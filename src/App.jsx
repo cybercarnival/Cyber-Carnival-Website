@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
-import EventCard from "./components/EventCard";
+import Events from "./pages/Events";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/events" element={<EventCard />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
     </BrowserRouter>
   );

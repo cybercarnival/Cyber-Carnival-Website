@@ -5,6 +5,23 @@
 body {
   background-color: black;
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5ce;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}
+
 @layer base {
   :root {
     --primary: 0 0% 0%;

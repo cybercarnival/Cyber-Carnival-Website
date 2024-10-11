@@ -20,6 +20,11 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         alumni: ["Alumni Sans", "sans-serif"],
+        orbitron: ["Orbitron", "sans-serif"],
+        audiowide: ["Audiowide", "sans-serif"],
+        jersey: ["'Jersey 10'", "sans-serif"],
+        rubik: ["'Rubik Glitch'", "sans-serif"],
+        saira: ["'Saira Stencil One'", "sans-serif"],
       },
       textShadow: {
         custom: "0px 0px 15px rgb(31, 96, 212)",
