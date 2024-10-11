@@ -23,14 +23,14 @@ function EventCard({
 }) {
   return (
     <>
-      <div className="w-[370px] h-[500px] relative m-10">
+      <div className="w-[330px] h-[500px] relative m-10 md:w-[370px]">
         <img className="absolute z-40 top-1 left-10" src={Grouplines} />
         <img
           className="absolute z-40 -bottom-2 left-1/2 transform: -translate-x-[80%]"
           src={Grouplines}
         />
         <div
-          className="w-[370px] h-[500px] flex items-center flex-col relative"
+          className="w-[330px] h-[500px] flex items-center flex-col relative md:w-[370px]"
           style={{
             clipPath: "url(#myShape)",
           }}
@@ -95,7 +95,7 @@ function EventCard({
           <img className="absolute top-2/3 left-0" src={LineGraphic2} />
         </div>
         <button
-          className="w-[168px] h-[39px] absolute -bottom-2 right-1"
+          className="w-[150px] h-[39px] absolute -bottom-2 right-1 md:w-[168px]"
           style={{
             clipPath: "url(#myShape2)",
           }}
