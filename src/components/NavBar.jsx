@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import MenuIcon from "@mui/icons-material/Menu";
 function NavBar() {
   return (
     <>
@@ -11,14 +12,14 @@ function NavBar() {
           </div>
         </NavLink>
 
-        <div className=" w-5/12 flex items-center justify-center bg-[#2E2B2B54] bg-opacity-[0.33]  rounded-[23px] ">
+        <div className=" w-5/12 hidden items-center justify-center bg-[#2E2B2B54] bg-opacity-[0.33] rounded-[23px] md:flex">
           <NavLink
             to="/"
             className={({ isActive }) =>
               (isActive
                 ? "text-[#5BFFE6] text-shadow-custom"
                 : "text-secondary") +
-              " text-3xl font-[300] mx-8 hover:text-[#5BFFE6] hover:text-shadow-custom"
+              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
             Home
@@ -29,7 +30,7 @@ function NavBar() {
               (isActive
                 ? "text-[#5BFFE6] text-shadow-custom"
                 : "text-secondary") +
-              " text-3xl font-[300] mx-8 hover:text-[#5BFFE6] hover:text-shadow-custom"
+              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
             Gallery
@@ -40,7 +41,7 @@ function NavBar() {
               (isActive
                 ? "text-[#5BFFE6] text-shadow-custom"
                 : "text-secondary") +
-              " text-3xl font-[300] mx-8 hover:text-[#5BFFE6] hover:text-shadow-custom"
+              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
             Events
@@ -51,22 +52,25 @@ function NavBar() {
               (isActive
                 ? "text-[#5BFFE6] text-shadow-custom"
                 : "text-secondary") +
-              " text-3xl font-[300] mx-8 hover:text-[#5BFFE6] hover:text-shadow-custom"
+              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
             Sponsors
           </NavLink>
         </div>
-        <div className=" w-3/12 flex items-center justify-end ">
+        <div className=" w-5/12 flex items-center justify-end md:w-3/12">
           <NavLink
             to="/login"
             className={({ isActive }) =>
               (isActive ? "text-[#5BFFE6] " : "text-secondary") +
-              " mx-2 hover:text-[#5BFFE6] "
+              " mx-2 hover:text-[#5BFFE6] hidden md:w-[35px] md:h-[35px] md:block lg:w-[50px] lg:h-[50px]"
             }
           >
-            <AccountCircleOutlinedIcon sx={{ height: "50px", width: "50px" }} />
+            <AccountCircleOutlinedIcon sx={{ height: "100%", width: "100%" }} />
           </NavLink>
+          <div className="h-[30px] w-[30px] text-secondary block md:hidden">
+            <MenuIcon sx={{ height: "100%", width: "100%" }} />
+          </div>
         </div>
       </div>
     </>
