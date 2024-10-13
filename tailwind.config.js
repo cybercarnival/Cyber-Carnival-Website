@@ -20,6 +20,8 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         alumni: ["Alumni Sans", "sans-serif"],
+        jersey: ['Jersey 10', 'sans-serif'],
+        monoton: ['Monoton', 'cursive'],
         orbitron: ["Orbitron", "sans-serif"],
         audiowide: ["Audiowide", "sans-serif"],
         jersey: ["'Jersey 10'", "sans-serif"],
@@ -78,10 +80,16 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "beam": {
+          '0%': { borderWidth: '2px', borderColor: 'transparent' },
+          '50%': { borderWidth: '2px', borderColor: '#07CBE7' },
+          '100%': { borderWidth: '2px', borderColor: 'transparent' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "beam": 'beam 1.5s linear infinite',
       },
     },
   },
