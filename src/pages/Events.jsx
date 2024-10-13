@@ -7,6 +7,7 @@ import React from "react";
 
 function Events() {
   return (
+    
     <div className="mt-32 w-full flex flex-wrap items-center justify-center ">
       <EventCard
         image={cyberConclave}

@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: black;
-}
+  body {
+    background-color: black;
+    background-image: url("./assets/bg_pic.png");
+    background-size: cover;
+  }
+
 ::-webkit-scrollbar {
   width: 6px;
 }

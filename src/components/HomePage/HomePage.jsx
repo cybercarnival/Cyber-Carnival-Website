@@ -17,6 +17,7 @@ function HomePage() {
         <div className='absolute bottom-4 left-4'>
         <CardCollection />
         </div>
+      
 
     </div>
   )

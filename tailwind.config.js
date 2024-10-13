@@ -27,6 +27,7 @@ module.exports = {
         jersey: ["'Jersey 10'", "sans-serif"],
         rubik: ["'Rubik Glitch'", "sans-serif"],
         saira: ["'Saira Stencil One'", "sans-serif"],
+        
       },
       textShadow: {
         custom: "0px 0px 15px rgb(31, 96, 212)",
@@ -72,6 +73,11 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "scroll": {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -86,10 +92,12 @@ module.exports = {
           '100%': { borderWidth: '2px', borderColor: 'transparent' },
         },
       },
+      
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "beam": 'beam 1.5s linear infinite',
+        "scroll":"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
   },
