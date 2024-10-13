@@ -3,6 +3,7 @@ import { BrowserRouter, Routes , Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/Home";
 import Events from "./pages/Events";
+import Gallery from "./pages/Gallery";
 
 
 function App() {
