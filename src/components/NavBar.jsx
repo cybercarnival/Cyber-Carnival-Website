@@ -13,7 +13,7 @@ function NavBar() {
           </div>
         </NavLink>
 
-        <div className=" w-5/12 hidden items-center justify-center bg-[#2E2B2B54] bg-opacity-[0.33] rounded-[23px] md:flex">
+        <div className=" w-5/12 hidden items-center justify-center bg-[#2E2B2B54] rounded-[23px] md:flex">
           <NavLink
             to="/"
             className={({ isActive }) =>

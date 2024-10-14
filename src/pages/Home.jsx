@@ -6,7 +6,7 @@ import About from "../components/About/about"
 import About2 from "../components/About2/about2"
 function Home() {
   return (
-    <div >
+    <div className='bg-slate-950'>
         <HomePage />
       <About />
       <About1 />
