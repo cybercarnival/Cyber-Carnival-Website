@@ -20,13 +20,14 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         alumni: ["Alumni Sans", "sans-serif"],
-        jersey: ['Jersey 10', 'sans-serif'],
         monoton: ['Monoton', 'cursive'],
         orbitron: ["Orbitron", "sans-serif"],
         audiowide: ["Audiowide", "sans-serif"],
         jersey: ["'Jersey 10'", "sans-serif"],
+        jersey2: ["'Jersey 20'", "sans-serif"],
         rubik: ["'Rubik Glitch'", "sans-serif"],
         saira: ["'Saira Stencil One'", "sans-serif"],
+        gudea: ["'Gudea'", "sans-serif"],
         
       },
       textShadow: {
