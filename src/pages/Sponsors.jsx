@@ -1,6 +1,5 @@
 import React from 'react'
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
-import cyberthon from "../assets/cyberthon.png";
 import bugbounty from "../assets/bugbounty.png";
 
 function Sponsors() {
@@ -26,7 +25,7 @@ function Sponsors() {
           content: (
             <div className="h-full w-full  flex items-center justify-center text-white">
               <img
-                src={cyberthon}
+                src={bugbounty}
                 className="h-full w-full object-cover"
                 alt="linear board demo"
               />
@@ -54,7 +53,7 @@ function Sponsors() {
           content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
               <img
-                src={cyberthon}
+                src={bugbounty}
                 className="h-full w-full object-cover"
                 alt="linear board demo"
               />
