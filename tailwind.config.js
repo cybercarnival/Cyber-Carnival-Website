@@ -28,10 +28,17 @@ module.exports = {
         rubik: ["'Rubik Glitch'", "sans-serif"],
         saira: ["'Saira Stencil One'", "sans-serif"],
         gudea: ["'Gudea'", "sans-serif"],
-        
+        rubik2: ["'Rubik 80s Fade'", "sans-serif"],
       },
       textShadow: {
         custom: "0px 0px 15px rgb(31, 96, 212)",
+      },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(0, 100, 100, 0.25)',
+        '4xl': [
+            '0 35px 35px rgba(0, 0, 0, 0.25)',
+            '0 45px 65px rgba(0, 0, 0, 0.15)'
+        ]
       },
       colors: {
         border: "hsl(var(--border))",

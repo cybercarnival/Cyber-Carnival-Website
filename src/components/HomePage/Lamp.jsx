@@ -15,9 +15,14 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br font-jersey  from-slate-300 to-blue-500 py-4 bg-clip-text 
-        text-9xl text-center  tracking-tight text-[#51B8BD] ">
-        CYBER <br/> <span className="font-monoton text-gradient-to-r text-8xl from-[#55C8CE] via-[#DFFFD9] to-[#FFFFFF]">CARNIVAL</span> 
+        className="mt-20 bg-gradient-to-br font-jersey   
+        text-[9rem] text-center  tracking-tight text-white ">
+        <div className="box-shadow-hover">
+        CYBER
+          </div> 
+          <div className="font-rubik2 text-gradient-to-r text-[10rem] text-[#27f4ff]  from-[#66f7ff] via-[#DFFFD9] to-[#FFFFFF] bg-clip-text -translate-y-20">
+            CARNIVAL
+            </div> 
       </motion.h1>
     </LampContainer>
     )

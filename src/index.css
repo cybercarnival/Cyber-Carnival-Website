@@ -82,6 +82,10 @@
   }
 }
 
+.box-shadow-hover {
+  filter: drop-shadow(0 0 20px rgba(15, 239, 239, 1));
+ }
+
 @layer base {
   * {
     @apply border-border;

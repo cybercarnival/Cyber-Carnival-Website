@@ -2,9 +2,10 @@
 import { BrowserRouter, Routes , Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/Home";
-import Events from "./pages/Events";
+import TechEvents from "./pages/TechEvents";
 import Gallery from "./pages/Gallery";
 import Sponsors from "./pages/Sponsors";
+import Events from "./pages/Events";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/home" element={<HomePage />} />
       <Route path="/events" element={<Events />} />
+      <Route path="/techevents" element={<TechEvents />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/sponsors" element={<Sponsors />} />
 
