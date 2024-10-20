@@ -17,7 +17,7 @@ function NavBar() {
   const handleClose = () => {
     animate(
       scope.current,
-      { opacity: 0, right: "-50%" },
+      { opacity: 0, right: "-100%" },
       { duration: 0.5, ease: "easeInOut" }
     );
   };
@@ -97,7 +97,7 @@ function NavBar() {
 
       <motion.div
         ref={scope}
-        className=" font-alumni w-1/2 h-screen backdrop-blur-xl fixed top-0  z-50 flex flex-col opacity-0 -right-1/2 items-center justify-center md:hidden"
+        className=" font-alumni w-2/3 h-screen backdrop-blur-xl fixed top-0  z-50 flex flex-col opacity-0 -right-full items-end justify-center md:hidden"
       >
         <div
           className="h-[30px] w-[30px] text-white block absolute top-0 right-0 m-10"
@@ -109,7 +109,7 @@ function NavBar() {
           to="/"
           className={({ isActive }) =>
             (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-            " text-5xl font-[300] my-3 mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom"
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
           }
           onClick={handleClose}
         >
@@ -119,7 +119,7 @@ function NavBar() {
           to="/gallery"
           className={({ isActive }) =>
             (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-            " text-5xl font-[300] my-3 mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom"
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
           }
           onClick={handleClose}
         >
@@ -129,7 +129,7 @@ function NavBar() {
           to="/events"
           className={({ isActive }) =>
             (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-            " text-5xl font-[300] my-3 mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom"
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
           }
           onClick={handleClose}
         >
@@ -139,11 +139,21 @@ function NavBar() {
           to="/sponsors"
           className={({ isActive }) =>
             (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-            " text-5xl font-[300] my-3 mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom"
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
           }
           onClick={handleClose}
         >
           Sponsors
+        </NavLink>
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
+          }
+          onClick={handleClose}
+        >
+          Login / Signup
         </NavLink>
       </motion.div>
     </>
