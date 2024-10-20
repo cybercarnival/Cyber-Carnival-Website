@@ -1,8 +1,8 @@
 import React from 'react'
 import { LampDemo } from './Lamp'
-import Button from './Button'
+// import Button from './Button'
 import CardCollection from './CardCollection'
-import vid from '../../assets/vid1.mp4';
+// import vid from '../../assets/vid1.mp4';
 
 function HomePage() {
   return (
@@ -16,7 +16,7 @@ function HomePage() {
         </Button> */}
         </div>
         <div className='absolute -translate-y-16 bottom-4 left-4'>
-        <CardCollection />
+        {/* <CardCollection /> */}
         </div>
       
 

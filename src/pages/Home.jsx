@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className='bg-slate-950'>
   
-      <video src={vid} className="opacity-30 object-cover absolute top-0 " autoPlay loop muted/>
+      <video src={vid} className="opacity-30 object-cover absolute top-0 min-h-full" autoPlay loop muted/>
         <HomePage />
       <About />
       <About1 />
