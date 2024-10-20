@@ -8,7 +8,7 @@ import boy from '../assets/boy_pic.png';
 import { NavLink } from 'react-router-dom';
 function EventComp() {
   return (
-    <div className='grid grid-cols-2'>
+    <div className='grid lg:grid-cols-2  sm:grid-cols-1'>
       <div className=''>
       <CardContainer className="inter-var ">
       <CardBody className=" bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bg border border-gray-100 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-full rounded-xl p-6   ">
