@@ -5,7 +5,8 @@ import { LampContainer } from "../ui/lamp";
 
 export function LampDemo() {
   return (
-    (<LampContainer className="pt-24">
+    (
+    <LampContainer className="pt-24">
       <motion.h1
         initial={{ opacity: 0.2, y: 400 }}
         whileInView={{ opacity: 1, y: 50 }}
@@ -14,11 +15,17 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br font-jersey  from-slate-300 to-blue-500 py-4 bg-clip-text 
-        text-9xl text-center  tracking-tight text-[#51B8BD] md:text-8xl">
-        CYBER <br /> <span className="font-monoton text-gradient-to-r text-9xl from-[#55C8CE] via-[#DFFFD9] to-[#FFFFFF]">CARNIVAL</span> 
+        className="mt-20 bg-gradient-to-br font-jersey   
+        text-[9rem] text-center  tracking-tight text-white ">
+        <div className="box-shadow-hover">
+        CYBER
+          </div> 
+          <div className="font-rubik2 text-gradient-to-r text-[10rem] text-[#27f4ff]  from-[#66f7ff] via-[#DFFFD9] to-[#FFFFFF] bg-clip-text -translate-y-20">
+            CARNIVAL
+            </div> 
       </motion.h1>
-    </LampContainer>)
+    </LampContainer>
+    )
   );
 }
 

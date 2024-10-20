@@ -1,0 +1,60 @@
+#introab1 {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.srmistab1{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h1ab1{
+    position: absolute;
+    font-size: larger;
+  font-weight: 400;
+  font-style: normal;
+  color: #BEDFE0;
+  margin-left: 50rem;
+  margin-top: -22rem;
+
+
+}
+.pab1{
+    font-weight: normal;
+    font-size: 1.3rem;
+    font-style: normal;
+    text-align: justify;
+    color: #B1B1B1;
+    font-family: "Gudea", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 35rem;
+    margin-left: 38rem;
+    padding-bottom: -5rem;
+    padding-top: 10rem;
+    text-align: justify;
+    line-height: 1.8rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120vh;
+
+
+}
+.srmubab1{
+    position: relative;
+    max-width: 600px;
+    max-height: 1000px;
+    margin-left: -2rem;
+    object-fit: cover;
+    height: 150vh;
+}

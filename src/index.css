@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: black;
-}
+  body {
+    background-color: black;
+    background-image: url("./assets/bg_pic.png");
+    background-size: cover;
+  }
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -78,6 +81,10 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+
+.box-shadow-hover {
+  filter: drop-shadow(0 0 20px rgba(15, 239, 239, 1));
+ }
 
 @layer base {
   * {
