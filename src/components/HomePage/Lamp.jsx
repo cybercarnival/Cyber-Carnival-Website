@@ -15,7 +15,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="bg-gradient-to-br font-jersey lg:text-[9rem]  md:text-[6rem] text-[6rem]  lg:mt-36 md:mt-24 sm:mt-44 text-center tracking-tight text-white ">
+        className="bg-gradient-to-br font-jersey lg:text-[9rem]  md:text-[6rem] text-[6rem]  lg:mt-36 md:mt-24 mt-44 text-center tracking-tight text-white ">
         <div className="box-shadow-hover">
         CYBER
           </div> 
