@@ -10,9 +10,9 @@ import './styles.css';
 import img1 from "../assets/img1.png";
 function Gallery() {
   return (
-    <div className='text-white mt-32 flex flex-wrap justify-center items-center '>
+    <div className='text-white mt-32 flex flex-wrap justify-center items-center p-4'>
       <div className='flex flex-col justify-center items-center'>
-        <h1 className='text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text'>Cyber Carnival'23</h1>
+        <h1 className='text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2'>Cyber Carnival'23</h1>
         <p className='text-center w-2/3'>The Cyber Carnival at SRM Ramapuram is an electrifying event hosted by the cybersecurity department, promising an immersive journey into the world of digital defense and innovation.</p>
       </div>
        <Swiper
@@ -64,7 +64,7 @@ function Gallery() {
     </Swiper>
 {/* next gallery */}
     <div className='flex flex-col justify-center items-center mt-8'>
-        <h1 className='text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text'>Cyber Carnival'23</h1>
+        <h1 className='text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2'>Cyber Awarness</h1>
         <p className='text-center w-2/3'>The Cyber Carnival at SRM Ramapuram is an electrifying event hosted by the cybersecurity department, promising an immersive journey into the world of digital defense and innovation.</p>
       </div>
        <Swiper

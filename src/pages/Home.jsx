@@ -5,6 +5,7 @@ import About1 from "../components/About1/about1"
 import About from "../components/About/about"
 import About2 from "../components/About2/about2"
 import vid from '../assets/vid1.mp4';
+import Footer from '../components/Footer';
 function Home() {
   return (
     <div className='bg-slate-950'>

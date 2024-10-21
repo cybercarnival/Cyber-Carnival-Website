@@ -3,7 +3,7 @@ import Card from '../components/EventComp'
 
 function Events() {
   return (
-    <div className='mt-10'>
+    <div className='mt-32 py-4'>
         <Card />
     </div>
   )

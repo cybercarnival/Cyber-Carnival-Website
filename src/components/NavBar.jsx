@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { NavLink } from "react-router-dom";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../assets/CC_Logo.png";
+import logo from "../assets/bg_logo.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion, useAnimate } from "framer-motion";
 function NavBar() {
@@ -64,7 +64,7 @@ function NavBar() {
           >
             Events
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/sponsors"
             className={({ isActive }) =>
               (isActive
@@ -74,10 +74,10 @@ function NavBar() {
             }
           >
             Sponsors
-          </NavLink>
+          </NavLink> */}
         </div>
         <div className=" w-5/12 flex items-center justify-end md:w-3/12">
-          <NavLink
+          {/* <NavLink
             to="/login"
             className={({ isActive }) =>
               (isActive ? "text-[#5BFFE6] " : "text-secondary") +
@@ -85,7 +85,7 @@ function NavBar() {
             }
           >
             <AccountCircleOutlinedIcon sx={{ height: "100%", width: "100%" }} />
-          </NavLink>
+          </NavLink> */}
           <div
             className="h-[30px] w-[30px] text-secondary block md:hidden"
             onClick={handleOpen}
@@ -135,7 +135,7 @@ function NavBar() {
         >
           Events
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/sponsors"
           className={({ isActive }) =>
             (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
@@ -144,8 +144,8 @@ function NavBar() {
           onClick={handleClose}
         >
           Sponsors
-        </NavLink>
-        <NavLink
+        </NavLink> */}
+        {/* <NavLink
           to="/login"
           className={({ isActive }) =>
             (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
@@ -154,7 +154,7 @@ function NavBar() {
           onClick={handleClose}
         >
           Login / Signup
-        </NavLink>
+        </NavLink> */}
       </motion.div>
     </>
   );

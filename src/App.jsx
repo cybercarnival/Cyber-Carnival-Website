@@ -6,6 +6,7 @@ import TechEvents from "./pages/TechEvents";
 import Gallery from "./pages/Gallery";
 import Sponsors from "./pages/Sponsors";
 import Events from "./pages/Events";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/sponsors" element={<Sponsors />} />
 
+
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
