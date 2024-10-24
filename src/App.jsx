@@ -20,6 +20,9 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/techevents" element={<TechEvents />} />
         <Route path="/techevents/viewevent/:event" element={<ViewEvent />} />
+        <Route path="/nontechevents" element={<NonTechEvents />} />
+        <Route path="/nontechevents/viewevent/:event" element={<ViewEvent />} />
+        <Route path="/techevents/viewevent/:event/register" element={<Register />} />
 
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsors" element={<Sponsors />} />
