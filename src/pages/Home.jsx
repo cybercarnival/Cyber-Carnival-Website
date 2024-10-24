@@ -1,31 +1,38 @@
-import React from 'react'
-import HomePage from '../components/HomePage/HomePage'
-import Loop from '../components/Loop'
-// import About1 from "../components/About1/about1"
-// import About from "../components/About/about"
-// import About2 from "../components/About2/about2"
+import React from 'react';
+import HomePage from '../components/HomePage/HomePage';
+import Loop from '../components/Loop';
 import vid from '../assets/vid1.mp4';
-// import Footer from '../components/Footer';
-import AboutUs from '../components/AboutUs/AboutUs'
+import AboutUs from '../components/AboutUs/AboutUs';
 
 function Home() {
   return (
     <div className='bg-slate-950'>
-  
-      <video src={vid} className="opacity-30 object-cover absolute top-0 min-h-full" autoPlay loop muted/>
-        <HomePage />
+      
+      {/* HomePage with Video Background */}
+      <div className="relative">
+        <video 
+          src={vid} 
+          className="opacity-30 object-cover absolute top-0 left-0 w-full h-full z-0"
+          autoPlay 
+          loop 
+          muted 
+        />
+        <div className="relative z-10">
+          <HomePage />
+        </div>
+      </div>
+
+      {/* AboutUs Section with Background text */}
+      <div className='relative z-10'>
         <AboutUs />
-      {/* <About />
-      <About1 />
-      <About2 /> */}
-      
-      
+      </div>
+
+      {/* Loop Component */}
+      <div className="relative z-10">
         <Loop />
+      </div>
     </div>
-    
-  )
+  );
 }
 
-export default Home
-
-
+export default Home;

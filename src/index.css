@@ -6,6 +6,7 @@
     background-color: black;
     background-image: url("./assets/bg_pic.png");
     background-size: cover;
+    scroll-behavior: smooth;
   }
 
 ::-webkit-scrollbar {
@@ -93,4 +94,53 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* blobs */
+@keyframes blobBreathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.blob {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 255, 255, 0.6);
+  filter: blur(100px);
+  border-radius: 40%;
+  animation: blobBreathe 6s infinite ease-in-out;
+  pointer-events: none; 
+}
+
+
+/* bubble */
+/* Add this to your global styles or the corresponding CSS file */
+@keyframes blink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-blink {
+  animation: blink 3s infinite;
+}
+
+/* Optional additional styling for a glowing effect */
+.blob {
+  border-radius: 30% 60% 40% 70%; /* Customize this for different shapes */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glowy effect */
 }
