@@ -8,19 +8,11 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { data } from "../data/viewEventsData.js";
 
-function EventCard({
-  image,
-  title,
-  title_size,
-  title_font,
-  description,
-  date,
-  time,
-  fees,
-  seats,
-  brief,
-}) {
+function EventCard({ urlName }) {
+  const nav = useNavigate();
   return (
     <>
       <div className="w-[330px] h-[500px] relative m-10 md:w-[370px]">
@@ -53,12 +45,19 @@ function EventCard({
             />
           </svg>
           <div className="w-full h-1/2 relative flex flex-col items-center justify-center">
-            <img className="w-full h-full absolute top-0 left-0" src={image} />
-            <h1 className={`z-40 ${title_font} ${title_size} text-white my-4 `}>
-              {title}
+            <img
+              className="w-full h-full absolute top-0 left-0"
+              src={data[`${urlName}`] .poster}
+            />
+            <h1
+              className={`z-40 ${data[`${urlName}`].title_font} ${
+                data[`${urlName}`].title_size
+              } text-white my-4 `}
+            >
+              {data[`${urlName}`].title}
             </h1>
             <p className="z-40 text-[10px] font-audiowide font-normal px-6 text-[#F6E9E9] text-center">
-              {description}
+              {data[`${urlName}`].description}
             </p>
           </div>
           <img
@@ -73,23 +72,33 @@ function EventCard({
             <div className="h-3/12 w-full grid grid-cols-2 grid-rows-2 pl-12 py-4 gap-y-2">
               <div className="flex justify-start items-center justify-self-start">
                 <CalendarTodayOutlinedIcon sx={{ height: 20, width: 20 }} />
-                <p className="text-xs mx-3">{date}</p>
+                <p className="text-xs mx-3">
+                  {data[`${urlName}`].eventDetails.date}
+                </p>
               </div>
               <div className="flex justify-start items-center justify-self-start">
                 <PaymentsOutlinedIcon sx={{ height: 20, width: 20 }} />
-                <p className="text-xs mx-3">{fees}</p>
+                <p className="text-xs mx-3">
+                  {data[`${urlName}`].eventDetails.fees}
+                </p>
               </div>
               <div className="flex justify-start items-center justify-self-start">
                 <PersonOutlinedIcon sx={{ height: 20, width: 20 }} />
-                <p className="text-xs mx-3">{seats}</p>
+                <p className="text-xs mx-3">
+                  {data[`${urlName}`].eventDetails.seats}
+                </p>
               </div>
               <div className="flex justify-start items-center justify-self-start">
                 <AccessTimeOutlinedIcon sx={{ height: 20, width: 20 }} />
-                <p className="text-xs mx-3">{time}</p>
+                <p className="text-xs mx-3">
+                  {data[`${urlName}`].eventDetails.time}
+                </p>
               </div>
             </div>
             <div className="h-9/12 py-6 px-8  flex justify-center items-center">
-              <p className="text-[10px]  text-justify">{brief}</p>
+              <p className="text-[10px]  text-justify">
+                {data[`${urlName}`].brief}
+              </p>
             </div>
           </div>
           <img className="absolute top-2/3 left-0" src={LineGraphic2} />
@@ -129,8 +138,9 @@ function EventCard({
               opacity: 1,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
+            onClick={() => nav(`viewevent/${urlName}`)}
           >
-            <p className="text-[#51B8BD] text-xl mx-2 font-jersey">REGISTER</p>
+            <p className="text-[#51B8BD] text-xl mx-2 font-jersey">VIEW</p>
 
             <CallMadeIcon sx={{ width: 15, height: 15, color: "white" }} />
           </motion.div>

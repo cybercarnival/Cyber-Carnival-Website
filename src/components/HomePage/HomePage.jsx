@@ -8,7 +8,6 @@ function HomePage() {
   return (
     <div className='relative'>
         <LampDemo/> 
-       {/* <video src={vid} loop autoPlay={true} muted className='w-full h-screen object-cover opacity-30 z-0 top-[-200rem]' />  */}
         <div className='absolute top-2/3 right-72'>
         {/* <Button>
           JOIN US

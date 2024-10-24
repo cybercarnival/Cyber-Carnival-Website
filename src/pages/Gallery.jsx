@@ -8,6 +8,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/effect-coverflow';
 import './styles.css';
 import img1 from "../assets/img1.png";
+
 import Background from '../components/Background/Background'; // Import the Background component
 
 function Gallery() {
@@ -127,6 +128,7 @@ function Gallery() {
       </div>
     </div>
   );
+
 }
 
 export default Gallery;

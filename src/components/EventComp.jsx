@@ -29,7 +29,7 @@ function EventComp() {
             src={lap}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32 hover:scale-150 "
             alt="thumbnail"
             />
            
@@ -58,20 +58,20 @@ function EventComp() {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 "
           >
            Experience 5+ exciting non tech events at Cyber Carnival!! From workshops to coding challenges, Join us for a dynamic celebration of innovation and learning. Don't miss out our tech events.        </CardItem>
           <img
             src={vr}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[18rem] object-cover rounded-xl translate-x-36 hover:scale-150"
             alt="thumbnail"
             />
            
            <div className="-translate-y-20">
         <NavLink
-            to="/techevents"
+            to="/nontechevents"
             className=" text-sm mx-4 text-white font-orbitron border-4 border-cyan-500 rounded-full p-4 hover:border-cyan-600 hover:text-gray-400 "
           >
             view all
@@ -102,7 +102,7 @@ function EventComp() {
             src={boy}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32 hover:scale-150"
             alt="thumbnail"
             />
            
@@ -139,7 +139,7 @@ function EventComp() {
             src={robot}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32 hover:scale-150"
             alt="thumbnail"
             />
            

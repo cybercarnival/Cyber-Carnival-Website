@@ -19,8 +19,11 @@ export function LampDemo() {
         <div className="box-shadow-hover">
         CYBER
           </div> 
-          <div className="font-rubik2 text-gradient-to-r lg:text-[10rem]  md:text-[7rem]  text-[#27f4ff]  from-[#66f7ff] via-[#DFFFD9] to-[#FFFFFF] bg-clip-text -translate-y-20 ">
-            CARNIVAL
+          <div className="font-rubik2 text-gradient-to-r lg:text-[9rem]  md:text-[7rem]  text-[#27f4ff]  from-[#66f7ff] via-[#DFFFD9] to-[#FFFFFF] bg-clip-text -translate-y-20 ">
+            CARNIVAL <span className="text-white font-audiowide">'25 </span>
+            </div> 
+            <div className="font-jura tracking-widest text-gradient-to-r lg:text-4xl  text-white -translate-y-20 ">
+            February 20 & 21
             </div> 
       </motion.h1>
     </LampContainer>
