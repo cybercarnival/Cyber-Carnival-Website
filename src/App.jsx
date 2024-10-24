@@ -7,6 +7,7 @@ import Sponsors from "./pages/Sponsors";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
 import ViewEvent from "./pages/ViewEvent";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/techevents" element={<TechEvents />} />
         <Route path="/techevents/viewevent/:event" element={<ViewEvent />} />
+        <Route
+          path="/techevents/viewevent/:event/register"
+          element={<Register />}
+        />
 
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsors" element={<Sponsors />} />
