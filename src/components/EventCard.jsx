@@ -8,6 +8,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function EventCard({
   image,
@@ -21,6 +22,7 @@ function EventCard({
   seats,
   brief,
 }) {
+  const nav = useNavigate();
   return (
     <>
       <div className="w-[330px] h-[500px] relative m-10 md:w-[370px]">
@@ -129,8 +131,9 @@ function EventCard({
               opacity: 1,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
+            onClick={() => nav("viewevent/fafa")}
           >
-            <p className="text-[#51B8BD] text-xl mx-2 font-jersey">REGISTER</p>
+            <p className="text-[#51B8BD] text-xl mx-2 font-jersey">VIEW</p>
 
             <CallMadeIcon sx={{ width: 15, height: 15, color: "white" }} />
           </motion.div>
