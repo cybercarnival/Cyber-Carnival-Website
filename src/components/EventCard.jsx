@@ -131,7 +131,7 @@ function EventCard({
               opacity: 1,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            onClick={() => nav("viewevent/fafa")}
+            onClick={() => nav("viewevent/cyber-conclave")}
           >
             <p className="text-[#51B8BD] text-xl mx-2 font-jersey">VIEW</p>
 
