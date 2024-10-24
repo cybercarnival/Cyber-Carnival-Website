@@ -1,8 +1,5 @@
 import EventCard from "../components/EventCard";
-import cyberConclave from "../assets/cyberConclave.png";
-import cyberthon from "../assets/Cyberthon.png";
-import bugBounty from "../assets/bugbounty.png";
-import captureTheFlag from "../assets/ctf.png";
+
 import React from "react";
 
 function Events() {
@@ -11,6 +8,9 @@ function Events() {
       <EventCard urlName="cyberconclave" />
       <EventCard urlName="capturetheflag" />
       <EventCard urlName="cyberthon" />
+      <EventCard urlName="paperpresentation" />
+      <EventCard urlName="bugbounty" />
+
 
       {/* <EventCard
         image={cyberthon}

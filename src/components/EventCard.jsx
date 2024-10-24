@@ -47,7 +47,7 @@ function EventCard({ urlName }) {
           <div className="w-full h-1/2 relative flex flex-col items-center justify-center">
             <img
               className="w-full h-full absolute top-0 left-0"
-              src={data[`${urlName}`].poster}
+              src={data[`${urlName}`] .poster}
             />
             <h1
               className={`z-40 ${data[`${urlName}`].title_font} ${
