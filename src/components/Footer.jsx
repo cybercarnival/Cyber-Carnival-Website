@@ -7,49 +7,32 @@ import email from '../assets/gmail.png';
 import Divider from '@mui/material/Divider';
 function Footer() {
   return (
-    <div className='bg-slate-900 border-t-4 border-emerald-300 grid grid-cols-3'>
+    <div className='bg-gray-900 border-t-4 border-emerald-300 grid grid-cols-3'>
 
-    <div className='w-40 h-auto'>
+    <div className='w-24 ml-14 h-full'>
       <img src={logo} alt="logo" />
     </div>
-
-<div className='grid grid-cols-2'>
-
-    <div className=' mt-5 text-white'>
-        <h1 className='text-emerald-300 text-2xl'>Reach Us <CallMadeIcon/></h1>
-        <li className='text-lg'>hello@cybercarnival.in</li>
-        <li className='text-lg'>SRMIST, Bharathi Salai, Ramapuram Chennai</li>
-    </div>
-
-    <div className=' mt-5 translate-x-36'>
-        <h1 className='text-emerald-300 text-2xl text-center'>Follow Our Socials</h1>
-        <div className='mt-4 grid grid-cols-4 gap-5'>
+    <div className='grid grid-rows-2 mt-5'>
+    <h1 className='text-emerald-300 text-xl '>Reach Us <CallMadeIcon/></h1>
+    <div className='grid grid-cols-3 '>
         <ul>
         <a href='https://www.instagram.com/cyber_carnival_srmrmp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='>
-        <img className='w-9 h-9' src={insta}/>
+        <img className='w-7 h-7' src={insta}/>
         </a>
         </ul>
         <ul>
         <a href='https://www.linkedin.com/in/cyber-carnival-srm-ramapuram-71a63a2b1/'>
-        <img className='w-9 h-9' src={linkedin}/>
+        <img className='w-7 h-7' src={linkedin}/>
         </a>
         </ul>
         <ul>
         <a href='https://www.instagram.com/cyber_carnival_srmrmp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='>
-        <img className='w-9 h-9' src={email}/>
-        </a>
-        </ul>
-        <ul>
-        <a href='https://www.instagram.com/cyber_carnival_srmrmp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='>
-        <img className='w-9 h-9' src={email}/>
+        <img className='w-7 h-7' src={email}/>
         </a>
         </ul>
     </div>
-</div>    
-
-    <Divider variant='middle' className='bg-white col-span-2 translate-x-16'/>
-    <h1 className='text-gray-400 text-center translate-x-52'>© 2024 Copyright: SRM RMP CSE CS</h1>
     </div>
+    <h1 className='text-gray-400 text-center text-xl mt-11'>© 2024 Copyright: SRM RMP CSE CS</h1>
     </div>
   )
 }

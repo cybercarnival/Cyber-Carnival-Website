@@ -1,6 +1,7 @@
 import React from 'react'
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import bugbounty from "../assets/bugbounty.png";
+import ctf from '../assets/ctf.png';
 
 function Sponsors() {
     const content = [
@@ -11,7 +12,7 @@ function Sponsors() {
           content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
               <img
-                src={bugbounty}
+                src={ctf}
                 className="h-full w-full object-cover"
                 alt="linear board demo"
               />
@@ -39,7 +40,7 @@ function Sponsors() {
           content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
               <img
-                src={bugbounty}
+                src={ctf}
                 className="h-full w-full object-cover"
                 alt="linear board demo"
               />
