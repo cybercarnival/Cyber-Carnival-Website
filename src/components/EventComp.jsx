@@ -58,14 +58,14 @@ function EventComp() {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 "
           >
            Experience 5+ exciting non tech events at Cyber Carnival!! From workshops to coding challenges, Join us for a dynamic celebration of innovation and learning. Don't miss out our tech events.        </CardItem>
           <img
             src={vr}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[18rem] object-cover rounded-xl translate-x-36 hover:scale-150"
             alt="thumbnail"
             />
            
@@ -102,7 +102,7 @@ function EventComp() {
             src={boy}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32 hover:scale-150"
             alt="thumbnail"
             />
            
@@ -139,7 +139,7 @@ function EventComp() {
             src={robot}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32 hover:scale-150"
             alt="thumbnail"
             />
            
