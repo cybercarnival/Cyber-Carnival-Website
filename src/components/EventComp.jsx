@@ -29,7 +29,7 @@ function EventComp() {
             src={lap}
             height="1000"
             width="1000"
-            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32"
+            className="h-[15rem] w-[20rem] object-cover rounded-xl translate-x-32 hover:scale-150 "
             alt="thumbnail"
             />
            
