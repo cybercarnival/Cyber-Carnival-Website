@@ -10,6 +10,8 @@ function Events() {
       <EventCard urlName="cyberthon" />
       <EventCard urlName="paperpresentation" />
       <EventCard urlName="bugbounty" />
+      <EventCard urlName="techexpo" />
+      <EventCard urlName="startup" />
 
 
       {/* <EventCard

@@ -7,7 +7,7 @@ import email from '../assets/gmail.png';
 import Divider from '@mui/material/Divider';
 function Footer() {
   return (
-    <div className='bg-black border-t-4 border-emerald-300 grid grid-cols-3 justify-items-stretch p-6'>
+    <div className='bg-black border-t-4 border-emerald-300 grid grid-cols-3 justify-items-stretch p-6 '>
 
       <img src={logo} className='w-16' alt="logo" />
     

@@ -71,7 +71,7 @@ function EventComp() {
            
            <div className="-translate-y-20">
         <NavLink
-            to="/techevents"
+            to="/nontechevents"
             className=" text-sm mx-4 text-white font-orbitron border-4 border-cyan-500 rounded-full p-4 hover:border-cyan-600 hover:text-gray-400 "
           >
             view all

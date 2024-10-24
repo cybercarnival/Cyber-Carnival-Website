@@ -3,6 +3,14 @@ import ctf from "../assets/ctf.png";
 import cyberthon from "../assets/Cyberthon.png";
 import paperpresentation from "../assets/paperpresentation.png";
 import bugbounty from "../assets/bugbounty.png";
+import techexpo from "../assets/techexpo.png";
+import startup from "../assets/startup.png";
+import freefire from "../assets/freefire.png";
+import cinema from "../assets/cinema.png";
+import surfing from "../assets/surfing.png";
+import awareness from "../assets/awareness.png";
+import surviva from "../assets/surviva.png";
+
 
 export const data = {
   cyberconclave: {
@@ -123,4 +131,169 @@ export const data = {
     },
     rules: ["rule 1", "rule 2", "rule 3"],
   },
+
+  
+  techexpo: {
+    title: "Secure Tool",
+    title_font: "font-jersey",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "SecureSec Tool is an exciting event where students will design, develop, and demonstrate their own cybersecurity tool to ensure Confidentiality, Integrity, and Availability (CIA) of digital information. Participants will showcase their creativity, programming skills, and knowledge of cybersecurity principles to create innovative solutions.",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: techexpo,
+    url: "techexpo",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  
+  startup: {
+    title: "Startup Expo", 
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: startup,
+    url: "startup",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  freefire: {
+    title: "Free Fire",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: freefire,
+    url: "freefire",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  cinema: {
+    title: "Cinema",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: cinema,
+    url: "cinema",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  surfing: {
+    title: "Surfing",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: surfing,
+    url: "surfing",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  awareness: {
+    title: "Awareness",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: awareness,
+    url: "awareness",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  surviva: {
+    title: "Surviva",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description: "Embark on a quest to seize the victory flags!",
+
+    brief:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    brief2:
+      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    poster: surviva,
+    url: "surviva",
+    facultyCoordinator: ["faculty name 1", "faculty name 2"],
+    studentCoordinator: ["student name 1", "student name 2"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "22 FEB 2025",
+      fees: "250 per team",
+      seats: "150 SEATS",
+    },
+    rules: ["rule 1", "rule 2", "rule 3"],
+  },
+
+  
 };
