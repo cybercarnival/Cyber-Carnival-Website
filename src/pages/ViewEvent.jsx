@@ -30,7 +30,7 @@ function ViewEvent() {
               {data[event].description}
             </p>
           </div>
-          <div className="h-1/2 w-full bg-gray-900 p-4 rounded-b-xl">
+          <div className="h-1/2 w-full bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bg p-4 rounded-b-xl">
             <p className="text-justify text-white">{data[event].brief2}</p>
           </div>
         </div>

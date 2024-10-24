@@ -37,7 +37,7 @@ function Gallery() {
       </div>
        <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard]}
+      modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard,]}
       effect={'coverflow'}
       grabCursor={true}
       centeredSlides={true}
