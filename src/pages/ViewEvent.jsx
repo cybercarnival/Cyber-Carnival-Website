@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import conclave from "../assets/cyberConclave.png";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
@@ -9,6 +9,7 @@ import CropSquareIcon from "@mui/icons-material/CropSquare";
 import { data } from "../data/viewEventsData.js";
 function ViewEvent() {
   const { event } = useParams();
+  const nav = useNavigate();
   console.log(event);
   return (
     <div className="w-full flex justify-center items-center text-white">
@@ -181,7 +182,10 @@ function ViewEvent() {
             </div>
           )}
 
-          <button className="border-2 border-[#1EC1C5] w-2/3 ml-[40px] p-1 rounded-xl text-[#1EC1C5] text-xl font-jersey">
+          <button
+            onClick={() => nav(`register`)}
+            className="border-2 border-[#1EC1C5] w-2/3 ml-[40px] p-1 rounded-xl text-[#1EC1C5] text-xl font-jersey"
+          >
             Register
           </button>
         </div>
