@@ -23,7 +23,7 @@ function App() {
         <Route path="/nontechevents" element={<NonTechEvents />} />
         <Route path="/nontechevents/viewevent/:event" element={<ViewEvent />} />
         <Route path="/techevents/viewevent/:event/register" element={<Register />} />
-
+        <Route path="/nontechevents/viewevent/:event/register" element={<Register />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsors" element={<Sponsors />} />
       </Routes>
