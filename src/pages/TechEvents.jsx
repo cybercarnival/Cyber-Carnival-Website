@@ -1,11 +1,11 @@
 import EventCard from "../components/EventCard";
-import Background from "../components/Background/Background";
+// import Background from "../components/Background/Background";
 import React from "react";
 
 function Events() {
   return (
     <div className="mt-32 w-full flex flex-wrap min-h-screen items-center justify-center ">
-      <Background/>
+      {/* <Background/> */}
       <EventCard urlName="cyberconclave" />
       <EventCard urlName="capturetheflag" />
       <EventCard urlName="cyberthon" />

@@ -25,13 +25,13 @@ import h7 from "../assets/h7.jpg";
 import e1 from "../assets/e1.jpg";
 import e2 from "../assets/e2.jpg";
 import Speakers from '../components/Speakers';
-import Background from '../components/Background/Background';
+// import Background from '../components/Background/Background';
 
 
 function Gallery() {
   return (
     <>
-    <Background/>
+    {/* <Background/> */}
     <div className='text-white mt-32 flex flex-wrap justify-center items-center p-4'>
       <div className='flex flex-col justify-center items-center'>
         <h1 className='text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2'>Cyber Carnival</h1>
