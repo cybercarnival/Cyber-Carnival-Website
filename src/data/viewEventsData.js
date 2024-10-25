@@ -105,26 +105,26 @@ export const data = {
     eventDetails: {
       time: "10AM - 11AM",
       date: "21st Feb 2025",
-      fees: "100 per head",
-      seats: "150 SEATS",
+      fees: "300 per team",
+      seats: "80 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["· Submit the Full Paper in IEEE format. It should not exceed 4 pages.", "Paper must be an original work and not previously submitted in any platform.", "Team size can be minimum of 1 and maximum of 4 members."],
   },
 
   bugbounty: {
     title: "Bug Bounty",
     title_font: "font-rubik",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Embark on a quest to find the bugs and retrieve the flag!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Join our Bug Bounty event, an exciting challenge where participants will test their cybersecurity skills in a real-world scenario. Your mission is to uncover hidden vulnerabilities and find the elusive flag. The challenge is open-ended—how you approach it is entirely up to you!",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Whether you're a seasoned ethical hacker or just starting out, this event offers the perfect platform to showcase your problem-solving abilities, learn new techniques, and contribute to a safer digital environment. Compete, grow, and earn recognition and rewards for your efforts. Do you have what it takes to find the flag?",
     poster: bugbounty,
     url: "bugbounty",
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
-    studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
+    studentCoordinator: ["Swapna Gupta - +91 90029 95954", "Rishit Chanda - +91 877 749 7567"],
     eventDetails: {
       time: "10AM - 12PM",
       date: "21 FEB 2025",
