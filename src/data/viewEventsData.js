@@ -34,10 +34,10 @@ export const data = {
     eventDetails: {
       time: "8AM - 9AM",
       date: "21 FEB 2025",
-      fees: "200 per team",
-      seats: "150 SEATS",
+      fees: "50 per head",
+      seats: "200 seats",
     },
-    discussion: ["Topic 1", "Topic 2", "Topic 3"],
+    discussion: ["TUnmasking online scams and strengthening adequate cyber defenses"],
   },
 
   capturetheflag: {
@@ -47,20 +47,20 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "The Capture the Flag event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "A Capture the Flag (CTF) is a game designed to challenge participant's hacking skills, problem-solving abilities, and knowledge of security. In these competitions, teams must solve a series of challenges, each of which contains hidden flags that participants need to find and submit to earn points.",
     poster: ctf,
     url: "capturetheflag",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
+    studentCoordinator: ["Anshul Bagchi", "Adhish Mehta"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
       fees: "250 per team",
-      seats: "150 SEATS",
+      seats: "180 seats",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: [" A team can consist of 1 to 3 members.", "Solve as many challenges as possible within the given time frame.", "The CTF is based on 5 different domains, with each domain with questions ranging from easy to hard difficulty", "Flags are worth different points based on the difficulty of the question.", "Sharing flags with other teams is strictly prohibited", "Teams which are found engaging in unfair means will be disqualified."],
   },
 
   cyberthon: {
