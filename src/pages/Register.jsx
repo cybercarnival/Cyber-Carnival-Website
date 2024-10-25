@@ -201,7 +201,7 @@ function Register() {
                           Check Out
                         </h4>
                         <div className="w-full h-32 flex justify-center items-center text-white text-xl font-[400] font-jersey2">
-                          <div className="w-1/3 h-full">
+                          <div className="w-2/3 h-full">
                             <div className="w-full flex justify-between">
                               <h6 className="">Event</h6>
                               <h6>{data[event]?.title}</h6>
