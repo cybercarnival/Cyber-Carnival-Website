@@ -121,15 +121,15 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: bugbounty,
     url: "bugbounty",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
+    studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "10AM - 12PM",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Bring your own device", "DDoS or Account takeover is permitted", "Find bugs only in the given target "],
   },
 
   
