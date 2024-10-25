@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Card from '../components/EventComp';
 import Background from '../components/Background/Background';
@@ -11,6 +12,7 @@ function Events() {
 
       {/* Event content */}
       <div className='relative z-20'>
+
         <Card />
       </div>
 

@@ -6,6 +6,7 @@ import vr  from '../assets/vr.png';
 import robot from '../assets/robot.png';
 import boy from '../assets/boy_pic.png';
 import { NavLink } from 'react-router-dom';
+// import Background from './Background/Background';
 function EventComp() {
   return (
     <div className='grid lg:grid-cols-2  sm:grid-cols-1 gap-y-10 '>

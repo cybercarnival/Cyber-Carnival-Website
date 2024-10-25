@@ -34,10 +34,10 @@ export const data = {
     eventDetails: {
       time: "8AM - 9AM",
       date: "21 FEB 2025",
-      fees: "200 per team",
-      seats: "150 SEATS",
+      fees: "50 per head",
+      seats: "200 seats",
     },
-    discussion: ["Topic 1", "Topic 2", "Topic 3"],
+    discussion: ["TUnmasking online scams and strengthening adequate cyber defenses"],
   },
 
   capturetheflag: {
@@ -47,20 +47,20 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "The Capture the Flag event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "A Capture the Flag (CTF) is a game designed to challenge participant's hacking skills, problem-solving abilities, and knowledge of security. In these competitions, teams must solve a series of challenges, each of which contains hidden flags that participants need to find and submit to earn points.",
     poster: ctf,
     url: "capturetheflag",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
+    studentCoordinator: ["Anshul Bagchi - +91 82729 41906", "Adhish Mehta - +91 62663 62445"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
       fees: "250 per team",
-      seats: "150 SEATS",
+      seats: "180 seats",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: [" A team can consist of 1 to 3 members.", "Solve as many challenges as possible within the given time frame.", "The CTF is based on 5 different domains, with each domain with questions ranging from easy to hard difficulty", "Flags are worth different points based on the difficulty of the question.", "Sharing flags with other teams is strictly prohibited", "Teams which are found engaging in unfair means will be disqualified."],
   },
 
   cyberthon: {
@@ -90,46 +90,48 @@ export const data = {
     title: "Paper Presentation",
     title_font: "font-jersey",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Unveil Innovations, Elevate Ideas: Where Knowledge Meets Discovery!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Join us for an enlightening event where innovation meets academia! The Research Paper Presentation is a platform for students, professionals, and researchers to showcase their latest research and ideas in the fields of technology, cybersecurity, data science, and beyond.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work."
+
+,
     poster: paperpresentation,
     url: "paperpresentation",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],  
+    studentCoordinator: ["Jandhyala Venkata - +91 9444025334", "Alton D Almeida - +91 93804 68719"],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "22 FEB 2025",
-      fees: "250 per team",
-      seats: "150 SEATS",
+      date: "21st Feb 2025",
+      fees: "300 per team",
+      seats: "80 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["· Submit the Full Paper in IEEE format. It should not exceed 4 pages.", "Paper must be an original work and not previously submitted in any platform.", "Team size can be minimum of 1 and maximum of 4 members."],
   },
 
   bugbounty: {
     title: "Bug Bounty",
     title_font: "font-rubik",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Embark on a quest to find the bugs and retrieve the flag!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Join our Bug Bounty event, an exciting challenge where participants will test their cybersecurity skills in a real-world scenario. Your mission is to uncover hidden vulnerabilities and find the elusive flag. The challenge is open-ended—how you approach it is entirely up to you!",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Whether you're a seasoned ethical hacker or just starting out, this event offers the perfect platform to showcase your problem-solving abilities, learn new techniques, and contribute to a safer digital environment. Compete, grow, and earn recognition and rewards for your efforts. Do you have what it takes to find the flag?",
     poster: bugbounty,
     url: "bugbounty",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
+    studentCoordinator: ["Swapna Gupta - +91 90029 95954", "Rishit Chanda - +91 877 749 7567"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "10AM - 12PM",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Bring your own device", "DDoS or Account takeover is permitted", "Find bugs only in the given target "],
   },
 
   
@@ -145,15 +147,15 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: techexpo,
     url: "techexpo",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
+    studentCoordinator: ["Dhivyan", "Jonathan"],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Indigenous built tools are only allowed", "Plagiarism isn't allowed", "rule 3"],
   },
 
   
@@ -164,16 +166,16 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be!",
     poster: startup,
     url: "startup",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
+    studentCoordinator: ["Vrajesh RS", "Akshayraj"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "10AM - 12AM",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -192,12 +194,12 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: freefire,
     url: "freefire",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
+    studentCoordinator: ["Sanjeev", "Moulleshvarma "],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "22 FEB 2025",
-      fees: "250 per team",
+      date: "20 FEB 2025",
+      fees: "300 per team",
       seats: "150 SEATS",
     },
     rules: ["rule 1", "rule 2", "rule 3"],

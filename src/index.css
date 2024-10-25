@@ -144,3 +144,21 @@
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glowy effect */
 }
+
+
+/*  */
+/* src/index.css or your main CSS file */
+.carousel {
+  transform-style: preserve-3d;
+}
+
+.carousel-image:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.carousel-image:nth-child(2) {
+  transform: rotateY(180deg) translateZ(300px);
+}
+
+
+
