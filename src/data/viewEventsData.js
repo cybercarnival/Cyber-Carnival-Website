@@ -145,15 +145,15 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: techexpo,
     url: "techexpo",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
+    studentCoordinator: ["Dhivyan", "Jonathan"],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Indigenous built tools are only allowed", "Plagiarism isn't allowed", "rule 3"],
   },
 
   
@@ -164,16 +164,16 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be!",
     poster: startup,
     url: "startup",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
+    studentCoordinator: ["Vrajesh RS", "Akshayraj"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "10AM - 12AM",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
