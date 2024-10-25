@@ -53,7 +53,7 @@ export const data = {
     poster: ctf,
     url: "capturetheflag",
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
-    studentCoordinator: ["Anshul Bagchi", "Adhish Mehta"],
+    studentCoordinator: ["Anshul Bagchi - +91 82729 41906", "Adhish Mehta - +91 62663 62445"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
@@ -90,20 +90,22 @@ export const data = {
     title: "Paper Presentation",
     title_font: "font-jersey",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Unveil Innovations, Elevate Ideas: Where Knowledge Meets Discovery!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Join us for an enlightening event where innovation meets academia! The Research Paper Presentation is a platform for students, professionals, and researchers to showcase their latest research and ideas in the fields of technology, cybersecurity, data science, and beyond.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work.
+
+,
     poster: paperpresentation,
     url: "paperpresentation",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
+    studentCoordinator: ["Jandhyala Venkata - +91 9444025334", "Alton D Almeida - +91 93804 68719"],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "22 FEB 2025",
-      fees: "250 per team",
+      date: "21st Feb 2025",
+      fees: "100 per head",
       seats: "150 SEATS",
     },
     rules: ["rule 1", "rule 2", "rule 3"],
