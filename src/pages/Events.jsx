@@ -6,7 +6,7 @@ import BlobBubble from '../components/Background/BlobBubble'; // Import the Blob
 
 function Events() {
   return (
-    <div className='relative z-10 mt-32 py-4'>
+    <div className='relative z-10 mt-32 py-4 overflow-hidden'>
       
 
       <Background />
