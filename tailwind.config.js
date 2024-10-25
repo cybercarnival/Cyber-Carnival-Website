@@ -106,6 +106,10 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "beam": 'beam 1.5s linear infinite',
         "scroll":"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        'spin-slow': 'spin 10s linear infinite',
+      },
+      perspective: {
+        '1000': '1000px',
       },
     },
   },

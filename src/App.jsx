@@ -9,6 +9,10 @@ import Footer from "./components/Footer";
 import ViewEvent from "./pages/ViewEvent";
 import NonTechEvents from "./pages/NonTechEvents";
 import Register from "./pages/Register";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"; 
+
+
 
 function App() {
   return (
@@ -27,7 +31,9 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/sponsors" element={<Sponsors />} />
       </Routes>
-      <Footer />
+
+      {/* <Footer/> */}
+
     </BrowserRouter>
   );
 }

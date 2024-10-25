@@ -124,14 +124,13 @@ export const data = {
     brief:
       "Join us for an enlightening event where innovation meets academia! The Research Paper Presentation is a platform for students, professionals, and researchers to showcase their latest research and ideas in the fields of technology, cybersecurity, data science, and beyond.",
     brief2:
-      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work.",
+      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work."
+
+,
     poster: paperpresentation,
     url: "paperpresentation",
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
-    studentCoordinator: [
-      "Jandhyala Venkata - +91 9444025334",
-      "Alton D Almeida - +91 93804 68719",
-    ],
+    studentCoordinator: ["Jandhyala Venkata - +91 9444025334", "Alton D Almeida - +91 93804 68719"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "21st Feb 2025",
