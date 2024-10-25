@@ -9,7 +9,7 @@ import con7 from '../assets/con7.png';
 function Speakers() {
   return (
     <>
-    <div className=' grid grid-cols-3 gap-8'>
+    <div className=' grid grid-cols-3 gap-14 justify-center it'>
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con1} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
@@ -21,7 +21,7 @@ function Speakers() {
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con2} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
+      <p className='text-start text-xl font-semibold text-emerald-400'>Dr. Mahesh Kalyanaraman</p>
       <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
       </div>
       </div>
@@ -29,7 +29,7 @@ function Speakers() {
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con3} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
+      <p className='text-start text-xl font-semibold text-emerald-400'>Ramu Para</p>
       <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
       </div>
       </div>
@@ -37,7 +37,7 @@ function Speakers() {
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con4} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
+      <p className='text-start text-xl font-semibold text-emerald-400'>Mr.Abhishek Kokate</p>
       <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
       </div>
       </div>
@@ -45,7 +45,7 @@ function Speakers() {
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con5} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
+      <p className='text-start text-xl font-semibold text-emerald-400'>Balachandar Natarajan</p>
       <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
       </div>
       </div>
@@ -53,7 +53,7 @@ function Speakers() {
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con6} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
+      <p className='text-start text-xl font-semibold text-emerald-400'>Suresh Vedakumar</p>
       <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
       </div>
       </div>
@@ -61,7 +61,7 @@ function Speakers() {
       <div className='flex justify-center items-center gap-4 w-80'>
       <img src={con7} alt="ctf" className='w-36 h-full rounded-full'/>
       <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
+      <p className='text-start text-xl font-semibold text-emerald-400'>Mr.Bharani Ramasamy      </p>
       <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
       </div>
       </div>
