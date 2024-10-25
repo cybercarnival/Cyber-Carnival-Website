@@ -32,12 +32,12 @@ export const data = {
       ["Name", "Designation"],
     ],
     eventDetails: {
-      time: "8AM - 9AM",
+      time: "8 AM - 9:30 AM",
       date: "21 FEB 2025",
       fees: "50 per head",
       seats: "200 seats",
     },
-    discussion: ["TUnmasking online scams and strengthening adequate cyber defenses"],
+    discussion: ["Unmasking online scams and strengthening adequate cyber defenses"],
   },
 
   capturetheflag: {
@@ -47,7 +47,7 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Unmasking Online Scams and Strengthening Cyber Defenses focuses on the urgent need to counter the rising tide of cyber threats and scams affecting individuals and organizations. This year’s Cyber Conclave will bring together experts to discuss strategies for enhancing cybersecurity through advanced threat detection, multi-layered defenses, and comprehensive awareness programs to build a safer digital ecosystem."
     brief2:
       "A Capture the Flag (CTF) is a game designed to challenge participant's hacking skills, problem-solving abilities, and knowledge of security. In these competitions, teams must solve a series of challenges, each of which contains hidden flags that participants need to find and submit to earn points.",
     poster: ctf,
@@ -75,15 +75,15 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: cyberthon,
     url: "cyberthon",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Minu", "Dr.Subashka Ramesh","Dr.Antony Vigil","Dr.Sudhan","Mr.Hariharan"],
+    studentCoordinator: ["Abdul Aleem - +91 9150738865","Pranav Anand - +91 63693 38337"],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "22 FEB 2025",
-      fees: "250 per team",
-      seats: "150 SEATS",
+      date: "24 Jan - 25 Jan 2025",
+      fees: "750 per team",
+      seats: "200 seats",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Each team must consist of 2 to 4 members.","Changes in team members are not entertained.","The project must be developed entirely during the event. Pre-existing projects or partial work will lead to disqualification.","Teams are required to bring their own laptops, devices, and accessories for development.","Any team found to be violating the rules, including inappropriate behavior or unethical practices, will be disqualified.","Decisions made by the organizing committee are final.","All projects developed during the hackathon remain the intellectual property of the respective teams, but the organizers reserve the right to showcase the projects for promotional purposes."],
   },
 
   paperpresentation: {
@@ -108,7 +108,7 @@ export const data = {
       fees: "300 per team",
       seats: "80 SEATS",
     },
-    rules: ["· Submit the Full Paper in IEEE format. It should not exceed 4 pages.", "Paper must be an original work and not previously submitted in any platform.", "Team size can be minimum of 1 and maximum of 4 members."],
+    rules: ["Submit the Full Paper in IEEE format. It should not exceed 4 pages.", "Paper must be an original work and not previously submitted in any platform.", "Team size can be minimum of 1 and maximum of 4 members."],
   },
 
   bugbounty: {
@@ -128,15 +128,15 @@ export const data = {
     eventDetails: {
       time: "10AM - 12PM",
       date: "21 FEB 2025",
-      fees: "250 per team",
+      fees: "150 per head",
       seats: "150 SEATS",
     },
-    rules: ["Bring your own device", "DDoS or Account takeover is permitted", "Find bugs only in the given target "],
+    rules: ["No Sharing: Don’t share the flags or bugs you find with anyone else. Sharing will lead to instant disqualification.", "You are not allowed to test on third-party services or systems.", "Be careful not to access, process, or destroy any personal data. Always respect privacy when working."],"5. Account Access: Don’t try to access any user’s account or private data unless it’s part of the challenge you're working on.", "6. No Technical Attacks: Do not attempt any form of technical attack that is outside the scope of the challenge. Stick to the defined boundaries of testing and problem-solving.", "8. Tie-Breaker: If two or more teams have the same points, the team that completed the challenges in the least amount of time will win."
   },
 
   
   techexpo: {
-    title: "Secure Tool",
+    title: "Secure Tool Expo",
     title_font: "font-jersey",
     title_size: "text-4xl",
     description: "Embark on a quest to seize the victory flags!",
