@@ -5,7 +5,7 @@ import React from 'react';
 import srmBuilding from '../../assets/srmBuilding.png';
 import cyberCarnivalPng from '../../assets/cyberCarnivalPng.png';
 import computerCyber from '../../assets/computerCyber.png';
-import Background from '../Background/Background';
+// import Background from '../Background/Background';
 
 const About = () => {
   return (
