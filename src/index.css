@@ -120,45 +120,14 @@
 }
 
 
-/* bubble */
-/* Add this to your global styles or the corresponding CSS file */
-@keyframes blink {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.animate-blink {
-  animation: blink 3s infinite;
-}
-
-/* Optional additional styling for a glowing effect */
-.blob {
-  border-radius: 30% 60% 40% 70%; /* Customize this for different shapes */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glowy effect */
+/* blobubble */
+.parent-container {
+  overflow: hidden; /* Prevent extra scrollbars */
 }
 
 
-/*  */
-/* src/index.css or your main CSS file */
-.carousel {
-  transform-style: preserve-3d;
-}
 
-.carousel-image:nth-child(1) {
-  transform: rotateY(0deg) translateZ(300px);
-}
 
-.carousel-image:nth-child(2) {
-  transform: rotateY(180deg) translateZ(300px);
-}
 
 
 

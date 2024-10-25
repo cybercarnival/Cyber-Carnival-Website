@@ -8,10 +8,10 @@ const Background = () => {
     <ParallaxProvider>
       <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         {/* Glowing blobs */}
-        <div className="blob top-0 left-10" />
-        {/* <div className="blob bottom-10 right-44" /> */}
-        <div className="blob top-1/4 right-10" />
-        <div className="blob bottom-0 left-10" />
+        <div className="blob top-10 left-10" />
+        <div className="blob bottom-10 right-10" />
+        <div className="blob top-10 right-10" />
+        <div className="blob bottom-10 left-10" />
 
        
         <Parallax
@@ -21,9 +21,10 @@ const Background = () => {
             whiteSpace: 'nowrap', 
             translate: '-50% -50%', 
             textShadow: '0 0 11px rgba(0, 255, 255, 0.4)', 
-            willChange: 'transform' 
+            willChange: 'transform'
           }} 
         >
+         
           {text.split('').map((char, index) => (
             <div 
               key={index} 

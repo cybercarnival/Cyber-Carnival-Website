@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import srmBuilding from '../../assets/srmBuilding.png';
 import cyberCarnivalPng from '../../assets/cyberCarnivalPng.png';
 import computerCyber from '../../assets/computerCyber.png';
-import Background from '../Background/Background';
+// import Background from '../Background/Background';
 
 const About = () => {
   
@@ -43,7 +43,7 @@ const About = () => {
   return (
 
     <section className="relative max-w-7xl mx-auto mt-3 mb-16 py-12 px-4 overflow-hidden">
-      <Background /> 
+      {/* <Background />  */}
       <div className="relative z-10">
         {createSection(cyberCarnivalPng, "Cyber Carnival", 
           "The Cyber Carnival at SRM Ramapuram is an electrifying event hosted by the cybersecurity department, promising an immersive journey into the world of digital defense and innovation. Fusing education with excitement, the carnival showcases cutting-edge technologies, interactive workshops, and engaging competitions designed to sharpen skills and raise awareness about cybersecurity threats and solutions. Participants can expect riveting demonstrations, insightful talks by industry experts, and hands-on experiences that illuminate the importance of safeguarding our digital landscape.")

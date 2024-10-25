@@ -5,30 +5,31 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const BlobBubble = () => {
-  const blobRef = useRef(null);
+  const blobRef = useRef(null); 
 
   useEffect(() => {
     // GSAP animation
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: blobRef.current,
-        start: 'top 90%', 
-        end: 'top 10%', 
-        scrub: 2,
+        trigger: blobRef.current, 
+        start: 'top 100%', 
+        end: 'top 0%', 
+        scrub: 1, 
         markers: false,
-        toggleActions: 'play none none play',
+        toggleActions: 'play none none none',
       },
     });
 
+    
     tl.to(blobRef.current, {
-      x: '80vw', 
-      y: '-70vh', 
-      rotate: 180,
-      scale: 1.5,
-      duration: 1,
+      x: '100vw', 
+      y: '-100vh',
+      rotate: 180, 
+      scale: 1.5, 
+      duration: 10, 
     })
     .to(blobRef.current, {
-      scale: 1,
+      scale: 1, 
       duration: 1,
     });
 
