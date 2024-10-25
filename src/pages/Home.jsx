@@ -7,14 +7,15 @@ import Loop from '../components/Loop'
 import vid from '../assets/vid1.mp4';
 // import Footer from '../components/Footer';
 import AboutUs from '../components/AboutUs/AboutUs'
+import Background from '../components/Background/Background';
 
 function Home() {
   return (
     <div className='bg-slate-950'>
-  
       <video src={vid} className="opacity-30 object-cover absolute top-0 min-h-full" autoPlay loop muted/>
         <HomePage />
         <AboutUs />
+      {/* <Background/> */}
       {/* <About />
       <About1 />
       <About2 /> */}

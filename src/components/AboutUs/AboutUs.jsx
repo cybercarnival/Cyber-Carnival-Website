@@ -5,11 +5,12 @@ import React from 'react';
 import srmBuilding from '../../assets/srmBuilding.png';
 import cyberCarnivalPng from '../../assets/cyberCarnivalPng.png';
 import computerCyber from '../../assets/computerCyber.png';
+import Background from '../Background/Background';
 
 const About = () => {
   return (
     <section className="max-w-7xl mx-auto  mt-3 mb-16 py-12 px-4">
-      
+      {/* <Background/> */}
       <div className="flex flex-col items-center  mb-20">
        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

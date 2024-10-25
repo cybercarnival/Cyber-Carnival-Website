@@ -91,6 +91,8 @@ function Register() {
   };
 
   return (
+    <>
+    {/* <Background/> */}
     <div className="h-screen w-full flex justify-center items-center">
       <div className="w-1/2 flex justify-end m-5">
         <img src={QR} className="w-[300px] h-[300px]" />
@@ -145,10 +147,12 @@ function Register() {
               onChange={handleInputChange}
               required
             />
+           
             <input
               type="file"
               onChange={handleFileChange}
               className="text-white border-2 text-center p-2 m-2 rounded-lg"
+              placeholder="upload transaction proof"
               required
             />
             <button
@@ -162,6 +166,7 @@ function Register() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
