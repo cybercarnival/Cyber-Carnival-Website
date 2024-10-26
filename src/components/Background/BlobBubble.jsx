@@ -8,33 +8,35 @@ const BlobBubble = () => {
   const blobRef = useRef(null);
 
   useEffect(() => {
-    // GSAP animation
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: blobRef.current,
-        start: 'top 90%', 
-        end: 'top 10%', 
-        scrub: 2,
-        markers: false,
-        toggleActions: 'play none none play',
-      },
-    });
+    if (typeof window !== "undefined") { // Ensure code runs only in the browser
+      // GSAP animation
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: blobRef.current,
+          start: 'top 90%', 
+          end: 'top 10%', 
+          scrub: 2,
+          markers: false,
+          toggleActions: 'play none none play',
+        },
+      });
 
-    tl.to(blobRef.current, {
-      x: '50vw', 
-      y: '-100vh', 
-      rotate: 180,
-      scale: 1.5,
-      duration: 4,
-    })
-    .to(blobRef.current, {
-      scale: 1,
-      duration: 1,
-    });
+      tl.to(blobRef.current, {
+        x: '50vw', 
+        y: '-100vh', 
+        rotate: 180,
+        scale: 1.5,
+        duration: 4,
+      })
+      .to(blobRef.current, {
+        scale: 1,
+        duration: 1,
+      });
 
-    return () => {
-      tl.kill(); 
-    };
+      return () => {
+        tl.kill(); 
+      };
+    }
   }, []);
 
   return (
