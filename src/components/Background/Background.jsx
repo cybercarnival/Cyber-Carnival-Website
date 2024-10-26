@@ -1,8 +1,8 @@
-import React from 'react';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import React from "react";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
 const Background = () => {
-  const text = "CYBER CARNIVAL"; 
+  const text = "CYBER CARNIVAL";
 
   return (
     <ParallaxProvider>
@@ -10,31 +10,29 @@ const Background = () => {
         {/* Glowing blobs */}
         <div className="blob top-10 left-10" />
         <div className="blob bottom-10 right-10" />
-        <div className="blob top-10 right-10" />
-        <div className="blob bottom-10 left-10" />
+        {/* <div className="blob top-10 right-10" />
+        <div className="blob bottom-10 left-10" /> */}
 
         <Parallax
-          translateY={[-30, 30]} 
-          className="text-teal-900/10 text-[14vw] font-jersey transform absolute left-1/2"
-          style={{ 
-            whiteSpace: 'nowrap', 
-            transform: 'translate(-50%, -50%)',  // Only this line changed
-            textShadow: '0 0 11px rgba(0, 255, 255, 0.4)', 
-            willChange: 'transform'
-          }} 
+          translateY={[-30, 30]}
+          className="text-teal-900/10 text-[14vw] font-jersey transform "
+          style={{
+            whiteSpace: "nowrap",
+            transform: "translate(-50%, -50%)", // Only this line changed
+            textShadow: "0 0 11px rgba(0, 255, 255, 0.4)",
+            willChange: "transform",
+          }}
         >
-          {text.split('').map((char, index) => (
-            <div 
-              key={index} 
-              className="flex justify-center items-center" 
-              style={{ margin: '0', lineHeight: '0.8' }} 
+          {text.split("").map((char, index) => (
+            <div
+              key={index}
+              className="flex justify-center items-center"
+              style={{ margin: "0", lineHeight: "0.8" }}
             >
               {char}
             </div>
           ))}
         </Parallax>
-
-        <div className="absolute inset-0 h-full w-full pointer-events-none overflow-hidden" />
       </div>
     </ParallaxProvider>
   );

@@ -26,17 +26,15 @@ function NavBar() {
       <div className="font-alumni z-50 flex fixed top-8 left-1/2 transform -translate-x-1/2 w-11/12 h-14 justify-between ">
         <NavLink to="/" className="w-3/12 flex items-center justify-start ">
           <div className=" font-alumni text-3xl text-white flex justify-center p-3 rounded-3xl w-52 h-14 items-center">
-            <img src={logo} alt="logo" className="w-32 h-auto" />
+            <img src={logo} alt="logo" className="w-20 h-auto" />
           </div>
         </NavLink>
 
-        <div className=" w-5/12 hidden items-center justify-center bg-[#2E2B2B54] rounded-[23px] md:flex">
+        <div className=" w-5/12 hidden items-center justify-center bg-[#191e20c4]  rounded-[23px] md:flex">
           <NavLink
             to="/"
             className={({ isActive }) =>
-              (isActive
-                ? "text-[#5BFFE6] text-shadow-custom"
-                : "text-secondary") +
+              (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
               " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
@@ -45,9 +43,7 @@ function NavBar() {
           <NavLink
             to="/gallery"
             className={({ isActive }) =>
-              (isActive
-                ? "text-[#5BFFE6] text-shadow-custom"
-                : "text-secondary") +
+              (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
               " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
@@ -56,9 +52,7 @@ function NavBar() {
           <NavLink
             to="/events"
             className={({ isActive }) =>
-              (isActive
-                ? "text-[#5BFFE6] text-shadow-custom"
-                : "text-secondary") +
+              (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
               " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
             }
           >
