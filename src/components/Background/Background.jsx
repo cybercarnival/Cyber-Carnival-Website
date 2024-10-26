@@ -13,18 +13,16 @@ const Background = () => {
         <div className="blob top-10 right-10" />
         <div className="blob bottom-10 left-10" />
 
-       
         <Parallax
           translateY={[-30, 30]} 
           className="text-teal-900/10 text-[14vw] font-jersey transform absolute left-1/2"
           style={{ 
             whiteSpace: 'nowrap', 
-            translate: '-50% -50%', 
+            transform: 'translate(-50%, -50%)',  // Only this line changed
             textShadow: '0 0 11px rgba(0, 255, 255, 0.4)', 
             willChange: 'transform'
           }} 
         >
-         
           {text.split('').map((char, index) => (
             <div 
               key={index} 
