@@ -121,5 +121,5 @@ body {
 
 /* blobubble */
 .parent-container {
-  overflow: hidden; /* Prevent extra scrollbars */
+  overflow: hidden; 
 }

@@ -10,6 +10,7 @@ function Events() {
       
 
       <Background />
+      
       <BlobBubble  />
 
       {/* Event content */}
