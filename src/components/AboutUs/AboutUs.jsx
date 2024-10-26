@@ -4,8 +4,9 @@ import { useRef } from 'react';
 import srmBuilding from '../../assets/srmBuilding.png';
 import cyberCarnivalPng from '../../assets/cyberCarnivalPng.png';
 import computerCyber from '../../assets/computerCyber.png';
-import Background from '../AboutUs/Aboutbg'; // Your existing background component
-import BlobBubble from '../AboutUs/AboutBlob'; // Import the new BlobBubble component
+import Background from '../AboutUs/Aboutbg'; 
+import BlobBubble from '../AboutUs/AboutBlob'; 
+import Loop from '../Loop';
 
 const About = () => {
   const variants = {
@@ -40,7 +41,7 @@ const About = () => {
   };
 
   return (
-    <section className="relative w-full mx-auto mt-3 mb-16 py-12 px-4 overflow-hidden">
+    <section className="relative w-full mx-auto -mt-16  py-12 px-4 overflow-hidden">
      
       <div className="absolute inset-0 z-0">
         <Background /> 
@@ -58,6 +59,8 @@ const About = () => {
           "The Cybersecurity Department of SRM Institute of Science and Technology is a center of innovation, education, and practical experience in the rapidly advancing field of digital security. Our department is committed to equipping students with the knowledge, skills, and forward-thinking approach necessary to address the challenges of today’s digital world. We aim to be a leading center of excellence in cybersecurity, fostering a generation of skilled professionals capable of defending against modern cyber threats while contributing to the global security landscape.")
         }
       </div>
+
+      <Loop />
     </section>
   );
 };

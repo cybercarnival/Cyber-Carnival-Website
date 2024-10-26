@@ -111,6 +111,9 @@ module.exports = {
       perspective: {
         '1000': '1000px',
       },
+      boxShadow: {
+        glow: '0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5)', // Customize the color and intensity
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("tailwindcss-textshadow")],

@@ -26,14 +26,19 @@ import e1 from "../assets/e1.jpg";
 import e2 from "../assets/e2.jpg";
 import Speakers from '../components/Speakers';
 // import Background from '../components/Background/Background';
-import blob from "../assets/Blob.png";
+// import blob from "../assets/Blob.png";
+import Background from '../components/Background/Background';
+import BlobBubble from '../components/Background/BlobBubble';
+
 
 
 function Gallery() {
   return (
     <>
-
-    {/* <Background/> */}
+    <div className="absolute  inset-0 z-0 ">
+        <Background /> 
+        <BlobBubble /> 
+      </div>
     <div className='text-white mt-32 flex flex-wrap justify-center items-center p-4'>
       <div className='flex flex-col justify-center items-center'>
         <h1 className='text-8xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2'>Cyber Carnival</h1>

@@ -4,8 +4,8 @@ import srmBuilding from '../../assets/srmBuilding.png';
 import cyberCarnivalPng from '../../assets/cyberCarnivalPng.png';
 import computerCyber from '../../assets/computerCyber.png';
 import Loop from '../Loop';
-import Background from './Aboutbg'; // Import Background component
-import BlobBubble from './AboutBlob'; // Import BlobBubble component
+import Background from './Aboutbg'; 
+import BlobBubble from './AboutBlob'; 
 
 const About = () => {
   const slides = [
@@ -30,17 +30,17 @@ const About = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    // Set up an interval to automatically change slides every 2 seconds
+    
     const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length); // Loop back to the first slide
-    }, 2000); // Change every 2 seconds
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length); 
+    }, 2000); 
 
-    return () => clearInterval(interval); // Clear the interval on component unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (
     <section className="relative max-w-full mx-4  mb-2  py-12 px-4 overflow-hidden" ref={sectionRef}>
-      {/* Include Background and BlobBubble components */}
+      {/* Including the Background and BlobBubble components */}
       <div className="absolute inset-0 z-0">
         <Background /> 
         <BlobBubble /> 
@@ -52,13 +52,13 @@ const About = () => {
           initial={{ opacity: 0, y: 80 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
-          transition={{ duration: 1.5 }} // Duration for visibility
+          transition={{ duration: 1.5 }} 
           className="flex flex-col items-center mb-20 relative w-full z-10"
         >
           {slides[currentSlide] && (
             <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10  items-center">
               <div className="relative">
-                {/* Top diagonal glowing lines within the container */}
+            
                 <div className="absolute -top-18 -left-12 transform rotate-45 w-36 h-1 bg-teal-300/80 shadow-glow"></div>
                 <div className="absolute -top-12 -left-12 transform rotate-45 w-36 h-1 bg-teal-300/80 shadow-glow "></div>
                 <div className="absolute -top-6 -left-12 transform rotate-45 w-36 h-1 bg-teal-300/80 shadow-glow"></div>
@@ -69,7 +69,7 @@ const About = () => {
                   className="w-3/4 h-auto justify-self-center relative z-10"
                 />
 
-                {/* Bottom diagonal glowing lines within the container */}
+             
                 <div className="absolute -bottom-10 -left-12 transform -rotate-45 w-36 h-1 bg-teal-300/80 shadow-glow"></div>
                 <div className="absolute -bottom-16 -left-12 transform -rotate-45 w-36 h-1 bg-teal-300/80 shadow-glow"></div>
                 <div className="absolute -bottom-24 -left-12 transform -rotate-45 w-36 h-1 bg-teal-300/80 shadow-glow"></div>

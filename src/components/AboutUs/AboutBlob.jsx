@@ -1,42 +1,60 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'; 
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const BlobBubble = () => {
-  const blobRef = useRef(null); 
+  const blobRef = useRef(null);
 
   useEffect(() => {
-    if (gsap && ScrollTrigger) { // Check if gsap and ScrollTrigger exist
-      // GSAP animation
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: blobRef.current, 
-          start: 'top 100%', 
-          end: 'top 0%', 
-          scrub: 1, 
-          markers: false,
-          toggleActions: 'play none none none',
-        },
-      });
+    // GSAP animation
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: blobRef.current,
+        start: 'top 100%',
+        end: 'top 0%',
+        scrub: 1,
+        markers: false,
+        toggleActions: 'play none none none',
+      },
+    });
 
-      tl.to(blobRef.current, {
-        x: '100vw', 
-        y: '-100vh',
-        rotate: 180, 
-        scale: 1.1, 
-        duration: 2, 
-      })
-      .to(blobRef.current, {
-        scale: 1, 
-        duration: 1,
-      });
+    tl.to(blobRef.current, {
+      x: '50vw',
+      y: '-200vh',
+      rotate: 180,
+      scale: 1.1,
+      duration: 8,
+    })
+    .to(blobRef.current, {
+      scale: 1,
+      duration: 3,
+    });
 
-      return () => {
-        tl.kill(); 
-      };
-    }
+    //
+    const scrollHandler = (e) => {
+      e.preventDefault(); 
+
+      // New scroll position
+      const newScrollPos = window.scrollY + e.deltaY * 1.5; 
+
+     
+      gsap.to(window, {
+        duration: 0.5,
+        scrollTo: { y: newScrollPos, autoKill: false },
+        ease: "power2.out",
+      });
+    };
+
+
+    window.addEventListener('wheel', scrollHandler, { passive: false });
+
+    return () => {
+      tl.kill();
+      window.removeEventListener('wheel', scrollHandler); 
+    };
   }, []);
 
   return (
