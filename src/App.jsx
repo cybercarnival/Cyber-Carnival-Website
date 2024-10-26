@@ -32,7 +32,7 @@ function App() {
         <Route path="/sponsors" element={<Sponsors />} />
       </Routes>
 
-      {/* <Footer/> */}
+      <Footer/>
 
     </BrowserRouter>
   );
