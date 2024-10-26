@@ -146,9 +146,6 @@ export const data = {
     url: "bugbounty",
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
     studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
-      "Swapna Gupta",
-      "Rishit Chanda",
-    ],
     eventDetails: {
       time: "10AM - 12PM",
       date: "21 FEB 2025",
