@@ -15,13 +15,13 @@ const Background = () => {
 
         {/* Text with Parallax effect */}
         <Parallax
-          translateY={[-30, 30]} // Adjust the movement for smoother effect
+          translateY={[-30, 30]} 
           className="text-teal-900/10 text-[14vw] font-jersey transform absolute left-1/2"
           style={{ 
             whiteSpace: 'nowrap', 
             translate: '-50% -50%', 
             textShadow: '0 0 11px rgba(0, 255, 255, 0.4)', // Lighter teal shadow
-            willChange: 'transform' // Enable hardware acceleration
+            willChange: 'transform' 
           }} 
         >
           {text.split('').map((char, index) => (

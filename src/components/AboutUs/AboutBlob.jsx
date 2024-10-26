@@ -22,8 +22,8 @@ const BlobBubble = () => {
       });
 
       tl.to(blobRef.current, {
-        x: '10vw', 
-        y: '-50vh',
+        x: '100vw', 
+        y: '-100vh',
         rotate: 180, 
         scale: 1.1, 
         duration: 2, 
