@@ -6,7 +6,7 @@ import AboutUs from '../components/AboutUs/AboutUs';
 
 function Home() {
   return (
-    <div className='bg-slate-950'>
+    <div className=''>
       <video src={vid} className="opacity-30 object-cover absolute top-0 min-h-full" autoPlay loop muted/>
         <HomePage />
         <AboutUs />
