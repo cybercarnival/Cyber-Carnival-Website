@@ -54,10 +54,7 @@ export const data = {
     poster: ctf,
     url: "capturetheflag",
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
-    studentCoordinator: [
-      "Anshul Bagchi - +91 82729 41906",
-      "Adhish Mehta - +91 62663 62445",
-    ],
+    studentCoordinator: ["Anshul Bagchi","Adhish Mehta"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
@@ -86,17 +83,8 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: cyberthon,
     url: "cyberthon",
-    facultyCoordinator: [
-      "Dr.Minu",
-      "Dr.Subashka Ramesh",
-      "Dr.Antony Vigil",
-      "Dr.Sudhan",
-      "Mr.Hariharan",
-    ],
-    studentCoordinator: [
-      "Abdul Aleem - +91 9150738865",
-      "Pranav Anand - +91 63693 38337",
-    ],
+    facultyCoordinator: ["Dr.Minu","Dr.Subashka Ramesh"],
+    studentCoordinator: ["Abdul Aleem","Pranav Anand"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "24 Jan - 25 Jan 2025",
@@ -130,7 +118,7 @@ export const data = {
     poster: paperpresentation,
     url: "paperpresentation",
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
-    studentCoordinator: ["Jandhyala Venkata - +91 9444025334", "Alton D Almeida - +91 93804 68719"],
+    studentCoordinator: ["Jandhyala Venkata", "Alton D Almeida"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "21st Feb 2025",
@@ -157,9 +145,9 @@ export const data = {
     poster: bugbounty,
     url: "bugbounty",
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
-    studentCoordinator: [
-      "Swapna Gupta - +91 90029 95954",
-      "Rishit Chanda - +91 877 749 7567",
+    studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
+      "Swapna Gupta",
+      "Rishit Chanda",
     ],
     eventDetails: {
       time: "10AM - 12PM",
@@ -262,8 +250,8 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: cinema,
     url: "cinema",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
+    studentCoordinator: ["Velu Aravind", "Yoshika"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
@@ -285,8 +273,8 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: surfing,
     url: "surfing",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
+    studentCoordinator: ["Praveen Bhalagee", "Vignesh"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
@@ -308,8 +296,8 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: awareness,
     url: "awareness",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
+    studentCoordinator: ["Shruthi Raj", "Sanjay"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
@@ -331,8 +319,8 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: surviva,
     url: "surviva",
-    facultyCoordinator: ["faculty name 1", "faculty name 2"],
-    studentCoordinator: ["student name 1", "student name 2"],
+    facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
+    studentCoordinator: ["Andrew Leo", "Priyanka G"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
