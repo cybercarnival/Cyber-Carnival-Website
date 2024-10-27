@@ -48,13 +48,13 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "Unmasking Online Scams and Strengthening Cyber Defenses focuses on the urgent need to counter the rising tide of cyber threats and scams affecting individuals and organizations. This year’s Cyber Conclave will bring together experts to discuss strategies for enhancing cybersecurity through advanced threat detection, multi-layered defenses, and comprehensive awareness programs to build a safer digital ecosystem.",
+      "Unmasking Online Scams and Strengthening Cyber Defenses focuses on the urgent need to counter the rising tide of cyber threats and scams affecting individuals and organizations. This year's Cyber Conclave will bring together experts to discuss strategies for enhancing cybersecurity through advanced threat detection and comprehensive awareness programs.",
     brief2:
       "A Capture the Flag (CTF) is a game designed to challenge participant's hacking skills, problem-solving abilities, and knowledge of security. In these competitions, teams must solve a series of challenges, each of which contains hidden flags that participants need to find and submit to earn points.",
     poster: ctf,
     url: "capturetheflag",
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
-    studentCoordinator: ["Anshul Bagchi","Adhish Mehta"],
+    studentCoordinator: ["Anshul Bagchi", "Adhish Mehta"],
     eventDetails: {
       time: "10AM - 11AM",
       date: "22 FEB 2025",
@@ -83,11 +83,11 @@ export const data = {
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: cyberthon,
     url: "cyberthon",
-    facultyCoordinator: ["Dr.Minu","Dr.Subashka Ramesh"],
-    studentCoordinator: ["Abdul Aleem","Pranav Anand"],
+    facultyCoordinator: ["Dr.Minu", "Dr.Subashka Ramesh"],
+    studentCoordinator: ["Abdul Aleem", "Pranav Anand"],
     eventDetails: {
       time: "10AM - 11AM",
-      date: "24 Jan - 25 Jan 2025",
+      date: "24-25 Jan 2025",
       fees: "750 per team",
       seats: "200 seats",
     },
@@ -112,9 +112,8 @@ export const data = {
     brief:
       "Join us for an enlightening event where innovation meets academia! The Research Paper Presentation is a platform for students, professionals, and researchers to showcase their latest research and ideas in the fields of technology, cybersecurity, data science, and beyond.",
     brief2:
-      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work."
+      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work.",
 
-,
     poster: paperpresentation,
     url: "paperpresentation",
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],

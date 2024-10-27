@@ -40,7 +40,7 @@ function ViewEvent() {
           {/*----------------SPEAKERS------------------*/}
           {event == "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] font-jersey text-[#1EC1C5] text-2xl">
+              <h1 className="text-left font-jersey m-2 text-[#1EC1C5] text-3xl">
                 SPEAKERS
               </h1>
               <div className="flex m-2">
@@ -48,9 +48,9 @@ function ViewEvent() {
                   src={conclave}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow">
-                  <h6 className="text-center">{data[event].speakers[0][0]}</h6>
-                  <h6 className=" text-center">{data[event].speakers[0][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2">
+                  <h6 className="text-left">{data[event].speakers[0][0]}</h6>
+                  <h6 className=" text-left">{data[event].speakers[0][1]}</h6>
                 </div>
               </div>
               <div className="flex m-2">
@@ -58,9 +58,9 @@ function ViewEvent() {
                   src={conclave}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow">
-                  <h6 className="text-center">{data[event].speakers[1][0]}</h6>
-                  <h6 className=" text-center">{data[event].speakers[1][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2">
+                  <h6 className="text-left">{data[event].speakers[1][0]}</h6>
+                  <h6 className=" text-left">{data[event].speakers[1][1]}</h6>
                 </div>
               </div>
               <div className="flex m-2">
@@ -68,9 +68,9 @@ function ViewEvent() {
                   src={conclave}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow">
-                  <h6 className="text-center">{data[event].speakers[2][0]}</h6>
-                  <h6 className=" text-center">{data[event].speakers[2][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2">
+                  <h6 className="text-left">{data[event].speakers[2][0]}</h6>
+                  <h6 className=" text-left">{data[event].speakers[2][1]}</h6>
                 </div>
               </div>
             </div>
@@ -168,7 +168,7 @@ function ViewEvent() {
 
           {event == "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] text-[#1EC1C5] text-2xl font-jersey">
+              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
                 TOPICS OF DISCUSSION
               </h1>
 
@@ -176,7 +176,7 @@ function ViewEvent() {
                 <div className="flex m-2">
                   <div className="flex flex-grow">
                     <CropSquareIcon />
-                    <h6 className=" text-center mx-2">{i}</h6>
+                    <h6 className=" text-left mx-2">{i}</h6>
                   </div>
                 </div>
               ))}
@@ -185,7 +185,7 @@ function ViewEvent() {
 
           <button
             onClick={() => nav(`register`)}
-            className="border-2 border-[#1EC1C5] w-2/3 ml-[40px] p-1 rounded-xl text-[#1EC1C5] text-xl font-jersey"
+            className="border-2 m-2 border-[#1EC1C5] w-2/3 p-1 rounded-xl text-[#1EC1C5] text-2xl font-jersey"
           >
             Register
           </button>
