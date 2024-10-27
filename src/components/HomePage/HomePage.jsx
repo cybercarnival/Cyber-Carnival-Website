@@ -6,7 +6,7 @@ import CardCollection from './CardCollection'
 
 function HomePage() {
   return (
-    <div className='relative'>
+    <div className='relative mb-16 lg:mb-36'>
         <LampDemo/> 
         <div className='absolute top-2/3 right-72'>
         {/* <Button>

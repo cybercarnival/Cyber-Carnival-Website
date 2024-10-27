@@ -51,7 +51,7 @@ function Gallery() {
     <>
     <Background />
     <BlobBubble />
-<div className='text-white mt-32 p-4'>
+<div className='text-white mt-32 p-4 z-10 relative'>
         {galleries.map((gallery, index) => (
           <div key={index} className='mb-16'>
             <h1 className='text-4xl md:text-6xl lg:text-8xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2 text-center'>{gallery.title}</h1>
