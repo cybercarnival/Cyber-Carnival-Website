@@ -15,7 +15,8 @@ function Events() {
     offset: ["start start", "end end"],
   });
   const scaleTransform = useTransform(scrollYProgress, [0, 1], [1, 2]);
-  const textTransform = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const textTransform = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+  const titleTransform = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   const yTransform1 = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const xTransform1 = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const yTransform2 = useTransform(scrollYProgress, [0, 1], [0, -50]);
@@ -30,7 +31,13 @@ function Events() {
     <div ref={containerRef} className="relative z-10 py-4 h-full mt-32">
       <Background />
       <div className="relative w-full">
-        <div className="h-screen sticky top-0 flex justify-center items-center overflow-x-hidden">
+        <div className="h-screen sticky top-0 flex flex-col justify-center items-center overflow-x-hidden">
+          <motion.h1
+            style={{ y: -50, opacity: titleTransform }}
+            className="text-white text-5xl font-monoton"
+          >
+            EVENTS
+          </motion.h1>
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: -15 }}
