@@ -1,20 +1,21 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'; 
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const BlobBubble = () => {
   const blobRef = useRef(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") { // Ensure code runs only in the browser
+    if (typeof window !== "undefined") { 
       // GSAP animation
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: blobRef.current,
-          start: 'top 90%', 
-          end: 'top 10%', 
+          start: 'top 90%',
+          end: 'top 10%',
           scrub: 2,
           markers: false,
           toggleActions: 'play play none play',
@@ -22,8 +23,7 @@ const BlobBubble = () => {
       });
 
       tl.to(blobRef.current, {
-        // x: '50vw', 
-        y: '-80vh', 
+        y: '-80vh',
         rotate: 180,
         scale: 1.5,
         duration: 4,
@@ -33,8 +33,26 @@ const BlobBubble = () => {
         duration: 1,
       });
 
+  
+      const scrollHandler = (e) => {
+        e.preventDefault(); 
+
+        const newScrollPos = window.scrollY + e.deltaY * 3; 
+
+       
+        gsap.to(window, {
+          duration: 0.5,
+          scrollTo: { y: newScrollPos, autoKill: false },
+          ease: "power2.out",
+        });
+      };
+
+     
+      window.addEventListener('wheel', scrollHandler, { passive: false });
+
       return () => {
         tl.kill(); 
+        window.removeEventListener('wheel', scrollHandler); 
       };
     }
   }, []);

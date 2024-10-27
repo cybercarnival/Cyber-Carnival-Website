@@ -110,12 +110,12 @@ body {
 
 .blob {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 15rem;
   background: rgba(0, 255, 255, 0.6);
-  filter: blur(100px);
-  border-radius: 40%;
-  animation: blobBreathe 6s infinite ease-in-out;
+  filter: blur(11rem);
+  border-radius: 60%;
+  /* animation: blobBreathe 6s infinite ease-in-out; */
   pointer-events: none;
 }
 

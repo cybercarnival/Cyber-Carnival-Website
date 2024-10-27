@@ -7,68 +7,57 @@ import con5 from '../assets/con5.png';
 import con6 from '../assets/con6.png';
 import con7 from '../assets/con7.png';
 function Speakers() {
+  const contributors = [
+    {
+      name: "Panchi Samuthirakani",
+      title: "Founder and Managing Director – YesPanchi Tech Services",
+      image: con1,
+    },
+    {
+      name: "Dr. Mahesh Kalyanaraman",
+      title: "Associate Vice President Risk and Compliance - HCL Technologies",
+      image: con2,
+    },
+    {
+      name: "Mr. Ramu Para",
+      title: "Associate Director - Cybersecurity - HTC Global Services",
+      image: con3,
+    },
+    {
+      name: "Mr. Abhishek Kokate",
+      title: "Clients Advisor Digital Risk Management Kanoo Elite", 
+      image: con4,
+    },
+    {
+      name: "Balachandar Natarajan",
+      title: "Platform Engineering Manager - Ford Motor Company", 
+      image: con5,
+    },
+    {
+      name: "Suresh Vedakumar",
+      title: "Associate Vice President & Lead - ITSM Mphasis", 
+      image: con6,
+    },
+    {
+      name: "Mr. Bharani Ramasamy",
+      title: "Senior Director Global Networks & Security Virtusa Corporation", 
+      image: con7,
+    },
+  ];
   return (
     <>
-    <div className=' grid grid-cols-3 gap-14 justify-center it'>
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con1} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Panchi Samuthirakani</p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
+    <h1 className='text-5xl  sm:text-4xl md:text-5xl font-semibold flex flex-col justify-center items-center text-cyan-300 font-alumni tracking-wide '>Conclave Speakers</h1>
+    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-center'>
+    {contributors.map((contributor, index) => (
+      <div key={index} className='flex flex-col justify-center items-center gap-4 w-80 mx-auto'>
+        <img src={contributor.image} alt={contributor.name} className='w-36 h-36 rounded-full object-cover' />
+        <div className='flex flex-col justify-center items-center'>
+          <p className='text-center text-xl font-semibold text-emerald-400'>{contributor.name}</p>
+          <p className='text-center text-sm font-semibold'>{contributor.title}</p>
+        </div>
       </div>
-      </div>
-
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con2} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Dr. Mahesh Kalyanaraman</p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
-      </div>
-      </div>
-
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con3} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Ramu Para</p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
-      </div>
-      </div>
-
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con4} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Mr.Abhishek Kokate</p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
-      </div>
-      </div>
-
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con5} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Balachandar Natarajan</p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
-      </div>
-      </div>
-
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con6} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Suresh Vedakumar</p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
-      </div>
-      </div>
-
-      <div className='flex justify-center items-center gap-4 w-80'>
-      <img src={con7} alt="ctf" className='w-36 h-full rounded-full'/>
-      <div className='flex flex-col justify-center items-center '>
-      <p className='text-start text-xl font-semibold text-emerald-400'>Mr.Bharani Ramasamy      </p>
-      <p className='text-start text-sm font-semibold'>Founder and Managing Director – YesPanchi Tech Services </p>
-      </div>
-      </div>
-
-      
-      
-    </div>
+    ))}
+  </div>
     </>
   )
 }

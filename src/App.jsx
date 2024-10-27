@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar";
 import HomePage from "./pages/Home";
 import TechEvents from "./pages/TechEvents";
 import Gallery from "./pages/Gallery";
-import Sponsors from "./pages/Sponsors";
 import Events from "./pages/Events";
 import Footer from "./components/Footer";
 import ViewEvent from "./pages/ViewEvent";
@@ -34,7 +33,7 @@ function App() {
           element={<Register />}
         />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/sponsors" element={<Sponsors />} />
+        {/* <Route path="/sponsors" element={<Sponsors />} /> */}
         <Route path="/underdev" element={<UnderDev />} />
       </Routes>
 
