@@ -13,7 +13,8 @@ function ViewEvent() {
   const nav = useNavigate();
   console.log(event);
   return (
-    <div className="w-full flex justify-center items-center text-white ">
+    <div className="w-full flex justify-center items-center text-white relative">
+      <Background />
       <div className="w-11/12 my-28 grid p-4 grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1">
         {/*-------------- poster and description -----------------*/}
         <div className="w-full flex flex-col justify-self-center items-center justify-center rounded-xl">
