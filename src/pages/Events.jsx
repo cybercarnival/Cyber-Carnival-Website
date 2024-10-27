@@ -15,6 +15,7 @@ function Events() {
     offset: ["start start", "end end"],
   });
   const scaleTransform = useTransform(scrollYProgress, [0, 1], [1, 2]);
+  const textTransform = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   const yTransform1 = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const xTransform1 = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const yTransform2 = useTransform(scrollYProgress, [0, 1], [0, -50]);
@@ -31,13 +32,13 @@ function Events() {
       <div className="relative w-full">
         <div className="h-screen sticky top-0 flex justify-center items-center overflow-x-hidden">
           <motion.div
-            initial={{ opacity: 0, y: 0 }}
-            whileInView={{ opacity: 1, y: -10 }}
+            initial={{ opacity: 0, y: -10 }}
+            whileInView={{ opacity: 1, y: -15 }}
             transition={{ duration: 2 }}
             className="w-[400px] md:w-[900px] h-2/3 grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 "
           >
             <motion.div
-              className="w-[300px] md:w-96 h-56 self-start justify-self-center md:self-end md:justify-self-end overflow-clip relative flex items-center justify-center cursor-pointer border-0"
+              className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-end md:justify-self-end overflow-clip relative flex items-center justify-center cursor-pointer border-0"
               onClick={() => {
                 nav("/techevents");
               }}
@@ -45,7 +46,7 @@ function Events() {
               style={{ y: yTransform1, x: xTransform1 }}
             >
               <motion.h1
-                style={{ opacity: scrollYProgress }}
+                style={{ opacity: textTransform }}
                 className="text-4xl font-monoton text-white"
               >
                 Tech Events
@@ -57,14 +58,14 @@ function Events() {
               />
             </motion.div>
             <motion.div
-              className="w-[300px] md:w-96 h-56 self-start justify-self-center md:self-end md:justify-self-start overflow-clip relative flex items-center justify-center cursor-pointer"
+              className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-end md:justify-self-start overflow-clip relative flex items-center justify-center cursor-pointer"
               style={{ y: yTransform2, x: xTransform2 }}
               onClick={() => {
                 nav("/nontechevents");
               }}
             >
               <motion.h1
-                style={{ opacity: scrollYProgress }}
+                style={{ opacity: textTransform }}
                 className="text-4xl font-monoton text-white text-center"
               >
                 Non-Tech Events
@@ -76,14 +77,14 @@ function Events() {
               />
             </motion.div>
             <motion.div
-              className="w-[300px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-end overflow-clip relative flex items-center justify-center cursor-pointer"
+              className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-end overflow-clip relative flex items-center justify-center cursor-pointer"
               style={{ y: yTransform3, x: xTransform3 }}
               onClick={() => {
                 nav("/underdev");
               }}
             >
               <motion.h1
-                style={{ opacity: scrollYProgress }}
+                style={{ opacity: textTransform }}
                 className="text-4xl font-monoton text-white"
               >
                 Cyberthon
@@ -95,14 +96,14 @@ function Events() {
               />
             </motion.div>
             <motion.div
-              className="w-[300px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-start overflow-clip relative flex items-center justify-center cursor-pointer"
+              className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-start overflow-clip relative flex items-center justify-center cursor-pointer"
               style={{ y: yTransform4, x: xTransform4 }}
               onClick={() => {
                 nav("/underdev");
               }}
             >
               <motion.h1
-                style={{ opacity: scrollYProgress }}
+                style={{ opacity: textTransform }}
                 className="text-4xl font-monoton text-white"
               >
                 Workshop
