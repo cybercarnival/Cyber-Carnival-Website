@@ -7,7 +7,10 @@ import email from "../assets/gmail.svg";
 import Divider from "@mui/material/Divider";
 function Footer() {
   return (
-    <div className="border-t-2 bg-black border-[#153944af] flex justify-center items-center p-6 z-20 sm:justify-between flex-wrap">
+
+    <>
+    <div className="border-t-2 border-[#153944af] flex justify-center items-center p-6 z-20 sm:justify-between flex-wrap">
+
       <div className="flex flex-col my-2 sm:mx-6">
         <img src={logo} className="w-24 m-2" alt="logo" />
         <div className=" flex flex-row gap-3 justify-start m-2 ">
@@ -30,7 +33,9 @@ function Footer() {
             </a>
           </ul>
         </div>
+<h1 className="text-gray-500 ">© 2025 Copyright: SRM RMP CSE CS</h1>
       </div>
+      
       <div className=" flex text-[#a5a5a5] justify-start my-2 sm:mx-6">
         <div className="text-left m-2 mx-4">
           <h1 className="text-xl text-[#205e71]">Home</h1>
@@ -52,6 +57,7 @@ function Footer() {
         </div>
       </div>
     </div>
+      </>
   );
 }
 

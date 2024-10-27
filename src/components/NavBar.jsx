@@ -30,7 +30,7 @@ function NavBar() {
           </div>
         </NavLink>
 
-        <div className=" w-5/12 hidden items-center justify-center bg-[#191e20c4]  rounded-[23px] md:flex">
+        <div className=" w-5/12 hidden items-center justify-center bg-neutral-950 rounded-[14px] md:flex  border-x-2 border-y-zinc-900 border-y-2 border-[#5BFFE6]">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -58,7 +58,7 @@ function NavBar() {
           >
             Events
           </NavLink>
-          {/* <NavLink
+          <NavLink
             to="/sponsors"
             className={({ isActive }) =>
               (isActive
@@ -68,7 +68,18 @@ function NavBar() {
             }
           >
             Sponsors
-          </NavLink> */}
+          </NavLink>
+          <NavLink
+            to="/aboutus"
+            className={({ isActive }) =>
+              (isActive
+                ? "text-[#5BFFE6] text-shadow-custom"
+                : "text-secondary") +
+              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
+            }
+          >
+            About Us
+          </NavLink>
         </div>
         <div className=" w-5/12 flex items-center justify-end md:w-3/12">
           {/* <NavLink

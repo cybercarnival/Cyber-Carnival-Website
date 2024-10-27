@@ -15,14 +15,14 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="bg-gradient-to-br font-jersey lg:text-[9rem]  md:text-[6rem] text-[6rem]  lg:mt-36 md:mt-24 mt-44 text-center tracking-tight text-white ">
-        <div className="box-shadow-hover">
+        className="bg-gradient-to-br font-jersey  lg:mt-36 md:mt-24 mt-44 text-center tracking-tight text-white ">
+        <div className="box-shadow-hover lg:text-9xl md:text-[5rem] text-[3rem] leading-tight ">
         CYBER
           </div> 
-          <div className="font-rubik2 text-gradient-to-r lg:text-[9rem]  md:text-[7rem]  text-[#27f4ff]  from-[#66f7ff] via-[#DFFFD9] to-[#FFFFFF] bg-clip-text -translate-y-20 ">
+          <div className="font-rubik2 text-gradient-to-r lg:text-[7rem] md:text-[5rem] text-[3rem]   text-[#27f4ff]  from-[#66f7ff] via-[#DFFFD9] to-[#FFFFFF] bg-clip-text  ">
             CARNIVAL <span className="text-white font-audiowide">'25 </span>
             </div> 
-            <div className="font-jura tracking-widest text-gradient-to-r lg:text-4xl  text-white -translate-y-20 ">
+            <div className="font-jura tracking-widest text-gradient-to-r lg:text-4xl md:text-3xl text-lg  text-white  ">
             February 20 & 21
             </div> 
       </motion.h1>
