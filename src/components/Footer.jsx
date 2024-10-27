@@ -7,7 +7,7 @@ import email from "../assets/gmail.svg";
 import Divider from "@mui/material/Divider";
 function Footer() {
   return (
-    <div className="border-t-2 border-[#153944af] flex justify-center items-center p-6 z-20 sm:justify-between flex-wrap">
+    <div className="border-t-2 bg-black border-[#153944af] flex justify-center items-center p-6 z-20 sm:justify-between flex-wrap">
       <div className="flex flex-col my-2 sm:mx-6">
         <img src={logo} className="w-24 m-2" alt="logo" />
         <div className=" flex flex-row gap-3 justify-start m-2 ">

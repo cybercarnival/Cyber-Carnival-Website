@@ -15,7 +15,7 @@ const Background = () => {
 
         <Parallax
           translateY={[-30, 30]}
-          className="text-teal-900/10 text-[14vw] font-jersey transform "
+          className="text-teal-900/10 text-[56vw] lg:text-[20vw] font-jersey transform "
           style={{
             whiteSpace: "nowrap",
             transform: "translate(-50%, -50%)", // Only this line changed
