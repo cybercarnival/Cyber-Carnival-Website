@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/bg_logo.png";
@@ -21,6 +21,8 @@ function NavBar() {
       { duration: 0.5, ease: "easeInOut" }
     );
   };
+
+  const location = useLocation();
   return (
     <>
       <div className="font-alumni z-50 flex fixed top-8 left-1/2 transform -translate-x-1/2 w-11/12 h-14 justify-between ">
@@ -30,21 +32,39 @@ function NavBar() {
           </div>
         </NavLink>
 
-        <div className=" w-5/12 hidden items-center justify-center bg-neutral-950 rounded-[14px] md:flex  border-x-2 border-y-zinc-900 border-y-2 border-[#5BFFE6]">
+        <div className=" w-6/12 hidden items-center justify-center bg-neutral-950 bg-opacity-90 rounded-[14px] md:flex  border-x-4 border-x-[#153944cb]">
           <NavLink
-            to="/"
+            to="/#home"
             className={({ isActive }) =>
               (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
+              " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
             }
           >
             Home
           </NavLink>
           <NavLink
+            to="/#aboutus"
+            className={({ isActive }) =>
+              (isActive ? "text-[#ffffff] text-shadow-custom" : "text-white") +
+              " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
+            }
+          >
+            About Us
+          </NavLink>
+          <NavLink
+            to="/#sponsors"
+            className={({ isActive }) =>
+              (isActive ? "text-[#ffffff] text-shadow-custom" : "text-white") +
+              " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
+            }
+          >
+            Sponsors
+          </NavLink>
+          <NavLink
             to="/gallery"
             className={({ isActive }) =>
               (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
+              " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
             }
           >
             Gallery
@@ -53,32 +73,10 @@ function NavBar() {
             to="/events"
             className={({ isActive }) =>
               (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
-              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
+              " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
             }
           >
             Events
-          </NavLink>
-          <NavLink
-            to="/sponsors"
-            className={({ isActive }) =>
-              (isActive
-                ? "text-[#5BFFE6] text-shadow-custom"
-                : "text-secondary") +
-              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
-            }
-          >
-            Sponsors
-          </NavLink>
-          <NavLink
-            to="/aboutus"
-            className={({ isActive }) =>
-              (isActive
-                ? "text-[#5BFFE6] text-shadow-custom"
-                : "text-secondary") +
-              " text-xl font-[300] mx-4 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-5"
-            }
-          >
-            About Us
           </NavLink>
         </div>
         <div className=" w-5/12 flex items-center justify-end md:w-3/12">
@@ -92,7 +90,7 @@ function NavBar() {
             <AccountCircleOutlinedIcon sx={{ height: "100%", width: "100%" }} />
           </NavLink> */}
           <div
-            className="h-[30px] w-[30px] text-secondary block md:hidden"
+            className="h-[35px] w-[35px] text-white block md:hidden"
             onClick={handleOpen}
           >
             <MenuIcon sx={{ height: "100%", width: "100%" }} />
@@ -119,6 +117,24 @@ function NavBar() {
           onClick={handleClose}
         >
           Home
+        </NavLink>
+        <NavLink
+          to="/#aboutus"
+          className={({ isActive }) =>
+            (isActive ? "text-[#ffffff] text-shadow-custom" : "text-white") +
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
+          }
+        >
+          About Us
+        </NavLink>
+        <NavLink
+          to="/#sponsors"
+          className={({ isActive }) =>
+            (isActive ? "text-[#ffffff] text-shadow-custom" : "text-white") +
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
+          }
+        >
+          Sponsors
         </NavLink>
         <NavLink
           to="/gallery"
