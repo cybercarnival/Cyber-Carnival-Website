@@ -119,7 +119,7 @@ function Gallery() {
                   <img
                     src={img}
                     alt={`slide ${imgIndex + 1}`}
-                    className="w-44 h-auto"
+                    className="w-44 h-auto z-50"
                   />
                 </SwiperSlide>
               ))}

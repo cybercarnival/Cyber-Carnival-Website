@@ -6,7 +6,7 @@ const Background = () => {
 
   return (
     <ParallaxProvider>
-      <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+      <div className="fixed top-0 left-0 w-full h-full overflow-hidden pointer-events-none -z-50">
         {/* Glowing blobs */}
         <div className="blob top-10 left-10" />
         <div className="blob bottom-10 right-10" />
