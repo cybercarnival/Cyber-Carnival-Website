@@ -61,7 +61,7 @@ function Gallery() {
         <BlobBubble />
         {galleries.map((gallery, index) => (
           <div key={index} className="mb-16">
-            <h1 className="text-4xl md:text-6xl lg:text-8xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2 text-center">
+            <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2 text-center font-audiowide">
               {gallery.title}
             </h1>
 
@@ -119,7 +119,7 @@ function Gallery() {
                   <img
                     src={img}
                     alt={`slide ${imgIndex + 1}`}
-                    className="w-44 h-auto z-50"
+                    className="w-auto h-auto z-50 object-cover"
                   />
                 </SwiperSlide>
               ))}
