@@ -1,12 +1,19 @@
-import React from 'react'
-import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard,   } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/effect-coverflow';
-import './styles.css';
+import React from "react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectCoverflow,
+  Keyboard,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-coverflow";
+import "./styles.css";
 import img1 from "../assets/img1.png";
 import a1 from "../assets/a1.jpg";
 import a2 from "../assets/a2.jpg";
@@ -24,41 +31,50 @@ import h6 from "../assets/h6.jpg";
 import h7 from "../assets/h7.jpg";
 import e1 from "../assets/e1.jpg";
 import e2 from "../assets/e2.jpg";
-import Speakers from '../components/Speakers';
-import Background from '../components/Background/Background';
-import BlobBubble from '../components/AboutUs/AboutBlob';
+import Speakers from "../components/Speakers";
+import Background from "../components/Background/Background";
+import BlobBubble from "../components/AboutUs/AboutBlob";
 
 function Gallery() {
   const galleries = [
     {
-      title: 'Cyber Carnival',
+      title: "Cyber Carnival",
       images: [e1, e2, h1, a1, a2, a3, a4],
     },
     {
-      title: 'Cyber Awareness',
+      title: "Cyber Awareness",
       images: [a1, a2, a3, a4, a5, a6, a7],
     },
     {
-      title: 'Cyberthon',
+      title: "Cyberthon",
       images: [h1, h2, h3, h4, h5, h6, h7],
     },
     {
-      title: 'Cyber Conclave',
+      title: "Cyber Conclave",
       images: [h1, h2, h3, h4, h5, h6, h7],
     },
   ];
   return (
     <>
-    <Background />
-    <BlobBubble />
-<div className='text-white mt-32 p-4 z-10 relative'>
+      <div className="text-white mt-32 p-4 z-10 relative">
+        <Background />
+        <BlobBubble />
         {galleries.map((gallery, index) => (
-          <div key={index} className='mb-16'>
-            <h1 className='text-4xl md:text-6xl lg:text-8xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2 text-center'>{gallery.title}</h1>
-            
+          <div key={index} className="mb-16">
+            <h1 className="text-4xl md:text-6xl lg:text-8xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2 text-center">
+              {gallery.title}
+            </h1>
+
             <Swiper
-              modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Keyboard]}
-              effect={'coverflow'}
+              modules={[
+                Navigation,
+                Pagination,
+                Scrollbar,
+                A11y,
+                EffectCoverflow,
+                Keyboard,
+              ]}
+              effect={"coverflow"}
               grabCursor={true}
               centeredSlides={true}
               loop={true}
@@ -100,17 +116,21 @@ function Gallery() {
             >
               {gallery.images.map((img, imgIndex) => (
                 <SwiperSlide key={imgIndex}>
-                  <img src={img} alt={`slide ${imgIndex + 1}`} className="w-44 h-auto" />
+                  <img
+                    src={img}
+                    alt={`slide ${imgIndex + 1}`}
+                    className="w-44 h-auto"
+                  />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
         ))}
-        
+
         <Speakers />
       </div>
     </>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;
