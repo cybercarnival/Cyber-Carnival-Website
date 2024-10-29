@@ -6,6 +6,11 @@ import con4 from "../assets/con4.png";
 import con5 from "../assets/con5.png";
 import con6 from "../assets/con6.png";
 import con7 from "../assets/con7.png";
+import con8 from "../assets/con8.jpg";
+import con9 from "../assets/con9.jpg";
+import con10 from "../assets/con10.jpg";
+import con11 from "../assets/con11.jpg";
+import con12 from "../assets/con12.jpg";
 function Speakers() {
   const contributors = [
     {
@@ -42,6 +47,31 @@ function Speakers() {
       name: "Mr. Bharani Ramasamy",
       title: "Senior Director Global Networks & Security Virtusa Corporation",
       image: con7,
+    },
+    {
+      name: "Mr. Ganesh S",
+      title: "Strategic Engineering Leade TransUnion Chicago, Illinois, U.S.",
+      image: con8,
+    },
+    {
+      name: "Mr. Bharani Ramasamy",
+      title: "Senior Director Global Networks and Securit Virtusa corporation",
+      image: con9,
+    },
+    {
+      name: "Mr. Rajkumar Kalaimani",
+      title: "Senior Engineer Altimetrik Chennai",
+      image: con10,
+    },
+    {
+      name: "Mr. Ranjith Kumar",
+      title: "Cyber Security Professional Infosys",
+      image: con11,
+    },
+    {
+      name: "Mr. Deep Chanda",
+      title: "  Vice President -Compliance and Audit , Network Intelligence Pvt. Ltd",
+      image: con12,
     },
   ];
   return (

@@ -164,7 +164,7 @@ export const data = {
   techexpo: {
     title: "Secure Tool Expo",
     title_font: "font-jersey",
-    title_size: "text-4xl",
+    title_size: "text-5xl",
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
@@ -215,35 +215,38 @@ export const data = {
     title: "Free Fire",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: " Battle Royale mode ",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    "Free Fire is a popular battle royale game where players compete on an island, aiming to be the last one standing. It features fast-paced action, unique characters with special abilities, and various weapons and items for survival, offering an intense gaming experience.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+    "Join Us for the ultimate Free Fire tournament, where the top players around all colleges Battle for glory and prizes. Compete in intense matches filled with strategic gameplay, thrilling gunfights, and heart-pounding moments. Whether you're a seasoned pro or a passionate newcomer, this tournament promises action-packed gameplay and an unforgettable experience. Don’t miss your chance to showcase your skills and claim your spot in the Free Fire community!",
     poster: freefire,
     url: "freefire",
     facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
     studentCoordinator: ["Sanjeev", "Moulleshvarma "],
     eventDetails: {
-      time: "10AM - 11AM",
+      time: "-",
       date: "20 FEB 2025",
       fees: "300 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Squad matches on the full Bermuda map; 2 matches, subject to time constraints. So make sure that the map is ready in your device and game.", 
+      "Teams may use voice chat or world channel, but any forms of abusive language or harassment will incur penalties.", 
+      "Players may rejoin ongoing matches if disconnected; if unable, teams continue without that player. So come with proper network connection and good phone for gameplay!",
+      "Top 2 teams based on points qualify for finals, which will have different rules or challenges. And for the prices - Based on final leaderboard; distribution occurs within TBD after the tournament.",],
   },
 
   cinema: {
-    title: "Cinema",
+    title: "Cyber Safe Cinema",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Lights Camera Hacktion",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+"Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+"Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
     poster: cinema,
     url: "cinema",
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
@@ -254,19 +257,24 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["TEAM SIZE CAN BE MAXIMUM OF THREE",
+       "FILM DURATION: STAY WITHIN THE TIME LIMIT OF 10 MINS TO MAINTAIN JUDGES ATTENTION.",
+        "USE OF COPYRIGHTED MATERIAL IS PROHIBITED.",
+      "SUBMISSIONS WILL BE EVALUATED BASED ON THE EFFECTIVENESS OF THE NOIR ATMOSPHERE.",
+    "ANY FORM OF VULGARITY WILL LEAD TO IMMEDIATE DISQUALIFICATION.",
+  "THEME:- CYBER AWARNESS"],
   },
 
   surfing: {
-    title: "Surfing",
+    title: "Channel surfing ",
     title_font: "font-saira",
     title_size: "text-4xl",
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+"Channel Surfing is about a team imitating the popular channels. The Judge will keep changing the channel and will give commands like (reverse, pause, play, fast-forward, slow motion) and the teams must perform accordingly. Cue will be given by judge to change the channel.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+"Performance must be changed immediately after that. According to the act points will be awarded. Categories of Channels: News, Sports, Movies-Hindi & English, Music-Hindi &English, Food Channels, Entertainment-National, Entertainment-International, Kids Channel, Lifestyle, Wildlife Channels, Science.",
     poster: surfing,
     url: "surfing",
     facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
@@ -277,7 +285,11 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["No props can be used ", 
+      "No costume is to be used.", 
+      "Do not use abusive words or actions in your Act.", 
+      "Participants must refrain from opening their mouths or verbally stating the channel name during the game. ", 
+      "Judge's decision is Final.", ],
   },
 
   awareness: {
@@ -304,15 +316,15 @@ export const data = {
   },
 
   surviva: {
-    title: "Surviva",
+    title: "Shipwreck",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Navigating life storm in shipwreck experience",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+"The shipwreck is a popular character-based debate competition. Participants take on roles of characters trapped on a sinking ship, arguing why their character deserves to be saved while contending why others should. It's a great way to develop observational skills, vocal presence, and persuasive abilities.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+"In a Shipwreck event, participants embody various characters—ranging from historical figures to fictional personas—who find themselves on a doomed ship. The scenario unfolds as the ship starts sinking, and each participant must convincingly argue why their character should be rescued by the limited lifeboats. The challenge lies in balancing the portrayal of their character’s traits, convincing others of their importance, and simultaneously discrediting the claims of their fellow shipmates. The event encourages creativity, sharpens debating skills, and demands quick thinking. While all characters plead their case, they must adapt to the evolving arguments and rebuttals from others, making it a dynamic and engaging exercise. It's a favorite in schools and colleges for its blend of drama, strategy, and humor.",
     poster: surviva,
     url: "surviva",
     facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
@@ -323,6 +335,12 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Time for convincing the captain: 3 minutes", 
+      "Rebuttal time: 1 minute", 
+      "Totally 2 rounds will be conducted",
+    "Any sort of vulgarity is prohibited",
+  "There will be a negative marking if preparation time in exceeded",
+"Participants will be judged on their humor, spontaneity and creativity",
+"On the final round Judge's decision will remain final."],
   },
 };

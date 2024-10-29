@@ -34,16 +34,42 @@ import e2 from "../assets/e2.jpg";
 import Speakers from "../components/Speakers";
 import Background from "../components/Background/Background";
 import BlobBubble from "../components/AboutUs/AboutBlob";
+import b1 from "../assets/b1.jpg";
+import b2 from "../assets/b2.jpg";
+import b3 from "../assets/b3.jpg";
+import b4 from "../assets/b4.jpg";
+import b5 from "../assets/b5.jpg";
+import b6 from "../assets/b6.jpg";
+import b7 from "../assets/b7.jpg";
+import b8 from "../assets/b8.jpg";
+import b9 from "../assets/b9.jpg";
+import b10 from "../assets/b10.jpg";
+import b11 from "../assets/b11.jpg";
+import b12 from "../assets/b12.jpg";
+import b13 from "../assets/b13.jpg";
+import b14 from "../assets/b14.jpg";
+import b15 from "../assets/b15.jpg";
+import b16 from "../assets/b16.jpg";
+import b17 from "../assets/b17.jpg";
+import b18 from "../assets/b18.jpg";
+import b19 from "../assets/b19.jpg";
+import b20 from "../assets/b20.jpg";
+import b21 from "../assets/b21.jpg";
+import b22 from "../assets/b22.jpg";
+import b23 from "../assets/b23.jpg";
+import b24 from "../assets/b24.jpg";
+import b25 from "../assets/b25.jpg";
+import b26 from "../assets/b26.jpg";
 
 function Gallery() {
   const galleries = [
     {
       title: "Cyber Carnival",
-      images: [e1, e2, h1, a1, a2, a3, a4],
+      images: [b1, b2, b8, b13, b23, b25, b26],
     },
     {
       title: "Cyber Awareness",
-      images: [a1, a2, a3, a4, a5, a6, a7],
+      images: [a1, a2, a3, a4, b25, b24, b23],
     },
     {
       title: "Cyberthon",
@@ -51,7 +77,7 @@ function Gallery() {
     },
     {
       title: "Cyber Conclave",
-      images: [h1, h2, h3, h4, h5, h6, h7],
+      images: [b1, b2, b3, b4, b5, b6, b7],
     },
   ];
   return (

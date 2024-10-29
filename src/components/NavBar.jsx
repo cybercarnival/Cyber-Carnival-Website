@@ -28,7 +28,7 @@ function NavBar() {
       <div className="font-alumni z-50 flex fixed top-8 left-1/2 transform -translate-x-1/2 w-11/12 h-14 justify-between ">
         <NavLink to="/" className="w-3/12 flex items-center justify-start ">
           <div className=" font-alumni text-3xl text-white flex justify-center p-3 rounded-3xl w-52 h-14 items-center">
-            <img src={logo} alt="logo" className="w-20 h-auto" />
+            <img src={logo} alt="logo" className="w-28 h-auto" />
           </div>
         </NavLink>
 
