@@ -184,7 +184,7 @@ export const data = {
     rules: [
       "Indigenous built tools are only allowed",
       "Plagiarism isn't allowed",
-      "rule 3",
+      
     ],
   },
 
@@ -208,7 +208,9 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Pitch desk must", 
+      "Must come in formal dress", 
+      "Founders / participants must come in prior to establish themselves in the venue"],
   },
 
   freefire: {
