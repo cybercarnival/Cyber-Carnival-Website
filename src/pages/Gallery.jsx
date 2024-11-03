@@ -25,7 +25,7 @@ import h7 from "../assets/h7.jpg";
 import e1 from "../assets/e1.jpg";
 import e2 from "../assets/e2.jpg";
 import Speakers from '../components/Speakers';
-import Background from '../components/Background/Background';
+// import Background from '../components/Background/Background';
 import BlobBubble from '../components/AboutUs/AboutBlob';
 
 function Gallery() {
@@ -49,7 +49,7 @@ function Gallery() {
   ];
   return (
     <>
-    <Background />
+    {/* <Background /> */}
     <BlobBubble />
 <div className='text-white mt-32 p-4 z-10 relative'>
         {galleries.map((gallery, index) => (

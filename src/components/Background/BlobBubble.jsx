@@ -33,27 +33,7 @@ const BlobBubble = () => {
         duration: 1,
       });
 
-  
-      const scrollHandler = (e) => {
-        e.preventDefault(); 
-
-        const newScrollPos = window.scrollY + e.deltaY * 3; 
-
-       
-        gsap.to(window, {
-          duration: 0.5,
-          scrollTo: { y: newScrollPos, autoKill: false },
-          ease: "power2.out",
-        });
-      };
-
-     
-      window.addEventListener('wheel', scrollHandler, { passive: false });
-
-      return () => {
-        tl.kill(); 
-        window.removeEventListener('wheel', scrollHandler); 
-      };
+      // Removed custom scroll handler here
     }
   }, []);
 
