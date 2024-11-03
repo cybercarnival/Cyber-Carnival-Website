@@ -41,7 +41,7 @@ function ContactUs() {
                   type="text"
                   placeholder='Enter your name'
                   name='from_name'
-                  className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " />
+                  className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " required />
               </div>
               <div>
                 <label
@@ -53,7 +53,7 @@ function ContactUs() {
                   type="email"
                   placeholder='Enter your email'
                   name="from_email"
-                  className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " />
+                  className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " required />
               </div>
               <div>
                 <label
@@ -65,7 +65,7 @@ function ContactUs() {
                 <textarea
                   placeholder='Enter your message'
                   name="message"
-                  className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " />
+                  className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " required />
               </div>
               <motion.button
                 initial={{
