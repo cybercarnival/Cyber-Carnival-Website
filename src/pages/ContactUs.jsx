@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { motion } from 'framer-motion'
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+
 
 function ContactUs() {
   const form = useRef();
@@ -18,7 +20,12 @@ function ContactUs() {
   };
 
   return (
+    
     <section className="">
+       
+      
+        <div className="blob top-10 left-10" />
+        <div className="blob bottom-10 right-10" />
       <div className=" my-32 flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">
         <h1 className='flex items-center mb-6 text-3xl font-semibold text-white font-audiowide'>Contact Us</h1>
         <div className="w-full border-2 border-[#1EC1C5] rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
@@ -80,6 +87,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
+   
     </section>
   )
 }
