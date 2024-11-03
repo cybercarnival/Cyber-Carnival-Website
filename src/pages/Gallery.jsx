@@ -22,6 +22,7 @@ import a4 from "../assets/a4.jpg";
 import a5 from "../assets/a5.jpg";
 import a6 from "../assets/a6.jpg";
 import a7 from "../assets/a7.jpg";
+import a8 from "../assets/a8.jpg";
 import h1 from "../assets/h1.jpg";
 import h2 from "../assets/h2.jpg";
 import h3 from "../assets/h3.jpg";
@@ -34,7 +35,6 @@ import e2 from "../assets/e2.jpg";
 import Speakers from "../components/Speakers";
 import Background from "../components/Background/Background";
 import BlobBubble from "../components/AboutUs/AboutBlob";
-import b1 from "../assets/b1.jpg";
 import b2 from "../assets/b2.jpg";
 import b3 from "../assets/b3.jpg";
 import b4 from "../assets/b4.jpg";
@@ -60,16 +60,40 @@ import b23 from "../assets/b23.jpg";
 import b24 from "../assets/b24.jpg";
 import b25 from "../assets/b25.jpg";
 import b26 from "../assets/b26.jpg";
+import c1 from "../assets/c1.jpg";
+import c2 from "../assets/c2.jpg";
+import c3 from "../assets/c3.jpg";
+import c4 from "../assets/c4.jpg";
+import c5 from "../assets/c5.jpg";
+import c6 from "../assets/c6.jpg";
+import c7 from "../assets/c7.jpg";
+import c8 from "../assets/c8.jpg";
+import c9 from "../assets/c9.jpg";
+import c10 from "../assets/c10.jpg";
+import c11 from "../assets/c11.jpg";
+import c12 from "../assets/c12.jpg";
+import c13 from "../assets/c13.jpg";
+import c14 from "../assets/c14.jpg";
+import c15 from "../assets/c15.jpg";
+import c16 from "../assets/c16.jpg";  
+import c17 from "../assets/c17.jpg";
+import i1 from "../assets/i1.jpg";
+import i2 from "../assets/i2.jpg";
+import i3 from "../assets/i3.jpg";
+import i4 from "../assets/i4.jpg";
+import i5 from "../assets/i5.jpg";
+
+
 
 function Gallery() {
   const galleries = [
     {
       title: "Cyber Carnival",
-      images: [b1, b2, b8, b13, b23, b25, b26],
+      images: [i1,c5, c2,i2,i3,i4,i5, c3, c4,a1, c6, c7, c8, c11,c1],
     },
     {
       title: "Cyber Awareness",
-      images: [a1, a2, a3, a4, b25, b24, b23],
+      images: [a8, a2,b25, a3, a4, b24, b23, b22],
     },
     {
       title: "Cyberthon",
@@ -77,7 +101,7 @@ function Gallery() {
     },
     {
       title: "Cyber Conclave",
-      images: [b1, b2, b3, b4, b5, b6, b7],
+      images: [c9, c6,c7,c8, b2, b3, b4, b5, b6, ],
     },
   ];
   return (
@@ -145,7 +169,7 @@ function Gallery() {
                   <img
                     src={img}
                     alt={`slide ${imgIndex + 1}`}
-                    className="w-auto h-auto z-50 object-cover"
+                    className="w-[4.5rem] h-[25rem] z-50 object-cover"
                   />
                 </SwiperSlide>
               ))}
