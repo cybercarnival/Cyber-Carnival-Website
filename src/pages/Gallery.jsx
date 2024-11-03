@@ -32,13 +32,8 @@ import h6 from "../assets/h6.jpg";
 import h7 from "../assets/h7.jpg";
 import e1 from "../assets/e1.jpg";
 import e2 from "../assets/e2.jpg";
-<<<<<<< HEAD
-import Speakers from '../components/Speakers';
-// import Background from '../components/Background/Background';
-import BlobBubble from '../components/AboutUs/AboutBlob';
-=======
 import Speakers from "../components/Speakers";
-import Background from "../components/Background/Background";
+// import Background from "../components/Background/Background";
 import BlobBubble from "../components/AboutUs/AboutBlob";
 import b2 from "../assets/b2.jpg";
 import b3 from "../assets/b3.jpg";
@@ -89,8 +84,6 @@ import i4 from "../assets/i4.jpg";
 import i5 from "../assets/i5.jpg";
 
 
->>>>>>> 4b48caa3358b385753154f8ffec4e848bc4ea575
-
 function Gallery() {
   const galleries = [
     {
@@ -112,15 +105,11 @@ function Gallery() {
   ];
   return (
     <>
-<<<<<<< HEAD
-    {/* <Background /> */}
-    <BlobBubble />
-<div className='text-white mt-32 p-4 z-10 relative'>
-=======
+
       <div className="text-white mt-32 p-4 z-10 relative">
-        <Background />
+        {/* <Background /> */}
         <BlobBubble />
->>>>>>> 4b48caa3358b385753154f8ffec4e848bc4ea575
+
         {galleries.map((gallery, index) => (
           <div key={index} className="mb-16">
             <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold bg-gradient-to-r from-green-400 to-teal-400 text-transparent bg-clip-text p-2 text-center font-audiowide">
