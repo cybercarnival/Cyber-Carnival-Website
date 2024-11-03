@@ -7,16 +7,18 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
 import CropSquareIcon from "@mui/icons-material/CropSquare";
 import { data } from "../data/viewEventsData.js";
+import Background from "../components/Background/Background";
 function ViewEvent() {
   const { event } = useParams();
   const nav = useNavigate();
   console.log(event);
   return (
-    <div className="w-full flex justify-center items-center text-white">
-      <div className="w-11/12 my-28 flex p-4 items-center justify-center flex-wrap">
+    <div className="w-full flex justify-center items-center text-white relative">
+      <Background />
+      <div className="w-11/12 my-28 grid p-4 grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-1">
         {/*-------------- poster and description -----------------*/}
-        <div className="h-[500px] w-[350px] flex flex-col items-center justify-center rounded-xl">
-          <div className="w-full h-1/2 relative flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col justify-self-center items-center justify-center rounded-xl">
+          <div className="w-full h-[250px] md:h-1/2 xl:h-2/3  relative flex flex-col items-center justify-center">
             <img
               className="w-full h-full absolute top-0 left-0"
               src={data[event].poster}
@@ -30,16 +32,16 @@ function ViewEvent() {
               {data[event].description}
             </p>
           </div>
-          <div className="h-1/2 w-full bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bg p-4 rounded-b-xl">
+          <div className="md:h-1/2 xl:h-1/3  w-full bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 bg p-4 rounded-b-xl">
             <p className="text-justify text-white">{data[event].brief2}</p>
           </div>
         </div>
 
-        <div className="w-[350px] flex flex-col items-center justify-between p-4">
+        <div className="w-ful flex flex-col items-center justify-between p-4">
           {/*----------------SPEAKERS------------------*/}
           {event == "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] font-jersey text-[#1EC1C5] text-2xl">
+              <h1 className="text-left font-jersey m-2 text-[#1EC1C5] text-3xl">
                 SPEAKERS
               </h1>
               <div className="flex m-2">
@@ -47,9 +49,9 @@ function ViewEvent() {
                   src={conclave}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow">
-                  <h6 className="text-center">{data[event].speakers[0][0]}</h6>
-                  <h6 className=" text-center">{data[event].speakers[0][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2">
+                  <h6 className="text-left">{data[event].speakers[0][0]}</h6>
+                  <h6 className=" text-left">{data[event].speakers[0][1]}</h6>
                 </div>
               </div>
               <div className="flex m-2">
@@ -57,9 +59,9 @@ function ViewEvent() {
                   src={conclave}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow">
-                  <h6 className="text-center">{data[event].speakers[1][0]}</h6>
-                  <h6 className=" text-center">{data[event].speakers[1][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2">
+                  <h6 className="text-left">{data[event].speakers[1][0]}</h6>
+                  <h6 className=" text-left">{data[event].speakers[1][1]}</h6>
                 </div>
               </div>
               <div className="flex m-2">
@@ -67,9 +69,9 @@ function ViewEvent() {
                   src={conclave}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow">
-                  <h6 className="text-center">{data[event].speakers[2][0]}</h6>
-                  <h6 className=" text-center">{data[event].speakers[2][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2">
+                  <h6 className="text-left">{data[event].speakers[2][0]}</h6>
+                  <h6 className=" text-left">{data[event].speakers[2][1]}</h6>
                 </div>
               </div>
             </div>
@@ -79,16 +81,16 @@ function ViewEvent() {
 
           {event !== "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] text-[#1EC1C5] text-2xl font-jersey">
+              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
                 Faculty Coordinator
               </h1>
               <div className="flex m-2">
-                <h6 className=" text-center mx-2">
+                <h6 className=" text-left">
                   {data[event].facultyCoordinator[0]}
                 </h6>
               </div>
               <div className="flex m-2">
-                <h6 className=" text-center mx-2">
+                <h6 className=" text-left">
                   {data[event].facultyCoordinator[1]}
                 </h6>
               </div>
@@ -99,16 +101,16 @@ function ViewEvent() {
 
           {event !== "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] text-[#1EC1C5] text-2xl font-jersey">
-                Student Coordinator
+              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
+                Student Coordinators
               </h1>
               <div className="flex m-2">
-                <h6 className=" text-center mx-2">
+                <h6 className=" text-left">
                   {data[event].studentCoordinator[0]}
                 </h6>
               </div>
               <div className="flex m-2">
-                <h6 className=" text-center mx-2">
+                <h6 className=" text-left">
                   {data[event].studentCoordinator[1]}
                 </h6>
               </div>
@@ -118,14 +120,14 @@ function ViewEvent() {
           {/*----------------Rules------------------*/}
           {event !== "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] text-[#1EC1C5] text-2xl font-jersey">
+              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
                 Rules
               </h1>
               <div className="flex flex-col m-2">
                 {data[event].rules.map((rule) => (
-                  <div className="flex flex-grow">
-                    <CropSquareIcon />
-                    <h6 className=" text-center mx-2">{rule}</h6>
+                  <div className="flex flex-grow mt-2">
+                    <CropSquareIcon sx={{}} />
+                    <h6 className=" text-left mx-2">{rule}</h6>
                   </div>
                 ))}
               </div>
@@ -134,7 +136,7 @@ function ViewEvent() {
 
           {/*----------------EVENT DETAILS------------------*/}
           <div className="w-full">
-            <h1 className="text-center ml-[40px] text-[#1EC1C5] text-2xl font-jersey">
+            <h1 className="text-lest m-2 text-[#1EC1C5] text-3xl font-jersey">
               EVENT DETAILS
             </h1>
             <div className="flex m-2">
@@ -167,7 +169,7 @@ function ViewEvent() {
 
           {event == "cyberconclave" && (
             <div className="w-full">
-              <h1 className="text-center ml-[40px] text-[#1EC1C5] text-2xl font-jersey">
+              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
                 TOPICS OF DISCUSSION
               </h1>
 
@@ -175,7 +177,7 @@ function ViewEvent() {
                 <div className="flex m-2">
                   <div className="flex flex-grow">
                     <CropSquareIcon />
-                    <h6 className=" text-center mx-2">{i}</h6>
+                    <h6 className=" text-left mx-2">{i}</h6>
                   </div>
                 </div>
               ))}
@@ -184,7 +186,7 @@ function ViewEvent() {
 
           <button
             onClick={() => nav(`register`)}
-            className="border-2 border-[#1EC1C5] w-2/3 ml-[40px] p-1 rounded-xl text-[#1EC1C5] text-xl font-jersey"
+            className="border-2 m-2 border-[#1EC1C5] w-2/3 p-1 rounded-xl text-[#1EC1C5] text-2xl font-jersey"
           >
             Register
           </button>

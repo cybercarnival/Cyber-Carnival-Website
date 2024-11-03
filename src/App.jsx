@@ -8,14 +8,16 @@ import Footer from "./components/Footer";
 import ViewEvent from "./pages/ViewEvent";
 import NonTechEvents from "./pages/NonTechEvents";
 import Register from "./pages/Register";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css"; 
-
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import UnderDev from "./components/UnderDev";
+import ScrollToTop from "./components/ScrollToTop";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -24,15 +26,22 @@ function App() {
         <Route path="/techevents" element={<TechEvents />} />
         <Route path="/techevents/viewevent/:event" element={<ViewEvent />} />
         <Route path="/nontechevents" element={<NonTechEvents />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/nontechevents/viewevent/:event" element={<ViewEvent />} />
-        <Route path="/techevents/viewevent/:event/register" element={<Register />} />
-        <Route path="/nontechevents/viewevent/:event/register" element={<Register />} />
+        <Route
+          path="/techevents/viewevent/:event/register"
+          element={<Register />}
+        />
+        <Route
+          path="/nontechevents/viewevent/:event/register"
+          element={<Register />}
+        />
         <Route path="/gallery" element={<Gallery />} />
         {/* <Route path="/sponsors" element={<Sponsors />} /> */}
+        <Route path="/underdev" element={<UnderDev />} />
       </Routes>
 
-      <Footer/>
-
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -47,7 +47,7 @@ function EventCard({ urlName }) {
           <div className="w-full h-1/2 relative flex flex-col items-center justify-center">
             <img
               className="w-full h-full absolute top-0 left-0"
-              src={data[`${urlName}`] .poster}
+              src={data[`${urlName}`].poster}
             />
             <h1
               className={`z-40 ${data[`${urlName}`].title_font} ${
@@ -69,7 +69,7 @@ function EventCard({ urlName }) {
             src={LineGraphic}
           />
           <div className="h-1/2 w-full font-orbitron text-white">
-            <div className="h-3/12 w-full grid grid-cols-2 grid-rows-2 pl-12 py-4 gap-y-2">
+            <div className="h-3/12 w-full grid grid-cols-2 grid-rows-2 pl-6 md:pl-12 py-4 gap-y-2">
               <div className="flex justify-start items-center justify-self-start">
                 <CalendarTodayOutlinedIcon sx={{ height: 20, width: 20 }} />
                 <p className="text-xs mx-3">
