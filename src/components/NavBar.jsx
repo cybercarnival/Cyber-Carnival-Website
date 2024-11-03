@@ -78,6 +78,15 @@ function NavBar() {
           >
             Events
           </NavLink>
+          <NavLink
+            to="/contactus"
+            className={({ isActive }) =>
+              (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
+              " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
+            }
+          >
+            Contact Us
+          </NavLink>
         </div>
         <div className=" w-5/12 flex items-center justify-end md:w-3/12">
           {/* <NavLink
@@ -155,6 +164,16 @@ function NavBar() {
           onClick={handleClose}
         >
           Events
+        </NavLink>
+        <NavLink
+          to="/contactus"
+          className={({ isActive }) =>
+            (isActive ? "text-[#5BFFE6] text-shadow-custom" : "text-white") +
+            " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
+          }
+          onClick={handleClose}
+        >
+          Contact Us
         </NavLink>
         {/* <NavLink
           to="/sponsors"

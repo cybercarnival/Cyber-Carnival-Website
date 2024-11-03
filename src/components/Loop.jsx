@@ -11,6 +11,7 @@ function Loop() {
       sponsorsRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
+  
   const testimonials = [
     {
       image: comingSoon,
