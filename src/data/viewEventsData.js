@@ -17,16 +17,16 @@ export const data = {
     title_font: "font-orbitron",
     title_size: "text-3xl",
     description:
-      "Dive into the Details of leading experts converging in a panel discussion",
+      "Unmasking online scams and strengthening adequate cyber defenses",
 
     brief:
-      "At the Cyber Conclave, leading experts converge in a dynamic panel discussion, offering a comprehensive dive into the intricate details of cybersecurity. This exclusive event brings together thought leaders, industry pioneers, and tech innovators to explore emerging trends, best practices, and pressing challenges facing the digital landscape.",
+      "Cyber Conclave, where industry leaders converge to explore the latest trends in cybersecurity. Engage in expert discussions, hands-on workshops, and networking opportunities, all aimed at enhancing your knowledge and strategies for a safer digital future.",
     brief2:
-      "In today’s digital age, the proliferation of online scams and cyber threats poses a significant risk to individuals and organizations alike. The alarming rise in these incidents has sparked a pressing need for robust discussions and actionable strategies among professionals across various sectors. To address these challenges, we invite you to participate in the upcoming",
+      "The Cyber Conclave is a premier gathering that brings together experts, innovators, and thought leaders in the field of cybersecurity. This annual event features keynote speeches, panel discussions, and workshops focused on the latest trends, challenges, and solutions in the digital security landscape. Attendees can engage in networking opportunities, explore cutting-edge technologies, and participate in hands-on training sessions. With topics ranging from threat intelligence and data protection to regulatory compliance and ethical hacking, the Conclave aims to empower professionals with actionable insights. Additionally, it serves as a platform for collaboration, fostering partnerships between academia, industry, and government to enhance global cybersecurity resilience.",
     poster: cyberconclave,
     url: "cyberconclave",
     speakers: [
-      ["Name", "Designation"],
+      ["Mr.Rajthilak.B.S", "Associate Vice president Standard chartered bank"],
       ["Name", "Designation"],
       ["Name", "Designation"],
     ],
@@ -301,9 +301,9 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "A cyber awareness campaign is a coordinated effort to educate individuals and organizations about cybersecurity risks, best practices, and how to protect themselves from cyber threats.Promote the use of strong, unique passwords and password managers.Explain the importance of protecting personal information and online privacy.Discuss the risks associated with mobile devices and best practices for secure usage.These event can provide detailed analytics on user behavior and campaign performance.",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "A cyber awareness campaign is a coordinated effort to educate individuals and organizations about cybersecurity risks, best practices, and how to protect themselves from cyber threats.Promote the use of strong, unique passwords and password managers.Explain the importance of protecting personal information and online privacy.Discuss the risks associated with mobile devices and best practices for secure usage.These event can provide detailed analytics on user behavior and campaign performance.",
     poster: awareness,
     url: "awareness",
     facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
@@ -314,7 +314,7 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["rule 1", "rule 2", "rule 3"],
+    rules: ["Maintain decorum within the mass", "Bring your edible essentials", ],
   },
 
   surviva: {

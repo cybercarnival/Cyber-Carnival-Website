@@ -8,6 +8,7 @@ import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
 import CropSquareIcon from "@mui/icons-material/CropSquare";
 import { data } from "../data/viewEventsData.js";
 import Background from "../components/Background/Background";
+import rajthilak from '../assets/rajthilak.jpeg'
 function ViewEvent() {
   const { event } = useParams();
   const nav = useNavigate();
@@ -46,7 +47,7 @@ function ViewEvent() {
               </h1>
               <div className="flex m-2">
                 <img
-                  src={conclave}
+                  src={rajthilak}
                   className="w-[40px] h-[40px] rounded-[50%]"
                 />
                 <div className="flex flex-col flex-grow mx-2">
