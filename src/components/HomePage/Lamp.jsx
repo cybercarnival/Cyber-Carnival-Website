@@ -33,7 +33,7 @@ export function LampDemo() {
           className="mt-6 flex justify-center"
         >
           <button
-            className="px-6 py-3 text-xl font-audiowide tracking-wider rounded-2xl bg-gradient-to-r from-[#156468] to-slate-300 text-black hover:from-teal-700 hover:to-teal-700 transition-all duration-300"
+            className="px-6 py-3 text-xl font-audiowide tracking-wider rounded-2xl bg-gradient-to-r from-[#156468] to-slate-300 text-black hover:from-teal-700 hover:to-teal-700 transition-all duration-300 outline outline-2 outline-[#156468] outline-offset-2"
           >
            <a target="_blank"  href="https://online.flippingbook.com/view/734596523/">Cyber Chronicle'24</a> 
           </button>

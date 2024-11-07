@@ -6,10 +6,9 @@ function Events() {
   return (
     <div className="mt-32 w-full flex flex-wrap min-h-screen items-center justify-center ">
       <Background />
-      <EventCard urlName="cyberconclave" />
       <EventCard urlName="capturetheflag" />
-      <EventCard urlName="paperpresentation" />
       <EventCard urlName="bugbounty" />
+      <EventCard urlName="paperpresentation" />
       <EventCard urlName="techexpo" />
       <EventCard urlName="startup" />
     </div>

@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import Card from "../components/EventComp";
 import Background from "../components/Background/Background";
 import BlobBubble from "../components/Background/BlobBubble"; // Import the BlobBubble component
 import nonTech from "../assets/nonTech.jpg";
@@ -93,7 +92,7 @@ function Events() {
               className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-end overflow-clip relative flex items-center justify-center cursor-pointer"
               style={{ y: yTransform3, x: xTransform3 }}
               onClick={() => {
-                nav("/underdev");
+                nav("/techevents/viewevent/cyberthon");
               }}
             >
               <motion.h1

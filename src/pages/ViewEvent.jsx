@@ -48,19 +48,19 @@ function ViewEvent() {
               <div className="flex m-2">
                 <img
                   src={rajthilak}
-                  className="w-[40px] h-[40px] rounded-[50%]"
+                  className="w-[80px] h-[80px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow mx-2">
+                <div className="flex flex-col flex-grow mx-2 justify-center">
                   <h6 className="text-left">{data[event].speakers[0][0]}</h6>
                   <h6 className=" text-left">{data[event].speakers[0][1]}</h6>
                 </div>
               </div>
-              <div className="flex m-2">
+              {/* <div className="flex m-2">
                 <img
                   src={conclave}
-                  className="w-[40px] h-[40px] rounded-[50%]"
+                  className="w-[80px] h-[80px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow mx-2">
+                <div className="flex flex-col flex-grow mx-2 justify-center">
                   <h6 className="text-left">{data[event].speakers[1][0]}</h6>
                   <h6 className=" text-left">{data[event].speakers[1][1]}</h6>
                 </div>
@@ -68,13 +68,13 @@ function ViewEvent() {
               <div className="flex m-2">
                 <img
                   src={conclave}
-                  className="w-[40px] h-[40px] rounded-[50%]"
+                  className="w-[80px] h-[80px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow mx-2">
+                <div className="flex flex-col flex-grow mx-2 justify-center">
                   <h6 className="text-left">{data[event].speakers[2][0]}</h6>
                   <h6 className=" text-left">{data[event].speakers[2][1]}</h6>
                 </div>
-              </div>
+              </div> */}
             </div>
           )}
 

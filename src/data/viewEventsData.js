@@ -22,7 +22,7 @@ export const data = {
     brief:
       "Cyber Conclave, where industry leaders converge to explore the latest trends in cybersecurity. Engage in expert discussions, hands-on workshops, and networking opportunities, all aimed at enhancing your knowledge and strategies for a safer digital future.",
     brief2:
-      "The Cyber Conclave is a premier gathering that brings together experts, innovators, and thought leaders in the field of cybersecurity. This annual event features keynote speeches, panel discussions, and workshops focused on the latest trends, challenges, and solutions in the digital security landscape. Attendees can engage in networking opportunities, explore cutting-edge technologies, and participate in hands-on training sessions. With topics ranging from threat intelligence and data protection to regulatory compliance and ethical hacking, the Conclave aims to empower professionals with actionable insights. Additionally, it serves as a platform for collaboration, fostering partnerships between academia, industry, and government to enhance global cybersecurity resilience.",
+      "The Cyber Conclave is a premier gathering that brings together experts, innovators, and thought leaders in the field of cybersecurity. This annual event features keynote speeches, panel discussions focused on the latest trends, challenges, and solutions in the digital security landscape. Attendees can engage in networking opportunities, explore cutting-edge technologies. With topics ranging from threat intelligence and data protection to regulatory compliance and ethical hacking, the Conclave aims to empower professionals with actionable insights. ",
     poster: cyberconclave,
     url: "cyberconclave",
     speakers: [
@@ -31,8 +31,8 @@ export const data = {
       ["Name", "Designation"],
     ],
     eventDetails: {
-      time: "8 AM - 9:30 AM",
-      date: "21 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "50 per head",
       seats: "200 seats",
     },
@@ -56,8 +56,8 @@ export const data = {
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
     studentCoordinator: ["Anshul Bagchi", "Adhish Mehta"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "180 seats",
     },
@@ -74,19 +74,19 @@ export const data = {
   cyberthon: {
     title: "Cyberthon",
     title_font: "font-jersey",
-    title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    title_size: "text-7xl",
+    description: "Gear up to Unleash your Hacking Prowess",
 
     brief:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Get ready to dive into the thrilling world of cybersecurity with Cyberthon, the national-level hackathon organized by the cybersecurity. ",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Get ready to dive into the thrilling world of cybersecurity with Cyberthon, the national-level hackathon organized by the cybersecurity .Showcase your exceptional cyber skills and earn recognition for your expertise in this intense 24-hour challenge! This is your chance to leave a lasting impact, to make waves in the cybersecurity community, and to carve out your place among the best and brightest in the field.",
     poster: cyberthon,
     url: "cyberthon",
     facultyCoordinator: ["Dr.Minu", "Dr.Subashka Ramesh"],
     studentCoordinator: ["Abdul Aleem", "Pranav Anand"],
     eventDetails: {
-      time: "10AM - 11AM",
+      time: "TBD",
       date: "24-25 Jan 2025",
       fees: "750 per team",
       seats: "200 seats",
@@ -119,8 +119,8 @@ export const data = {
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
     studentCoordinator: ["Jandhyala Venkata", "Alton D Almeida"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "21st Feb 2025",
+      time: "TBD",
+      date: "Feb 2025",
       fees: "300 per team",
       seats: "80 SEATS",
     },
@@ -135,7 +135,7 @@ export const data = {
     title: "Bug Bounty",
     title_font: "font-rubik",
     title_size: "text-4xl",
-    description: "Embark on a quest to find the bugs and retrieve the flag!",
+    description: "Uncover, Report, and Win – Hack the Code, Secure the Future!",
 
     brief:
       "Join our Bug Bounty event, an exciting challenge where participants will test their cybersecurity skills in a real-world scenario. Your mission is to uncover hidden vulnerabilities and find the elusive flag. The challenge is open-ended—how you approach it is entirely up to you!",
@@ -146,8 +146,8 @@ export const data = {
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
     studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
     eventDetails: {
-      time: "10AM - 12PM",
-      date: "21 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "150 per head",
       seats: "150 SEATS",
     },
@@ -165,7 +165,7 @@ export const data = {
     title: "Secure Tool Expo",
     title_font: "font-jersey",
     title_size: "text-5xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Showcaase of your cyber innovation in a secure manner",
 
     brief:
       "SecureSec Tool is an exciting event where students will design, develop, and demonstrate their own cybersecurity tool to ensure Confidentiality, Integrity, and Availability (CIA) of digital information. Participants will showcase their creativity, programming skills, and knowledge of cybersecurity principles to create innovative solutions.",
@@ -176,8 +176,8 @@ export const data = {
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
     studentCoordinator: ["Dhivyan", "Jonathan"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "21 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -192,7 +192,7 @@ export const data = {
     title: "Startup Expo",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "Engage the audience and get a great opportunity to showcase your startup!",
 
     brief:
       "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be",
@@ -203,8 +203,8 @@ export const data = {
     facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
     studentCoordinator: ["Vrajesh RS", "Akshayraj"],
     eventDetails: {
-      time: "10AM - 12AM",
-      date: "21 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -228,8 +228,8 @@ export const data = {
     facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
     studentCoordinator: ["Sanjeev", "Moulleshvarma "],
     eventDetails: {
-      time: "-",
-      date: "20 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "300 per team",
       seats: "150 SEATS",
     },
@@ -254,8 +254,8 @@ export const data = {
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
     studentCoordinator: ["Velu Aravind", "Yoshika"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -282,8 +282,8 @@ export const data = {
     facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
     studentCoordinator: ["Praveen Bhalagee", "Vignesh"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -295,10 +295,10 @@ export const data = {
   },
 
   awareness: {
-    title: "Awareness",
+    title: "Cyber Awareness",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "Embark on a quest to seize the victory flags!",
+    description: "A cyber awareness campaign is a coordinated effort to educate individuals and organizations.",
 
     brief:
       "A cyber awareness campaign is a coordinated effort to educate individuals and organizations about cybersecurity risks, best practices, and how to protect themselves from cyber threats.Promote the use of strong, unique passwords and password managers.Explain the importance of protecting personal information and online privacy.Discuss the risks associated with mobile devices and best practices for secure usage.These event can provide detailed analytics on user behavior and campaign performance.",
@@ -309,8 +309,8 @@ export const data = {
     facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
     studentCoordinator: ["Shruthi Raj", "Sanjay"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -332,8 +332,8 @@ export const data = {
     facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
     studentCoordinator: ["Andrew Leo", "Priyanka G"],
     eventDetails: {
-      time: "10AM - 11AM",
-      date: "22 FEB 2025",
+      time: "TBD",
+      date: "FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
     },
@@ -345,4 +345,7 @@ export const data = {
 "Participants will be judged on their humor, spontaneity and creativity",
 "On the final round Judge's decision will remain final."],
   },
+ 
+
+
 };
