@@ -33,9 +33,9 @@ export const data = {
       ["Name", "Designation"],
     ],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "50 per head",
+      time: "10 AM - 11:30 AM",
+      date: "20 FEB 2025",
+      fees: "150 per head",
       seats: "200 seats",
     },
     discussion: [
@@ -58,9 +58,9 @@ export const data = {
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
     studentCoordinator: ["Anshul Bagchi", "Adhish Mehta"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "250 per team",
+      time: "10 AM - 1 PM",
+      date: "20 FEB 2025",
+      fees: "300 per team",
       seats: "180 seats",
     },
     rules: [
@@ -88,7 +88,7 @@ export const data = {
     facultyCoordinator: ["Dr.Minu", "Dr.Subashka Ramesh"],
     studentCoordinator: ["Abdul Aleem", "Pranav Anand"],
     eventDetails: {
-      time: "TBD",
+      time: "-",
       date: "24-25 Jan 2025",
       fees: "750 per team",
       seats: "200 seats",
@@ -121,9 +121,9 @@ export const data = {
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
     studentCoordinator: ["Jandhyala Venkata", "Alton D Almeida"],
     eventDetails: {
-      time: "TBD",
-      date: "Feb 2025",
-      fees: "300 per team",
+      time: "11AM - 1 PM",
+      date: "21 Feb 2025",
+      fees: "100 per head",
       seats: "80 SEATS",
     },
     rules: [
@@ -148,8 +148,8 @@ export const data = {
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
     studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
+      time: "9 AM - 11 AM",
+      date: "21 FEB 2025",
       fees: "150 per head",
       seats: "150 SEATS",
     },
@@ -178,9 +178,9 @@ export const data = {
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
     studentCoordinator: ["Dhivyan", "Jonathan"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "250 per team",
+      time: "10 AM - 12 PM",
+      date: "21 FEB 2025",
+      fees: "FREE",
       seats: "150 SEATS",
     },
     rules: [
@@ -204,9 +204,9 @@ export const data = {
     facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
     studentCoordinator: ["Vrajesh RS", "Akshayraj"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "250 per team",
+      time: "10 AM - 4 PM",
+      date: "20 & 21 FEB 2025",
+      fees: "FREE",
       seats: "150 SEATS",
     },
     rules: [
@@ -231,16 +231,16 @@ export const data = {
     facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
     studentCoordinator: ["Sanjeev", "Moulleshvarma "],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "300 per team",
+      time: "10 AM - 1 PM",
+      date: "20 FEB 2025",
+      fees: "200 per team",
       seats: "150 SEATS",
     },
     rules: [
       "Squad matches on the full Bermuda map; 2 matches, subject to time constraints. So make sure that the map is ready in your device and game.",
       "Teams may use voice chat or world channel, but any forms of abusive language or harassment will incur penalties.",
       "Players may rejoin ongoing matches if disconnected; if unable, teams continue without that player. So come with proper network connection and good phone for gameplay!",
-      "Top 2 teams based on points qualify for finals, which will have different rules or challenges. And for the prices - Based on final leaderboard; distribution occurs within TBD after the tournament.",
+      "Top 2 teams based on points qualify for finals, which will have different rules or challenges. And for the prices - Based on final leaderboard; distribution occurs within  after the tournament.",
     ],
   },
 
@@ -259,9 +259,9 @@ export const data = {
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
     studentCoordinator: ["Velu Aravind", "Yoshika"],
     eventDetails: {
-      time: "TBD",
+      time: "9 AM - 12 PM",
       date: "FEB 2025",
-      fees: "250 per team",
+      fees: "300 per team",
       seats: "150 SEATS",
     },
     rules: [
@@ -289,9 +289,9 @@ export const data = {
     facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
     studentCoordinator: ["Praveen Bhalagee", "Vignesh"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "250 per team",
+      time: "11 AM - 1 PM",
+      date: "20 FEB 2025",
+      fees: "300 per team",
       seats: "150 SEATS",
     },
     rules: [
@@ -318,10 +318,9 @@ export const data = {
     facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
     studentCoordinator: ["Shruthi Raj", "Sanjay"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "250 per team",
-      seats: "150 SEATS",
+      time: "10 AM - 11 AM",
+      date: "20 FEB 2025",
+      fees: "FREE",
     },
     rules: ["Maintain decorum within the mass", "Bring your edible essentials"],
   },
@@ -341,9 +340,9 @@ export const data = {
     facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
     studentCoordinator: ["Andrew Leo", "Priyanka G"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "250 per team",
+      time: "11 AM - 1 PM",
+      date: "21 FEB 2025",
+      fees: "150 per head",
       seats: "150 SEATS",
     },
     rules: [
@@ -372,9 +371,9 @@ export const data = {
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
     studentCoordinator: ["Vijay K", "Manav Raitani"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "Rs 500",
+      time: "10 AM - 4 PM",
+      date: "20 & 21 FEB 2025",
+      fees: "500 PER head",
       seats: "150 SEATS",
     },
     rules: [],
@@ -395,9 +394,9 @@ export const data = {
     facultyCoordinator: ["Ms.Menaka", "Dr.Jospin Jeya"],
     studentCoordinator: ["Arunkumar J", "Sanrakshan P.B"],
     eventDetails: {
-      time: "TBD",
-      date: "FEB 2025",
-      fees: "Rs 500",
+      time: "10 AM - 4 PM",
+      date: "20 & 21 FEB 2025",
+      fees: "500 PER head",
       seats: "150 SEATS",
     },
     rules: [],
