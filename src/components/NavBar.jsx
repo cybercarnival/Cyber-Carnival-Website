@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../assets/bg_logo.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { motion, useAnimate } from "framer-motion";
+import srmlogo from "../assets/srm_logo.png";
 function NavBar() {
   const [scope, animate] = useAnimate();
   const handleOpen = () => {
@@ -26,9 +27,10 @@ function NavBar() {
   return (
     <>
       <div className="font-alumni z-50 flex fixed top-8 left-1/2 transform -translate-x-1/2 w-11/12 h-14 justify-between ">
-        <NavLink to="/" className="w-3/12 flex items-center justify-start ">
+        <NavLink to="/#home" className="w-3/12 flex items-center justify-start ">
           <div className=" font-alumni text-3xl text-white flex justify-center p-3 rounded-3xl w-52 h-14 items-center">
             <img src={logo} alt="logo" className="w-28 h-auto" />
+  
           </div>
         </NavLink>
 
@@ -87,8 +89,13 @@ function NavBar() {
           >
             Contact Us
           </NavLink>
+          
         </div>
         <div className=" w-5/12 flex items-center justify-end md:w-3/12">
+        <div className="">
+            <img src={srmlogo} alt="logo" className="w-40 h-auto" />
+  
+          </div>
           {/* <NavLink
             to="/login"
             className={({ isActive }) =>
