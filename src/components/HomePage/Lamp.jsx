@@ -25,6 +25,20 @@ export function LampDemo() {
             <div className="font-jura tracking-widest text-gradient-to-r lg:text-4xl md:text-3xl text-lg  text-white  ">
             February 20 & 21
             </div> 
+
+            <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }}
+          className="mt-6 flex justify-center"
+        >
+          <button
+            className="px-6 py-3 text-xl font-audiowide tracking-wider rounded-2xl bg-gradient-to-r from-[#156468] to-slate-300 text-black hover:from-teal-700 hover:to-teal-700 transition-all duration-300"
+          >
+           <a target="_blank"  href="https://online.flippingbook.com/view/734596523/">Cyber Chronicle'24</a> 
+          </button>
+        </motion.div>
+
       </motion.h1>
     </LampContainer>
     )
