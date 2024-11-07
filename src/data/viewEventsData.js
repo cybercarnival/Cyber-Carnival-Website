@@ -12,6 +12,8 @@ import awareness from "../assets/awareness.png";
 import surviva from "../assets/surviva.png";
 import workshop1 from "../assets/workshop1.jpeg";
 import workshop2 from "../assets/workshop2.jpeg";
+import title from "../assets/title.jpeg";
+import valo from "../assets/valorant.jpeg";
 
 export const data = {
   cyberconclave: {
@@ -193,7 +195,8 @@ export const data = {
     title: "Startup Expo",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "Engage the audience and get a great opportunity to showcase your startup!",
+    description:
+      "Engage the audience and get a great opportunity to showcase your startup!",
 
     brief:
       "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be",
@@ -307,7 +310,8 @@ export const data = {
     title: "Cyber Awareness",
     title_font: "font-saira",
     title_size: "text-4xl",
-    description: "A cyber awareness campaign is a coordinated effort to educate individuals and organizations.",
+    description:
+      "A cyber awareness campaign is a coordinated effort to educate individuals and organizations.",
 
     brief:
       "A cyber awareness campaign is a coordinated effort to educate individuals and organizations about cybersecurity risks, best practices, and how to protect themselves from cyber threats.Promote the use of strong, unique passwords and password managers.Explain the importance of protecting personal information and online privacy.Discuss the risks associated with mobile devices and best practices for secure usage.These event can provide detailed analytics on user behavior and campaign performance.",
@@ -355,6 +359,67 @@ export const data = {
       "On the final round Judge's decision will remain final.",
     ],
   },
+  title: {
+    title: "Title Event",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description:
+      "Join us for an electrifying Cyber Carnival, where technology meets creativity",
+
+    brief:
+      " In Last One Standing: The Battle for the Title, fierce contenders clash in a high-stakes competition where only the strongest will prevail. This intense event pushes participants to their limits as they battle for the coveted champion title.",
+    brief2:
+      "Every move is strategic, and each decision is crucial as they navigate challenges and obstacles. As the tension mounts and contenders are eliminated, the fight for supremacy intensifies, leaving just one victor. 'Last One Standing' is a testament to resilience and the relentless pursuit of greatness. Join us for this ultimate test of strength and spirit.",
+    poster: title,
+    url: "title",
+    facultyCoordinator: ["--", "--"],
+    studentCoordinator: [" Shadrach P - 9094562861"],
+    eventDetails: {
+      time: "11 AM - 1 PM",
+      date: "21 FEB 2025",
+      fees: "150 per head",
+      seats: "200 SEATS",
+    },
+    rules: [
+      "Multiple elimination rounds",
+      "Winner Recieves the title Mr/Ms. Cyber Carnival",
+    ],
+  },
+  valorant: {
+    title: "Valorant",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description:
+      "Gear up for the ultimate Valorant showdown - where skill, strategy, and adrenaline collide!",
+
+    brief:
+      "Prepare for an action-packed Valorant event, bringing together skilled players and fans for intense, strategic battles in the ultimate test of teamwork and precision. Whether you're competing for victory or cheering on your favorite teams, this event promises heart-pounding gameplay, thrilling highlights, and a vibrant community atmosphere.",
+    brief2:
+      "Get ready for an electrifying Valorant event, where top players and avid fans unite for a high-stakes showdown filled with strategy, skill, and adrenaline. Watch as teams go head-to-head in intense, tactical battles, showcasing their mastery of the game and pushing the limits of teamwork and precision. With immersive viewing experiences, fan activities, and plenty of highlights, this event is a must for anyone who lives for the thrill of competition. Don’t miss out on the excitement, camaraderie, and unforgettable moments that only Valorant can deliver!",
+    poster: valo,
+    url: "valorant",
+    facultyCoordinator: ["--", "--"],
+    studentCoordinator: ["--", "--"],
+    eventDetails: {
+      time: "9 AM - 12 PM",
+      date: "22 FEB 2025",
+      fees: "150 per head",
+      seats: "150 SEATS",
+    },
+    rules: [
+      "Teams of 5 players each",
+      "Single elimination bracket",
+      "Best of 3 rounds for each match",
+      "No toxic behavior or abusive language allowed",
+      "Use of any cheats, hacks, or external assistance is strictly prohibited",
+      "Players must join 10 minutes before their scheduled match time",
+      "Server choice is based on mutual agreement; if not, default server is used",
+      "All participants must have stable internet connection to avoid delays",
+      "Winning team advances to the next round",
+      "Prize for MVP of the tournament",
+    ],
+  },
+
   workshop2: {
     title: "Workshop 2",
     title_font: "font-saira",
@@ -401,7 +466,4 @@ export const data = {
     },
     rules: [],
   },
- 
-
-
 };

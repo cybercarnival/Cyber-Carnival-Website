@@ -119,23 +119,23 @@ function ViewEvent() {
           )}
 
           {/*----------------Rules------------------*/}
-          {event !== "cyberconclave" ||
+          {(event !== "cyberconclave" ||
             event !== "workshop1" ||
-            (event !== "workshop2" && (
-              <div className="w-full">
-                <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
-                  Rules
-                </h1>
-                <div className="flex flex-col m-2">
-                  {data[event].rules.map((rule) => (
-                    <div className="flex flex-grow mt-2">
-                      <CropSquareIcon sx={{}} />
-                      <h6 className=" text-left mx-2">{rule}</h6>
-                    </div>
-                  ))}
-                </div>
+            event !== "workshop2") && (
+            <div className="w-full">
+              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
+                Rules
+              </h1>
+              <div className="flex flex-col m-2">
+                {data[event].rules.map((rule) => (
+                  <div className="flex flex-grow mt-2">
+                    <CropSquareIcon sx={{}} />
+                    <h6 className=" text-left mx-2">{rule}</h6>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+          )}
 
           {/*----------------EVENT DETAILS------------------*/}
           <div className="w-full">
