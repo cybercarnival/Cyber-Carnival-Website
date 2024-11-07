@@ -9,6 +9,10 @@ import CropSquareIcon from "@mui/icons-material/CropSquare";
 import { data } from "../data/viewEventsData.js";
 import Background from "../components/Background/Background";
 import rajthilak from "../assets/rajthilak.jpeg";
+import s1 from "../assets/s1.jpg";
+import s2 from "../assets/s2.jpg";
+import s3 from "../assets/s3.jpg";
+import s4 from "../assets/s4.jpg";
 function ViewEvent() {
   const { event } = useParams();
   const nav = useNavigate();
@@ -48,33 +52,53 @@ function ViewEvent() {
               <div className="flex m-2">
                 <img
                   src={rajthilak}
-                  className="w-[80px] h-[80px] rounded-[50%]"
+                  className="w-[90px] h-[90px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow mx-2 justify-center">
+                <div className="flex flex-col flex-grow mx-2 justify-center ">
                   <h6 className="text-left">{data[event].speakers[0][0]}</h6>
-                  <h6 className=" text-left">{data[event].speakers[0][1]}</h6>
-                </div>
-              </div>
-              {/* <div className="flex m-2">
-                <img
-                  src={conclave}
-                  className="w-[80px] h-[80px] rounded-[50%]"
-                />
-                <div className="flex flex-col flex-grow mx-2 justify-center">
-                  <h6 className="text-left">{data[event].speakers[1][0]}</h6>
-                  <h6 className=" text-left">{data[event].speakers[1][1]}</h6>
+                  <h6 className=" text-left w-2/6">{data[event].speakers[0][1]}</h6>
                 </div>
               </div>
               <div className="flex m-2">
                 <img
-                  src={conclave}
-                  className="w-[80px] h-[80px] rounded-[50%]"
+                  src={s1}
+                  className="w-[90px] h-[90px] rounded-[50%]"
                 />
-                <div className="flex flex-col flex-grow mx-2 justify-center">
-                  <h6 className="text-left">{data[event].speakers[2][0]}</h6>
-                  <h6 className=" text-left">{data[event].speakers[2][1]}</h6>
+                <div className="flex flex-col flex-grow mx-2 justify-center ">
+                  <h6 className="text-left">{data[event].speakers[1][0]}</h6>
+                  <h6 className=" text-left w-2/6 ">{data[event].speakers[1][1]}</h6>
                 </div>
-              </div> */}
+              </div>
+              <div className="flex m-2">
+                <img
+                  src={s2}
+                  className="w-[90px] h-[90px] rounded-[50%]"
+                />
+                <div className="flex flex-col flex-grow mx-2 justify-center ">
+                  <h6 className="text-left">{data[event].speakers[2][0]}</h6>
+                  <h6 className=" text-left w-2/6 ">{data[event].speakers[2][1]}</h6>
+                </div>
+              </div>
+              <div className="flex m-2">
+                <img
+                  src={s3}
+                  className="w-[90px] h-[90px] rounded-[50%]"
+                />
+                <div className="flex flex-col flex-grow mx-2 justify-center ">
+                  <h6 className="text-left">{data[event].speakers[3][0]}</h6>
+                  <h6 className=" text-left w-2/6 ">{data[event].speakers[3][1]}</h6>
+                </div>
+              </div>
+              <div className="flex m-2">
+                <img
+                  src={s4}
+                  className="w-[90px] h-[90px] rounded-[50%]"
+                />
+                <div className="flex flex-col flex-grow mx-2 justify-center ">
+                  <h6 className="text-left">{data[event].speakers[4][0]}</h6>
+                  <h6 className=" text-left w-2/6 ">{data[event].speakers[4][1]}</h6>
+                </div>
+              </div>
             </div>
           )}
 

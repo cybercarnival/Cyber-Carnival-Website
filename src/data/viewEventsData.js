@@ -30,9 +30,11 @@ export const data = {
     poster: cyberconclave,
     url: "cyberconclave",
     speakers: [
-      ["Mr.Rajthilak.B.S", "Associate Vice president Standard chartered bank"],
-      ["Name", "Designation"],
-      ["Name", "Designation"],
+      ["Mr.Rajthilak.B.S", "Associate Vice-President, Standard Chartered Bank"],
+      ["Mr.Iniya Nehru", "Deputy Director General, National Informatics Centre Chennai"],
+      ["Mr.Joel Ganesan ", "Technical Trainer, Microsoft"],
+      ["Mr.Vinayak Shrivaishnav ", "Security Solutions Engineer, Rapid7"],
+      ["Mr.Jason Charles", "Leading Fortinet's NetOps Business, India & SAARC Region."],
     ],
     eventDetails: {
       time: "10 AM - 11:30 AM",
