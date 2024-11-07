@@ -112,7 +112,7 @@ function Events() {
               className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-start overflow-clip relative flex items-center justify-center cursor-pointer"
               style={{ y: yTransform4, x: xTransform4 }}
               onClick={() => {
-                nav("/underdev");
+                nav("/workshops");
               }}
             >
               <motion.h1

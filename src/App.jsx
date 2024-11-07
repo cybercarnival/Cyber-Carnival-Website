@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import UnderDev from "./components/UnderDev";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/ContactUs";
+import Workshops from "./pages/Workshops";
 
 function App() {
   return (
@@ -26,8 +27,10 @@ function App() {
         <Route path="/techevents" element={<TechEvents />} />
         <Route path="/techevents/viewevent/:event" element={<ViewEvent />} />
         <Route path="/nontechevents" element={<NonTechEvents />} />
+        <Route path="/workshops" element={<Workshops />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/nontechevents/viewevent/:event" element={<ViewEvent />} />
+        <Route path="/workshops/viewevent/:event" element={<ViewEvent />} />
         <Route
           path="/techevents/viewevent/:event/register"
           element={<Register />}

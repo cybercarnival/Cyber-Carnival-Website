@@ -8,7 +8,7 @@ import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
 import CropSquareIcon from "@mui/icons-material/CropSquare";
 import { data } from "../data/viewEventsData.js";
 import Background from "../components/Background/Background";
-import rajthilak from '../assets/rajthilak.jpeg'
+import rajthilak from "../assets/rajthilak.jpeg";
 function ViewEvent() {
   const { event } = useParams();
   const nav = useNavigate();
@@ -21,7 +21,7 @@ function ViewEvent() {
         <div className="w-full flex flex-col justify-self-center items-center justify-center rounded-xl">
           <div className="w-full h-[250px] md:h-1/2 xl:h-2/3  relative flex flex-col items-center justify-center">
             <img
-              className="w-full h-full absolute top-0 left-0"
+              className="w-full h-full absolute top-0 left-0 object-cover"
               src={data[event].poster}
             />
             <h1
@@ -119,21 +119,23 @@ function ViewEvent() {
           )}
 
           {/*----------------Rules------------------*/}
-          {event !== "cyberconclave" && (
-            <div className="w-full">
-              <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
-                Rules
-              </h1>
-              <div className="flex flex-col m-2">
-                {data[event].rules.map((rule) => (
-                  <div className="flex flex-grow mt-2">
-                    <CropSquareIcon sx={{}} />
-                    <h6 className=" text-left mx-2">{rule}</h6>
-                  </div>
-                ))}
+          {event !== "cyberconclave" ||
+            event !== "workshop1" ||
+            (event !== "workshop2" && (
+              <div className="w-full">
+                <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
+                  Rules
+                </h1>
+                <div className="flex flex-col m-2">
+                  {data[event].rules.map((rule) => (
+                    <div className="flex flex-grow mt-2">
+                      <CropSquareIcon sx={{}} />
+                      <h6 className=" text-left mx-2">{rule}</h6>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            ))}
 
           {/*----------------EVENT DETAILS------------------*/}
           <div className="w-full">

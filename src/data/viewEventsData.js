@@ -10,6 +10,8 @@ import cinema from "../assets/cinema.png";
 import surfing from "../assets/surfing.png";
 import awareness from "../assets/awareness.png";
 import surviva from "../assets/surviva.png";
+import workshop1 from "../assets/workshop1.jpeg";
+import workshop2 from "../assets/workshop2.jpeg";
 
 export const data = {
   cyberconclave: {
@@ -184,7 +186,6 @@ export const data = {
     rules: [
       "Indigenous built tools are only allowed",
       "Plagiarism isn't allowed",
-      
     ],
   },
 
@@ -208,9 +209,11 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["Pitch desk must", 
-      "Must come in formal dress", 
-      "Founders / participants must come in prior to establish themselves in the venue"],
+    rules: [
+      "Pitch desk must",
+      "Must come in formal dress",
+      "Founders / participants must come in prior to establish themselves in the venue",
+    ],
   },
 
   freefire: {
@@ -220,9 +223,9 @@ export const data = {
     description: " Battle Royale mode ",
 
     brief:
-    "Free Fire is a popular battle royale game where players compete on an island, aiming to be the last one standing. It features fast-paced action, unique characters with special abilities, and various weapons and items for survival, offering an intense gaming experience.",
+      "Free Fire is a popular battle royale game where players compete on an island, aiming to be the last one standing. It features fast-paced action, unique characters with special abilities, and various weapons and items for survival, offering an intense gaming experience.",
     brief2:
-    "Join Us for the ultimate Free Fire tournament, where the top players around all colleges Battle for glory and prizes. Compete in intense matches filled with strategic gameplay, thrilling gunfights, and heart-pounding moments. Whether you're a seasoned pro or a passionate newcomer, this tournament promises action-packed gameplay and an unforgettable experience. Don’t miss your chance to showcase your skills and claim your spot in the Free Fire community!",
+      "Join Us for the ultimate Free Fire tournament, where the top players around all colleges Battle for glory and prizes. Compete in intense matches filled with strategic gameplay, thrilling gunfights, and heart-pounding moments. Whether you're a seasoned pro or a passionate newcomer, this tournament promises action-packed gameplay and an unforgettable experience. Don’t miss your chance to showcase your skills and claim your spot in the Free Fire community!",
     poster: freefire,
     url: "freefire",
     facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
@@ -233,10 +236,12 @@ export const data = {
       fees: "300 per team",
       seats: "150 SEATS",
     },
-    rules: ["Squad matches on the full Bermuda map; 2 matches, subject to time constraints. So make sure that the map is ready in your device and game.", 
-      "Teams may use voice chat or world channel, but any forms of abusive language or harassment will incur penalties.", 
+    rules: [
+      "Squad matches on the full Bermuda map; 2 matches, subject to time constraints. So make sure that the map is ready in your device and game.",
+      "Teams may use voice chat or world channel, but any forms of abusive language or harassment will incur penalties.",
       "Players may rejoin ongoing matches if disconnected; if unable, teams continue without that player. So come with proper network connection and good phone for gameplay!",
-      "Top 2 teams based on points qualify for finals, which will have different rules or challenges. And for the prices - Based on final leaderboard; distribution occurs within TBD after the tournament.",],
+      "Top 2 teams based on points qualify for finals, which will have different rules or challenges. And for the prices - Based on final leaderboard; distribution occurs within TBD after the tournament.",
+    ],
   },
 
   cinema: {
@@ -246,9 +251,9 @@ export const data = {
     description: "Lights Camera Hacktion",
 
     brief:
-"Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
+      "Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
     brief2:
-"Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
+      "Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
     poster: cinema,
     url: "cinema",
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
@@ -259,12 +264,14 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["TEAM SIZE CAN BE MAXIMUM OF THREE",
-       "FILM DURATION: STAY WITHIN THE TIME LIMIT OF 10 MINS TO MAINTAIN JUDGES ATTENTION.",
-        "USE OF COPYRIGHTED MATERIAL IS PROHIBITED.",
+    rules: [
+      "TEAM SIZE CAN BE MAXIMUM OF THREE",
+      "FILM DURATION: STAY WITHIN THE TIME LIMIT OF 10 MINS TO MAINTAIN JUDGES ATTENTION.",
+      "USE OF COPYRIGHTED MATERIAL IS PROHIBITED.",
       "SUBMISSIONS WILL BE EVALUATED BASED ON THE EFFECTIVENESS OF THE NOIR ATMOSPHERE.",
-    "ANY FORM OF VULGARITY WILL LEAD TO IMMEDIATE DISQUALIFICATION.",
-  "THEME:- CYBER AWARNESS"],
+      "ANY FORM OF VULGARITY WILL LEAD TO IMMEDIATE DISQUALIFICATION.",
+      "THEME:- CYBER AWARNESS",
+    ],
   },
 
   surfing: {
@@ -274,9 +281,9 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-"Channel Surfing is about a team imitating the popular channels. The Judge will keep changing the channel and will give commands like (reverse, pause, play, fast-forward, slow motion) and the teams must perform accordingly. Cue will be given by judge to change the channel.",
+      "Channel Surfing is about a team imitating the popular channels. The Judge will keep changing the channel and will give commands like (reverse, pause, play, fast-forward, slow motion) and the teams must perform accordingly. Cue will be given by judge to change the channel.",
     brief2:
-"Performance must be changed immediately after that. According to the act points will be awarded. Categories of Channels: News, Sports, Movies-Hindi & English, Music-Hindi &English, Food Channels, Entertainment-National, Entertainment-International, Kids Channel, Lifestyle, Wildlife Channels, Science.",
+      "Performance must be changed immediately after that. According to the act points will be awarded. Categories of Channels: News, Sports, Movies-Hindi & English, Music-Hindi &English, Food Channels, Entertainment-National, Entertainment-International, Kids Channel, Lifestyle, Wildlife Channels, Science.",
     poster: surfing,
     url: "surfing",
     facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
@@ -287,11 +294,13 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["No props can be used ", 
-      "No costume is to be used.", 
-      "Do not use abusive words or actions in your Act.", 
-      "Participants must refrain from opening their mouths or verbally stating the channel name during the game. ", 
-      "Judge's decision is Final.", ],
+    rules: [
+      "No props can be used ",
+      "No costume is to be used.",
+      "Do not use abusive words or actions in your Act.",
+      "Participants must refrain from opening their mouths or verbally stating the channel name during the game. ",
+      "Judge's decision is Final.",
+    ],
   },
 
   awareness: {
@@ -314,7 +323,7 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["Maintain decorum within the mass", "Bring your edible essentials", ],
+    rules: ["Maintain decorum within the mass", "Bring your edible essentials"],
   },
 
   surviva: {
@@ -324,9 +333,9 @@ export const data = {
     description: "Navigating life storm in shipwreck experience",
 
     brief:
-"The shipwreck is a popular character-based debate competition. Participants take on roles of characters trapped on a sinking ship, arguing why their character deserves to be saved while contending why others should. It's a great way to develop observational skills, vocal presence, and persuasive abilities.",
+      "The shipwreck is a popular character-based debate competition. Participants take on roles of characters trapped on a sinking ship, arguing why their character deserves to be saved while contending why others should. It's a great way to develop observational skills, vocal presence, and persuasive abilities.",
     brief2:
-"In a Shipwreck event, participants embody various characters—ranging from historical figures to fictional personas—who find themselves on a doomed ship. The scenario unfolds as the ship starts sinking, and each participant must convincingly argue why their character should be rescued by the limited lifeboats. The challenge lies in balancing the portrayal of their character’s traits, convincing others of their importance, and simultaneously discrediting the claims of their fellow shipmates. The event encourages creativity, sharpens debating skills, and demands quick thinking. While all characters plead their case, they must adapt to the evolving arguments and rebuttals from others, making it a dynamic and engaging exercise. It's a favorite in schools and colleges for its blend of drama, strategy, and humor.",
+      "In a Shipwreck event, participants embody various characters—ranging from historical figures to fictional personas—who find themselves on a doomed ship. The scenario unfolds as the ship starts sinking, and each participant must convincingly argue why their character should be rescued by the limited lifeboats. The challenge lies in balancing the portrayal of their character’s traits, convincing others of their importance, and simultaneously discrediting the claims of their fellow shipmates. The event encourages creativity, sharpens debating skills, and demands quick thinking. While all characters plead their case, they must adapt to the evolving arguments and rebuttals from others, making it a dynamic and engaging exercise. It's a favorite in schools and colleges for its blend of drama, strategy, and humor.",
     poster: surviva,
     url: "surviva",
     facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
@@ -337,12 +346,60 @@ export const data = {
       fees: "250 per team",
       seats: "150 SEATS",
     },
-    rules: ["Time for convincing the captain: 3 minutes", 
-      "Rebuttal time: 1 minute", 
+    rules: [
+      "Time for convincing the captain: 3 minutes",
+      "Rebuttal time: 1 minute",
       "Totally 2 rounds will be conducted",
-    "Any sort of vulgarity is prohibited",
-  "There will be a negative marking if preparation time in exceeded",
-"Participants will be judged on their humor, spontaneity and creativity",
-"On the final round Judge's decision will remain final."],
+      "Any sort of vulgarity is prohibited",
+      "There will be a negative marking if preparation time in exceeded",
+      "Participants will be judged on their humor, spontaneity and creativity",
+      "On the final round Judge's decision will remain final.",
+    ],
+  },
+  workshop2: {
+    title: "Workshop 2",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description:
+      "Interactive cybersecurity workshop handled by industry experts with doubt clearing session",
+
+    brief:
+      "This cybersecurity workshop provides an essential introduction to digital security for both beginners and professionals. Covering core topics like threat detection, vulnerability assessment, and network protection, the workshop guides participants through the fundamentals of safeguarding digital assets.",
+    brief2:
+      "This cybersecurity workshop provides an essential introduction to digital security for both beginners and professionals. Covering core topics like threat detection, vulnerability assessment, and network protection, the workshop guides participants through the fundamentals of safeguarding digital assets. Attendees will learn to identify and respond to phishing attempts, implement effective defense mechanisms, and follow best practices for data security. Hands-on sessions will immerse participants in real-world scenarios, allowing them to practice incident response and risk mitigation in real time. ",
+    poster: workshop2,
+    url: "workshop2",
+    facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
+    studentCoordinator: ["Vijay K -9843352754", "Manav Raitani - 75700 25877"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "20 FEB 2025",
+      fees: "Rs 500",
+      seats: "150 SEATS",
+    },
+    rules: [],
+  },
+  workshop1: {
+    title: "Workshop 1",
+    title_font: "font-saira",
+    title_size: "text-4xl",
+    description:
+      "Interactive cybersecurity workshop handled by industry experts with doubt clearing session",
+
+    brief:
+      "A cybersecurity workshop covering fundamentals of online security, threat detection, and protection techniques. Participants will learn about securing networks, and implementing best practices to safeguard digital assets. Ideal for beginners and professionals aiming to enhance their cybersecurity skills.",
+    brief2:
+      "A cybersecurity workshop covering fundamentals of online security, threat detection, and protection techniques. Participants will learn about securing networks, and implementing best practices to safeguard digital assets. Ideal for beginners and professionals aiming to enhance their cybersecurity skills.This cybersecurity workshop provides a comprehensive introduction to the essentials of digital security.",
+    poster: workshop1,
+    url: "workshop1",
+    facultyCoordinator: ["Ms.Menaka", "Dr.Jospin Jeya"],
+    studentCoordinator: ["Arunkumar J-7397588467", "Sanrakshan P.B 8825876646"],
+    eventDetails: {
+      time: "10AM - 11AM",
+      date: "20 FEB 2025",
+      fees: "Rs 500",
+      seats: "150 SEATS",
+    },
+    rules: [],
   },
 };

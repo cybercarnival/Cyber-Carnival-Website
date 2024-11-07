@@ -46,7 +46,7 @@ function EventCard({ urlName }) {
           </svg>
           <div className="w-full h-1/2 relative flex flex-col items-center justify-center">
             <img
-              className="w-full h-full absolute top-0 left-0"
+              className="w-full h-full absolute object-cover top-0 left-0"
               src={data[`${urlName}`].poster}
             />
             <h1
