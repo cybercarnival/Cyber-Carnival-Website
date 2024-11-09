@@ -41,7 +41,7 @@ export const data = {
       seats: "200 seats",
     },
     discussion: [
-      "Unmasking online scams and strengthening adequate cyber defenses",
+      "Unmasking Online Scams and Strengthening Digital Defenses",
     ],
   },
 
