@@ -32,11 +32,18 @@ export function LampDemo() {
           transition={{ delay: 0.5, duration: 0.8, ease: "easeInOut" }}
           className="mt-6 flex justify-center"
         >
+          <div className="grid sm:grid-rows-2 lg:grid-cols-2 gap-5">
           <button
-            className="px-6 py-3 text-xl font-audiowide tracking-wider rounded-2xl bg-gradient-to-r from-[#156468] to-slate-300 text-black hover:from-teal-700 hover:to-teal-700 transition-all duration-300 outline outline-2 outline-[#156468] outline-offset-2"
+            className="px-6 py-3 text-sm lg:text-xl font-audiowide tracking-wider rounded-2xl bg-gradient-to-r from-[#37adb1] to-slate-300 text-black hover:from-cyan-300 hover:to-teal-700 transition-all duration-300 outline outline-2 outline-cyan-300 outline-offset-2"
+          >
+           <a target="_blank"  href="https://online.flippingbook.com/view/63663026/">Cyber Chronicle'23</a> 
+          </button>
+          <button
+            className="px-6 py-3 text-sm lg:text-xl font-audiowide tracking-wider rounded-2xl  text-cyan-300 hover:bg-gradient-to-r hover:from-cyan-800 hover:to-slate-800 transition-all duration-300 outline outline-2 outline-cyan-300 outline-offset-2"
           >
            <a target="_blank"  href="https://online.flippingbook.com/view/734596523/">Cyber Chronicle'24</a> 
           </button>
+          </div>
         </motion.div>
 
       </motion.h1>
