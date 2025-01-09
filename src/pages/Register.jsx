@@ -27,6 +27,7 @@ function Register() {
     phone: "",
     email: "",
     college: "",
+    transactionID: "",
     file: null,
   });
   const { event } = useParams();
@@ -93,6 +94,7 @@ function Register() {
         phone: formData.phone,
         email: formData.email,
         college: formData.college,
+        transactionID: formData.transactionID,
         screenshotUrl: imageURL, // Add the image URL here
         createdAt: new Date(),
       });
@@ -185,24 +187,7 @@ function Register() {
                     required
                   />
                 </div>
-                <div>
-                  <label
-                    htmlFor="contact"
-                    className="block mb-2 text-base font-medium text-gray-400"
-                  >
-                    Transaction ID
-                  </label>
-                  <input
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    type="text"
-                    name="phone"
-                    id="contact"
-                    className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                    placeholder="xxxxxxxxxxxxx"
-                    required
-                  />
-                </div>
+
                 <motion.div className="py-2 border-2 border-[#1EC1C5] rounded-lg cursor-pointer flex items-center justify-center">
                   <Modal>
                     <ModalTrigger className="bg-transparent text-white flex justify-center group/modal-btn w-full h-full">
@@ -248,6 +233,24 @@ function Register() {
                     </ModalBody>
                   </Modal>
                 </motion.div>
+                <div>
+                  <label
+                    htmlFor="transactionID"
+                    className="block mb-2 text-base font-medium text-gray-400"
+                  >
+                    Transaction ID
+                  </label>
+                  <input
+                    value={formData.transactionID}
+                    onChange={handleInputChange}
+                    type="text"
+                    name="transactionID"
+                    id="transactionID"
+                    className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                    placeholder="xxxxxxxxxxxxx"
+                    required
+                  />
+                </div>
                 <div>
                   <div className=" w-full h-64 border-2 rounded-sm">
                     <label

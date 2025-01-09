@@ -38,22 +38,51 @@ function Footer() {
 
         <div className=" flex text-[#a5a5a5] justify-start my-2 sm:mx-6">
           <div className="text-left m-2 mx-4">
-            <h1 className="text-xl text-[#205e71]">Home</h1>
-            <h6 className="my-2">About Us</h6>
-            <h6 className="my-2">Sponsors</h6>
+            <a href="/#home" className="text-xl text-[#205e71]">
+              Home
+            </a>
+            <br />
+            <a href="/#aboutus" className="my-2">
+              About Us
+            </a>
+            <br />
+            <a href="/#sponsors" className="my-2">
+              Sponsors
+            </a>
           </div>
           <div className="text-left m-2 mx-4 ">
-            <h1 className="text-xl text-[#205e71]">Gallery</h1>
-            <h6 className="my-2">Cyber Carnival 24'</h6>
-            <h6 className="my-2">Cyberthon 24'</h6>
-            <h6 className="my-2">Events</h6>
+            <a href="/gallery" className="text-xl text-[#205e71]">
+              Gallery
+            </a>
+            <br />
+            <a href="/techevents/viewevent/cyberthon" className="my-2">
+              Cyberthon 25'
+            </a>
+            <br />
+            <a href="/events" className="my-2">
+              Events
+            </a>
           </div>
           <div className="text-left m-2 mx-4">
-            <h1 className="text-xl text-[#205e71]">Events</h1>
-            <h6 className="my-2">Technical Events</h6>
-            <h6 className="my-2">Non-Technical Events</h6>
-            <h6 className="my-2">Cyberthon</h6>
-            <h6 className="my-2">Workshop</h6>
+            <a href="/events" className="text-xl text-[#205e71]">
+              Events
+            </a>
+            <br />
+            <a href="/techevents" className="my-2">
+              Technical Events
+            </a>
+            <br />
+            <a href="nontechevents" className="my-2">
+              Non-Technical Events
+            </a>
+            <br />
+            <a href="/techevents/viewevent/cyberthon" className="my-2">
+              Cyberthon
+            </a>
+            <br />
+            <a href="/workshops" className="my-2">
+              Workshop
+            </a>
           </div>
         </div>
       </div>
