@@ -8,7 +8,7 @@ import conclave from "../assets/cyberConclave.png";
 import techEvent from "../assets/techEvent.jpg";
 import workshopEvent from "../assets/workshopEvent.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useHref, useNavigate } from "react-router-dom";
 function Events() {
   const containerRef = useRef();
   const { scrollYProgress } = useScroll({
@@ -92,7 +92,7 @@ function Events() {
               className="w-[270px] md:w-96 h-56 self-start justify-self-center md:self-start md:justify-self-end overflow-clip relative flex items-center justify-center cursor-pointer"
               style={{ y: yTransform3, x: xTransform3 }}
               onClick={() => {
-                nav("/techevents/viewevent/cyberthon");
+                window.location.href = "https://cyberthon.cybercarnival.in";
               }}
             >
               <motion.h1
