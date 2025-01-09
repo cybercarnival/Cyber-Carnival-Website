@@ -15,7 +15,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/ContactUs";
 import Workshops from "./pages/Workshops";
 import JSConfetti from 'js-confetti'
-
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa"; 
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     // });
     
     var viewpass = false;
+    
 
     return (
       <div className="w-full h-screen flex flex-col justify-center items-center">
@@ -44,15 +46,16 @@ function App() {
             e.preventDefault();
             viewpass = !viewpass
             if(viewpass){
-              e.target.innerText = "Hide Pass Key"
               e.target.nextSibling.type = "text"
             }
             else{
-              e.target.innerText = "View Pass Key"
               e.target.nextSibling.type = "password"
             }
 
-          }}>View Pass Key</button>
+          }}>
+            {viewpass? <FaEye /> : <FaEyeSlash />}
+            
+          </button>
           <input
             type="password"
             className="rounded-lg p-2 mt-2 text-3xl"
