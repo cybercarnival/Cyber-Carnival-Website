@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from "react";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/Home";
 import TechEvents from "./pages/TechEvents";
@@ -34,7 +35,9 @@ function App() {
     //   confettiSpeed: 1,
     // });
     
-    var viewpass = false;
+    // var viewpass = false;
+    const [viewpass, setViewPass] = React.useState(false);
+    const [pass,setPass] = React.useState('');
     
 
     return (
@@ -44,29 +47,30 @@ function App() {
         <form className="flex flex-col justify-center items-center">
           <button className="bg-black p-2 text-white mt-2 rounded-lg border-2 border-white " onClick={(e) => {
             e.preventDefault();
-            viewpass = !viewpass
-            if(viewpass){
-              e.target.nextSibling.type = "text"
-            }
-            else{
-              e.target.nextSibling.type = "password"
-            }
+            setViewPass(!viewpass);
+
 
           }}>
-            {viewpass? <FaEye /> : <FaEyeSlash />}
-            
+            {/* {viewpass  && <FaEyeSlash />}
+            {!viewpass  && <FaEye />} */}
+            { viewpass ? <FaEyeSlash />: <FaEye />  }
           </button>
           <input
-            type="password"
+            type={viewpass ? 'text' : 'password'}
             className="rounded-lg p-2 mt-2 text-3xl"
             placeholder="Pass Key"
+            onChange={
+              (e) => {
+                setPass(e.target.value);
+              }
+            }
           />
           <button
             type="submit"
             className="bg-black p-2 text-white mt-2 rounded-lg border-2 border-white text-3xl"
             onClick={(e) => {
               e.preventDefault();
-              if ("Cyber_Carnival'25" === e.target.previousSibling.value) {
+              if ("Cyber_Carnival'25" === pass) {
                 localStorage.setItem('needPassKey', 'false');
 
                 jsConfetti.addConfetti({
