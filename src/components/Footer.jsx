@@ -24,7 +24,7 @@ function Footer() {
             </ul>
             <ul>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@cybercarnival.in&su=SUBJECT&body=BODY"
+                href="mailto:hello@cybercarnival.in?subject=CyberCarnival2025"
                 target="#"
               >
                 <img className="w-6 h-6" src={email} />
