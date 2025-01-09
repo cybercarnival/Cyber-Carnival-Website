@@ -14,8 +14,91 @@ import UnderDev from "./components/UnderDev";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactUs from "./pages/ContactUs";
 import Workshops from "./pages/Workshops";
+import JSConfetti from 'js-confetti'
+
+
 
 function App() {
+
+  const needPassKey = localStorage.getItem('needPassKey');
+
+
+
+  const PassKeyElement = () => {
+    const jsConfetti = new JSConfetti();
+    // jsConfetti.addConfetti({
+    //   confettiColors: ['#ff0000', '#00ff00', '#0000ff'],
+    //   confettiRadius: 3,
+    //   confettiNumber: 100,
+    //   confettiSpeed: 1,
+    // });
+    
+    var viewpass = false;
+
+    return (
+      <div className="w-full h-screen flex flex-col justify-center items-center">
+        <h1 className="text-7xl text-white font-jersey "
+        >Enter Pass Key</h1>
+        <form className="flex flex-col justify-center items-center">
+          <button className="bg-black p-2 text-white mt-2 rounded-lg border-2 border-white " onClick={(e) => {
+            e.preventDefault();
+            viewpass = !viewpass
+            if(viewpass){
+              e.target.innerText = "Hide Pass Key"
+              e.target.nextSibling.type = "text"
+            }
+            else{
+              e.target.innerText = "View Pass Key"
+              e.target.nextSibling.type = "password"
+            }
+
+          }}>View Pass Key</button>
+          <input
+            type="password"
+            className="rounded-lg p-2 mt-2 text-3xl"
+            placeholder="Pass Key"
+          />
+          <button
+            type="submit"
+            className="bg-black p-2 text-white mt-2 rounded-lg border-2 border-white text-3xl"
+            onClick={(e) => {
+              e.preventDefault();
+              if ("Cyber_Carnival'25" === e.target.previousSibling.value) {
+                localStorage.setItem('needPassKey', 'false');
+
+                jsConfetti.addConfetti({
+                  confettiColors: ['#00FFFF', '#00FFDD', '#00DDFF'],
+                  confettiRadius: 5,
+                  confettiNumber: 500,
+                  confettiSpeed: 1,
+                }).then(() => {
+                  window.location.reload();
+                });
+              } else {
+                alert('Invalid Pass Key');
+              }
+            }
+            }
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    );
+  };
+
+  if (needPassKey === 'true') {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PassKeyElement />} />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
+
+
+
   return (
     <BrowserRouter>
       <ScrollToTop />
