@@ -54,11 +54,6 @@ function Speakers() {
       image: con8,
     },
     {
-      name: "Mr. Bharani Ramasamy",
-      title: "Senior Director Global Networks and Securit Virtusa corporation",
-      image: con9,
-    },
-    {
       name: "Mr. Rajkumar Kalaimani",
       title: "Senior Engineer Altimetrik Chennai",
       image: con10,
@@ -70,7 +65,8 @@ function Speakers() {
     },
     {
       name: "Mr. Deep Chanda",
-      title: "  Vice President -Compliance and Audit , Network Intelligence Pvt. Ltd",
+      title:
+        "  Vice President -Compliance and Audit , Network Intelligence Pvt. Ltd",
       image: con12,
     },
   ];
