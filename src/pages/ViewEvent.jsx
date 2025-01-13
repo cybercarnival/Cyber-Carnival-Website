@@ -16,7 +16,6 @@ import s4 from "../assets/s4.jpg";
 function ViewEvent() {
   const { event } = useParams();
   const nav = useNavigate();
-  console.log(event);
   return (
     <div className="w-full flex justify-center items-center text-white relative">
       <Background />
@@ -56,47 +55,45 @@ function ViewEvent() {
                 />
                 <div className="flex flex-col flex-grow mx-2 justify-center ">
                   <h6 className="text-left">{data[event].speakers[0][0]}</h6>
-                  <h6 className=" text-left w-2/6">{data[event].speakers[0][1]}</h6>
+                  <h6 className=" text-left w-2/6">
+                    {data[event].speakers[0][1]}
+                  </h6>
                 </div>
               </div>
               <div className="flex m-2">
-                <img
-                  src={s1}
-                  className="w-[90px] h-[90px] rounded-[50%]"
-                />
+                <img src={s1} className="w-[90px] h-[90px] rounded-[50%]" />
                 <div className="flex flex-col flex-grow mx-2 justify-center ">
                   <h6 className="text-left">{data[event].speakers[1][0]}</h6>
-                  <h6 className=" text-left w-2/6 ">{data[event].speakers[1][1]}</h6>
+                  <h6 className=" text-left w-2/6 ">
+                    {data[event].speakers[1][1]}
+                  </h6>
                 </div>
               </div>
               <div className="flex m-2">
-                <img
-                  src={s2}
-                  className="w-[90px] h-[90px] rounded-[50%]"
-                />
+                <img src={s2} className="w-[90px] h-[90px] rounded-[50%]" />
                 <div className="flex flex-col flex-grow mx-2 justify-center ">
                   <h6 className="text-left">{data[event].speakers[2][0]}</h6>
-                  <h6 className=" text-left w-2/6 ">{data[event].speakers[2][1]}</h6>
+                  <h6 className=" text-left w-2/6 ">
+                    {data[event].speakers[2][1]}
+                  </h6>
                 </div>
               </div>
               <div className="flex m-2">
-                <img
-                  src={s3}
-                  className="w-[90px] h-[90px] rounded-[50%]"
-                />
+                <img src={s3} className="w-[90px] h-[90px] rounded-[50%]" />
                 <div className="flex flex-col flex-grow mx-2 justify-center ">
                   <h6 className="text-left">{data[event].speakers[3][0]}</h6>
-                  <h6 className=" text-left w-2/6 ">{data[event].speakers[3][1]}</h6>
+                  <h6 className=" text-left w-2/6 ">
+                    {data[event].speakers[3][1]}
+                  </h6>
                 </div>
               </div>
               <div className="flex m-2">
-                <img
-                  src={s4}
-                  className="w-[90px] h-[90px] rounded-[50%]"
-                />
+                <img src={s4} className="w-[90px] h-[90px] rounded-[50%]" />
                 <div className="flex flex-col flex-grow mx-2 justify-center ">
                   <h6 className="text-left">{data[event].speakers[4][0]}</h6>
-                  <h6 className=" text-left w-2/6 ">{data[event].speakers[4][1]}</h6>
+                  <h6 className=" text-left w-2/6 ">
+                    {data[event].speakers[4][1]}
+                  </h6>
                 </div>
               </div>
             </div>
@@ -143,16 +140,16 @@ function ViewEvent() {
           )}
 
           {/*----------------Rules------------------*/}
-          {(event !== "cyberconclave" &&
+          {event !== "cyberconclave" &&
             event !== "workshop1" &&
-            event !== "workshop2") && (
+            event !== "workshop2" && (
               <div className="w-full">
                 <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
                   Rules
                 </h1>
                 <div className="flex flex-col m-2">
-                  {data[event].rules.map((rule) => (
-                    <div className="flex flex-grow mt-2">
+                  {data[event].rules.map((rule, index) => (
+                    <div className="flex flex-grow mt-2" key={index}>
                       <CropSquareIcon sx={{}} />
                       <h6 className=" text-left mx-2">{rule}</h6>
                     </div>
@@ -200,8 +197,8 @@ function ViewEvent() {
                 TOPICS OF DISCUSSION
               </h1>
 
-              {data[event].discussion.map((i) => (
-                <div className="flex m-2">
+              {data[event].discussion.map((i, index) => (
+                <div className="flex m-2" key={index}>
                   <div className="flex flex-grow">
                     <CropSquareIcon />
                     <h6 className=" text-left mx-2">{i}</h6>

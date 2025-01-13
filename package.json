@@ -16,6 +16,7 @@
     "@fontsource/rubik-80s-fade": "^5.1.0",
     "@mui/icons-material": "^6.1.4",
     "@mui/material": "^6.1.4",
+    "@supabase/supabase-js": "^2.47.12",
     "@tabler/icons-react": "^3.20.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -35,7 +36,8 @@
     "swiper": "^11.1.14",
     "tailwind-clip-path": "^1.0.0",
     "tailwind-merge": "^2.5.3",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "uid": "^2.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

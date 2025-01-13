@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { collection, addDoc } from "firebase/firestore";
-import { storage, db } from "../firebase_config.js"; // import firebase config
+import { db, supabase } from "../firebase_config.js"; // import firebase config
 import { useNavigate, useParams } from "react-router-dom";
 import QR from "../assets/QR.png";
 import { data } from "../data/viewEventsData.js";
@@ -19,6 +18,8 @@ import {
   useModal,
 } from "../components/ui/animated-modal.jsx";
 import { motion } from "framer-motion";
+import { createClient } from "@supabase/supabase-js";
+import { uid } from "uid";
 
 function Register() {
   const nav = useNavigate();
@@ -35,7 +36,6 @@ function Register() {
   const [url, setUrl] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Handle form inputs
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -44,7 +44,6 @@ function Register() {
     }));
   };
 
-  // Handle file input (screenshot image)
   const handleFileChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -52,54 +51,55 @@ function Register() {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.file) return alert("Please upload a screenshot");
+    if (!formData.file) return alert("Please upload the payment screenshot");
 
     setIsSubmitting(true);
 
-    // Upload the image to Firebase Storage
-    const storageRef = ref(storage, `screenshots/${formData.file.name}`);
-    const uploadTask = uploadBytesResumable(storageRef, formData.file);
-
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {
-        const progress =
-          (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        setProgress(progress);
-      },
-      (error) => {
+    async function uploadFile() {
+      const UID = uid();
+      const { data, error } = await supabase.storage
+        .from("screenshots")
+        .upload(UID, formData.file);
+      if (error) {
         console.error("Upload error:", error);
         setIsSubmitting(false);
-      },
-      async () => {
-        // Get the image URL after upload completes
-        const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
+      } else {
+        const { data: data2, error } = await supabase.storage
+          .from("screenshots")
+          .createSignedUrl(UID, 100000000);
+
+        const downloadURL = data2.signedUrl;
         setUrl(downloadURL);
-        // Save the entire form data, including the image URL, in Firestore
+
         await saveFormData(downloadURL);
         setIsSubmitting(false);
       }
-    );
+    }
+    uploadFile();
   };
 
-  // Save form data to Firestore
   const saveFormData = async (imageURL) => {
     try {
-      // Replace 'eventCollection' with the specific event's collection name
       const docRef = await addDoc(collection(db, event), {
         name: formData.name,
         phone: formData.phone,
         email: formData.email,
         college: formData.college,
         transactionID: formData.transactionID,
-        screenshotUrl: imageURL, // Add the image URL here
+        screenshotUrl: imageURL,
         createdAt: new Date(),
       });
-      console.log("Document written with ID: ", docRef.id);
       alert("Form submitted successfully!");
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        college: "",
+        transactionID: "",
+        file: null,
+      });
     } catch (error) {
       console.error("Error adding document: ", error);
     }
