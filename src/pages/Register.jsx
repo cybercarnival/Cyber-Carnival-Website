@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db, supabase } from "../firebase_config.js"; // import firebase config
+import { db, supabase } from "../firebase_config.js";
 import { useNavigate, useParams } from "react-router-dom";
 import QR from "../assets/QR.png";
 import { data } from "../data/viewEventsData.js";

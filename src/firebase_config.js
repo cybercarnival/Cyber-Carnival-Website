@@ -3,12 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAfSjFRZl4fIkeZ6iCJ3u6BTbnrGUuOJ2M",
-  authDomain: "cyber-carnival-2025.firebaseapp.com",
-  projectId: "cyber-carnival-2025",
-  storageBucket: "cyber-carnival-2025.firebasestorage.app",
-  messagingSenderId: "117126522262",
-  appId: "1:117126522262:web:e2cdccc2f87133b60069b7",
+  apiKey: "AIzaSyDbMNgJESUnVGq8ibi0CvFCvv9d9sIj8AU",
+  authDomain: "cyber-carnival-25.firebaseapp.com",
+  projectId: "cyber-carnival-25",
+  storageBucket: "cyber-carnival-25.firebasestorage.app",
+  messagingSenderId: "663323088825",
+  appId: "1:663323088825:web:ab76a8f486e5d36f4c8868",
 };
 
 const supabase = createClient(
