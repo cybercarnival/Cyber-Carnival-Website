@@ -31,10 +31,16 @@ export const data = {
     url: "cyberconclave",
     speakers: [
       ["Mr.Rajthilak.B.S", "Associate Vice-President, Standard Chartered Bank"],
-      ["Mr.Iniya Nehru", "Deputy Director General, National Informatics Centre Chennai"],
+      [
+        "Mr.Iniya Nehru",
+        "Deputy Director General, National Informatics Centre Chennai",
+      ],
       ["Mr.Joel Ganesan ", "Technical Trainer, Microsoft"],
       ["Mr.Vinayak Shrivaishnav ", "Security Solutions Engineer, Rapid7"],
-      ["Mr.Jason Charles", "Leading Fortinet's NetOps Business, India & SAARC Region."],
+      [
+        "Mr.Jason Charles",
+        "Leading Fortinet's NetOps Business, India & SAARC Region.",
+      ],
     ],
     eventDetails: {
       time: "10 AM - 11:30 AM",
@@ -42,9 +48,7 @@ export const data = {
       fees: "150 per head",
       seats: "200 seats",
     },
-    discussion: [
-      "Unmasking Online Scams and Strengthening Digital Defenses",
-    ],
+    discussion: ["Unmasking Online Scams and Strengthening Digital Defenses"],
   },
 
   capturetheflag: {
@@ -123,7 +127,7 @@ export const data = {
     poster: paperpresentation,
     url: "paperpresentation",
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
-    studentCoordinator: ["Jandhyala Venkata", "Alton D Almeida"],
+    studentCoordinator: ["J. Karthikeya", "Alton D Almeida"],
     eventDetails: {
       time: "11AM - 1 PM",
       date: "21 Feb 2025",

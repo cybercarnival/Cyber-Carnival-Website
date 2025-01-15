@@ -1,9 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import conclave from "../assets/cyberConclave.png";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
 import CropSquareIcon from "@mui/icons-material/CropSquare";
 import { data } from "../data/viewEventsData.js";

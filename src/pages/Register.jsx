@@ -28,11 +28,14 @@ function Register() {
     phone: "",
     email: "",
     college: "",
+    member2: "",
+    member3: "",
+    member4: "",
+    member5: "",
     transactionID: "",
     file: null,
   });
   const { event } = useParams();
-  const [progress, setProgress] = useState(0);
   const [url, setUrl] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -53,7 +56,14 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.file) return alert("Please upload the payment screenshot");
+    if (
+      event !== "awareness" &&
+      event != "techexpo" &&
+      event != "startup" &&
+      !formData.file
+    ) {
+      return alert("Please upload the payment screenshot");
+    }
 
     setIsSubmitting(true);
 
@@ -77,7 +87,12 @@ function Register() {
         setIsSubmitting(false);
       }
     }
-    uploadFile();
+    if (event !== "awareness" && event != "techexpo" && event != "startup") {
+      uploadFile();
+    } else {
+      await saveFormData("");
+      setIsSubmitting(false);
+    }
   };
 
   const saveFormData = async (imageURL) => {
@@ -87,6 +102,10 @@ function Register() {
         phone: formData.phone,
         email: formData.email,
         college: formData.college,
+        member2: formData.member2,
+        member3: formData.member3,
+        member4: formData.member4,
+        member5: formData.member5,
         transactionID: formData.transactionID,
         screenshotUrl: imageURL,
         createdAt: new Date(),
@@ -97,6 +116,10 @@ function Register() {
         phone: "",
         email: "",
         college: "",
+        member2: "",
+        member3: "",
+        member4: "",
+        member5: "",
         transactionID: "",
         file: null,
       });
@@ -117,10 +140,19 @@ function Register() {
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor="name"
                     className="block mb-2 text-base font-medium text-gray-400"
                   >
-                    Name
+                    {[
+                      "capturetheflag",
+                      "freefire",
+                      "paperpresentation",
+                      "cinema",
+                      "valorant",
+                      "surfing",
+                    ].includes(event)
+                      ? "Leader Name"
+                      : "Name"}
                   </label>
                   <input
                     value={formData.name}
@@ -138,7 +170,16 @@ function Register() {
                     htmlFor="email"
                     className="block mb-2 text-base font-medium text-gray-400"
                   >
-                    Email
+                    {[
+                      "capturetheflag",
+                      "freefire",
+                      "paperpresentation",
+                      "cinema",
+                      "valorant",
+                      "surfing",
+                    ].includes(event)
+                      ? "Leader Email"
+                      : "Email"}
                   </label>
                   <input
                     value={formData.email}
@@ -153,10 +194,19 @@ function Register() {
                 </div>
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor="institution"
                     className="block mb-2 text-base font-medium text-gray-400"
                   >
-                    Institution
+                    {[
+                      "capturetheflag",
+                      "freefire",
+                      "paperpresentation",
+                      "cinema",
+                      "valorant",
+                      "surfing",
+                    ].includes(event)
+                      ? "Leader Institution"
+                      : "Institution"}
                   </label>
                   <input
                     value={formData.college}
@@ -174,7 +224,16 @@ function Register() {
                     htmlFor="contact"
                     className="block mb-2 text-base font-medium text-gray-400"
                   >
-                    Contact
+                    {[
+                      "capturetheflag",
+                      "freefire",
+                      "paperpresentation",
+                      "cinema",
+                      "valorant",
+                      "surfing",
+                    ].includes(event)
+                      ? "Leader Contact"
+                      : "Contact"}
                   </label>
                   <input
                     value={formData.phone}
@@ -187,95 +246,193 @@ function Register() {
                     required
                   />
                 </div>
-
-                <motion.div className="py-2 border-2 border-[#1EC1C5] rounded-lg cursor-pointer flex items-center justify-center">
-                  <Modal>
-                    <ModalTrigger className="bg-transparent text-white flex justify-center group/modal-btn w-full h-full">
-                      <span className="group-hover/modal-btn:translate-x-80 text-center transition duration-500">
-                        Make Payment
-                      </span>
-                      <div className="-translate-x-80 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-                        <PaymentsOutlinedIcon />
-                      </div>
-                    </ModalTrigger>
-                    <ModalBody className="bg-[#1EC1C5] border-2 border-[#1EC1C5] backdrop-filter backdrop-blur-lg bg-opacity-10">
-                      <ModalContent>
-                        <h4 className="text-lg font-audiowide md:text-2xl text-white dark:text-neutral-100 font-bold text-center mb-8">
-                          Check Out
-                        </h4>
-                        <div className="w-full h-32 flex justify-center items-center text-white text-xl font-[400] font-jersey2">
-                          <div className="w-2/3 h-full">
-                            <div className="w-full flex justify-between">
-                              <h6 className="">Event</h6>
-                              <h6>{data[event]?.title}</h6>
-                            </div>
-                            <div className="w-full flex justify-between">
-                              <h6>Date</h6>
-                              <h6>{data[event]?.eventDetails.date}</h6>
-                            </div>
-                            <div className="w-full flex justify-between">
-                              <h6>Time</h6>
-                              <h6>{data[event]?.eventDetails.time}</h6>
-                            </div>
-                            <div className="w-full flex justify-between">
-                              <h6>Fees</h6>
-                              <h6>{data[event]?.eventDetails.fees}</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="flex justify-center items-center">
-                          <img
-                            src={QR}
-                            className="w-56 h-56 border-2 border-gray-500 rounded-lg"
-                          />
-                        </div>
-                      </ModalContent>
-                    </ModalBody>
-                  </Modal>
-                </motion.div>
-                <div>
-                  <label
-                    htmlFor="transactionID"
-                    className="block mb-2 text-base font-medium text-gray-400"
-                  >
-                    Transaction ID
-                  </label>
-                  <input
-                    value={formData.transactionID}
-                    onChange={handleInputChange}
-                    type="text"
-                    name="transactionID"
-                    id="transactionID"
-                    className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                    placeholder="xxxxxxxxxxxxx"
-                    required
-                  />
-                </div>
-                <div>
-                  <div className=" w-full h-64 border-2 rounded-sm">
-                    <label
-                      className=" mb-2 text-sm font-medium text-white w-full h-full cursor-pointer flex flex-col justify-center items-center"
-                      htmlFor="file_input"
-                    >
+                {[
+                  "capturetheflag",
+                  "freefire",
+                  "paperpresentation",
+                  "cinema",
+                  "valorant",
+                  "surfing",
+                ].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="member 2"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Member 2
+                      </label>
                       <input
-                        className="hidden w-full h-full"
-                        id="file_input"
-                        type="file"
-                        onChange={handleFileChange}
+                        value={formData.member2}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="member2"
+                        id="member2"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Name"
                       />
-                      <FileUploadIcon />
-                      <h6 className="text-center p-4">
-                        Drop Your Payment Screenshot Here
-                      </h6>
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="member 3"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Member 3
+                      </label>
+                      <input
+                        value={formData.member3}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="member3"
+                        id="member3"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Name "
+                      />
+                    </div>
+                  </>
+                )}
+                {[
+                  "freefire",
+                  "paperpresentation",
+                  "valorant",
+                  "surfing",
+                ].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="member 4"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Member 4
+                      </label>
+                      <input
+                        value={formData.member4}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="member4"
+                        id="member4"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Name "
+                      />
+                    </div>
+                  </>
+                )}
+                {["valorant"].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="member 5"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Member 5
+                      </label>
+                      <input
+                        value={formData.member5}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="member5"
+                        id="member5"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Name"
+                      />
+                    </div>
+                  </>
+                )}
 
-                      {formData.file && (
-                        <h1 className="text-base">
-                          Uploded File : {formData.file.name}
-                        </h1>
-                      )}
-                    </label>
-                  </div>
-                </div>
+                {event !== "awareness" &&
+                  event !== "techexpo" &&
+                  event !== "startup" && (
+                    <>
+                      <motion.div className="py-2 border-2 border-[#1EC1C5] rounded-lg cursor-pointer flex items-center justify-center">
+                        <Modal>
+                          <ModalTrigger className="bg-transparent text-white flex justify-center group/modal-btn w-full h-full">
+                            <span className="group-hover/modal-btn:translate-x-80 text-center transition duration-500">
+                              Make Payment
+                            </span>
+                            <div className="-translate-x-80 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                              <PaymentsOutlinedIcon />
+                            </div>
+                          </ModalTrigger>
+                          <ModalBody className="bg-[#1EC1C5] border-2 border-[#1EC1C5] backdrop-filter backdrop-blur-lg bg-opacity-10">
+                            <ModalContent>
+                              <h4 className="text-lg font-audiowide md:text-2xl text-white dark:text-neutral-100 font-bold text-center mb-8">
+                                Check Out
+                              </h4>
+                              <div className="w-full h-32 flex justify-center items-center text-white text-xl font-[400] font-jersey2">
+                                <div className="w-2/3 h-full">
+                                  <div className="w-full flex justify-between">
+                                    <h6 className="">Event</h6>
+                                    <h6>{data[event]?.title}</h6>
+                                  </div>
+                                  <div className="w-full flex justify-between">
+                                    <h6>Date</h6>
+                                    <h6>{data[event]?.eventDetails.date}</h6>
+                                  </div>
+                                  <div className="w-full flex justify-between">
+                                    <h6>Time</h6>
+                                    <h6>{data[event]?.eventDetails.time}</h6>
+                                  </div>
+                                  <div className="w-full flex justify-between">
+                                    <h6>Fees</h6>
+                                    <h6>{data[event]?.eventDetails.fees}</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="flex justify-center items-center">
+                                <img
+                                  src={QR}
+                                  className="w-56 h-56 border-2 border-gray-500 rounded-lg"
+                                />
+                              </div>
+                            </ModalContent>
+                          </ModalBody>
+                        </Modal>
+                      </motion.div>
+                      <div>
+                        <label
+                          htmlFor="transactionID"
+                          className="block mb-2 text-base font-medium text-gray-400"
+                        >
+                          Transaction ID
+                        </label>
+                        <input
+                          value={formData.transactionID}
+                          onChange={handleInputChange}
+                          type="text"
+                          name="transactionID"
+                          id="transactionID"
+                          className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                          placeholder="xxxxxxxxxxxxx"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <div className=" w-full h-64 border-2 rounded-sm">
+                          <label
+                            className=" mb-2 text-sm font-medium text-white w-full h-full cursor-pointer flex flex-col justify-center items-center"
+                            htmlFor="file_input"
+                          >
+                            <input
+                              className="hidden w-full h-full"
+                              id="file_input"
+                              type="file"
+                              onChange={handleFileChange}
+                            />
+                            <FileUploadIcon />
+                            <h6 className="text-center p-4">
+                              Drop Your Payment Screenshot Here
+                            </h6>
+
+                            {formData.file && (
+                              <h1 className="text-base">
+                                Uploded File : {formData.file.name}
+                              </h1>
+                            )}
+                          </label>
+                        </div>
+                      </div>{" "}
+                    </>
+                  )}
 
                 <motion.button
                   initial={{
@@ -290,7 +447,7 @@ function Register() {
                   type="submit"
                   className="w-full border-2 border-[#1EC1C5] text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                 >
-                  SUBMIT
+                  {isSubmitting ? "SUBMITING....." : "SUBMIT"}
                 </motion.button>
               </form>
             </div>
