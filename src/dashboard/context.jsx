@@ -18,6 +18,11 @@ export const AppProvider = ({ children }) => {
     };
   }, []);
 
+  const AUTHORIZED = [
+    "yogavelanbj@gmail.com",
+    "vigneshmuraleedharan848@gmail.com",
+  ];
+
   const [data, setData] = useState({});
   const [dataset, setDataset] = useState([]);
   const [totalRevenue, setTotalRevenue] = useState(0);
@@ -242,6 +247,7 @@ export const AppProvider = ({ children }) => {
         setToggle,
         user,
         setUser,
+        AUTHORIZED,
       }}
     >
       {children}

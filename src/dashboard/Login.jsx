@@ -7,6 +7,7 @@ import { useAppContext } from "./context";
 function Login() {
   const [mail, setMail] = useState("");
   const [password, setPassword] = useState("");
+  const [prank, setPrank] = useState(false);
   const { user } = useAppContext();
   const nav = useNavigate();
 
@@ -26,9 +27,12 @@ function Login() {
     return <Navigate to={"/admin/home"} replace={true} />;
   }
   return (
-    <div className="bg-white min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-alumni">LOGIN</h1>
-      <form className="h-80 w-52" onSubmit={(e) => handleSubmit(e)}>
+    <div className="bg-white min-h-screen flex flex-col items-center justify-center  border-black rounded-xl">
+      <h1 className="text-4xl font-alumni my-4">ADMIN LOGIN</h1>
+      <form
+        className="h-72 w-80 border-2 border-black rounded-xl p-6 items-center"
+        onSubmit={(e) => handleSubmit(e)}
+      >
         <div>
           <label
             htmlFor="Team Name"
@@ -71,6 +75,15 @@ function Login() {
         >
           Login
         </button>
+        <a
+          className="text-blue-600 underline cursor-pointer"
+          onClick={() => {
+            setPrank(true);
+          }}
+        >
+          Don't have an account?
+        </a>
+        <span>{!prank ? "" : ".....Ask Yoga😉"}</span>
       </form>
     </div>
   );

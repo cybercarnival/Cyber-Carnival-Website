@@ -3,10 +3,34 @@ import { useAppContext } from "./context";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase_config";
+import { motion } from "framer-motion";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import NewReleasesIcon from "@mui/icons-material/NewReleases";
+import VerifiedIcon from "@mui/icons-material/Verified";
 
 function Event() {
-  const { data, eventFees, verifiedList, setToggle, verifiedData, user } =
-    useAppContext();
+  const menuVariants = {
+    open: {
+      display: "flex",
+      opacity: 1,
+      y: "0",
+    },
+    closed: {
+      display: "none",
+      opacity: 0,
+      y: "-10%",
+    },
+  };
+  const {
+    data,
+    eventFees,
+    verifiedList,
+    setToggle,
+    verifiedData,
+    user,
+    AUTHORIZED,
+  } = useAppContext();
   const { id } = useParams();
   const [currentOpen, setCurrentOpen] = useState(null);
   const nav = useNavigate();
@@ -40,35 +64,44 @@ function Event() {
   }
   return (
     <div className="flex justify-start items-center flex-col bg-white min-h-screen">
-      <h1 className="text-4xl font-mono font-bold my-4">{id}</h1>
-      <div>
-        <div className="flex">
-          <div className="m-10">
-            <h1 className="text-3xl font-mono">
-              Total Registrations: {registrations?.length}
+      <div className="flex w-full items-center justify-center">
+        <h1 className=" font-orbitron text-white text-4xl w-1/2 font-bold my-4 h-48 m-6 border-4 rounded-xl border-gray-600 bg-teal-800 flex items-center justify-center">
+          {id}
+        </h1>
+        <div className="flex flex-col h-48 w-80 border-2 border-gray-600 m-6 bg-neutral-800 rounded-xl p-5 text-white justify-center">
+          <h1 className="text-xl font-mono">
+            Total Registrations: {registrations?.length}
+          </h1>
+          {AUTHORIZED.includes(user.email) ? (
+            <h1 className="text-xl font-mono">Total Revenue: Rs.{revenue} </h1>
+          ) : (
+            <></>
+          )}
+          <div className="h-1 bg-gray-600 rounded-xl my-4"></div>
+          <h1 className="text-xl font-mono">
+            Verified Registrations:{" "}
+            <span className="text-green-500">
+              {verifiedRegistrations?.length}
+            </span>
+          </h1>
+          {AUTHORIZED.includes(user.email) ? (
+            <h1 className="text-xl font-mono">
+              Verified Revenue:{" "}
+              <span className="text-green-500">Rs.{verifiedRevenue} </span>
             </h1>
-            <h1 className="text-3xl font-mono">
-              Total Revenue : Rs.{revenue}{" "}
-            </h1>
-          </div>
-          <div className="m-10">
-            <h1 className="text-3xl font-mono">
-              Verified Registrations: {verifiedRegistrations?.length}
-            </h1>
-            <h1 className="text-3xl font-mono">
-              Verified Revenue : Rs.{verifiedRevenue}{" "}
-            </h1>
-          </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center w-full">
+      <div className="flex flex-col items-center justify-center w-full mb-10">
         {registrations?.map((row, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center w-full my-1 px-1"
+            className="flex flex-col items-center justify-center w-9/12 my-1 px-1"
           >
             <>
-              <div className="flex w-full border-2 border-black p-4 justify-between">
+              <div className="flex w-full border-2 border-black p-4 justify-between rounded-xl">
                 <h1 className="text-xl font-mono w-1/6">{index + 1}</h1>
                 <h1 className="text-xl font-mono w-1/6">{row.name}</h1>
                 <h1 className="text-xl font-mono w-1/6">{row.email}</h1>
@@ -79,23 +112,38 @@ function Event() {
                       : "text-green-800"
                   }`}
                 >
-                  {verifiedList.includes(row.id) ? "Verified" : "Not-Verified"}
+                  {verifiedList.includes(row.id) ? (
+                    <span>
+                      Verified
+                      <VerifiedIcon />
+                    </span>
+                  ) : (
+                    <span>
+                      Not-Verified
+                      <NewReleasesIcon />
+                    </span>
+                  )}
                 </h1>
                 <button
                   className="text-xl font-extrabold font-sans"
-                  onClick={() => setCurrentOpen(index)}
+                  onClick={() =>
+                    setCurrentOpen((prev) => (prev == index ? null : index))
+                  }
                 >
-                  V
+                  {currentOpen == index ? (
+                    <KeyboardDoubleArrowUpIcon />
+                  ) : (
+                    <KeyboardDoubleArrowDownIcon />
+                  )}
                 </button>
               </div>
-              {currentOpen === index && (
-                <div className="flex w-full border-2 border-black p-4 my-2 rounded-2xl relative max-h-[800px] justify-center">
-                  <button
-                    onClick={() => setCurrentOpen(null)}
-                    className="absolute top-0 right-0 m-4 text-xl font-extrabold font-sans"
-                  >
-                    X
-                  </button>
+              {
+                <motion.div
+                  animate={currentOpen == index ? "open" : "closed"}
+                  variants={menuVariants}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className={`w-full border-2 border-black p-4 my-2 rounded-2xl relative max-h-[800px] justify-center`}
+                >
                   <div className="flex flex-col w-1/2 pr-8">
                     <img
                       src={row.screenshotUrl}
@@ -144,7 +192,11 @@ function Event() {
                     </h1>
                     <button
                       disabled={verifiedList.includes(row.id)}
-                      className={`w-full h-10 bg-green-900 text-white rounded-xl`}
+                      className={`w-full h-10 ${
+                        verifiedList.includes(row.id)
+                          ? "bg-green-700"
+                          : "bg-red-600"
+                      } rounded-xl my-4 text-white text-lg`}
                       onClick={() => handleVerification(row.id)}
                     >
                       {verifiedList.includes(row.id)
@@ -152,8 +204,8 @@ function Event() {
                         : "Add to Verified"}
                     </button>
                   </div>
-                </div>
-              )}
+                </motion.div>
+              }
             </>
           </div>
         ))}

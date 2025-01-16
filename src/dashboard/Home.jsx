@@ -17,6 +17,7 @@ function Home() {
     verifiedTotalRevenue,
     user,
     setUser,
+    AUTHORIZED,
   } = useAppContext();
   const nav = useNavigate();
   const chartSetting = {
@@ -45,19 +46,22 @@ function Home() {
     <div className="flex flex-col items-center justify-center bg-white">
       <button
         onClick={() => handleLogout()}
-        className="h-5 w-20 bg-slate-900 text-white absolute top-0 right-0 m-5"
+        className="h-5 w-20 bg-slate-800 text-white absolute top-0 right-0 m-5 rounded-sm"
       >
         Logout
       </button>
-      <h1 className="text-2xl font-mono my-10">
-        Overall Registrations and Revenue
+      <h1 className="text-2xl font-audiowide my-10">
+        {AUTHORIZED.includes(user.email)
+          ? "Overall Registrations and Revenue"
+          : "Overall Registrations"}
       </h1>
       <div className="flex items-center justify-center flex-wrap w-full px-24">
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="my-4 text-xl font-mono">
+        <div className="flex flex-col items-center justify-center border-2 border-black rounded-xl bg-slate-200 m-2">
+          <h2 className="my-4 text-3xl font-alumni font-bold">
             Total Registrations : {totalRegistrations}
           </h2>
           <BarChart
+            colors={["navy"]}
             dataset={dataset}
             yAxis={[{ scaleType: "band", dataKey: "event" }]}
             sx={{}}
@@ -74,36 +78,44 @@ function Home() {
             {...chartSetting}
           />
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="my-4 text-xl font-mono">
-            Total Revenue : Rs.{totalRevenue}
-          </h2>
-          <PieChart
-            series={[
-              {
-                data: [
-                  { id: 0, value: dataset[0]?.revenue, label: "Technical" },
-                  {
-                    id: 1,
-                    value: dataset[1]?.revenue,
-                    label: "Non-Technical",
-                  },
-                  { id: 2, value: dataset[2]?.revenue, label: "Cyberthon" },
-                  { id: 3, value: dataset[3]?.revenue, label: "Workshops" },
-                  { id: 4, value: dataset[4]?.revenue, label: "Conclave" },
-                  { id: 5, value: dataset[5]?.revenue, label: "Awareness" },
-                ],
-              },
-            ]}
-            width={500}
-            height={200}
-          />
-        </div>
+        {AUTHORIZED.includes(user.email) ? (
+          <div className="flex flex-col items-center justify-center rounded-xl border-2 bg-slate-200 m-2">
+            <h2 className="my-4 text-3xl font-alumni font-bold">
+              Total Revenue : Rs.{totalRevenue}
+            </h2>
+            <PieChart
+              series={[
+                {
+                  data: [
+                    { id: 0, value: dataset[0]?.revenue, label: "Technical" },
+                    {
+                      id: 1,
+                      value: dataset[1]?.revenue,
+                      label: "Non-Technical",
+                    },
+                    { id: 2, value: dataset[2]?.revenue, label: "Cyberthon" },
+                    { id: 3, value: dataset[3]?.revenue, label: "Workshops" },
+                    { id: 4, value: dataset[4]?.revenue, label: "Conclave" },
+                    { id: 5, value: dataset[5]?.revenue, label: "Awareness" },
+                  ],
+                },
+              ]}
+              width={500}
+              height={200}
+            />
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
-
+      <h1 className="text-2xl font-audiowide mb-5 mt-20">
+        {AUTHORIZED.includes(user.email)
+          ? "Verified Registrations and Revenue"
+          : "Verified Registrations"}
+      </h1>
       <div className="flex items-center justify-center flex-wrap w-full px-24 my-8">
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="my-4 text-xl font-mono">
+        <div className="flex flex-col items-center justify-center border-2 border-black rounded-xl bg-teal-100 m-2">
+          <h2 className="my-4 text-3xl font-alumni font-bold text-green-800">
             Verified Registrations : {verifiedTotalRegistrations}
           </h2>
           <BarChart
@@ -123,55 +135,61 @@ function Home() {
             {...chartSetting}
           />
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="my-4 text-xl font-mono">
-            Verified Revenue : Rs.{verifiedTotalRevenue}
-          </h2>
-          <PieChart
-            series={[
-              {
-                data: [
-                  {
-                    id: 0,
-                    value: verifiedDataset[0]?.revenue,
-                    label: "Technical",
-                  },
-                  {
-                    id: 1,
-                    value: verifiedDataset[1]?.revenue,
-                    label: "Non-Technical",
-                  },
-                  {
-                    id: 2,
-                    value: verifiedDataset[2]?.revenue,
-                    label: "Cyberthon",
-                  },
-                  {
-                    id: 3,
-                    value: verifiedDataset[3]?.revenue,
-                    label: "Workshops",
-                  },
-                  {
-                    id: 4,
-                    value: verifiedDataset[4]?.revenue,
-                    label: "Conclave",
-                  },
-                  {
-                    id: 5,
-                    value: verifiedDataset[5]?.revenue,
-                    label: "Awareness",
-                  },
-                ],
-              },
-            ]}
-            width={500}
-            height={200}
-          />
-        </div>
+        {AUTHORIZED.includes(user.email) ? (
+          <div className="flex flex-col items-center justify-center rounded-xl border-2 bg-teal-100 m-2">
+            <h2 className="my-4 text-3xl font-alumni font-bold text-green-800">
+              Verified Revenue : Rs.{verifiedTotalRevenue}
+            </h2>
+            <PieChart
+              series={[
+                {
+                  data: [
+                    {
+                      id: 0,
+                      value: verifiedDataset[0]?.revenue,
+                      label: "Technical",
+                    },
+                    {
+                      id: 1,
+                      value: verifiedDataset[1]?.revenue,
+                      label: "Non-Technical",
+                    },
+                    {
+                      id: 2,
+                      value: verifiedDataset[2]?.revenue,
+                      label: "Cyberthon",
+                    },
+                    {
+                      id: 3,
+                      value: verifiedDataset[3]?.revenue,
+                      label: "Workshops",
+                    },
+                    {
+                      id: 4,
+                      value: verifiedDataset[4]?.revenue,
+                      label: "Conclave",
+                    },
+                    {
+                      id: 5,
+                      value: verifiedDataset[5]?.revenue,
+                      label: "Awareness",
+                    },
+                  ],
+                },
+              ]}
+              width={500}
+              height={200}
+            />
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
 
       <div className="w-full flex flex-col items-center justify-center my-10">
-        <h1 className="text-2xl font-mono text-black m-4">Technical Events</h1>
+        <h1 className="text-2xl font-audiowide text-black m-4">
+          Technical Events
+        </h1>
         <div className="flex flex-wrap justify-center items-center">
           {data.Tecnical?.map((event) => (
             <div
@@ -188,7 +206,7 @@ function Home() {
       </div>
 
       <div className="w-full flex flex-col items-center justify-center">
-        <h1 className="text-2xl font-mono text-black m-4">
+        <h1 className="text-2xl font-audiowide text-black m-4">
           Non-Technical Events
         </h1>
         <div className="flex flex-wrap justify-center items-center">
@@ -207,7 +225,7 @@ function Home() {
       </div>
 
       <div className="w-full flex flex-col items-center justify-center">
-        <h1 className="text-2xl font-mono text-black m-4">Workshops</h1>
+        <h1 className="text-2xl font-audiowide text-black m-4">Workshops</h1>
         <div className="flex flex-wrap justify-center items-center">
           {data.Workshops?.map((event) => (
             <div
@@ -224,7 +242,7 @@ function Home() {
       </div>
 
       <div className="w-full flex flex-col items-center justify-center mb-10">
-        <h1 className="text-2xl font-mono text-black m-4">Other Events</h1>
+        <h1 className="text-2xl font-audiowide text-black m-4">Other Events</h1>
         <div className="flex flex-wrap justify-center items-center">
           <div
             onClick={() => nav("event/cyberthon")}
