@@ -18,12 +18,12 @@ import {
   useModal,
 } from "../components/ui/animated-modal.jsx";
 import { motion } from "framer-motion";
-import { createClient } from "@supabase/supabase-js";
 import { uid } from "uid";
 
 function Register() {
   const nav = useNavigate();
   const [formData, setFormData] = useState({
+    teamName: "",
     name: "",
     phone: "",
     email: "",
@@ -98,6 +98,7 @@ function Register() {
   const saveFormData = async (imageURL) => {
     try {
       const docRef = await addDoc(collection(db, event), {
+        teamName: formData.teamName,
         name: formData.name,
         phone: formData.phone,
         email: formData.email,
@@ -112,6 +113,7 @@ function Register() {
       });
       alert("Form submitted successfully!");
       setFormData({
+        teamName: "",
         name: "",
         phone: "",
         email: "",
@@ -138,6 +140,35 @@ function Register() {
           <div className="w-full border-2 border-[#1EC1C5] rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+                {[
+                  "capturetheflag",
+                  "freefire",
+                  "paperpresentation",
+                  "cinema",
+                  "valorant",
+                  "surfing",
+                ].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="Team Name"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Team Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        value={formData.teamName}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="teamName"
+                        id="teamName"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Team Name"
+                        required
+                      />
+                    </div>
+                  </>
+                )}
                 <div>
                   <label
                     htmlFor="name"
@@ -153,6 +184,7 @@ function Register() {
                     ].includes(event)
                       ? "Leader Name"
                       : "Name"}
+                    <span className="text-red-500">*</span>
                   </label>
                   <input
                     value={formData.name}
@@ -180,6 +212,7 @@ function Register() {
                     ].includes(event)
                       ? "Leader Email"
                       : "Email"}
+                    <span className="text-red-500">*</span>
                   </label>
                   <input
                     value={formData.email}
@@ -207,6 +240,7 @@ function Register() {
                     ].includes(event)
                       ? "Leader Institution"
                       : "Institution"}
+                    <span className="text-red-500">*</span>
                   </label>
                   <input
                     value={formData.college}
@@ -234,6 +268,7 @@ function Register() {
                     ].includes(event)
                       ? "Leader Contact"
                       : "Contact"}
+                    <span className="text-red-500">*</span>
                   </label>
                   <input
                     value={formData.phone}
@@ -393,7 +428,7 @@ function Register() {
                           htmlFor="transactionID"
                           className="block mb-2 text-base font-medium text-gray-400"
                         >
-                          Transaction ID
+                          Transaction ID<span className="text-red-500">*</span>
                         </label>
                         <input
                           value={formData.transactionID}
@@ -421,6 +456,7 @@ function Register() {
                             <FileUploadIcon />
                             <h6 className="text-center p-4">
                               Drop Your Payment Screenshot Here
+                              <span className="text-red-500">*</span>
                             </h6>
 
                             {formData.file && (
