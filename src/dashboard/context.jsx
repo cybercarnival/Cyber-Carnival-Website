@@ -38,19 +38,20 @@ export const AppProvider = ({ children }) => {
   const eventFees = {
     cyberconclave: 150,
     capturetheflag: 300,
-    cyberthon: 750,
+    cyberthon: 799,
     paperpresentation: 100,
-    bugbounty: 150,
+    bugbounty: 250,
     techexpo: 0,
     startup: 0,
     freefire: 200,
     cinema: 300,
-    surfing: 150,
+    surfing: 300,
+    surviva: 200,
     awareness: 0,
     workshop1: 500,
     workshop2: 500,
-    title: 150,
-    valo: 150,
+    title: 200,
+    valo: 200,
   };
 
   async function getEvents() {
@@ -62,6 +63,7 @@ export const AppProvider = ({ children }) => {
       "bugbounty",
       "techexpo",
       "startup",
+      "surviva",
       "freefire",
       "cinema",
       "surfing",
@@ -158,7 +160,7 @@ export const AppProvider = ({ children }) => {
         col === "freefire" ||
         col === "cinema" ||
         col === "surfing" ||
-        col === "shipwreck"
+        col === "surviva"
       ) {
         newDataset[1].registrations += colSnapshot.docs.length;
         newDataset[1].revenue += colSnapshot.docs.length * eventFees[col];
