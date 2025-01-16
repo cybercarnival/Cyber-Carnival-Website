@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
@@ -18,5 +19,6 @@ const supabase = createClient(
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const auth = getAuth(app);
 
-export { supabase, db };
+export { supabase, db, auth };
