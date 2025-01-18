@@ -21,6 +21,7 @@ export const AppProvider = ({ children }) => {
   const AUTHORIZED = [
     "yogavelanbj@gmail.com",
     "vigneshmuraleedharan848@gmail.com",
+    "sm1680@srmist.edu.in",
   ];
 
   const [data, setData] = useState({});
