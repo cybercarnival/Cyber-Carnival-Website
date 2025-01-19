@@ -101,12 +101,11 @@ function Event() {
             className="flex flex-col items-center justify-center w-9/12 my-1 px-1"
           >
             <>
-              <div className="flex w-full border-2 border-black p-4 justify-between rounded-xl">
-                <h1 className="text-xl font-mono w-1/6">{index + 1}</h1>
-                <h1 className="text-xl font-mono w-1/6">{row.name}</h1>
-                <h1 className="text-xl font-mono w-1/6">{row.email}</h1>
+              <div className="flex w-full border-2 border-black justify-between p-4 rounded-xl">
+                <h1 className="text-xl font-mono w-1/12">{index + 1}</h1>
+                <h1 className="text-xl font-mono ">{row.email}</h1>
                 <h1
-                  className={`text-xl font-mono w-1/6 font-bold ${
+                  className={`text-xl font-mono  font-bold ${
                     !verifiedList.includes(row.id)
                       ? "text-red-700"
                       : "text-green-800"
@@ -125,7 +124,7 @@ function Event() {
                   )}
                 </h1>
                 <button
-                  className="text-xl font-extrabold font-sans"
+                  className="text-xl font-extrabold font-sans w-1/12"
                   onClick={() =>
                     setCurrentOpen((prev) => (prev == index ? null : index))
                   }

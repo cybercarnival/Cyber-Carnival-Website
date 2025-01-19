@@ -204,7 +204,7 @@ export const data = {
     eventDetails: {
       time: "10 AM - 12 PM",
       date: "21 FEB 2025",
-      fees: "150 PER HEAD",
+      fees: "150 PER TEAM",
       seats: "150 SEATS",
       qr: techexpoQR,
     },

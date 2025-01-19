@@ -137,6 +137,7 @@ function Register() {
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
                 {[
                   "capturetheflag",
+                  "techexpo",
                   "freefire",
                   "paperpresentation",
                   "cinema",
@@ -171,6 +172,7 @@ function Register() {
                   >
                     {[
                       "capturetheflag",
+                      "techexpo",
                       "freefire",
                       "paperpresentation",
                       "cinema",
@@ -199,6 +201,7 @@ function Register() {
                   >
                     {[
                       "capturetheflag",
+                      "techexpo",
                       "freefire",
                       "paperpresentation",
                       "cinema",
@@ -227,6 +230,7 @@ function Register() {
                   >
                     {[
                       "capturetheflag",
+                      "techexpo",
                       "freefire",
                       "paperpresentation",
                       "cinema",
@@ -255,6 +259,7 @@ function Register() {
                   >
                     {[
                       "capturetheflag",
+                      "techexpo",
                       "freefire",
                       "paperpresentation",
                       "cinema",
@@ -278,6 +283,7 @@ function Register() {
                 </div>
                 {[
                   "capturetheflag",
+                  "techexpo",
                   "freefire",
                   "paperpresentation",
                   "cinema",
