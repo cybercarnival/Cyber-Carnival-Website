@@ -474,7 +474,7 @@ export const data = {
     studentCoordinator: ["Vijay K", "Manav Raitani"],
     eventDetails: {
       time: "10 AM - 4 PM",
-      date: "20 & 21 FEB 2025",
+      date: "20 & 21 FEB",
       fees: "500 PER head",
       seats: "150 SEATS",
       qr: WorkshopQR,
@@ -498,7 +498,7 @@ export const data = {
     studentCoordinator: ["Arunkumar J", "Sanrakshan P.B"],
     eventDetails: {
       time: "10 AM - 4 PM",
-      date: "20 & 21 FEB 2025",
+      date: "20 & 21 FEB",
       fees: "500 PER head",
       seats: "150 SEATS",
       qr: WorkshopQR,
