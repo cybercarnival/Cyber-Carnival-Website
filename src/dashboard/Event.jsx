@@ -182,7 +182,9 @@ function Event() {
                       </h1>
                     )}
                     <h1 className="text-xl font-mono ">Email: {row.email}</h1>
-                    <h1 className="text-xl font-mono">Phone: {row.phone}</h1>
+                    <h1 className="text-xl font-mono">
+                      Phone: {row.phone || row.contact}
+                    </h1>
                     <h1 className="text-xl font-mono">
                       Institution: {row.college}
                     </h1>

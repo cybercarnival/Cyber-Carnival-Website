@@ -38,7 +38,7 @@ export const data = {
     brief:
       "Cyber Conclave, where industry leaders converge to explore the latest trends in cybersecurity. Engage in expert discussions, hands-on workshops, and networking opportunities, all aimed at enhancing your knowledge and strategies for a safer digital future.",
     brief2:
-      "The Cyber Conclave is a premier gathering that brings together experts, innovators, and thought leaders in the field of cybersecurity. This annual event features keynote speeches, panel discussions focused on the latest trends, challenges, and solutions in the digital security landscape. Attendees can engage in networking opportunities, explore cutting-edge technologies. With topics ranging from threat intelligence and data protection to regulatory compliance and ethical hacking, the Conclave aims to empower professionals with actionable insights. ",
+      "The Cyber Conclave is all about bringing people together to talk cybersecurity. It’s a place to learn from each other, share ideas, and discuss the latest challenges in digital security. You’ll hear from experts, join in on interesting talks, and meet others who care about cybersecurity. Whether you're into hacking, protecting data, or just curious about how it all works, there’s something for everyone. If you want to learn, connect, and be part of shaping the future of cybersecurity, this event is for you.",
     poster: cyberconclave,
     url: "cyberconclave",
     speakers: [
@@ -73,7 +73,7 @@ export const data = {
     brief:
       "Online scams and cyber threats are a huge problem today. This event is all about figuring out how we can fight back and make our digital world safer. Experts will share their tips on spotting advanced threats and creating programs to help people stay safe. Come join us and learn how to stay ahead of scammers!",
     brief2:
-      "A Capture the Flag (CTF) is a game designed to challenge participant's hacking skills, problem-solving abilities, and knowledge of security. In these competitions, teams must solve a series of challenges, each of which contains hidden flags that participants need to find and submit to earn points.",
+      "Dive into an exciting Capture the Flag challenge! In this cybersecurity-focused event, participants will uncover vulnerabilities, solve intricate puzzles, and develop strategies to combat online scams and threats. Guided by industry experts, you'll learn how to identify advanced threats and create innovative solutions to strengthen digital security. Whether you're an expert or a beginner, this event promises an engaging, action-packed experience. ",
     poster: ctf,
     url: "capturetheflag",
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
@@ -86,12 +86,12 @@ export const data = {
       qr: CTFQR,
     },
     rules: [
-      " A team can consist of 1 to 3 members.",
-      "Solve as many challenges as possible within the given time frame.",
-      "The CTF is based on 5 different domains, with each domain with questions ranging from easy to hard difficulty",
-      "Flags are worth different points based on the difficulty of the question.",
-      "Sharing flags with other teams is strictly prohibited",
-      "Teams which are found engaging in unfair means will be disqualified.",
+      "Teams can have up to 1 - 3 members",
+      "The goal is simple: solve as many challenges as you can within the time limit.",
+      "There are five different categories of challenges, and each one has questions ranging from super easy to really tough.",
+      "You’ll earn points based on the difficulty of the question—harder ones mean more points.",
+      "Sharing flags with other teams isn’t allowed. Let’s keep it fair for everyone!",
+      "If a team is caught cheating, they’ll be disqualified. Play fair and have fun!",
     ],
   },
 
@@ -136,7 +136,7 @@ export const data = {
     brief:
       "Got an idea or a research project you’re passionate about? The Research Paper Presentation is where you can share your work with others in the tech, cybersecurity, and data science fields. It’s a great place to learn from each other and get inspired—don’t miss it!",
     brief2:
-      "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work.",
+      "Bring your innovative ideas and research to life in the Paper Presentation event! Participants will share insights, theories, and practical applications in the fields of cybersecurity, data science, and emerging technologies. With an audience of peers and industry experts, it’s a perfect platform for collaboration, learning, and inspiration. Gain feedback, network with like-minded individuals, and leave with new perspectives.  ",
 
     poster: paperpresentation,
     url: "paperpresentation",
@@ -150,9 +150,11 @@ export const data = {
       qr: PaperPresentationQR,
     },
     rules: [
-      "Submit the Full Paper in IEEE format. It should not exceed 4 pages.",
-      "Paper must be an original work and not previously submitted in any platform.",
-      "Team size can be minimum of 1 and maximum of 4 members.",
+      "Submit your paper in the IEEE format, and make sure it’s no longer than 4 pages.",
+      "Your work should be original and not something you’ve submitted anywhere else before.",
+      "Team must consist of up to 1 - 4 members.",
+      "No plagiarism allowed—your paper must be your own creation.",
+      "The judges’ decisions will be final, so let your work speak for itself!",
     ],
   },
 
@@ -165,7 +167,7 @@ export const data = {
     brief:
       "If you love a good challenge, our Bug Bounty event is perfect for you! Your job? Find the vulnerabilities and uncover hidden flaws. There’s no one right way to do it—it’s all about using your creativity and problem-solving skills. Ready to dive in and show what you've got?",
     brief2:
-      "Whether you're a seasoned ethical hacker or just starting out, this event offers the perfect platform to showcase your problem-solving abilities, learn new techniques, and contribute to a safer digital environment. Compete, grow, and earn recognition and rewards for your efforts. Do you have what it takes to find the flag?",
+      "Bug Bounty challenges participants to explore systems, identify vulnerabilities, and patch flaws while showcasing their ingenuity and technical prowess. It's a creative and competitive platform for ethical hackers and cybersecurity enthusiasts to demonstrate their skills. Whether you're a professional or a beginner, this event will keep you on your toes as you uncover hidden risks and propose solutions.  ",
     poster: bugbounty,
     url: "bugbounty",
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
@@ -178,12 +180,13 @@ export const data = {
       qr: BugBountyQR,
     },
     rules: [
-      `No Sharing: Don't share the flags or bugs you find with anyone else. Sharing will lead to instant disqualification.`,
-      `You are not allowed to test on third-party services or systems.`,
-      "Be careful not to access, process, or destroy any personal data. Always respect privacy when working.",
-      "Account Access: Don't try to access any user's account or private data unless it's part of the challenge you're working on.",
-      "No Technical Attacks: Do not attempt any form of technical attack that is outside the scope of the challenge. Stick to the defined boundaries of testing and problem-solving.",
-      "Tie-Breaker: If two or more teams have the same points, the team that completed the challenges in the least amount of time will win.",
+      "No sharing! Don’t share the flags or bugs you find with anyone. Sharing will lead to instant disqualification.",
+      "Stick to the scope—don’t test on third-party systems or services.",
+      "Respect privacy. Avoid accessing, processing, or destroying personal data.",
+      "Don’t try to break into user accounts or access private data unless the challenge specifically allows it.",
+      "No out-of-scope attacks.",
+      "No Technical Attacks: Do not attempt any form of technical attack. Focus on the challenges and follow the testing boundaries.",
+      "In case of a tie, the team that finishes the challenges the fastest will win.",
     ],
   },
 
@@ -196,7 +199,7 @@ export const data = {
     brief:
       "Think you can build the next big cybersecurity tool? At Secure Tool Expo, you'll get the chance to design and showcase a tool you've created. It could be anything from protecting data to keeping systems running smoothly. Bring your coding skills and creativity—we can't wait to see what you come up with!",
     brief2:
-      "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
+      "Secure Tool Expo provides a platform for participants to demonstrate their creativity by developing a cybersecurity tool. Whether it’s for safeguarding data, improving system performance, or detecting vulnerabilities, this event is a hub of innovation. Participants will showcase their solutions to a panel of judges, demonstrating how their tool addresses key cybersecurity challenges.  ",
     poster: techexpo,
     url: "techexpo",
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
@@ -209,8 +212,11 @@ export const data = {
       qr: techexpoQR,
     },
     rules: [
-      "Indigenous built tools are only allowed",
-      "Plagiarism isn't allowed",
+      "Registration: Teams can have 1 - 3 members, and participants must bring their own laptops, software, and resources.",
+      "Participants must build the cyber tool before the event day and present it during the exhibition time.",
+      "Each team will have 10 minutes for their presentation.",
+      "The presentation must include a PPT covering the following: description of the tool, novelty and innovative solution proposed, and a functional demo.",
+      "Tool development categories include Network Security, Cryptography, Web Application Security, Incident Response, and Digital Forensics.",
     ],
   },
 
@@ -224,7 +230,7 @@ export const data = {
     brief:
       "If you're into fresh ideas and innovation, the Startup Expo is where you'll want to be. Entrepreneurs are pitching their ideas, investors are looking for the next big thing, and everyone's excited to connect. Whether you want to get inspired or just check out what's coming next, this event has something for everyone!",
     brief2:
-      "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be!",
+      "Discover the future at The Startup Expo! Entrepreneurs will pitch their unique ideas and innovative solutions to a panel of investors and an enthusiastic audience. This event is the perfect opportunity to explore creative projects, learn about emerging trends, and connect with visionaries shaping tomorrow. Whether you’re an aspiring entrepreneur or simply curious, this expo offers inspiration and networking opportunities.",
     poster: startup,
     url: "startup",
     facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
@@ -236,9 +242,11 @@ export const data = {
       seats: "150 SEATS",
     },
     rules: [
-      "Pitch desk must",
-      "Must come in formal dress",
-      "Founders / participants must come in prior to establish themselves in the venue",
+      "Bring a pitch deck that clearly presents your idea.",
+      "Founders or participants should arrive early to get settled and ready for the event.",
+      "Each startup gets 5 minutes to pitch, followed by a Q&A session.",
+      "Your pitch should highlight your innovation, feasibility, and market potential.",
+      "Make sure your presentation materials follow the provided guidelines.",
     ],
   },
 
