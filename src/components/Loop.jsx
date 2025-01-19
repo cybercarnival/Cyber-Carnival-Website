@@ -2,6 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import comingSoon from "../assets/comingSoon.jpg";
 import { useLocation } from "react-router-dom";
+import disai from "../assets/disai.png";
+import nullImage from "../assets/null.png";
+import yuniq from "../assets/yuniq.svg";
 
 function Loop() {
   const sponsorsRef = useRef(null);
@@ -14,25 +17,20 @@ function Loop() {
   
   const testimonials = [
     {
-      image: comingSoon,
+      image: yuniq,
     },
     {
-      image: comingSoon,
+      image: nullImage,
     },
     {
-      image: comingSoon,
+      image: disai,
     },
-    {
-      image: comingSoon,
-    },
-    {
-      image: comingSoon,
-    },
+    
   ];
   return (
     <div className="" ref={sponsorsRef}>
       <h1 className=" text-7xl font-semibold flex flex-col justify-center items-center text-cyan-300 font-alumni ">
-        OUR SPONSORS
+        OUR PARTNERS
       </h1>
       <p className="text-white text-lg flex flex-col justify-center items-center text-center ">
         We are truly grateful for your confidence in us. We look forward to
