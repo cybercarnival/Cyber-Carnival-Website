@@ -202,6 +202,31 @@ function Event() {
                         ? "Verified"
                         : "Add to Verified"}
                     </button>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={`https://mail.google.com/mail/u/cybercarnivalsrmrmp@gmail.com/?view=cm&to=${
+                        row.email
+                      }&su=${encodeURIComponent(
+                        "Cyber Carnival '25 Registration"
+                      )}&body=${encodeURIComponent(
+                        `Hi ${row.name},
+Your registration for the event ${id} has been successfully verified. 
+
+Thank you for participating!
+
+Best regards,
+CC Team`
+                      )}`}
+                      className={`w-full h-10 ${
+                        verifiedList.includes(row.id)
+                          ? "bg-green-700"
+                          : "bg-red-600"
+                      } rounded-xl text-white text-lg text-center flex justify-center items-center`}
+                      aria-label={`Send email to ${row.name}`}
+                    >
+                      Send Mail
+                    </a>
                   </div>
                 </motion.div>
               }
