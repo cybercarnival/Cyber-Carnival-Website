@@ -39,7 +39,7 @@ export const AppProvider = ({ children }) => {
   const eventFees = {
     cyberconclave: 150,
     capturetheflag: 300,
-    cyberthon: 799,
+    cyberthon: 750,
     paperpresentation: 100,
     bugbounty: 250,
     techexpo: 150,
