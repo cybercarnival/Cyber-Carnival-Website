@@ -467,7 +467,7 @@ export const data = {
     brief:
       "This cybersecurity workshop provides an essential introduction to digital security for both beginners and professionals. Covering core topics like threat detection, vulnerability assessment, and network protection, the workshop guides participants through the fundamentals of safeguarding digital assets.",
     brief2:
-      "This cybersecurity workshop provides an essential introduction to digital security for both beginners and professionals. Covering core topics like threat detection, vulnerability assessment, and network protection, the workshop guides participants through the fundamentals of safeguarding digital assets. Attendees will learn to identify and respond to phishing attempts, implement effective defense mechanisms, and follow best practices for data security. Hands-on sessions will immerse participants in real-world scenarios, allowing them to practice incident response and risk mitigation in real time. ",
+      "This cybersecurity workshop serves as a simple introduction to the digital security environment for beginners as well as professional users. Its core topics focus on threat detection, vulnerability assessment, and network protection, helping students understand the principles of protecting their digital assets. These include identifying phishing attempts and responding accordingly, effective mechanisms for defense, and best practices in data security. Hands-on sessions will immerse participants in real-world scenarios to allow them to practice incident response and risk mitigation in real time.",
     poster: workshop2,
     url: "workshop2",
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
@@ -489,7 +489,7 @@ export const data = {
       "Interactive cybersecurity workshop handled by industry experts with doubt clearing session",
 
     brief:
-      "",
+      "This cybersecurity workshop covers online security fundamentals, threat detection, and protection techniques. Participants will learn to secure networks and implement best practices to protect digital assets. Ideal for beginners and professionals looking to enhance their cybersecurity skills.",
     brief2:
       "A cybersecurity workshop covering fundamentals of online security, threat detection, and protection techniques. Participants will learn about securing networks, and implementing best practices to safeguard digital assets. Ideal for beginners and professionals aiming to enhance their cybersecurity skills.This cybersecurity workshop provides a comprehensive introduction to the essentials of digital security.",
     poster: workshop1,
