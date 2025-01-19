@@ -4,6 +4,7 @@ import cyberthon from "../assets/Cyberthon.png";
 import paperpresentation from "../assets/paperpresentation.png";
 import bugbounty from "../assets/bugbounty.png";
 import techexpo from "../assets/techexpo.png";
+import techexpoQR from "../assets/techexpoQR.png";
 import startup from "../assets/startup.png";
 import freefire from "../assets/freefire.png";
 import cinema from "../assets/cinema.png";
@@ -203,8 +204,9 @@ export const data = {
     eventDetails: {
       time: "10 AM - 12 PM",
       date: "21 FEB 2025",
-      fees: "FREE",
+      fees: "150 PER HEAD",
       seats: "150 SEATS",
+      qr: techexpoQR,
     },
     rules: [
       "Indigenous built tools are only allowed",

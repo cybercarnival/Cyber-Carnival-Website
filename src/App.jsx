@@ -121,6 +121,10 @@ function App() {
           element={<Register />}
         />
         <Route
+          path="/workshops/viewevent/:event/register"
+          element={<Register />}
+        />
+        <Route
           path="/nontechevents/viewevent/:event/register"
           element={<Register />}
         />
