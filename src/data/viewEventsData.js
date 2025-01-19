@@ -26,7 +26,6 @@ import ShipwreckQR from "../assets/ShipwreckQR.png";
 import TitleEventQR from "../assets/TitleEventQR.png";
 import ValoQR from "../assets/ValoQR.png";
 
-
 export const data = {
   cyberconclave: {
     title: "Cyber Conclave",
@@ -59,7 +58,7 @@ export const data = {
       date: "20 FEB 2025",
       fees: "150 per head",
       seats: "200 seats",
-      qr: ConclaveQR
+      qr: ConclaveQR,
     },
     discussion: ["Unmasking Online Scams and Strengthening Digital Defenses"],
   },
@@ -93,7 +92,6 @@ export const data = {
       "Sharing flags with other teams is strictly prohibited",
       "Teams which are found engaging in unfair means will be disqualified.",
     ],
-
   },
 
   cyberthon: {
@@ -148,7 +146,7 @@ export const data = {
       date: "21 Feb 2025",
       fees: "100 per head",
       seats: "80 SEATS",
-      qr: PaperPresentationQR, 
+      qr: PaperPresentationQR,
     },
     rules: [
       "Submit the Full Paper in IEEE format. It should not exceed 4 pages.",
@@ -195,7 +193,7 @@ export const data = {
     description: "Showcase your cyber innovation in a secure manner",
 
     brief:
-      "Think you can build the next big cybersecurity tool? At SecureSec, you'll get the chance to design and showcase a tool you've created. It could be anything from protecting data to keeping systems running smoothly. Bring your coding skills and creativity—we can't wait to see what you come up with!",
+      "Think you can build the next big cybersecurity tool? At Secure Tool Expo, you'll get the chance to design and showcase a tool you've created. It could be anything from protecting data to keeping systems running smoothly. Bring your coding skills and creativity—we can't wait to see what you come up with!",
     brief2:
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: techexpo,
@@ -207,7 +205,6 @@ export const data = {
       date: "21 FEB 2025",
       fees: "FREE",
       seats: "150 SEATS",
-
     },
     rules: [
       "Indigenous built tools are only allowed",
