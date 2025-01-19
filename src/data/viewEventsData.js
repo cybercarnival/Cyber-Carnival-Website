@@ -58,7 +58,7 @@ export const data = {
     description: "Embark on a quest to seize the victory flags!",
 
     brief:
-      "Unmasking Online Scams and Strengthening Cyber Defenses focuses on the urgent need to counter the rising tide of cyber threats and scams affecting individuals and organizations. This year's Cyber Conclave will bring together experts to discuss strategies for enhancing cybersecurity through advanced threat detection and comprehensive awareness programs.",
+      "Online scams and cyber threats are a huge problem today. This event is all about figuring out how we can fight back and make our digital world safer. Experts will share their tips on spotting advanced threats and creating programs to help people stay safe. Come join us and learn how to stay ahead of scammers!",
     brief2:
       "A Capture the Flag (CTF) is a game designed to challenge participant's hacking skills, problem-solving abilities, and knowledge of security. In these competitions, teams must solve a series of challenges, each of which contains hidden flags that participants need to find and submit to earn points.",
     poster: ctf,
@@ -120,7 +120,7 @@ export const data = {
       "Unveil Innovations, Elevate Ideas: Where Knowledge Meets Discovery!",
 
     brief:
-      "Join us for an enlightening event where innovation meets academia! The Research Paper Presentation is a platform for students, professionals, and researchers to showcase their latest research and ideas in the fields of technology, cybersecurity, data science, and beyond.",
+      "Got an idea or a research project you’re passionate about? The Research Paper Presentation is where you can share your work with others in the tech, cybersecurity, and data science fields. It’s a great place to learn from each other and get inspired—don’t miss it!",
     brief2:
       "Paper Presentation encourages the exploration of cutting-edge topics, fostering a collaborative environment for sharing knowledge and receiving valuable feedback. Whether you're a seasoned researcher or a budding enthusiast, this is the perfect stage to discuss groundbreaking concepts, refine your research skills, and gain recognition for your work.",
 
@@ -148,7 +148,7 @@ export const data = {
     description: "Uncover, Report, and Win – Hack the Code, Secure the Future!",
 
     brief:
-      "Join our Bug Bounty event, an exciting challenge where participants will test their cybersecurity skills in a real-world scenario. Your mission is to uncover hidden vulnerabilities and find the elusive flag. The challenge is open-ended—how you approach it is entirely up to you!",
+      "If you love a good challenge, our Bug Bounty event is perfect for you! Your job? Find the vulnerabilities and uncover hidden flaws. There’s no one right way to do it—it’s all about using your creativity and problem-solving skills. Ready to dive in and show what you've got?",
     brief2:
       "Whether you're a seasoned ethical hacker or just starting out, this event offers the perfect platform to showcase your problem-solving abilities, learn new techniques, and contribute to a safer digital environment. Compete, grow, and earn recognition and rewards for your efforts. Do you have what it takes to find the flag?",
     poster: bugbounty,
@@ -175,10 +175,10 @@ export const data = {
     title: "Secure Tool Expo",
     title_font: "font-jersey",
     title_size: "text-5xl",
-    description: "Showcaase of your cyber innovation in a secure manner",
+    description: "Showcase your cyber innovation in a secure manner",
 
     brief:
-      "SecureSec Tool is an exciting event where students will design, develop, and demonstrate their own cybersecurity tool to ensure Confidentiality, Integrity, and Availability (CIA) of digital information. Participants will showcase their creativity, programming skills, and knowledge of cybersecurity principles to create innovative solutions.",
+      "Think you can build the next big cybersecurity tool? At SecureSec, you'll get the chance to design and showcase a tool you've created. It could be anything from protecting data to keeping systems running smoothly. Bring your coding skills and creativity—we can't wait to see what you come up with!",
     brief2:
       "The Capture the Flag (CTF) Event is back, offering participants an intense, fast-paced competition designed to test your problem-solving, coding, and cybersecurity expertise. Whether you're a beginner or an experienced hacker, this event is the perfect opportunity to dive into real-world challenges and show off your skills!",
     poster: techexpo,
@@ -205,7 +205,7 @@ export const data = {
       "Engage the audience and get a great opportunity to showcase your startup!",
 
     brief:
-      "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be",
+      "If you're into fresh ideas and innovation, the Startup Expo is where you'll want to be. Entrepreneurs are pitching their ideas, investors are looking for the next big thing, and everyone's excited to connect. Whether you want to get inspired or just check out what's coming next, this event has something for everyone!",
     brief2:
       "The Startup Expo is here, showcasing a dynamic lineup of innovative new startups ready to transform industries and inspire change. This event offers entrepreneurs the perfect platform to pitch groundbreaking ideas, network with investors, and connect with a community eager to shape the future. Whether you're looking to discover the next big thing or introduce your venture to the world, the Startup Expo is the place to be!",
     poster: startup,
@@ -214,7 +214,7 @@ export const data = {
     studentCoordinator: ["Vrajesh RS", "Akshayraj"],
     eventDetails: {
       time: "10 AM - 4 PM",
-      date: "20 & 21 FEB 2025",
+      date: "20 & 21 FEB",
       fees: "FREE",
       seats: "150 SEATS",
     },
