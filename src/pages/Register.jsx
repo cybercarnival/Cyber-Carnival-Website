@@ -415,8 +415,8 @@ function Register() {
                               </div>
                               <div className="flex justify-center items-center">
                                 <img
-                                  src={QR}
-                                  className="w-56 h-56 border-2 border-gray-500 rounded-lg"
+                                  src={data[event]?.eventDetails.qr}
+                                  className="w-64 h-80 border-2 border-gray-500 rounded-lg"
                                 />
                               </div>
                             </ModalContent>

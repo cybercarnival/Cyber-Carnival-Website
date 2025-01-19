@@ -13,7 +13,7 @@ function Footer() {
           <img src={logo} className="w-24 m-2" alt="logo" />
           <div className=" flex flex-row gap-3 justify-start m-2 ">
             <ul>
-              <a href="https://www.instagram.com/cyber_carnival_srmrmp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <a href="https://www.instagram.com/cyber_carnival_srmrmp/">
                 <img className="w-6 h-6" src={insta} />
               </a>
             </ul>

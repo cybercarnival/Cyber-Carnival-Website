@@ -14,6 +14,18 @@ import workshop1 from "../assets/workshop1.jpeg";
 import workshop2 from "../assets/workshop2.jpeg";
 import title from "../assets/title.jpeg";
 import valo from "../assets/valorant.jpeg";
+import ConclaveQR from "../assets/ConclaveQR.png";
+import CTFQR from "../assets/CTFQR.png";
+import PaperPresentationQR from "../assets/PaperPresentationQR.png";
+import WorkshopQR from "../assets/WorkshopQR.png";
+import BugBountyQR from "../assets/BugBountyQR.png";
+import ChannelSurfingQR from "../assets/ChannelSurfingQR.png";
+import CyberSafeCinemaQR from "../assets/CyberSafeCinemaQR.png";
+import FreeFireQR from "../assets/FreeFireQR.png";
+import ShipwreckQR from "../assets/ShipwreckQR.png";
+import TitleEventQR from "../assets/TitleEventQR.png";
+import ValoQR from "../assets/ValoQR.png";
+
 
 export const data = {
   cyberconclave: {
@@ -47,6 +59,7 @@ export const data = {
       date: "20 FEB 2025",
       fees: "150 per head",
       seats: "200 seats",
+      qr: ConclaveQR
     },
     discussion: ["Unmasking Online Scams and Strengthening Digital Defenses"],
   },
@@ -70,6 +83,7 @@ export const data = {
       date: "20 FEB 2025",
       fees: "300 per team",
       seats: "180 seats",
+      qr: CTFQR,
     },
     rules: [
       " A team can consist of 1 to 3 members.",
@@ -79,6 +93,7 @@ export const data = {
       "Sharing flags with other teams is strictly prohibited",
       "Teams which are found engaging in unfair means will be disqualified.",
     ],
+
   },
 
   cyberthon: {
@@ -133,6 +148,7 @@ export const data = {
       date: "21 Feb 2025",
       fees: "100 per head",
       seats: "80 SEATS",
+      qr: PaperPresentationQR, 
     },
     rules: [
       "Submit the Full Paper in IEEE format. It should not exceed 4 pages.",
@@ -160,6 +176,7 @@ export const data = {
       date: "21 FEB 2025",
       fees: "150 per head",
       seats: "150 SEATS",
+      qr: BugBountyQR,
     },
     rules: [
       `No Sharing: Don't share the flags or bugs you find with anyone else. Sharing will lead to instant disqualification.`,
@@ -190,6 +207,7 @@ export const data = {
       date: "21 FEB 2025",
       fees: "FREE",
       seats: "150 SEATS",
+
     },
     rules: [
       "Indigenous built tools are only allowed",
@@ -244,6 +262,7 @@ export const data = {
       date: "20 FEB 2025",
       fees: "200 per team",
       seats: "150 SEATS",
+      qr: FreeFireQR,
     },
     rules: [
       "Squad matches on the full Bermuda map; 2 matches, subject to time constraints. So make sure that the map is ready in your device and game.",
@@ -272,6 +291,7 @@ export const data = {
       date: "FEB 2025",
       fees: "300 per team",
       seats: "150 SEATS",
+      qr: CyberSafeCinemaQR,
     },
     rules: [
       "TEAM SIZE CAN BE MAXIMUM OF THREE",
@@ -302,6 +322,7 @@ export const data = {
       date: "20 FEB 2025",
       fees: "300 per team",
       seats: "150 SEATS",
+      qr: ChannelSurfingQR,
     },
     rules: [
       "No props can be used ",
@@ -354,6 +375,7 @@ export const data = {
       date: "21 FEB 2025",
       fees: "150 per head",
       seats: "150 SEATS",
+      qr: ShipwreckQR,
     },
     rules: [
       "Time for convincing the captain: 3 minutes",
@@ -385,6 +407,7 @@ export const data = {
       date: "21 FEB 2025",
       fees: "150 per head",
       seats: "200 SEATS",
+      qr: TitleEventQR,
     },
     rules: [
       "Multiple elimination rounds",
@@ -411,6 +434,7 @@ export const data = {
       date: "22 FEB 2025",
       fees: "150 per head",
       seats: "150 SEATS",
+      qr: ValoQR,
     },
     rules: [
       "Teams of 5 players each",
@@ -446,6 +470,7 @@ export const data = {
       date: "20 & 21 FEB 2025",
       fees: "500 PER head",
       seats: "150 SEATS",
+      qr: WorkshopQR,
     },
     rules: [],
   },
@@ -469,6 +494,7 @@ export const data = {
       date: "20 & 21 FEB 2025",
       fees: "500 PER head",
       seats: "150 SEATS",
+      qr: WorkshopQR,
     },
     rules: [],
   },
