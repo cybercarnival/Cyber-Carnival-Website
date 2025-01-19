@@ -42,7 +42,7 @@ export const AppProvider = ({ children }) => {
     cyberthon: 799,
     paperpresentation: 100,
     bugbounty: 250,
-    techexpo: 0,
+    techexpo: 150,
     startup: 0,
     freefire: 200,
     cinema: 300,
