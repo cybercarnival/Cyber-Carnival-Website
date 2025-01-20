@@ -145,7 +145,7 @@ export const data = {
     eventDetails: {
       time: "11AM - 1 PM",
       date: "21 Feb 2025",
-      fees: "Phase 1 FREE",
+      fees: "Phase 1: FREE",
       seats: "80 SEATS",
       qr: PaperPresentationQR,
     },
@@ -157,7 +157,7 @@ export const data = {
       "No plagiarism allowed – your paper must be your own creation.",
       "After Phase1, the selected teams will be notified(via email).",
       "Selected teams can proceed with the payment.",
-      "Phase 2 (Rs.100 for the shortlisted teams) :",
+      "Phase 2 (Rs.100 per Head for the shortlisted teams) :",
       "Presentation time will be around 5 minutes.",
       "If the paper is a group effort, each member may be required to present a portion of the paper.",
       "Bring a backup copy of the presentation (on USB or cloud storage).",

@@ -150,7 +150,7 @@ function ViewEvent() {
                     <div className="flex flex-grow mt-2" key={index}>
                       {![
                         "Phase 1 (No Fee) :",
-                        "Phase 2 (Rs.100 for the shortlisted teams) :",
+                        "Phase 2 (Rs.100 per Head for the shortlisted teams) :",
                       ].includes(rule) ? (
                         <>
                           <CropSquareIcon sx={{}} />
@@ -194,7 +194,10 @@ function ViewEvent() {
               <div className="flex flex-grow">
                 <PaymentsOutlinedIcon />
                 <h6 className=" text-center mx-2">
-                  {data[event].eventDetails.fees}
+                  {data[event].eventDetails.fees}{" "}
+                  {event == "paperpresentation"
+                    ? " | Phase 2: Rs.100 per Head"
+                    : ""}
                 </h6>
               </div>
             </div>
