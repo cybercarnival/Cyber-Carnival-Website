@@ -257,9 +257,9 @@ export const data = {
     description: " Battle Royale mode ",
 
     brief:
-      "Free Fire is a popular battle royale game where players compete on an island, aiming to be the last one standing. It features fast-paced action, unique characters with special abilities, and various weapons and items for survival, offering an intense gaming experience.",
+      "Free Fire is a thrilling video game battle royale game where players face off on an island, players striving to be the last one standing. With fast-paced action, a cast of unique characters boasting special abilities, and a wide range of weapons and survival items, it delivers an intense and exciting gaming experience that keeps you on the edge of your seat.",
     brief2:
-      "Join Us for the ultimate Free Fire tournament, where the top players around all colleges Battle for glory and prizes. Compete in intense matches filled with strategic gameplay, thrilling gunfights, and heart-pounding moments. Whether you're a seasoned pro or a passionate newcomer, this tournament promises action-packed gameplay and an unforgettable experience. Don’t miss your chance to showcase your skills and claim your spot in the Free Fire community!",
+      "Get ready for the ultimate Free Fire tournament! Join top players from colleges everywhere as they battle it out for glory and cool prizes. Dive into intense matches packed with strategy, epic gunfights, and heart-pounding moments. Whether you're a seasoned pro or just love the game, this tournament is your chance to experience action-packed gameplay and create unforgettable memories. Don’t miss out the opportunity to show off your skills and claim your place in the Free Fire community!",
     poster: freefire,
     url: "freefire",
     facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
@@ -272,10 +272,10 @@ export const data = {
       qr: FreeFireQR,
     },
     rules: [
-      "Squad matches on the full Bermuda map; 2 matches, subject to time constraints. So make sure that the map is ready in your device and game.",
-      "Teams may use voice chat or world channel, but any forms of abusive language or harassment will incur penalties.",
-      "Players may rejoin ongoing matches if disconnected; if unable, teams continue without that player. So come with proper network connection and good phone for gameplay!",
-      "Top 2 teams based on points qualify for finals, which will have different rules or challenges. And for the prices - Based on final leaderboard; distribution occurs within  after the tournament.",
+      "Full Bermuda map squad matches; 2 matches, time dependent. So make sure that the map is prepared on your device and game.",
+      "Players may use voice chat but abusive languages or harassment are strictly penalized.",
+      "If the player gets disconnected, they can join back the match, otherwise the team plays without that player. So come with proper network connection and a good phone for gameplay!",
+      "The top 2 teams based on points qualify for the finals, which will have unique rules or challenges. Regarding prizes, they are distributed right after the tourney Based on the final leaderboard.",
     ],
   },
 
@@ -286,9 +286,9 @@ export const data = {
     description: "Lights Camera Hacktion",
 
     brief:
-      "Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
+      "Lights On is a showcase of various filmmakers telling strong stories. This event features short films on cyber awareness, emphasizing the impact of technology. Audiences will be exposed to thought-provoking narratives that inspire curiosity and discussion on digital knowledge.",
     brief2:
-      "Lights On, an engaging event that showcases filmmakers of all backgrounds as they illuminate the screen with powerful stories. This platform features a selection of short films focused on cyber awareness, highlighting the impact of technology on our lives. As the lights shine bright, audiences will experience thought-provoking narratives that inspire curiosity and provoke discussion about the importance of staying informed in our digital world.",
+      "Lights On is an electrifying event, bringing filmmakers of different backgrounds onto the screen as they light it up with strong stories. The event features short films on cyber awareness, showing how technology is changing our lives. As lights shine bright, viewers will witness stories that make them think and talk about why staying informed in this digital world matters.",
     poster: cinema,
     url: "cinema",
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
@@ -319,7 +319,7 @@ export const data = {
     brief:
       "Channel Surfing is about a team imitating the popular channels. The Judge will keep changing the channel and will give commands like (reverse, pause, play, fast-forward, slow motion) and the teams must perform accordingly. Cue will be given by judge to change the channel.",
     brief2:
-      "Performance must be changed immediately after that. According to the act points will be awarded. Categories of Channels: News, Sports, Movies-Hindi & English, Music-Hindi &English, Food Channels, Entertainment-National, Entertainment-International, Kids Channel, Lifestyle, Wildlife Channels, Science.",
+      "Channel Surfing is a mimicry of popular channels by a team. The Judge changes the channel and gives commands in reverse, pause, play, fast-forward, and slow motion, which teams are supposed to follow. The judge cues the team to switch channels.Performance must be changed immediately after that. According to the act points will be awarded. Categories of Channels: News, Sports, Movies-Hindi & English, Music-Hindi & English, Food Channels, Entertainment-National,Entertainment-International, Kids Channel, Lifestyle, Wildlife Channels, Science.",
     poster: surfing,
     url: "surfing",
     facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
@@ -350,7 +350,7 @@ export const data = {
     brief:
       "A cyber awareness campaign is a coordinated effort to educate individuals and organizations about cybersecurity risks, best practices, and how to protect themselves from cyber threats.Promote the use of strong, unique passwords and password managers.Explain the importance of protecting personal information and online privacy.Discuss the risks associated with mobile devices and best practices for secure usage.These event can provide detailed analytics on user behavior and campaign performance.",
     brief2:
-      "A cyber awareness campaign is a coordinated effort to educate individuals and organizations about cybersecurity risks, best practices, and how to protect themselves from cyber threats.Promote the use of strong, unique passwords and password managers.Explain the importance of protecting personal information and online privacy.Discuss the risks associated with mobile devices and best practices for secure usage.These event can provide detailed analytics on user behavior and campaign performance.",
+      "A cyber awareness campaign is an organized process that educates individuals and organizations on cybersecurity risks, best practices, and ways of protecting them against cyber threats. Promote the use of strong, unique passwords and password managers. Raise awareness about protecting personal information and online privacy. Talk about the risks associated with mobile devices and how to properly use these devices. These campaigns can offer fine-grained analytics regarding user behavior and campaign effectiveness.",
     poster: awareness,
     url: "awareness",
     facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
@@ -370,9 +370,9 @@ export const data = {
     description: "Navigating life storm in shipwreck experience",
 
     brief:
-      "The shipwreck is a popular character-based debate competition. Participants take on roles of characters trapped on a sinking ship, arguing why their character deserves to be saved while contending why others should. It's a great way to develop observational skills, vocal presence, and persuasive abilities.",
+      "This is a character-based debate competition in which people argue why a particular character should be saved, and not other characters, who are on board a sinking ship. It trains the players to observe facts, use strong voices, and persuade others, among other attributes.",
     brief2:
-      "In a Shipwreck event, participants embody various characters—ranging from historical figures to fictional personas—who find themselves on a doomed ship. The scenario unfolds as the ship starts sinking, and each participant must convincingly argue why their character should be rescued by the limited lifeboats. The challenge lies in balancing the portrayal of their character’s traits, convincing others of their importance, and simultaneously discrediting the claims of their fellow shipmates. The event encourages creativity, sharpens debating skills, and demands quick thinking. While all characters plead their case, they must adapt to the evolving arguments and rebuttals from others, making it a dynamic and engaging exercise. It's a favorite in schools and colleges for its blend of drama, strategy, and humor.",
+      "In a Shipwreck event, participants play various characters-from historical to totally fictional-on a sinking ship. Each participant has to argue why their character deserves to be included in the limited lifeboats. They balance character portrayal with convincing others about their importance and discrediting fellow shipmates at the same time. It is creative, homes debating skills, and demands quick thinking. One has to keep changing arguments and rebuttals - very dynamic and entertaining. It's popular in schools and colleges because of the drama, strategy, and humor it brings into a debate.",
     poster: surviva,
     url: "surviva",
     facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
@@ -404,7 +404,7 @@ export const data = {
     brief:
       " In Last One Standing: The Battle for the Title, fierce contenders clash in a high-stakes competition where only the strongest will prevail. This intense event pushes participants to their limits as they battle for the coveted champion title.",
     brief2:
-      "Every move is strategic, and each decision is crucial as they navigate challenges and obstacles. As the tension mounts and contenders are eliminated, the fight for supremacy intensifies, leaving just one victor. 'Last One Standing' is a testament to resilience and the relentless pursuit of greatness. Join us for this ultimate test of strength and spirit.",
+      "In Last One Standing: The Battle for the Title, the battle is intense among fierce contenders as they vie in a high-stakes competition for the champion title. Participants are pushed to their limits, making strategic moves and crucial decisions while facing various challenges. As the competition hots up, and hopefuls drop one by one, it is just the last man standing. 'Last One Standing' is all about tenacity and striving for greatness. Join us in this battle of strength and spirit.",
     poster: title,
     url: "title",
     facultyCoordinator: ["--", "--"],
@@ -470,14 +470,14 @@ export const data = {
     brief:
       "This cybersecurity workshop provides an essential introduction to digital security for both beginners and professionals. Covering core topics like threat detection, vulnerability assessment, and network protection, the workshop guides participants through the fundamentals of safeguarding digital assets.",
     brief2:
-      "This cybersecurity workshop provides an essential introduction to digital security for both beginners and professionals. Covering core topics like threat detection, vulnerability assessment, and network protection, the workshop guides participants through the fundamentals of safeguarding digital assets. Attendees will learn to identify and respond to phishing attempts, implement effective defense mechanisms, and follow best practices for data security. Hands-on sessions will immerse participants in real-world scenarios, allowing them to practice incident response and risk mitigation in real time. ",
+      "This cybersecurity workshop serves as a simple introduction to the digital security environment for beginners as well as professional users. Its core topics focus on threat detection, vulnerability assessment, and network protection, helping students understand the principles of protecting their digital assets. These include identifying phishing attempts and responding accordingly, effective mechanisms for defense, and best practices in data security. Hands-on sessions will immerse participants in real-world scenarios to allow them to practice incident response and risk mitigation in real time.",
     poster: workshop2,
     url: "workshop2",
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
     studentCoordinator: ["Vijay K", "Manav Raitani"],
     eventDetails: {
       time: "10 AM - 4 PM",
-      date: "20 & 21 FEB 2025",
+      date: "20 & 21 FEB",
       fees: "500 PER head",
       seats: "150 SEATS",
       qr: WorkshopQR,
@@ -492,7 +492,7 @@ export const data = {
       "Interactive cybersecurity workshop handled by industry experts with doubt clearing session",
 
     brief:
-      "A cybersecurity workshop covering fundamentals of online security, threat detection, and protection techniques. Participants will learn about securing networks, and implementing best practices to safeguard digital assets. Ideal for beginners and professionals aiming to enhance their cybersecurity skills.",
+      "This cybersecurity workshop covers online security fundamentals, threat detection, and protection techniques. Participants will learn to secure networks and implement best practices to protect digital assets. Ideal for beginners and professionals looking to enhance their cybersecurity skills.",
     brief2:
       "A cybersecurity workshop covering fundamentals of online security, threat detection, and protection techniques. Participants will learn about securing networks, and implementing best practices to safeguard digital assets. Ideal for beginners and professionals aiming to enhance their cybersecurity skills.This cybersecurity workshop provides a comprehensive introduction to the essentials of digital security.",
     poster: workshop1,
@@ -501,7 +501,7 @@ export const data = {
     studentCoordinator: ["Arunkumar J", "Sanrakshan P.B"],
     eventDetails: {
       time: "10 AM - 4 PM",
-      date: "20 & 21 FEB 2025",
+      date: "20 & 21 FEB",
       fees: "500 PER head",
       seats: "150 SEATS",
       qr: WorkshopQR,
