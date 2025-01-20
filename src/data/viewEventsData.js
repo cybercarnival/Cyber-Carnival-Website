@@ -145,16 +145,23 @@ export const data = {
     eventDetails: {
       time: "11AM - 1 PM",
       date: "21 Feb 2025",
-      fees: "100 per head",
+      fees: "Phase 1 FREE",
       seats: "80 SEATS",
       qr: PaperPresentationQR,
     },
     rules: [
+      "This event is conducted in 2 Phases.",
+      "Phase 1 (No Fee) :",
       "Submit your paper in the IEEE format, and make sure it’s no longer than 4 pages.",
-      "Your work should be original and not something you’ve submitted anywhere else before.",
-      "Team must consist of up to 1 - 4 members.",
-      "No plagiarism allowed—your paper must be your own creation.",
-      "The judges’ decisions will be final, so let your work speak for itself!",
+      "Team must consist of up to 1 – 4 members.",
+      "No plagiarism allowed – your paper must be your own creation.",
+      "After Phase1, the selected teams will be notified(via email).",
+      "Selected teams can proceed with the payment.",
+      "Phase 2 (Rs.100 for the shortlisted teams) :",
+      "Presentation time will be around 5 minutes.",
+      "If the paper is a group effort, each member may be required to present a portion of the paper.",
+      "Bring a backup copy of the presentation (on USB or cloud storage).",
+      "The judges’ decisions will be final, so let your work speak for itself.",
     ],
   },
 
@@ -234,12 +241,12 @@ export const data = {
     poster: startup,
     url: "startup",
     facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
-    studentCoordinator: ["Vrajesh RS", "Akshayraj"],
+    studentCoordinator: ["Vrajesh RS", "Joshika Sathish"],
     eventDetails: {
       time: "10 AM - 4 PM",
-      date: "20 & 21 FEB",
+      date: "20 FEB 2025",
       fees: "FREE",
-      seats: "150 SEATS",
+      seats: "8 Startups",
     },
     rules: [
       "Bring a pitch deck that clearly presents your idea.",
@@ -286,9 +293,9 @@ export const data = {
     description: "Lights Camera Hacktion",
 
     brief:
-      "Lights On is a showcase of various filmmakers telling strong stories. This event features short films on cyber awareness, emphasizing the impact of technology. Audiences will be exposed to thought-provoking narratives that inspire curiosity and discussion on digital knowledge.",
+      "Cyber Safe Cinema is a showcase of various filmmakers telling strong stories. This event features short films on cyber awareness, emphasizing the impact of technology. Audiences will be exposed to thought-provoking narratives that inspire curiosity and discussion on digital knowledge.",
     brief2:
-      "Lights On is an electrifying event, bringing filmmakers of different backgrounds onto the screen as they light it up with strong stories. The event features short films on cyber awareness, showing how technology is changing our lives. As lights shine bright, viewers will witness stories that make them think and talk about why staying informed in this digital world matters.",
+      "Cyber Safe Cinema is an electrifying event, bringing filmmakers of different backgrounds onto the screen as they light it up with strong stories. The event features short films on cyber awareness, showing how technology is changing our lives. As lights shine bright, viewers will witness stories that make them think and talk about why staying informed in this digital world matters.",
     poster: cinema,
     url: "cinema",
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],

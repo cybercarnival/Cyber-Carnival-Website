@@ -9,6 +9,48 @@ import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp
 import NewReleasesIcon from "@mui/icons-material/NewReleases";
 import VerifiedIcon from "@mui/icons-material/Verified";
 
+const EMAILS = {
+  cyberthon: {
+    subject: "Registration Verified",
+    body: `Dear {NAME},  
+Thank you for registering for Cyberthon! We are thrilled to have you join us for this exciting event.  
+
+Important Information:  
+- Event Date: 1st Feb 2025 to 2nd Feb 2025 
+- Venue: YuniQ, TIDEL building 4th floor
+https://maps.app.goo.gl/fGkChGHEGTh8Dx3y8   
+
+To ensure a smooth check-in process, we kindly request you to bring the following on the day of the event:  
+1. Registration ID : {REGISTRATIONID}.  
+2. Payment Confirmation Screenshot (as proof of payment).  
+
+We will provide ID cards to all participants at the venue during check-in. Upon entry please show us your registration ID and payment screenshot to receive your ID card and access the event.  
+
+If you have any questions or need further assistance, feel free to contact us at hello@cybercarnival.in or +91 9384918930.  
+
+We look forward to seeing you at Cyberthon and sharing an incredible experience together!  
+
+Best regards,  
+CyberCarnival Team
+`,
+  },
+  cyberconclave: { subject: "", body: "" },
+  capturetheflag: { subject: "", body: "" },
+  paperpresentation: { subject: "", body: "" },
+  bugbounty: { subject: "", body: "" },
+  techexpo: { subject: "", body: "" },
+  startup: { subject: "", body: "" },
+  surviva: { subject: "", body: "" },
+  freefire: { subject: "", body: "" },
+  cinema: { subject: "", body: "" },
+  surfing: { subject: "", body: "" },
+  awareness: { subject: "", body: "" },
+  workshop1: { subject: "", body: "" },
+  workshop2: { subject: "", body: "" },
+  title: { subject: "", body: "" },
+  valo: { subject: "", body: "" },
+};
+
 function Event() {
   const menuVariants = {
     open: {
@@ -96,32 +138,13 @@ function Event() {
       </div>
       <div className="flex flex-col items-center justify-center w-full mb-10">
         {registrations?.map((row, index) => {
-          const subject = "Your Custom Email Subject";
-          const body = `Dear <team name>,  
-
-Thank you for registering for *Cyberthon*! We are thrilled to have you join us for this exciting event.  
-
-Important Information:  
-- Event Date: 1st Feb 2025 to 2nd Feb 2025 
-- Venue: YuniQ, TIDEL building 4th floor
-https://maps.app.goo.gl/fGkChGHEGTh8Dx3y8   
-
-To ensure a smooth check-in process, we kindly request you to bring the following on the day of the event:  
-1. Registration ID (provided at the time of registration).  
-2. Payment Confirmation Screenshot (as proof of payment).  
-
-We will provide ID cards to all participants at the venue during check-in. Upon entry please show us your registration ID and payment screenshot to receive your ID card and access the event.  
-
-If you have any questions or need further assistance, feel free to contact us at hello@cybercarnival.in or +91 9384918930.  
-
-We look forward to seeing you at Cyberthon and sharing an incredible experience together!  
-
-Best regards,  
-CyberCarnival Team
-          `;
-
+          const variables = { REGISTRATIONID: row.id, NAME: row.teamName };
+          const subject = EMAILS[id]["subject"];
+          const body = EMAILS[id]["body"].replace(
+            /{(.*?)}/g,
+            (_, key) => variables[key] || `{${key}}`
+          );
           const encodedBody = encodeURIComponent(body);
-
           const mailtoLink = `https://mail.google.com/mail/u/cybercarnivalsrmrmp@gmail.com/?view=cm&to=${
             row.email
           }&su=${encodeURIComponent(subject)}&body=${encodedBody}`;
@@ -219,9 +242,11 @@ CyberCarnival Team
                       <h1 className="text-xl font-mono">
                         Institution: {row.college}
                       </h1>
-                      <h1 className="text-xl font-mono">
-                        Transaction ID: {row.transactionID}
-                      </h1>
+                      {row.transactionID && (
+                        <h1 className="text-xl font-mono">
+                          Transaction ID: {row.transactionID}
+                        </h1>
+                      )}
                       <button
                         disabled={verifiedList.includes(row.id)}
                         className={`w-full h-10 ${

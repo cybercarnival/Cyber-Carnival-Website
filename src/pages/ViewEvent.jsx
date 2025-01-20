@@ -148,8 +148,21 @@ function ViewEvent() {
                 <div className="flex flex-col m-2">
                   {data[event].rules.map((rule, index) => (
                     <div className="flex flex-grow mt-2" key={index}>
-                      <CropSquareIcon sx={{}} />
-                      <h6 className=" text-left mx-2">{rule}</h6>
+                      {![
+                        "Phase 1 (No Fee) :",
+                        "Phase 2 (Rs.100 for the shortlisted teams) :",
+                      ].includes(rule) ? (
+                        <>
+                          <CropSquareIcon sx={{}} />
+                          <h6 className=" text-left mx-2">{rule}</h6>
+                        </>
+                      ) : (
+                        <>
+                          <h6 className="text-xl text-[#1EC1C5] text-left mx-2 font-jersey">
+                            {rule}
+                          </h6>
+                        </>
+                      )}
                     </div>
                   ))}
                 </div>
