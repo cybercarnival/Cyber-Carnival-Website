@@ -19,6 +19,7 @@ Important Information:
 - Event Date: 1st Feb 2025 to 2nd Feb 2025 
 - Venue: YuniQ, TIDEL building 4th floor
 https://maps.app.goo.gl/fGkChGHEGTh8Dx3y8   
+- Do join the WhatsApp group for further updates: https://chat.whatsapp.com/H7XYFJ0alf9ILSQ0C1S8r7
 
 To ensure a smooth check-in process, we kindly request you to bring the following on the day of the event:  
 1. Registration ID : {REGISTRATIONID}.  
