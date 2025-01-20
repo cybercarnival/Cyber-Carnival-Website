@@ -106,7 +106,9 @@ function Register() {
         screenshotUrl: imageURL,
         createdAt: new Date(),
       });
-      alert("Form submitted successfully! Verification mail will be sent soon to the registered email id.");
+      alert(
+        "Form submitted successfully! Verification mail will be sent soon to the registered email id."
+      );
       setFormData({
         teamName: "",
         name: "",

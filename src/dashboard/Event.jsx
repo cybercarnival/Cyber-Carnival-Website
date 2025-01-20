@@ -95,146 +95,166 @@ function Event() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-full mb-10">
-        {registrations?.map((row, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center w-9/12 my-1 px-1"
-          >
-            <>
-              <div className="flex w-full border-2 border-black justify-between p-4 rounded-xl">
-                <h1 className="text-xl font-mono w-1/12">{index + 1}</h1>
-                <h1 className="text-xl font-mono ">{row.email}</h1>
-                <h1
-                  className={`text-xl font-mono  font-bold ${
-                    !verifiedList.includes(row.id)
-                      ? "text-red-700"
-                      : "text-green-800"
-                  }`}
-                >
-                  {verifiedList.includes(row.id) ? (
-                    <span>
-                      Verified
-                      <VerifiedIcon />
-                    </span>
-                  ) : (
-                    <span>
-                      Not-Verified
-                      <NewReleasesIcon />
-                    </span>
-                  )}
-                </h1>
-                <button
-                  className="text-xl font-extrabold font-sans w-1/12"
-                  onClick={() =>
-                    setCurrentOpen((prev) => (prev == index ? null : index))
-                  }
-                >
-                  {currentOpen == index ? (
-                    <KeyboardDoubleArrowUpIcon />
-                  ) : (
-                    <KeyboardDoubleArrowDownIcon />
-                  )}
-                </button>
-              </div>
-              {
-                <motion.div
-                  animate={currentOpen == index ? "open" : "closed"}
-                  variants={menuVariants}
-                  transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className={`w-full border-2 border-black p-4 my-2 rounded-2xl relative max-h-[800px] justify-center`}
-                >
-                  <div className="flex flex-col w-1/2 pr-8">
-                    <img
-                      src={row.screenshotUrl}
-                      className="object-contain h-full"
-                    />
-                  </div>
-                  <div className="flex flex-col items-start justify-center">
-                    <h1 className="text-xl font-mono ">
-                      Registration ID: {row.id}
-                    </h1>
+        {registrations?.map((row, index) => {
+          const subject = "Your Custom Email Subject";
+          const body = `Dear <team name>,  
 
-                    {row.teamName && (
-                      <h1 className="text-xl font-mono ">
-                        Team Name: {row.teamName}
-                      </h1>
-                    )}
+Thank you for registering for *Cyberthon*! We are thrilled to have you join us for this exciting event.  
 
-                    <h1 className="text-xl font-mono ">Name: {row.name}</h1>
-                    {row.member2 && (
-                      <h1 className="text-xl font-mono ">
-                        Member 2: {row.member2}
-                      </h1>
-                    )}
-                    {row.member3 && (
-                      <h1 className="text-xl font-mono ">
-                        Member 3: {row.member3}
-                      </h1>
-                    )}
-                    {row.member4 && (
-                      <h1 className="text-xl font-mono ">
-                        Member 4: {row.member4}
-                      </h1>
-                    )}
-                    {row.member5 && (
-                      <h1 className="text-xl font-mono ">
-                        Member 5: {row.member5}
-                      </h1>
-                    )}
-                    <h1 className="text-xl font-mono ">Email: {row.email}</h1>
-                    <h1 className="text-xl font-mono">
-                      Phone: {row.phone || row.contact}
-                    </h1>
-                    <h1 className="text-xl font-mono">
-                      Institution: {row.college}
-                    </h1>
-                    <h1 className="text-xl font-mono">
-                      Transaction ID: {row.transactionID}
-                    </h1>
-                    <button
-                      disabled={verifiedList.includes(row.id)}
-                      className={`w-full h-10 ${
-                        verifiedList.includes(row.id)
-                          ? "bg-green-700"
-                          : "bg-red-600"
-                      } rounded-xl my-4 text-white text-lg`}
-                      onClick={() => handleVerification(row.id)}
-                    >
-                      {verifiedList.includes(row.id)
-                        ? "Verified"
-                        : "Add to Verified"}
-                    </button>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={`https://mail.google.com/mail/u/cybercarnivalsrmrmp@gmail.com/?view=cm&to=${
-                        row.email
-                      }&su=${encodeURIComponent(
-                        "Cyber Carnival '25 Registration"
-                      )}&body=${encodeURIComponent(
-                        `Hi ${row.name},
-Your registration for the event ${id} has been successfully verified. 
+Important Information:  
+- Event Date: 1st Feb 2025 to 2nd Feb 2025 
+- Venue: YuniQ, TIDEL building 4th floor
+https://maps.app.goo.gl/fGkChGHEGTh8Dx3y8   
 
-Thank you for participating!
+To ensure a smooth check-in process, we kindly request you to bring the following on the day of the event:  
+1. Registration ID (provided at the time of registration).  
+2. Payment Confirmation Screenshot (as proof of payment).  
 
-Best regards,
-CC Team`
-                      )}`}
-                      className={`w-full h-10 ${
-                        verifiedList.includes(row.id)
-                          ? "bg-green-700"
-                          : "bg-red-600"
-                      } rounded-xl text-white text-lg text-center flex justify-center items-center`}
-                      aria-label={`Send email to ${row.name}`}
-                    >
-                      Send Mail
-                    </a>
-                  </div>
-                </motion.div>
-              }
-            </>
-          </div>
-        ))}
+We will provide ID cards to all participants at the venue during check-in. Upon entry please show us your registration ID and payment screenshot to receive your ID card and access the event.  
+
+If you have any questions or need further assistance, feel free to contact us at hello@cybercarnival.in or +91 9384918930.  
+
+We look forward to seeing you at Cyberthon and sharing an incredible experience together!  
+
+Best regards,  
+CyberCarnival Team
+          `;
+
+          const encodedBody = encodeURIComponent(body);
+
+          const mailtoLink = `https://mail.google.com/mail/u/cybercarnivalsrmrmp@gmail.com/?view=cm&to=${
+            row.email
+          }&su=${encodeURIComponent(subject)}&body=${encodedBody}`;
+
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center w-9/12 my-1 px-1"
+            >
+              <>
+                <div className="flex w-full border-2 border-black justify-between p-4 rounded-xl">
+                  <h1 className="text-xl font-mono w-1/12">{index + 1}</h1>
+                  <h1 className="text-xl font-mono ">{row.email}</h1>
+                  <h1
+                    className={`text-xl font-mono  font-bold ${
+                      !verifiedList.includes(row.id)
+                        ? "text-red-700"
+                        : "text-green-800"
+                    }`}
+                  >
+                    {verifiedList.includes(row.id) ? (
+                      <span>
+                        Verified
+                        <VerifiedIcon />
+                      </span>
+                    ) : (
+                      <span>
+                        Not-Verified
+                        <NewReleasesIcon />
+                      </span>
+                    )}
+                  </h1>
+                  <button
+                    className="text-xl font-extrabold font-sans w-1/12"
+                    onClick={() =>
+                      setCurrentOpen((prev) => (prev == index ? null : index))
+                    }
+                  >
+                    {currentOpen == index ? (
+                      <KeyboardDoubleArrowUpIcon />
+                    ) : (
+                      <KeyboardDoubleArrowDownIcon />
+                    )}
+                  </button>
+                </div>
+                {
+                  <motion.div
+                    animate={currentOpen == index ? "open" : "closed"}
+                    variants={menuVariants}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className={`w-full border-2 border-black p-4 my-2 rounded-2xl relative max-h-[800px] justify-center`}
+                  >
+                    <div className="flex flex-col w-1/2 pr-8">
+                      <img
+                        src={row.screenshotUrl}
+                        className="object-contain h-full"
+                      />
+                    </div>
+                    <div className="flex flex-col items-start justify-center">
+                      <h1 className="text-xl font-mono ">
+                        Registration ID: {row.id}
+                      </h1>
+
+                      {row.teamName && (
+                        <h1 className="text-xl font-mono ">
+                          Team Name: {row.teamName}
+                        </h1>
+                      )}
+
+                      <h1 className="text-xl font-mono ">Name: {row.name}</h1>
+                      {row.member2 && (
+                        <h1 className="text-xl font-mono ">
+                          Member 2: {row.member2}
+                        </h1>
+                      )}
+                      {row.member3 && (
+                        <h1 className="text-xl font-mono ">
+                          Member 3: {row.member3}
+                        </h1>
+                      )}
+                      {row.member4 && (
+                        <h1 className="text-xl font-mono ">
+                          Member 4: {row.member4}
+                        </h1>
+                      )}
+                      {row.member5 && (
+                        <h1 className="text-xl font-mono ">
+                          Member 5: {row.member5}
+                        </h1>
+                      )}
+                      <h1 className="text-xl font-mono ">Email: {row.email}</h1>
+                      <h1 className="text-xl font-mono">
+                        Phone: {row.phone || row.contact}
+                      </h1>
+                      <h1 className="text-xl font-mono">
+                        Institution: {row.college}
+                      </h1>
+                      <h1 className="text-xl font-mono">
+                        Transaction ID: {row.transactionID}
+                      </h1>
+                      <button
+                        disabled={verifiedList.includes(row.id)}
+                        className={`w-full h-10 ${
+                          verifiedList.includes(row.id)
+                            ? "bg-green-700"
+                            : "bg-red-600"
+                        } rounded-xl my-4 text-white text-lg`}
+                        onClick={() => handleVerification(row.id)}
+                      >
+                        {verifiedList.includes(row.id)
+                          ? "Verified"
+                          : "Add to Verified"}
+                      </button>
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={mailtoLink}
+                        className={`w-full h-10 ${
+                          verifiedList.includes(row.id)
+                            ? "bg-green-700"
+                            : "bg-red-600"
+                        } rounded-xl text-white text-lg text-center flex justify-center items-center`}
+                        aria-label={`Send email to ${row.name}`}
+                      >
+                        Send Mail
+                      </a>
+                    </div>
+                  </motion.div>
+                }
+              </>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

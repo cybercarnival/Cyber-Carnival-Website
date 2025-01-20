@@ -3,7 +3,7 @@ import ctf from "../assets/ctf.png";
 import cyberthon from "../assets/Cyberthon.png";
 import paperpresentation from "../assets/paperpresentation.png";
 import bugbounty from "../assets/bugbounty.png";
-import techexpo from "../assets/techexpo.png";
+import techexpo from "../assets/techexpo.jpg";
 import techexpoQR from "../assets/techexpoQR.png";
 import startup from "../assets/startup.png";
 import freefire from "../assets/freefire.png";
@@ -199,7 +199,7 @@ export const data = {
     brief:
       "Think you can build the next big cybersecurity tool? At Secure Tool Expo, you'll get the chance to design and showcase a tool you've created. It could be anything from protecting data to keeping systems running smoothly. Bring your coding skills and creativity—we can't wait to see what you come up with!",
     brief2:
-      "Secure Tool Expo provides a platform for participants to demonstrate their creativity by developing a cybersecurity tool. Whether it’s for safeguarding data, improving system performance, or detecting vulnerabilities, this event is a hub of innovation. Participants will showcase their solutions to a panel of judges, demonstrating how their tool addresses key cybersecurity challenges.  ",
+      "Unleash innovation in cybersecurity as students showcase their own tools to safeguard the digital future while upholding Confidentiality, Integrity, and Availability! The Secure Tool Expo provides a dynamic platform for participants to demonstrate their creativity by showcasing cutting-edge cybersecurity tools built by you. Whether focused on safeguarding data, enhancing system performance, or detecting vulnerabilities, this event serves as a hub of innovation. Participants will present their solutions to a panel of judges, showcasing how their tools effectively address critical cybersecurity challenges.",
     poster: techexpo,
     url: "techexpo",
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
@@ -266,7 +266,7 @@ export const data = {
     studentCoordinator: ["Sanjeev", "Moulleshvarma "],
     eventDetails: {
       time: "10 AM - 1 PM",
-      date: "20 FEB 2025",
+      date: "21 FEB 2025",
       fees: "200 per team",
       seats: "150 SEATS",
       qr: FreeFireQR,
@@ -408,7 +408,10 @@ export const data = {
     poster: title,
     url: "title",
     facultyCoordinator: ["--", "--"],
-    studentCoordinator: [" Shadrach P - 9094562861"],
+    studentCoordinator: [
+      " Shadrach P - 9094562861",
+      "Swasthikka Ranganathan - 7094234999",
+    ],
     eventDetails: {
       time: "11 AM - 1 PM",
       date: "21 FEB 2025",
@@ -438,7 +441,7 @@ export const data = {
     studentCoordinator: ["--", "--"],
     eventDetails: {
       time: "9 AM - 12 PM",
-      date: "22 FEB 2025",
+      date: "20 FEB 2025",
       fees: "150 per head",
       seats: "150 SEATS",
       qr: ValoQR,
