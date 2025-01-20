@@ -425,7 +425,7 @@ export const data = {
     ],
   },
   valorant: {
-    title: "Valorant",
+    title: "Valorush",
     title_font: "font-saira",
     title_size: "text-4xl",
     description:
