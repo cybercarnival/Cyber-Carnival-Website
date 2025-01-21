@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useAppContext } from "./context";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { doc, setDoc } from "firebase/firestore";
+import { deleteDoc, doc, setDoc } from "firebase/firestore";
 import { db } from "../firebase_config";
 import { motion } from "framer-motion";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
@@ -97,6 +97,16 @@ function Event() {
     try {
       await setDoc(doc(db, "verified", id), {});
       alert("Registration Verified");
+      setToggle((prev) => !prev);
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+  const handleDeletion = async (row) => {
+    try {
+      await setDoc(doc(db, "deleted", row.id), row);
+      await deleteDoc(doc(db, id, row.id));
+      alert("Registration Deleted");
       setToggle((prev) => !prev);
     } catch (err) {
       console.log(err.message);
@@ -260,6 +270,12 @@ function Event() {
                         {verifiedList.includes(row.id)
                           ? "Verified"
                           : "Add to Verified"}
+                      </button>
+                      <button
+                        className={`w-full h-10  rounded-xl my-4 text-white bg-red-600 text-lg`}
+                        onClick={() => handleDeletion(row)}
+                      >
+                        Delete
                       </button>
                       <a
                         target="_blank"
