@@ -154,6 +154,7 @@ function Register() {
                   "cinema",
                   "valorant",
                   "surfing",
+                  "bugbounty",
                 ].includes(event) && (
                   <>
                     <div>
@@ -189,6 +190,7 @@ function Register() {
                       "cinema",
                       "valorant",
                       "surfing",
+                      "bugbounty",
                     ].includes(event)
                       ? "Leader Name"
                       : "Name"}
@@ -218,6 +220,7 @@ function Register() {
                       "cinema",
                       "valorant",
                       "surfing",
+                      "bugbounty",
                     ].includes(event)
                       ? "Leader Email"
                       : "Email"}
@@ -247,6 +250,7 @@ function Register() {
                       "cinema",
                       "valorant",
                       "surfing",
+                      "bugbounty",
                     ].includes(event)
                       ? "Leader Institution"
                       : "Institution"}
@@ -276,6 +280,7 @@ function Register() {
                       "cinema",
                       "valorant",
                       "surfing",
+                      "bugbounty",
                     ].includes(event)
                       ? "Leader Contact"
                       : "Contact"}
@@ -300,6 +305,7 @@ function Register() {
                   "cinema",
                   "valorant",
                   "surfing",
+                  "bugbounty",
                 ].includes(event) && (
                   <>
                     <div>

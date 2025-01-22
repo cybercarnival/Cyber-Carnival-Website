@@ -182,7 +182,7 @@ export const data = {
     eventDetails: {
       time: "9 AM - 11 AM",
       date: "21 FEB 2025",
-      fees: "150 per head",
+      fees: "150 per team",
       seats: "150 SEATS",
       qr: BugBountyQR,
     },
