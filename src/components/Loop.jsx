@@ -14,7 +14,7 @@ function Loop() {
       sponsorsRef.current?.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
-  
+
   const testimonials = [
     {
       image: yuniq,
@@ -25,7 +25,6 @@ function Loop() {
     {
       image: disai,
     },
-    
   ];
   return (
     <div className="" ref={sponsorsRef}>
@@ -41,7 +40,7 @@ function Loop() {
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
-          speed="slow"
+          speed="normal"
         />
       </div>
     </div>

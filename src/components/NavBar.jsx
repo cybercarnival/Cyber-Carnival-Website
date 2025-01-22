@@ -62,7 +62,7 @@ function NavBar() {
               " text-xl font-[300] mx-2 hover:text-[#5BFFE6] hover:text-shadow-custom lg:text-3xl lg:mx-3"
             }
           >
-            Sponsors
+            Partners
           </NavLink>
           <NavLink
             to="/gallery"
@@ -150,7 +150,7 @@ function NavBar() {
             " text-3xl font-[300] my-3 mr-10 hover:text-[#5BFFE6] hover:text-shadow-custom"
           }
         >
-          Sponsors
+          Partners
         </NavLink>
         <NavLink
           to="/gallery"

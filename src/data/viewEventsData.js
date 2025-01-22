@@ -180,7 +180,7 @@ export const data = {
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
     studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
     eventDetails: {
-      time: "9 AM - 11 AM",
+      time: "10 AM - 01 PM",
       date: "21 FEB 2025",
       fees: "150 per team",
       seats: "150 SEATS",
