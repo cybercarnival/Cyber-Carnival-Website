@@ -35,20 +35,98 @@ Best regards,
 CyberCarnival Team
 `,
   },
+  capturetheflag: {
+    subject: "Confirmation of Your CTF Ticket  for CyberCarnival’25",
+    body: `Dear {NAME},  
+
+Thank you for registering for the upcoming Capture The Flag (CTF) event! We're thrilled to have you join us for this exciting challenge. Here are the event details:  
+    
+Event Details:
+    - Date: 20th February 2025  
+    - Time: 10:00 AM to 1:00 PM  
+    - Venue: BMS, 4th Floor Lab  
+
+Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/LVolM3Ffat59y8zbJPLR3f
+
+Please arrive at least 15 minutes early to complete check-in and set up your equipment. Ensure you bring your laptop and any necessary tools/software to participate effectively.  
+
+If you have any questions or require assistance, feel free to reply to this email.  
+
+Looking forward to seeing you at the event and wishing you all the best for the challenge ahead!  
+
+Best regards,  
+CyberCarnival Team`,
+  },
+  bugbounty: {
+    subject: "Confirmation of Your Ticket for the Bug Bounty Event",
+    body: `Dear {NAME} 
+
+Thank you for registering for the Bug Bounty event at CyberCarnival! We are thrilled to confirm your participation.  
+
+Event Details:
+- Date: 21st February 2025  
+- Time: 9 AM - 11 AM 
+Here's the whatsapp link to join our participants group: https://chat.whatsapp.com/JCNLUzsfA4mEqWFAawVJFp
+
+Please ensure you arrive at least 15 minutes early to complete the check-in process. Bring a copy of this confirmation email or your registration ID for seamless entry.  
+
+If you have any questions or require further assistance, feel free to reach out to us at hello@cybercarnival.in or +91 87774 97567.  
+
+We look forward to seeing you there for an engaging and insightful experience!  
+
+Best regards,
+CyberCarnival Team`,
+  },
+  surviva: {
+    subject: "Confirmation of Your Ticket for Shipwreck",
+    body: `Dear {NAME},
+
+Thank you for registering for the Shipwreck event! We're thrilled to confirm your participation.
+
+Event Details:
+
+Date: 21st February 2025
+Time: 10:00 AM - 1:00 PM
+Here’s our whatsapp link to join our participants group: https://chat.whatsapp.com/Ce5p7uG3VT35cYg4K4WFu0
+Please arrive at least 15 minutes early for check-in to ensure a smooth start to the event.
+
+Should you have any questions or require assistance, feel free to reach out to us at hello@cybercarnival.in or +91 8610307954.
+
+We look forward to seeing you there for an unforgettable experience!
+
+Best regards,
+Cyber Carnival Team`,
+  },
+  title: {
+    subject: "Confirmation of Your Ticket for the Title Event",
+    body: `Dear {NAME},
+
+Thank you for registering for the Title Event! We are excited to confirm your participation.
+
+Event Details:
+📅 Date: Friday, 21st February 2025
+⏰ Time: 11:00 AM to 1:00 PM
+Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/InHvZG5l3TNBWVCGItJGns
+
+Please bring a copy of this email or your ticket for verification at the registration desk. Ensure you arrive at least 15 minutes before the event starts to complete the check-in process smoothly.
+
+Should you have any questions or require further assistance, feel free to contact us at hello@cybercarnival.in or +91 9094562861.
+
+We look forward to seeing you there!
+
+Best regards,
+CyberCarnival Team`,
+  },
   cyberconclave: { subject: "", body: "" },
-  capturetheflag: { subject: "", body: "" },
   paperpresentation: { subject: "", body: "" },
-  bugbounty: { subject: "", body: "" },
   techexpo: { subject: "", body: "" },
   startup: { subject: "", body: "" },
-  surviva: { subject: "", body: "" },
   freefire: { subject: "", body: "" },
   cinema: { subject: "", body: "" },
   surfing: { subject: "", body: "" },
   awareness: { subject: "", body: "" },
   workshop1: { subject: "", body: "" },
   workshop2: { subject: "", body: "" },
-  title: { subject: "", body: "" },
   valo: { subject: "", body: "" },
 };
 
@@ -149,7 +227,10 @@ function Event() {
       </div>
       <div className="flex flex-col items-center justify-center w-full mb-10">
         {registrations?.map((row, index) => {
-          const variables = { REGISTRATIONID: row.id, NAME: row.teamName };
+          const variables = {
+            REGISTRATIONID: row.id,
+            NAME: row.teamName || row.name,
+          };
           const subject = EMAILS[id]["subject"];
           const body = EMAILS[id]["body"].replace(
             /{(.*?)}/g,
