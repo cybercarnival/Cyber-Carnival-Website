@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import disai from "../assets/disai.png";
 import nullImage from "../assets/null.png";
 import yuniq from "../assets/yuniq.svg";
+import guvi from "../assets/guvi.png";
 
 function Loop() {
   const sponsorsRef = useRef(null);
@@ -25,6 +26,7 @@ function Loop() {
     {
       image: disai,
     },
+    { image: guvi },
   ];
   return (
     <div className="" ref={sponsorsRef}>

@@ -51,7 +51,7 @@ export const InfiniteMovingCards = ({
       if (speed === "fast") {
         containerRef.current.style.setProperty("--animation-duration", "20s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "30s");
+        containerRef.current.style.setProperty("--animation-duration", "24s");
       } else {
         containerRef.current.style.setProperty("--animation-duration", "80s");
       }
@@ -88,10 +88,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] "
               ></div>
 
-              <img
-                src={item.image}
-                className="z-20 w-48 h-48 s border border-white"
-              />
+              <img src={item.image} className="z-20 w-44 h-44 object-contain" />
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col ">
                   {/* <span className=" text-sm leading-[1.6] text-gray-400 font-normal">

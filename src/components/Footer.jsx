@@ -76,7 +76,7 @@ function Footer() {
               Non-Technical Events
             </a>
             <br />
-            <a href="/techevents/viewevent/cyberthon" className="my-2">
+            <a href="https://cyberthon.cybercarnival.in/" className="my-2">
               Cyberthon
             </a>
             <br />

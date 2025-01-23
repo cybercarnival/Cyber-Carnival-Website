@@ -22,7 +22,7 @@ function ViewEvent() {
         <div className="w-full flex flex-col justify-self-center items-center justify-center rounded-xl">
           <div className="w-full h-[250px] md:h-1/2 xl:h-2/3  relative flex flex-col items-center justify-center">
             <img
-              className="w-full h-full absolute top-0 left-0 object-cover"
+              className="w-full h-full absolute top-0 left-0 object-cover rounded-t-xl"
               src={data[event].poster}
             />
             <h1
