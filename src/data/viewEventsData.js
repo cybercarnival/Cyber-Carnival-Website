@@ -210,7 +210,7 @@ export const data = {
     poster: techexpo,
     url: "techexpo",
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
-    studentCoordinator: ["Dhivyan", "Jonathan"],
+    studentCoordinator: ["Dhivyan +91 9042876394", "Jonathan +91 9150662333"],
     eventDetails: {
       time: "10 AM - 12 PM",
       date: "21 FEB 2025",
@@ -221,7 +221,7 @@ export const data = {
     rules: [
       "Registration: Teams can have 1 - 3 members, and participants must bring their own laptops, software, and resources.",
       "Participants must build the cyber tool before the event day and present it during the exhibition time.",
-      "Each team will have 10 minutes for their presentation.",
+      "Each team will have 3-5 minutes for their presentation.",
       "The presentation must include a PPT covering the following: description of the tool, novelty and innovative solution proposed, and a functional demo.",
       "Tool development categories include Network Security, Cryptography, Web Application Security, Incident Response, and Digital Forensics.",
     ],
