@@ -114,6 +114,13 @@ function ViewEvent() {
                   {data[event].facultyCoordinator[1]}
                 </h6>
               </div>
+              {data[event].facultyCoordinator.length == 3 && (
+                <div className="flex m-2">
+                  <h6 className=" text-left">
+                    {data[event].facultyCoordinator[2]}
+                  </h6>
+                </div>
+              )}
             </div>
           )}
 

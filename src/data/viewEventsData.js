@@ -77,7 +77,10 @@ export const data = {
     poster: ctf,
     url: "capturetheflag",
     facultyCoordinator: ["Dr.Surendar", "Dr.Sujatha"],
-    studentCoordinator: ["Anshul Bagchi", "Adhish Mehta"],
+    studentCoordinator: [
+      "Anshul Bagchi +91 8272941906",
+      "Adhish Mehta +91 6266362445",
+    ],
     eventDetails: {
       time: "10 AM - 1 PM",
       date: "20 FEB 2025",
@@ -99,7 +102,7 @@ export const data = {
     title: "Cyberthon",
     title_font: "font-jersey",
     title_size: "text-7xl",
-    description: "Gear up to Unleash your Hacking Prowess",
+    description: "Gear up to Unleash your Hacking Process",
 
     brief:
       "Get ready to dive into the thrilling world of cybersecurity with Cyberthon, the national-level hackathon organized by the cybersecurity. ",
@@ -141,7 +144,10 @@ export const data = {
     poster: paperpresentation,
     url: "paperpresentation",
     facultyCoordinator: ["Dr.Sabitha", "Dr.Gowri"],
-    studentCoordinator: ["J. Karthikeya", "Alton D Almeida"],
+    studentCoordinator: [
+      "J. Karthikeya +91 8074849211",
+      "Alton D Almeida +91 9380468719",
+    ],
     eventDetails: {
       time: "11AM - 1 PM",
       date: "21 Feb 2025",
@@ -178,7 +184,10 @@ export const data = {
     poster: bugbounty,
     url: "bugbounty",
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
-    studentCoordinator: ["Swapna Gupta", "Rishit Chanda"],
+    studentCoordinator: [
+      "Swapna Gupta +91 9002995954",
+      "Rishit Chanda +91 8777497567",
+    ],
     eventDetails: {
       time: "10 AM - 01 PM",
       date: "21 FEB 2025",
@@ -210,11 +219,11 @@ export const data = {
       "Unleash innovation in cybersecurity as students showcase their own tools to safeguard the digital future while upholding Confidentiality, Integrity, and Availability! The Secure Tool Expo provides a dynamic platform for participants to demonstrate their creativity by showcasing cutting-edge cybersecurity tools built by you. Whether focused on safeguarding data, enhancing system performance, or detecting vulnerabilities, this event serves as a hub of innovation. Participants will present their solutions to a panel of judges, showcasing how their tools effectively address critical cybersecurity challenges.",
     poster: techexpo,
     url: "techexpo",
-    facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy"],
+    facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy", "Dr.J.Nithisha"],
     studentCoordinator: ["Dhivyan +91 9042876394", "Jonathan +91 9150662333"],
     eventDetails: {
       time: "10 AM - 12 PM",
-      date: "21 FEB 2025",
+      date: "20 FEB 2025",
       fees: "150 PER TEAM",
       seats: "150 SEATS",
       qr: techexpoQR,
@@ -242,7 +251,10 @@ export const data = {
     poster: startup,
     url: "startup",
     facultyCoordinator: ["Dr.Visnudharsini", "Dr.Azhagiri"],
-    studentCoordinator: ["Vrajesh RS", "Joshika Sathish"],
+    studentCoordinator: [
+      "Vrajesh RS +91 9384025353",
+      "Joshika Sathish +91 7845845124",
+    ],
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 FEB 2025",
@@ -271,7 +283,10 @@ export const data = {
     poster: freefire,
     url: "freefire",
     facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
-    studentCoordinator: ["Sanjeev", "Moulleshvarma "],
+    studentCoordinator: [
+      "Sanjeev +91 6382079788",
+      "Moulleshvarma +91 9840440702",
+    ],
     eventDetails: {
       time: "10 AM - 1 PM",
       date: "21 FEB 2025",
@@ -300,7 +315,10 @@ export const data = {
     poster: cinema,
     url: "cinema",
     facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
-    studentCoordinator: ["Velu Aravind", "Yoshika"],
+    studentCoordinator: [
+      "Velu Aravind +91 7299284940",
+      "Akshayraj +91 7550248083",
+    ],
     eventDetails: {
       time: "9 AM - 12 PM",
       date: "FEB 2025",
@@ -331,7 +349,10 @@ export const data = {
     poster: surfing,
     url: "surfing",
     facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
-    studentCoordinator: ["Praveen Bhalagee", "Vignesh"],
+    studentCoordinator: [
+      "Praveen Bhalagee +91 9884224568",
+      "Vignesh +91 9176027957",
+    ],
     eventDetails: {
       time: "11 AM - 1 PM",
       date: "20 FEB 2025",
@@ -362,7 +383,7 @@ export const data = {
     poster: awareness,
     url: "awareness",
     facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
-    studentCoordinator: ["Shruthi Raj", "Sanjay"],
+    studentCoordinator: ["Shruthi Raj +91 7358451891", "Sanjay +91 9363581924"],
     eventDetails: {
       time: "10 AM - 11 AM",
       date: "20 FEB 2025",
@@ -384,7 +405,10 @@ export const data = {
     poster: surviva,
     url: "surviva",
     facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
-    studentCoordinator: ["Andrew Leo", "Priyanka G"],
+    studentCoordinator: [
+      "Andrew Leo +91 8610307954",
+      "Priyanka G +91 7305051592",
+    ],
     eventDetails: {
       time: "11 AM - 1 PM",
       date: "21 FEB 2025",
@@ -482,7 +506,7 @@ export const data = {
     poster: workshop2,
     url: "workshop2",
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
-    studentCoordinator: ["Vijay K", "Manav Raitani"],
+    studentCoordinator: ["Vijay K ", "Manav Raitani"],
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 & 21 FEB",
@@ -506,7 +530,10 @@ export const data = {
     poster: workshop1,
     url: "workshop1",
     facultyCoordinator: ["Ms.Menaka", "Dr.Jospin Jeya"],
-    studentCoordinator: ["Arunkumar J", "Sanrakshan P.B"],
+    studentCoordinator: [
+      "Arunkumar J +91 7397588467",
+      "Samrakshan P.B +91 8825876646",
+    ],
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 & 21 FEB",
