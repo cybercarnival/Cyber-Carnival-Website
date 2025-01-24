@@ -187,6 +187,7 @@ export const data = {
       qr: BugBountyQR,
     },
     rules: [
+      "Teams can have 1 - 3 members, and participants must bring their own laptops, software, and resources.",
       "No sharing! Don’t share the flags or bugs you find with anyone. Sharing will lead to instant disqualification.",
       "Stick to the scope—don’t test on third-party systems or services.",
       "Respect privacy. Avoid accessing, processing, or destroying personal data.",
