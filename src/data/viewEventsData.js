@@ -89,7 +89,7 @@ export const data = {
       qr: CTFQR,
     },
     rules: [
-      "Teams can have up to 1 - 3 members",
+      "Teams can have up to 1 - 3 members.",
       "The goal is simple: solve as many challenges as you can within the time limit.",
       "There are five different categories of challenges, and each one has questions ranging from super easy to really tough.",
       "You’ll earn points based on the difficulty of the question—harder ones mean more points.",
@@ -107,11 +107,11 @@ export const data = {
     brief:
       "Get ready to dive into the thrilling world of cybersecurity with Cyberthon, the national-level hackathon organized by the cybersecurity. ",
     brief2:
-      "Get ready to dive into the thrilling world of cybersecurity with Cyberthon, the national-level hackathon organized by the cybersecurity .Showcase your exceptional cyber skills and earn recognition for your expertise in this intense 24-hour challenge! This is your chance to leave a lasting impact, to make waves in the cybersecurity community, and to carve out your place among the best and brightest in the field.",
+      "Get ready to dive into the thrilling world of cybersecurity with Cyberthon, the national-level hackathon organized by the cybersecurity. Showcase your exceptional cyber skills and earn recognition for your expertise in this intense 24-hour challenge! This is your chance to leave a lasting impact, to make waves in the cybersecurity community, and to carve out your place among the best and brightest in the field.",
     poster: cyberthon,
     url: "cyberthon",
     facultyCoordinator: ["Dr.Minu", "Dr.Subashka Ramesh"],
-    studentCoordinator: ["Abdul Aleem", "Pranav Anand"],
+    studentCoordinator: ["Vignesh Muraleedharan +91 98221 28899", "Gokul R +91 9384918930"],
     eventDetails: {
       time: "-",
       date: "24-25 Jan 2025",
@@ -180,7 +180,7 @@ export const data = {
     brief:
       "If you love a good challenge, our Bug Bounty event is perfect for you! Your job? Find the vulnerabilities and uncover hidden flaws. There’s no one right way to do it—it’s all about using your creativity and problem-solving skills. Ready to dive in and show what you've got?",
     brief2:
-      "Bug Bounty challenges participants to explore systems, identify vulnerabilities, and patch flaws while showcasing their ingenuity and technical prowess. It's a creative and competitive platform for ethical hackers and cybersecurity enthusiasts to demonstrate their skills. Whether you're a professional or a beginner, this event will keep you on your toes as you uncover hidden risks and propose solutions.  ",
+      "Bug Bounty challenges participants to explore systems, identify vulnerabilities, and patch flaws while showcasing their ingenuity and technical prowess. It's a creative and competitive platform for ethical hackers and cybersecurity enthusiasts to demonstrate their skills. Whether you're a professional or a beginner, this event will keep you on your toes as you uncover hidden risks and propose solutions.",
     poster: bugbounty,
     url: "bugbounty",
     facultyCoordinator: ["Ms.J.Arthy", "Mrs.S.Sridevi"],
@@ -327,12 +327,12 @@ export const data = {
       qr: CyberSafeCinemaQR,
     },
     rules: [
-      "TEAM SIZE CAN BE MAXIMUM OF THREE",
-      "FILM DURATION: STAY WITHIN THE TIME LIMIT OF 10 MINS TO MAINTAIN JUDGES ATTENTION.",
-      "USE OF COPYRIGHTED MATERIAL IS PROHIBITED.",
-      "SUBMISSIONS WILL BE EVALUATED BASED ON THE EFFECTIVENESS OF THE NOIR ATMOSPHERE.",
-      "ANY FORM OF VULGARITY WILL LEAD TO IMMEDIATE DISQUALIFICATION.",
-      "THEME:- CYBER AWARNESS",
+      "Team size can be maximum of three",
+      "Film duration: Stay within the time limit of 10 mins to maintain the judges attention.",
+      "Use of copyrighted material is prohibited.",
+      "Submissions will be evaluated based on the effectiveness of the noir atmosphere.",
+      "Any form of vulgarity will lead to immediate disqualification.",
+      "Theme:- Cyber Awarness",
     ],
   },
 
@@ -361,10 +361,10 @@ export const data = {
       qr: ChannelSurfingQR,
     },
     rules: [
-      "No props can be used ",
+      "No props can be used.",
       "No costume is to be used.",
       "Do not use abusive words or actions in your Act.",
-      "Participants must refrain from opening their mouths or verbally stating the channel name during the game. ",
+      "Participants must refrain from opening their mouths or verbally stating the channel name during the game.",
       "Judge's decision is Final.",
     ],
   },
@@ -389,7 +389,7 @@ export const data = {
       date: "20 FEB 2025",
       fees: "FREE",
     },
-    rules: ["Maintain decorum within the mass", "Bring your edible essentials"],
+    rules: ["Maintain decorum within the mass.", "Bring your edible essentials."],
   },
 
   surviva: {
@@ -419,10 +419,10 @@ export const data = {
     rules: [
       "Time for convincing the captain: 3 minutes",
       "Rebuttal time: 1 minute",
-      "Totally 2 rounds will be conducted",
-      "Any sort of vulgarity is prohibited",
-      "There will be a negative marking if preparation time in exceeded",
-      "Participants will be judged on their humor, spontaneity and creativity",
+      "2 rounds will be conducted in total.",
+      "Any sort of vulgarity is prohibited.",
+      "There will be a negative marking if preparation time in exceeded.",
+      "Participants will be judged on their humor, spontaneity and creativity.",
       "On the final round Judge's decision will remain final.",
     ],
   },
@@ -441,8 +441,8 @@ export const data = {
     url: "title",
     facultyCoordinator: ["--", "--"],
     studentCoordinator: [
-      " Shadrach P - 9094562861",
-      "Swasthikka Ranganathan - 7094234999",
+      "Shadrach P - +91 9094562861",
+      "Swasthikka Ranganathan - +91 7094234999",
     ],
     eventDetails: {
       time: "11 AM - 1 PM",
@@ -452,8 +452,8 @@ export const data = {
       qr: TitleEventQR,
     },
     rules: [
-      "Multiple elimination rounds",
-      "Winner Recieves the title Mr/Ms. Cyber Carnival",
+      "Multiple elimination rounds.",
+      "Winner Recieves the title Mr/Ms. Cyber Carnival.",
     ],
   },
   valorant: {
@@ -470,7 +470,10 @@ export const data = {
     poster: valo,
     url: "valorant",
     facultyCoordinator: ["--", "--"],
-    studentCoordinator: ["--", "--"],
+    studentCoordinator: [
+      "Anand Paul - +91 9150575341"
+      "Vigneshwaran B - +91 7845891735"
+    ],
     eventDetails: {
       time: "9 AM - 12 PM",
       date: "20 FEB 2025",
@@ -479,16 +482,16 @@ export const data = {
       qr: ValoQR,
     },
     rules: [
-      "Teams of 5 players each",
-      "Single elimination bracket",
-      "Best of 3 rounds for each match",
-      "No toxic behavior or abusive language allowed",
-      "Use of any cheats, hacks, or external assistance is strictly prohibited",
-      "Players must join 10 minutes before their scheduled match time",
-      "Server choice is based on mutual agreement; if not, default server is used",
-      "All participants must have stable internet connection to avoid delays",
-      "Winning team advances to the next round",
-      "Prize for MVP of the tournament",
+      "Teams of 5 players each.",
+      "Single elimination bracket.",
+      "Best of 3 rounds for each match.",
+      "No toxic behavior or abusive language allowed.",
+      "Use of any cheats, hacks, or external assistance is strictly prohibited.",
+      "Players must join 10 minutes before their scheduled match time.",
+      "Server choice is based on mutual agreement; if not, default server is used.",
+      "All participants must have stable internet connection to avoid delays.",
+      "Winning team advances to the next round.",
+      "Prize for MVP of the tournament.",
     ],
   },
 
@@ -506,7 +509,9 @@ export const data = {
     poster: workshop2,
     url: "workshop2",
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
-    studentCoordinator: ["Vijay K ", "Manav Raitani"],
+    studentCoordinator: [
+      "Vijay K - ", 
+      "Manav Raitani - +91 75700 25877"],
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 & 21 FEB",
