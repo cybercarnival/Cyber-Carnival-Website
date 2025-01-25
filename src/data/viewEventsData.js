@@ -112,8 +112,9 @@ export const data = {
     url: "cyberthon",
     facultyCoordinator: ["Dr.Minu", "Dr.Subashka Ramesh"],
     studentCoordinator: [
-      "Vignesh Muraleedharan +91 98221 28899", 
-      "Gokul R +91 9384918930"],
+      "Vignesh Muraleedharan +91 98221 28899",
+      "Gokul R +91 9384918930",
+    ],
     eventDetails: {
       time: "-",
       date: "24-25 Jan 2025",
@@ -222,9 +223,7 @@ export const data = {
     poster: techexpo,
     url: "techexpo",
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy", "Dr.J.Nithisha"],
-    studentCoordinator: [
-      "Dhivyan +91 9042876394", 
-      "Jonathan +91 9150662333"],
+    studentCoordinator: ["Dhivyan +91 9042876394", "Jonathan +91 9150662333"],
     eventDetails: {
       time: "10 AM - 12 PM",
       date: "20 FEB 2025",
@@ -387,15 +386,16 @@ export const data = {
     poster: awareness,
     url: "awareness",
     facultyCoordinator: ["Dr.R.Sathya", "Mr.Kingsley Stephen "],
-    studentCoordinator: [
-      "Shruthi Raj +91 7358451891", 
-      "Sanjay +91 9363581924"],
+    studentCoordinator: ["Shruthi Raj +91 7358451891", "Sanjay +91 9363581924"],
     eventDetails: {
       time: "10 AM - 11 AM",
       date: "20 FEB 2025",
       fees: "FREE",
     },
-    rules: ["Maintain decorum within the mass.", "Bring your edible essentials."],
+    rules: [
+      "Maintain decorum within the mass.",
+      "Bring your edible essentials.",
+    ],
   },
 
   surviva: {
@@ -477,8 +477,8 @@ export const data = {
     url: "valorant",
     facultyCoordinator: ["--", "--"],
     studentCoordinator: [
-      "Anand Paul - +91 9150575341"
-      "Vigneshwaran B - +91 7845891735"
+      "Anand Paul - +91 9150575341",
+      "Vigneshwaran B - +91 7845891735",
     ],
     eventDetails: {
       time: "9 AM - 12 PM",
@@ -515,9 +515,7 @@ export const data = {
     poster: workshop2,
     url: "workshop2",
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
-    studentCoordinator: [
-      "Vijay K - ", 
-      "Manav Raitani - +91 75700 25877"],
+    studentCoordinator: ["Vijay K - ", "Manav Raitani - +91 75700 25877"],
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 & 21 FEB",
