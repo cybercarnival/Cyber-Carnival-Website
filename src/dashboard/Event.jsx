@@ -8,6 +8,7 @@ import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import NewReleasesIcon from "@mui/icons-material/NewReleases";
 import VerifiedIcon from "@mui/icons-material/Verified";
+import ExportData from "./exportData";
 
 const EMAILS = {
   cyberthon: {
@@ -195,6 +196,8 @@ function Event() {
   }
   return (
     <div className="flex justify-start items-center flex-col bg-white min-h-screen">
+      {id == "cyberthon" && <ExportData event={id} />}
+
       <div className="flex w-full items-center justify-center">
         <h1 className=" font-orbitron text-white text-4xl w-1/2 font-bold my-4 h-48 m-6 border-4 rounded-xl border-gray-600 bg-teal-800 flex items-center justify-center">
           {id}
