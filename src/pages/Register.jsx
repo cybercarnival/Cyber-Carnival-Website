@@ -32,6 +32,8 @@ function Register() {
     member3: "",
     member4: "",
     member5: "",
+    startup: "",
+    registration: "",
     transactionID: "",
     file: null,
   });
@@ -111,6 +113,8 @@ function Register() {
         member3: formData.member3,
         member4: formData.member4,
         member5: formData.member5,
+        startup: formData.startup,
+        registration: formData.registration,
         transactionID: formData.transactionID,
         screenshotUrl: imageURL,
         createdAt: new Date(),
@@ -128,6 +132,8 @@ function Register() {
         member3: "",
         member4: "",
         member5: "",
+        startup: "",
+        registration: "",
         transactionID: "",
         file: null,
       });
@@ -172,6 +178,51 @@ function Register() {
                         id="teamName"
                         className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                         placeholder="Team Name"
+                        required
+                      />
+                    </div>
+                  </>
+                )}
+                {["startup"].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="startupname"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Startup Name <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        value={formData.startup}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="startup"
+                        id="startupname"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Startup Name"
+                        required
+                      />
+                    </div>
+                  </>
+                )}
+                {["startup"].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="Startupreg"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Startup Registration
+                        <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        value={formData.registration}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="registration"
+                        id="Startupreg"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Startup Registration"
                         required
                       />
                     </div>
