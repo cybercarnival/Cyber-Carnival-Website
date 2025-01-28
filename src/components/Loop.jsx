@@ -4,7 +4,7 @@ import comingSoon from "../assets/comingSoon.jpg";
 import { useLocation } from "react-router-dom";
 import disai from "../assets/disai.png";
 import nullImage from "../assets/null.png";
-import yuniq from "../assets/yuniq.svg";
+import yuniq from "../assets/yuniq.jpg";
 import guvi from "../assets/guvi.png";
 
 function Loop() {

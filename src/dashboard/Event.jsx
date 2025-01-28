@@ -146,6 +146,8 @@ function Event() {
   };
   const {
     data,
+    dataset,
+    verifiedDataset,
     eventFees,
     verifiedList,
     setToggle,
@@ -166,11 +168,16 @@ function Event() {
   let revenue = 0;
   let verifiedRevenue = 0;
 
-  for (let i = 0; i < verifiedRegistrations?.length; i++) {
-    verifiedRevenue += eventFees[id];
-  }
-  for (let i = 0; i < registrations?.length; i++) {
-    revenue += eventFees[id];
+  if (id == "cyberthon") {
+    revenue = 25750;
+    verifiedRevenue = 25750;
+  } else {
+    for (let i = 0; i < verifiedRegistrations?.length; i++) {
+      verifiedRevenue += eventFees[id];
+    }
+    for (let i = 0; i < registrations?.length; i++) {
+      revenue += eventFees[id];
+    }
   }
   const handleVerification = async (id) => {
     try {
@@ -306,6 +313,16 @@ function Event() {
                       {row.teamName && (
                         <h1 className="text-xl font-mono ">
                           Team Name: {row.teamName}
+                        </h1>
+                      )}
+                      {row.startup && (
+                        <h1 className="text-xl font-mono ">
+                          Startup Name: {row.startup}
+                        </h1>
+                      )}
+                      {row.registration && (
+                        <h1 className="text-xl font-mono ">
+                          Startup Registration: {row.registration}
                         </h1>
                       )}
 
