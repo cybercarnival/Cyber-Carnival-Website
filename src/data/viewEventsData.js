@@ -317,7 +317,7 @@ export const data = {
       "Cyber Safe Cinema is an electrifying event, bringing filmmakers of different backgrounds onto the screen as they light it up with strong stories. The event features short films on cyber awareness, showing how technology is changing our lives. As lights shine bright, viewers will witness stories that make them think and talk about why staying informed in this digital world matters.",
     poster: cinema,
     url: "cinema",
-    facultyCoordinator: ["Dr. Manju AP/CSE", "Ms. S.Nancy Lima AP/CSE"],
+    facultyCoordinator: ["Dr. Manju AP/CSE", "Ms. S.Nancy Lima Christy AP/CSE"],
     studentCoordinator: [
       "Velu Aravind +91 7299284940",
       "Akshayraj +91 7550248083",
@@ -357,7 +357,7 @@ export const data = {
       "Vignesh +91 9176027957",
     ],
     eventDetails: {
-      time: "11 AM - 1 PM",
+      time: "1 PM - 3 PM",
       date: "20 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",

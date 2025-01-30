@@ -107,6 +107,7 @@ function ViewEvent() {
               <div className="flex m-2">
                 <h6 className=" text-left">
                   {data[event].facultyCoordinator[0]}
+                  {""}
                 </h6>
               </div>
               <div className="flex m-2">
