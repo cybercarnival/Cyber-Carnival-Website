@@ -102,7 +102,7 @@ function ViewEvent() {
           {event !== "cyberconclave" && (
             <div className="w-full">
               <h1 className="text-left m-2 text-[#1EC1C5] text-3xl font-jersey">
-                Faculty Coordinator
+                Faculty Coordinators
               </h1>
               <div className="flex m-2">
                 <h6 className=" text-left">
