@@ -26,6 +26,8 @@ import FreeFireQR from "../assets/FreeFireQR.png";
 import ShipwreckQR from "../assets/ShipwreckQR.jpg";
 import TitleEventQR from "../assets/TitleEventQR.jpg";
 import ValoQR from "../assets/ValoQR.jpg";
+import ugpgQR from "../assets/ugpgQR.png";
+import proffQR from "../assets/proffQR.png";
 
 export const data = {
   cyberconclave: {
@@ -58,8 +60,12 @@ export const data = {
       time: "10 AM - 11:30 AM",
       date: "20 FEB 2025",
       fees: "150 per head",
+      ugpg: "500 per head",
+      proff: "750 per head",
       seats: "200 seats",
       qr: ConclaveQR,
+      ugpgQR: ugpgQR,
+      proffQR: proffQR,
     },
     discussion: ["Unmasking Online Scams and Strengthening Digital Defenses"],
   },
