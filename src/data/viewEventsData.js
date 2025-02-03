@@ -57,7 +57,7 @@ export const data = {
     eventDetails: {
       time: "10 AM - 11:30 AM",
       date: "20 FEB 2025",
-      fees: "150 per head",
+      fees: "200 per head",
       seats: "200 seats",
       qr: ConclaveQR,
     },
@@ -166,7 +166,7 @@ export const data = {
       "No plagiarism allowed – your paper must be your own creation.",
       "After Phase1, the selected teams will be notified(via email).",
       "Selected teams can proceed with the payment.",
-      "Phase 2 (Rs.100 per Head for the shortlisted teams) :",
+      "Phase 2 (Rs.150 per Head for the shortlisted teams) :",
       "Presentation time will be around 5 minutes.",
       "If the paper is a group effort, each member may be required to present a portion of the paper.",
       "Bring a backup copy of the presentation (on USB or cloud storage).",

@@ -204,7 +204,7 @@ function ViewEvent() {
                 <h6 className=" text-center mx-2">
                   {data[event].eventDetails.fees}{" "}
                   {event == "paperpresentation"
-                    ? " | Phase 2: Rs.100 per Head"
+                    ? " | Phase 2: Rs.150 per Head"
                     : ""}
                 </h6>
               </div>
