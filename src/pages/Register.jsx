@@ -22,10 +22,8 @@ import { uid } from "uid";
 
 function Register() {
   const nav = useNavigate();
-
   const [formData, setFormData] = useState({
     teamName: "",
-    occupation: "",
     name: "",
     phone: "",
     email: "",
@@ -49,7 +47,6 @@ function Register() {
       ...prev,
       [name]: value,
     }));
-    console.log(formData.occupation);
   };
 
   const handleFileChange = (e) => {
@@ -445,34 +442,6 @@ function Register() {
                     </div>
                   </>
                 )}
-                {event == "cyberconclave" && (
-                  <div>
-                    <label
-                      htmlFor="member 5"
-                      className="block mb-2 text-base font-medium text-gray-400"
-                    >
-                      Occupation <span className="text-red-600">*</span>
-                    </label>
-                    <select
-                      id="occupation"
-                      name="occupation"
-                      value={formData.occupation}
-                      onChange={handleInputChange}
-                      className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                      required
-                    >
-                      <option value="None" className="bg-black">
-                        Select
-                      </option>
-                      <option value="ugpg" className="bg-black">
-                        UG/PG Students
-                      </option>
-                      <option value="proff" className="bg-black">
-                        Industry Proffessionals / faculty / Scholars{" "}
-                      </option>
-                    </select>
-                  </div>
-                )}
 
                 {event !== "awareness" &&
                   event !== "startup" &&
@@ -507,50 +476,17 @@ function Register() {
                                     <h6>Time</h6>
                                     <h6>{data[event]?.eventDetails.time}</h6>
                                   </div>
-                                  {event != "cyberconclave" ? (
-                                    <div className="w-full flex justify-between">
-                                      <h6>Fees</h6>
-                                      <h6>{data[event]?.eventDetails.fees}</h6>
-                                    </div>
-                                  ) : (
-                                    <div className="w-full flex justify-between">
-                                      <h6>Fees</h6>
-                                      {formData.occupation ? (
-                                        <h6>
-                                          {
-                                            data[event]?.eventDetails[
-                                              formData.occupation
-                                            ]
-                                          }
-                                        </h6>
-                                      ) : (
-                                        <h6>
-                                          Select Occupation to know event fees
-                                        </h6>
-                                      )}
-                                    </div>
-                                  )}
+                                  <div className="w-full flex justify-between">
+                                    <h6>Fees</h6>
+                                    <h6>{data[event]?.eventDetails.fees}</h6>
+                                  </div>
                                 </div>
                               </div>
                               <div className="flex justify-center items-center">
-                                {event != "cyberconclave" ? (
-                                  <img
-                                    src={data[event]?.eventDetails.qr}
-                                    className="w-64 h-80 border-2 border-gray-500 rounded-lg"
-                                  />
-                                ) : formData.occupation == "ugpg" ? (
-                                  <img
-                                    src={data[event]?.eventDetails.ugpgQR}
-                                    className="w-64 h-80 border-2 border-gray-500 rounded-lg"
-                                  />
-                                ) : formData.occupation == "proff" ? (
-                                  <img
-                                    src={data[event]?.eventDetails.proffQR}
-                                    className="w-64 h-80 border-2 border-gray-500 rounded-lg"
-                                  />
-                                ) : (
-                                  <></>
-                                )}
+                                <img
+                                  src={data[event]?.eventDetails.qr}
+                                  className="w-64 h-80 border-2 border-gray-500 rounded-lg"
+                                />
                               </div>
                             </ModalContent>
                           </ModalBody>
