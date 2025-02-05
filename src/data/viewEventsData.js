@@ -20,12 +20,12 @@ import CTFQR from "../assets/CTFQR.png";
 import PaperPresentationQR from "../assets/PaperPresentationQR.png";
 import WorkshopQR from "../assets/WorkshopQR.png";
 import BugBountyQR from "../assets/BugBountyQR.png";
-import ChannelSurfingQR from "../assets/ChannelSurfingQR.jpg";
+import ChannelSurfingQR from "../assets/ChannelSurfingQR.png";
 import CyberSafeCinemaQR from "../assets/CyberSafeCinemaQR.png";
 import FreeFireQR from "../assets/FreeFireQR.png";
-import ShipwreckQR from "../assets/ShipwreckQR.jpg";
-import TitleEventQR from "../assets/TitleEventQR.jpg";
-import ValoQR from "../assets/ValoQR.jpg";
+import ShipwreckQR from "../assets/ShipwreckQR.png";
+import TitleEventQR from "../assets/TitleEventQR.png";
+import ValoQR from "../assets/ValoQR.png";
 
 export const data = {
   cyberconclave: {
@@ -57,7 +57,7 @@ export const data = {
     eventDetails: {
       time: "10 AM - 11:30 AM",
       date: "20 FEB 2025",
-      fees: "200 per head",
+      fees: "150 per head",
       seats: "200 seats",
       qr: ConclaveQR,
     },
@@ -166,7 +166,7 @@ export const data = {
       "No plagiarism allowed – your paper must be your own creation.",
       "After Phase1, the selected teams will be notified(via email).",
       "Selected teams can proceed with the payment.",
-      "Phase 2 (Rs.150 per Head for the shortlisted teams) :",
+      "Phase 2 (Rs.100 per Head for the shortlisted teams) :",
       "Presentation time will be around 5 minutes.",
       "If the paper is a group effort, each member may be required to present a portion of the paper.",
       "Bring a backup copy of the presentation (on USB or cloud storage).",
@@ -194,7 +194,7 @@ export const data = {
     eventDetails: {
       time: "10 AM - 01 PM",
       date: "21 FEB 2025",
-      fees: "250 per team",
+      fees: "150 per team",
       seats: "150 SEATS",
       qr: BugBountyQR,
     },
@@ -285,7 +285,7 @@ export const data = {
       "Get ready for the ultimate Free Fire tournament! Join top players from colleges everywhere as they battle it out for glory and cool prizes. Dive into intense matches packed with strategy, epic gunfights, and heart-pounding moments. Whether you're a seasoned pro or just love the game, this tournament is your chance to experience action-packed gameplay and create unforgettable memories. Don’t miss out the opportunity to show off your skills and claim your place in the Free Fire community!",
     poster: freefire,
     url: "freefire",
-    facultyCoordinator: ["Ms.Sivasankari AP/CSE", "Dr.Sasirekha AP/CSE"],
+    facultyCoordinator: ["Ms.Sivasankari ", "Dr.Sasirekha"],
     studentCoordinator: [
       "Sanjeev +91 6382079788",
       "Moulleshvarma +91 9840440702",
@@ -317,7 +317,7 @@ export const data = {
       "Cyber Safe Cinema is an electrifying event, bringing filmmakers of different backgrounds onto the screen as they light it up with strong stories. The event features short films on cyber awareness, showing how technology is changing our lives. As lights shine bright, viewers will witness stories that make them think and talk about why staying informed in this digital world matters.",
     poster: cinema,
     url: "cinema",
-    facultyCoordinator: ["Dr. Manju AP/CSE", "Ms. S.Nancy Lima Christy AP/CSE"],
+    facultyCoordinator: ["Dr.Manju", "Ms.S.Nancy Lima"],
     studentCoordinator: [
       "Velu Aravind +91 7299284940",
       "Akshayraj +91 7550248083",
@@ -351,7 +351,7 @@ export const data = {
       "Channel Surfing is a mimicry of popular channels by a team. The Judge changes the channel and gives commands in reverse, pause, play, fast-forward, and slow motion, which teams are supposed to follow. The judge cues the team to switch channels.Performance must be changed immediately after that. According to the act points will be awarded. Categories of Channels: News, Sports, Movies-Hindi & English, Music-Hindi & English, Food Channels, Entertainment-National,Entertainment-International, Kids Channel, Lifestyle, Wildlife Channels, Science.",
     poster: surfing,
     url: "surfing",
-    facultyCoordinator: ["Ms.Sajini AP/CSE", "Ms.S.Vaishnavi AP/CSE"],
+    facultyCoordinator: ["Ms.Sajini", "Ms.S.Vaishnavi"],
     studentCoordinator: [
       "Praveen Bhalagee +91 9884224568",
       "Vignesh +91 9176027957",
@@ -410,7 +410,7 @@ export const data = {
       "In a Shipwreck event, participants play various characters-from historical to totally fictional-on a sinking ship. Each participant has to argue why their character deserves to be included in the limited lifeboats. They balance character portrayal with convincing others about their importance and discrediting fellow shipmates at the same time. It is creative, homes debating skills, and demands quick thinking. One has to keep changing arguments and rebuttals - very dynamic and entertaining. It's popular in schools and colleges because of the drama, strategy, and humor it brings into a debate.",
     poster: surviva,
     url: "surviva",
-    facultyCoordinator: ["Ms.Kudiyarasudevi AP/CSE ", "Dr.Tamilselvi AP/CSE"],
+    facultyCoordinator: ["Ms.Kudiyarasudevi", "Dr.Tamilselvi"],
     studentCoordinator: [
       "Andrew Leo +91 8610307954",
       "Priyanka G +91 7305051592",
@@ -445,7 +445,7 @@ export const data = {
       "In Last One Standing: The Battle for the Title, the battle is intense among fierce contenders as they vie in a high-stakes competition for the champion title. Participants are pushed to their limits, making strategic moves and crucial decisions while facing various challenges. As the competition hots up, and hopefuls drop one by one, it is just the last man standing. 'Last One Standing' is all about tenacity and striving for greatness. Join us in this battle of strength and spirit.",
     poster: title,
     url: "title",
-    facultyCoordinator: ["Ms. Sujeetha AP/CSE", ""],
+    facultyCoordinator: ["--", "--"],
     studentCoordinator: [
       "Shadrach P - +91 9094562861",
       "Swasthikka Ranganathan - +91 7094234999",
@@ -475,7 +475,7 @@ export const data = {
       "Get ready for an electrifying Valorant event, where top players and avid fans unite for a high-stakes showdown filled with strategy, skill, and adrenaline. Watch as teams go head-to-head in intense, tactical battles, showcasing their mastery of the game and pushing the limits of teamwork and precision. With immersive viewing experiences, fan activities, and plenty of highlights, this event is a must for anyone who lives for the thrill of competition. Don’t miss out on the excitement, camaraderie, and unforgettable moments that only Valorant can deliver!",
     poster: valo,
     url: "valorant",
-    facultyCoordinator: ["Dr.D. Deva hema AP/CSE", "Ms.J. Juslin Sega AP/CSE"],
+    facultyCoordinator: ["--", "--"],
     studentCoordinator: [
       "Anand Paul - +91 9150575341",
       "Vigneshwaran B - +91 7845891735",
@@ -483,21 +483,21 @@ export const data = {
     eventDetails: {
       time: "9 AM - 12 PM",
       date: "20 FEB 2025",
-      fees: "250 per team",
+      fees: "150 per head",
       seats: "150 SEATS",
       qr: ValoQR,
     },
     rules: [
-      "Teams of 5 players each.",
-      "Single elimination bracket.",
-      "Best of 3 rounds for each match.",
+      "Each team must consist of exactly 5 players.",
+      "The tournament follows a 16-team single-elimination format. Losing a match means immediate elimination.",
+      "Swiftplay mode will be used for all knockout matches (no overtime). The final match will be played in standard mode between the two teams, with overtime enabled and a 'win by two' rule applied.",
+      "Teams must report on time for their matches. Late or unavailable teams will be disqualified.",
+      "Teams will be assigned through random shuffling for the first knockout round.",
+      "Organizers will not be responsible for any connectivity issues.",
       "No toxic behavior or abusive language allowed.",
-      "Use of any cheats, hacks, or external assistance is strictly prohibited.",
-      "Players must join 10 minutes before their scheduled match time.",
-      "Server choice is based on mutual agreement; if not, default server is used.",
-      "All participants must have stable internet connection to avoid delays.",
-      "Winning team advances to the next round.",
-      "Prize for MVP of the tournament.",
+      "Bugs, hacks, scripts, or any external software violations are strictly prohibited. Violators will be disqualified.",
+      "Maps will be chosen randomly for each match, so teams should be prepared to play on any map.",
+      "In case of any contradiction or disputes during the game, the coordinators' decision will be final and binding.",
     ],
   },
 
