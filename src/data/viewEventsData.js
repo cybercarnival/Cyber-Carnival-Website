@@ -515,7 +515,10 @@ export const data = {
     poster: workshop2,
     url: "workshop2",
     facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya"],
-    studentCoordinator: ["Vijay K - ", "Manav Raitani - +91 75700 25877"],
+    studentCoordinator: [
+      "Vijay K - +91 9843352754",
+      "Manav Raitani - +91 75700 25877",
+    ],
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 & 21 FEB",
