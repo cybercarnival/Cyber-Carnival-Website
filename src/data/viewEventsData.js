@@ -323,7 +323,7 @@ export const data = {
       "Akshayraj +91 7550248083",
     ],
     eventDetails: {
-      time: "9 AM - 12 PM",
+      time: "9 AM - 11 AM",
       date: "21 FEB 2025",
       fees: "300 per team",
       seats: "150 SEATS",
@@ -357,8 +357,8 @@ export const data = {
       "Vignesh +91 9176027957",
     ],
     eventDetails: {
-      time: "1 PM - 3 PM",
-      date: "20 FEB 2025",
+      time: "9 AM - 11 AM",
+      date: "21 FEB 2025",
       fees: "250 per team",
       seats: "150 SEATS",
       qr: ChannelSurfingQR,
@@ -451,7 +451,7 @@ export const data = {
       "Swasthikka Ranganathan - +91 7094234999",
     ],
     eventDetails: {
-      time: "11 AM - 1 PM",
+      time: "1 PM - 3 PM",
       date: "21 FEB 2025",
       fees: "150 per head",
       seats: "200 SEATS",
