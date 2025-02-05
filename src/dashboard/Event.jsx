@@ -128,7 +128,7 @@ CyberCarnival Team`,
   awareness: { subject: "", body: "" },
   workshop1: { subject: "", body: "" },
   workshop2: { subject: "", body: "" },
-  valo: { subject: "", body: "" },
+  valorant: { subject: "", body: "" },
 };
 
 function Event() {

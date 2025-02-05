@@ -55,7 +55,7 @@ export const AppProvider = ({ children }) => {
     workshop1: 500,
     workshop2: 500,
     title: 200,
-    valo: 200,
+    valorant: 200,
   };
 
   async function getEvents() {
@@ -75,7 +75,7 @@ export const AppProvider = ({ children }) => {
       "workshop1",
       "workshop2",
       "title",
-      "valo",
+      "valorant",
     ];
 
     const allData = [];
@@ -160,7 +160,7 @@ export const AppProvider = ({ children }) => {
         verifiedConclave.push({ collection: col, documents: verifiedDocs });
       } else if (
         col === "title" ||
-        col === "valo" ||
+        col === "valorant" ||
         col === "freefire" ||
         col === "cinema" ||
         col === "surfing" ||
