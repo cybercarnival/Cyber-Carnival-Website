@@ -514,10 +514,14 @@ export const data = {
       "This cybersecurity workshop serves as a simple introduction to the digital security environment for beginners as well as professional users. Its core topics focus on threat detection, vulnerability assessment, and network protection, helping students understand the principles of protecting their digital assets. These include identifying phishing attempts and responding accordingly, effective mechanisms for defense, and best practices in data security. Hands-on sessions will immerse participants in real-world scenarios to allow them to practice incident response and risk mitigation in real time.",
     poster: workshop2,
     url: "workshop2",
-    facultyCoordinator: ["Ms.Jayalakshmi ", "Dr.Ramya", "Ms.Sivasankari"],
+    facultyCoordinator: [
+      "Ms.Jayalakshmi AP/CSE",
+      "Dr.Ramya AP/CSE",
+      "Ms.Sivasankari AP/CSE",
+    ],
     studentCoordinator: [
       "Vijay K - +91 9843352754",
-      "Manav Raitani - +91 7570025877",
+      "Manav Raitani - +91 7570025877",
     ],
     eventDetails: {
       time: "10 AM - 4 PM",
@@ -541,7 +545,7 @@ export const data = {
       "A cybersecurity workshop covering fundamentals of online security, threat detection, and protection techniques. Participants will learn about securing networks, and implementing best practices to safeguard digital assets. Ideal for beginners and professionals aiming to enhance their cybersecurity skills.This cybersecurity workshop provides a comprehensive introduction to the essentials of digital security.",
     poster: workshop1,
     url: "workshop1",
-    facultyCoordinator: ["Ms.Menaka", "Dr.Jospin Jeya"],
+    facultyCoordinator: ["Dr.S.Menaka AP/CSE", "Dr.Jospin Jeya AP/CSE"],
     studentCoordinator: [
       "Arunkumar J +91 7397588467",
       "Samrakshan P.B +91 8825876646",
