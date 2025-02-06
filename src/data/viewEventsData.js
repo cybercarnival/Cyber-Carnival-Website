@@ -325,12 +325,12 @@ export const data = {
     eventDetails: {
       time: "9 AM - 11 AM",
       date: "21 FEB 2025",
-      fees: "300 per team",
+      fees: "250 per team",
       seats: "150 SEATS",
       qr: CyberSafeCinemaQR,
     },
     rules: [
-      "Team size can be maximum of three",
+      "Team size can be maximum of four",
       "Film duration: Stay within the time limit of 10 mins to maintain the judges attention.",
       "Use of copyrighted material is prohibited.",
       "Submissions will be evaluated based on the effectiveness of the noir atmosphere.",
@@ -483,7 +483,7 @@ export const data = {
     eventDetails: {
       time: "9 AM - 12 PM",
       date: "20 FEB 2025",
-      fees: "150 per head",
+      fees: "250 per team",
       seats: "150 SEATS",
       qr: ValoQR,
     },
