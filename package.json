@@ -21,6 +21,7 @@
     "@tabler/icons-react": "^3.20.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "confetti-js": "^0.0.18",
     "firebase": "^11.0.1",
     "framer-motion": "^11.11.9",
     "gsap": "^3.12.5",

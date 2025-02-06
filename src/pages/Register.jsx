@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { collection, addDoc } from "firebase/firestore";
+import {
+  collection,
+  addDoc,
+  getDocs,
+  deleteDoc,
+  doc,
+} from "firebase/firestore";
 import { db, supabase } from "../firebase_config.js";
 import { useNavigate, useParams } from "react-router-dom";
 import QR from "../assets/QR.png";
 import { data } from "../data/viewEventsData.js";
 import FileUploadIcon from "@mui/icons-material/FileUpload";
 import PaymentsOutlinedIcon from "@mui/icons-material/PaymentsOutlined";
-
 import {
   Modal,
   ModalBody,
@@ -22,6 +27,18 @@ import { uid } from "uid";
 
 function Register() {
   const nav = useNavigate();
+  const [promocodes, setPromocodes] = useState([]);
+  const [promoVerify, setPromoVerify] = useState(false);
+  useEffect(() => {
+    const getCodes = async () => {
+      const colRef = collection(db, "workshopcodes");
+      const colSnapshot = await getDocs(colRef);
+      const colData = colSnapshot.docs.map((doc) => doc.id);
+      setPromocodes(colData);
+    };
+    getCodes();
+  }, []);
+
   const [formData, setFormData] = useState({
     teamName: "",
     name: "",
@@ -33,6 +50,7 @@ function Register() {
     member4: "",
     member5: "",
     startup: "",
+    promocode: "",
     registration: "",
     transactionID: "",
     file: null,
@@ -48,7 +66,20 @@ function Register() {
       [name]: value,
     }));
   };
-
+  const handlePromoVerify = () => {
+    if (promocodes.includes(formData.promocode)) {
+      alert("Promo Code Applied!!");
+      try {
+        deleteDoc(doc(db, "workshopcodes", formData.promocode));
+      } catch (err) {
+        alert("Code Not Found");
+      }
+      setPromoVerify(true);
+    } else {
+      alert("Invalid Promo Code");
+      setPromoVerify(false);
+    }
+  };
   const handleFileChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -62,6 +93,7 @@ function Register() {
       event !== "awareness" &&
       event != "startup" &&
       event != "paperpresentation" &&
+      !promoVerify &&
       !formData.file
     ) {
       return alert("Please upload the payment screenshot");
@@ -92,7 +124,8 @@ function Register() {
     if (
       event !== "awareness" &&
       event != "startup" &&
-      event != "paperpresentation"
+      event != "paperpresentation" &&
+      !promoVerify
     ) {
       uploadFile();
     } else {
@@ -111,6 +144,7 @@ function Register() {
         college: formData.college,
         member2: formData.member2,
         member3: formData.member3,
+        promocode: formData.promocode,
         member4: formData.member4,
         member5: formData.member5,
         startup: formData.startup,
@@ -130,6 +164,7 @@ function Register() {
         college: "",
         member2: "",
         member3: "",
+        promocode: "",
         member4: "",
         member5: "",
         startup: "",
@@ -442,10 +477,39 @@ function Register() {
                     </div>
                   </>
                 )}
+                {["workshop1", "workshop2"].includes(event) && (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="promocode"
+                        className="block mb-2 text-base font-medium text-gray-400"
+                      >
+                        Promo Code
+                      </label>
+                      <input
+                        value={formData.promocode}
+                        onChange={handleInputChange}
+                        type="text"
+                        name="promocode"
+                        id="promocode"
+                        className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                        placeholder="Promo Code"
+                      />
+                      <button
+                        type="button"
+                        onClick={handlePromoVerify}
+                        className="w-full h-10 bg-teal-950 text-white rounded-xl mt-3"
+                      >
+                        Apply Code
+                      </button>
+                    </div>
+                  </>
+                )}
 
                 {event !== "awareness" &&
                   event !== "startup" &&
-                  event !== "paperpresentation" && (
+                  event !== "paperpresentation" &&
+                  !promoVerify && (
                     <>
                       <motion.div className="py-2 border-2 border-[#1EC1C5] rounded-lg cursor-pointer flex items-center justify-center">
                         <Modal>
