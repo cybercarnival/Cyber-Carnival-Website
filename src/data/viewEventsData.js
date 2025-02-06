@@ -502,9 +502,9 @@ export const data = {
   },
 
   workshop2: {
-    title: "Workshop 2",
+    title: "Cyber Forensics and Digital Forensics",
     title_font: "font-saira",
-    title_size: "text-4xl",
+    title_size: "text-2xl text-center",
     description:
       "Interactive cybersecurity workshop handled by industry experts with doubt clearing session",
 
@@ -533,9 +533,9 @@ export const data = {
     rules: [],
   },
   workshop1: {
-    title: "Workshop 1",
+    title: "Cybersecurity and Network Security",
     title_font: "font-saira",
-    title_size: "text-4xl",
+    title_size: "text-2xl text-center",
     description:
       "Interactive cybersecurity workshop handled by industry experts with doubt clearing session",
 
