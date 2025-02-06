@@ -335,7 +335,6 @@ export const data = {
       "Use of copyrighted material is prohibited.",
       "Submissions will be evaluated based on the effectiveness of the noir atmosphere.",
       "Any form of vulgarity will lead to immediate disqualification.",
-      "Theme:- Cyber Awarness",
     ],
   },
 

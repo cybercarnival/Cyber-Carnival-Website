@@ -435,6 +435,7 @@ function Register() {
                   "paperpresentation",
                   "valorant",
                   "surfing",
+                  "cinema",
                 ].includes(event) && (
                   <>
                     <div>
