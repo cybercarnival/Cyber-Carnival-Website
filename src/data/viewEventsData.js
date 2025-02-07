@@ -25,7 +25,7 @@ import CyberSafeCinemaQR from "../assets/CyberSafeCinemaQR.png";
 import FreeFireQR from "../assets/FreeFireQR.png";
 import ShipwreckQR from "../assets/ShipwreckQR.jpg";
 import TitleEventQR from "../assets/TitleEventQR.jpg";
-import ValoQR from "../assets/ValoQR.jpg";
+import ValoQR from "../assets/ValoQR.png";
 
 export const data = {
   cyberconclave: {
@@ -457,7 +457,9 @@ export const data = {
       qr: TitleEventQR,
     },
     rules: [
-      "Multiple elimination rounds.",
+      "There will be multiple elimination rounds and the judge's decision is final.",
+      "Participants will be judged based on the humour creativity and spontaneity.",
+      "Do not use abusive words  or actions in your Act.",
       "Winner Recieves the title Mr/Ms. Cyber Carnival.",
     ],
   },
