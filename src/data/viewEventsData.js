@@ -153,7 +153,7 @@ export const data = {
     ],
     eventDetails: {
       time: "11AM - 1 PM",
-      date: "21 Feb 2025",
+      date: "20 Feb 2025",
       fees: "Phase 1: FREE",
       seats: "80 SEATS",
       qr: PaperPresentationQR,
