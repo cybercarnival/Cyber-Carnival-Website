@@ -55,7 +55,7 @@ export const data = {
       ],
     ],
     eventDetails: {
-      time: "10 AM - 11:30 AM",
+      time: "10 AM - 20:00 PM",
       date: "20 FEB 2025",
       fees: "150 per head",
       seats: "200 seats",
@@ -292,7 +292,7 @@ export const data = {
     ],
     eventDetails: {
       time: "10 AM - 1 PM",
-      date: "21 FEB 2025",
+      date: "20 FEB 2025",
       fees: "200 per team",
       seats: "150 SEATS",
       qr: FreeFireQR,
@@ -388,7 +388,7 @@ export const data = {
     studentCoordinator: ["Shruthi Raj +91 7358451891", "Sanjay +91 9363581924"],
     eventDetails: {
       time: "10 AM - 11 AM",
-      date: "20 FEB 2025",
+      date: "21 FEB 2025",
       fees: "FREE",
     },
     rules: [
