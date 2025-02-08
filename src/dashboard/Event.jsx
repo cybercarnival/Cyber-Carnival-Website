@@ -78,6 +78,24 @@ We look forward to seeing you there for an engaging and insightful experience!
 Best regards,
 CyberCarnival Team`,
   },
+  cyberconclave: {
+    subject: "Your Ticket Confirmation for Cyber Conclave 2025",
+    body: `Dear {NAME},  
+
+We are thrilled to confirm your ticket for Cyber Conclave 2025! Get ready for an insightful and engaging session where we explore the latest trends in cybersecurity with security professionals.
+
+📅 Date: 20th February 2025
+📍 Venue: SRM Ramapuram
+⏰ Time: 10:00 AM - 12:00 PM
+Here's the whatsapp link to join our participants group: https://chat.whatsapp.com/E4CGfKE5Mqx83Sc1EU9dGz
+
+Please present this email at the registration desk for smooth entry. If you have any questions, feel free to reach out us at hello@cybercarnival.in.
+
+Looking forward to seeing you at Cyber Conclave 2025!
+
+Best regards,
+Team CyberCarnival`,
+  },
   surviva: {
     subject: "Confirmation of Your Ticket for Shipwreck",
     body: `Dear {NAME},
