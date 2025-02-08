@@ -118,6 +118,23 @@ We look forward to seeing you there!
 Best regards,
 CyberCarnival Team`,
   },
+  techexpo: {
+    subject: "Your Ticket for SecureTool Expo 2025 – Confirmation & Event Details",
+    body: `Dear {NAME},
+
+Congratulations! Your ticket for SecureTool Expo 2025 has been confirmed. We're excited to have you join us for this one-of-a-kind cybersecurity event where innovators like you will showcase their cutting-edge security tools to our esteemed panel of judges.
+
+📅 Event Date: 20th February 2025
+📍 Venue: SRMIST Ramapuram
+Here's the whatsapp group link: https://chat.whatsapp.com/FxgzMEnfn1Y4U9vqsxIHT1
+
+This is your opportunity to gain valuable feedback, and demonstrate your tool's impact in the field. Please ensure you arrive on time and bring any necessary materials for your presentation.
+
+If you have any questions or require further details, feel free to reach out to us at hello@cybercarnival.in. We look forward to seeing you at SecureTool Expo 2025!
+
+Best regards,
+Team CyberCarnival`,
+  },
   cyberconclave: { subject: "", body: "" },
   paperpresentation: { subject: "", body: "" },
   techexpo: { subject: "", body: "" },
