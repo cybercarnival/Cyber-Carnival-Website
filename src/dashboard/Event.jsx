@@ -137,7 +137,8 @@ Best regards,
 CyberCarnival Team`,
   },
   techexpo: {
-    subject: "Your Ticket for SecureTool Expo 2025 – Confirmation & Event Details",
+    subject:
+      "Your Ticket for SecureTool Expo 2025 – Confirmation & Event Details",
     body: `Dear {NAME},
 
 Congratulations! Your ticket for SecureTool Expo 2025 has been confirmed. We're excited to have you join us for this one-of-a-kind cybersecurity event where innovators like you will showcase their cutting-edge security tools to our esteemed panel of judges.
@@ -153,9 +154,7 @@ If you have any questions or require further details, feel free to reach out to 
 Best regards,
 Team CyberCarnival`,
   },
-  cyberconclave: { subject: "", body: "" },
   paperpresentation: { subject: "", body: "" },
-  techexpo: { subject: "", body: "" },
   startup: { subject: "", body: "" },
   freefire: { subject: "", body: "" },
   cinema: { subject: "", body: "" },
