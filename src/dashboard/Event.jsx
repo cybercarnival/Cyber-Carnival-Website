@@ -48,6 +48,7 @@ Event Details:
     - Venue: BMS, 4th Floor Lab  
 
 Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/LVolM3Ffat59y8zbJPLR3f
+Here's the discord link to join our server for support and queries related to the CTF: https://discord.gg/6PXf5zFME8
 
 Please arrive at least 15 minutes early to complete check-in and set up your equipment. Ensure you bring your laptop and any necessary tools/software to participate effectively.  
 
