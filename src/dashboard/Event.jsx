@@ -173,6 +173,24 @@ If you have any questions or need further assistance, feel free to reach out to 
 Best regards,
 Team CyberCarnival`,
   },
+  valorant: {
+    subject:
+      "Confirmation of Your Ticket for Valorush",
+    body: `Dear {NAME},
+
+Congratulations! Your ticket for Valorush is confirmed. 🎉
+
+📅 Event Date: February 16, 2025
+⏰ Time: 9:00 AM (IST)
+📍 Venue: Online
+
+Get ready for an action-packed experience! Stay tuned for further details, including access links and event instructions.
+
+If you have any questions, feel free to reach out at hello@cybercarnival.in or +91 9150575341. See you at Valorush!
+
+Best regards,
+Team CyberCarnival`,
+  },
   paperpresentation: { subject: "", body: "" },
   startup: { subject: "", body: "" },
   freefire: { subject: "", body: "" },
