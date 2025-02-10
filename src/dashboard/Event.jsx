@@ -155,10 +155,27 @@ If you have any questions or require further details, feel free to reach out to 
 Best regards,
 Team CyberCarnival`,
   },
+  cinema: {
+    subject:
+      "Confirmation of Your Ticket for Cybersafe Cinema",
+    body: `Dear {NAME},
+
+Thank you for registering for Cybersafe Cinema! We're excited to have you join us for an insightful and engaging event.
+
+📅 Date: 21st February 2025
+📍 Venue: Gallery Hall
+⏰ Time: 9:00 AM – 11:00 AM
+
+Your ticket is confirmed, and we look forward to seeing you there. Be sure to arrive on time to make the most of the event!
+
+If you have any questions or need further assistance, feel free to reach out to us at hello@cybercarnival.in or +91 72992 84940.
+
+Best regards,
+Team CyberCarnival`,
+  },
   paperpresentation: { subject: "", body: "" },
   startup: { subject: "", body: "" },
   freefire: { subject: "", body: "" },
-  cinema: { subject: "", body: "" },
   surfing: { subject: "", body: "" },
   awareness: { subject: "", body: "" },
   workshop1: { subject: "", body: "" },
