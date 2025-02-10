@@ -40,22 +40,22 @@ export const AppProvider = ({ children }) => {
   const [toggle, setToggle] = useState(true);
 
   const eventFees = {
-    cyberconclave: 150,
+    cyberconclave: 200,
     capturetheflag: 300,
     cyberthon: 750,
-    paperpresentation: 100,
+    paperpresentation: 0,
     bugbounty: 250,
     techexpo: 150,
     startup: 0,
     freefire: 200,
-    cinema: 300,
-    surfing: 300,
-    surviva: 200,
+    cinema: 250,
+    surfing: 250,
+    surviva: 150,
     awareness: 0,
     workshop1: 500,
     workshop2: 500,
-    title: 200,
-    valorant: 200,
+    title: 150,
+    valorant: 250,
   };
 
   async function getEvents() {

@@ -14,18 +14,104 @@ function ExportData({ event }) {
     );
     let ed = [];
     for (let i of mapped[0]?.documents) {
-      ed.push([
-        i.teamName,
-        i.name,
-        i.member2,
-        i.member3,
-        i.member4,
-        i.college,
-        i.email,
-        i.contact,
-        i.screenshotUrl,
-        i.transactionID,
-      ]);
+      if (event == "cyberconclave") {
+        ed.push([
+          i.teamName,
+          i.name,
+          i.member2,
+          i.member3,
+          i.member4,
+          i.college,
+          i.email,
+          i.contact,
+          i.screenshotUrl,
+          i.transactionID,
+        ]);
+      } else if (
+        event == "capturetheflag" ||
+        event == "bugbounty" ||
+        event == "techexpo"
+      ) {
+        ed.push([
+          i.teamName,
+          i.name,
+          i.member2,
+          i.member3,
+          i.college,
+          i.email,
+          i.phone,
+          i.screenshotUrl,
+          i.transactionID,
+        ]);
+      } else if (event == "paperpresentation") {
+        ed.push([
+          i.teamName,
+          i.name,
+          i.member2,
+          i.member3,
+          i.member4,
+          i.college,
+          i.email,
+          i.phone,
+        ]);
+      } else if (event == "startup") {
+        ed.push([
+          i.startup,
+          i.registration,
+          i.name,
+          i.college,
+          i.email,
+          i.phone,
+        ]);
+      } else if (
+        event == "surviva" ||
+        event == "title" ||
+        event == "workshop1" ||
+        event == "workshop2" ||
+        event == "cyberconclave"
+      ) {
+        ed.push([
+          i.name,
+          i.email,
+          i.phone,
+          i.college,
+          i.screenshotUrl,
+          i.transactionID,
+        ]);
+      } else if (
+        event == "freefire" ||
+        event == "cinema" ||
+        event == "surfing"
+      ) {
+        ed.push([
+          i.teamName,
+          i.name,
+          i.member2,
+          i.member3,
+          i.member4,
+          i.college,
+          i.email,
+          i.phone,
+          i.screenshotUrl,
+          i.transactionID,
+        ]);
+      } else if (event == "valorant") {
+        ed.push([
+          i.teamName,
+          i.name,
+          i.member2,
+          i.member3,
+          i.member4,
+          i.member5,
+          i.college,
+          i.email,
+          i.phone,
+          i.screenshotUrl,
+          i.transactionID,
+        ]);
+      } else if (event == "awareness") {
+        ed.push([i.name, i.email, i.phone, i.college]);
+      }
     }
 
     setExcelData(ed);
@@ -34,18 +120,101 @@ function ExportData({ event }) {
   const handleExport = () => {
     setIsSubmitting(true);
 
-    const headers = [
-      "Team Name",
-      "Team Leader",
-      "Member 2",
-      "Member 3",
-      "Member 4",
-      "Institution",
-      "Email",
-      "Contact",
-      "URL",
-      "Transaction ID",
-    ];
+    let headers = [];
+    if (event == "cyberconclave") {
+      headers = [
+        "Team Name",
+        "Team Leader",
+        "Member 2",
+        "Member 3",
+        "Member 4",
+        "Institution",
+        "Email",
+        "Contact",
+        "URL",
+        "Transaction ID",
+      ];
+    } else if (
+      event == "capturetheflag" ||
+      event == "bugbounty" ||
+      event == "techexpo"
+    ) {
+      headers = [
+        "Team Name",
+        "Team Leader",
+        "Member 2",
+        "Member 3",
+        "Institution",
+        "Email",
+        "Contact",
+        "URL",
+        "Transaction ID",
+      ];
+    } else if (event == "paperpresentation") {
+      headers = [
+        "Team Name",
+        "Team Leader",
+        "Member 2",
+        "Member 3",
+        "Member 4",
+        "Institution",
+        "Email",
+        "Contact",
+      ];
+    } else if (event == "startup") {
+      headers = [
+        "Startup Name",
+        "Registration Type",
+        "Name",
+        "Institution",
+        "Email",
+        "Contact",
+      ];
+    } else if (
+      event == "surviva" ||
+      event == "title" ||
+      event == "workshop1" ||
+      event == "workshop2" ||
+      event == "cyberconclave"
+    ) {
+      headers = [
+        "Team Name",
+        "Email",
+        "Contact",
+        "Institution",
+        "URL",
+        "Transaction ID",
+      ];
+    } else if (event == "freefire" || event == "cinema" || event == "surfing") {
+      headers = [
+        "Team Name",
+        "Team Leader",
+        "Member 2",
+        "Member 3",
+        "Member 4",
+        "Institution",
+        "Email",
+        "Contact",
+        "URL",
+        "Transaction ID",
+      ];
+    } else if (event == "valorant") {
+      headers = [
+        "Team Name",
+        "Team Leader",
+        "Member 2",
+        "Member 3",
+        "Member 4",
+        "Member 5",
+        "Institution",
+        "Email",
+        "Contact",
+        "URL",
+        "Transaction ID",
+      ];
+    } else if (event == "awareness") {
+      headers = ["Team Name", "Email", "Contact", "Institution"];
+    }
 
     // Add headers to the data
     const sheetData = [headers, ...excelData];
