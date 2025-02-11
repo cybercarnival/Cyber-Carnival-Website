@@ -156,8 +156,7 @@ Best regards,
 Team CyberCarnival`,
   },
   cinema: {
-    subject:
-      "Confirmation of Your Ticket for Cybersafe Cinema",
+    subject: "Confirmation of Your Ticket for Cybersafe Cinema",
     body: `Dear {NAME},
 
 Thank you for registering for Cybersafe Cinema! We're excited to have you join us for an insightful and engaging event.
@@ -174,8 +173,7 @@ Best regards,
 Team CyberCarnival`,
   },
   valorant: {
-    subject:
-      "Confirmation of Your Ticket for Valorush",
+    subject: "Confirmation of Your Ticket for Valorush",
     body: `Dear {NAME},
 
 Congratulations! Your ticket for Valorush is confirmed. 🎉
@@ -227,10 +225,15 @@ function Event() {
   const { id } = useParams();
   const [currentOpen, setCurrentOpen] = useState(null);
   const nav = useNavigate();
-  const registrations = data.allData?.filter(
-    (event) => event.collection === id
-  )[0].documents;
-
+  const registrations = data.allData
+    ?.filter((event) => event.collection === id)[0]
+    .documents.sort((a, b) => {
+      return (
+        a.createdAt.seconds - b.createdAt.seconds ||
+        a.createdAt.nanoseconds - b.createdAt.nanoseconds
+      );
+    });
+  console.log(registrations);
   const verifiedRegistrations = verifiedData.verifiedAllData?.filter(
     (event) => event.collection === id
   )[0].documents;
