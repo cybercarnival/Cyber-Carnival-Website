@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BarChart } from "@mui/x-charts/BarChart";
 import { PieChart } from "@mui/x-charts";
 import { useAppContext } from "./context";
 import { Navigate, useNavigate } from "react-router-dom";
 import { auth } from "../firebase_config";
 import { signOut } from "firebase/auth";
+function useWindowSize() {
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowSize;
+}
 function Home() {
   const {
     data,
@@ -19,6 +40,8 @@ function Home() {
     setUser,
     AUTHORIZED,
   } = useAppContext();
+  const { width, height } = useWindowSize();
+  console.log(width);
   const nav = useNavigate();
   const chartSetting = {
     xAxis: [
@@ -26,8 +49,8 @@ function Home() {
         label: "Registrations",
       },
     ],
-    width: 800,
-    height: 400,
+    width: width < 850 ? 300 : 800,
+    height: width < 850 ? 190 : 400,
   };
 
   function valueFormatter(value) {
@@ -46,11 +69,11 @@ function Home() {
     <div className="flex flex-col items-center justify-center bg-white">
       <button
         onClick={() => handleLogout()}
-        className="h-5 w-20 bg-slate-800 text-white absolute top-0 right-0 m-5 rounded-sm"
+        className="h-5 w-20 bg-slate-800 text-white absolute top-0 right-0 m-4 rounded-sm"
       >
         Logout
       </button>
-      <h1 className="text-2xl font-audiowide my-10">
+      <h1 className="sm:text-xl md:text-2xl font-audiowide my-10">
         {AUTHORIZED.includes(user.email)
           ? "Overall Registrations and Revenue"
           : "Overall Registrations"}
@@ -87,28 +110,48 @@ function Home() {
               series={[
                 {
                   data: [
-                    { id: 0, value: dataset[0]?.revenue, label: "Technical" },
+                    {
+                      id: 0,
+                      value: dataset[0]?.revenue,
+                      label: width < 850 ? "Tech.." : "Technical",
+                    },
                     {
                       id: 1,
                       value: dataset[1]?.revenue,
-                      label: "Non-Technical",
+                      label: width < 850 ? "Non-T.." : "Non-Technical",
                     },
-                    { id: 2, value: dataset[2]?.revenue, label: "Cyberthon" },
-                    { id: 3, value: dataset[3]?.revenue, label: "Workshops" },
-                    { id: 4, value: dataset[4]?.revenue, label: "Conclave" },
-                    { id: 5, value: dataset[5]?.revenue, label: "Awareness" },
+                    {
+                      id: 2,
+                      value: dataset[2]?.revenue,
+                      label: width < 850 ? "Cybe.." : "Cyberthon",
+                    },
+                    {
+                      id: 3,
+                      value: dataset[3]?.revenue,
+                      label: width < 850 ? "Work.." : "Workshops",
+                    },
+                    {
+                      id: 4,
+                      value: dataset[4]?.revenue,
+                      label: width < 850 ? "Conc.." : "Conclave",
+                    },
+                    {
+                      id: 5,
+                      value: dataset[5]?.revenue,
+                      label: width < 850 ? "Awar.." : "Awareness",
+                    },
                   ],
                 },
               ]}
-              width={500}
-              height={200}
+              width={width < 850 ? 300 : 500}
+              height={width < 850 ? 200 : 200}
             />
           </div>
         ) : (
           <></>
         )}
       </div>
-      <h1 className="text-2xl font-audiowide mb-5 mt-20">
+      <h1 className="sm:text-xl md:text-2xl font-audiowide mb-5 mt-20">
         {AUTHORIZED.includes(user.email)
           ? "Verified Registrations and Revenue"
           : "Verified Registrations"}
@@ -147,38 +190,38 @@ function Home() {
                     {
                       id: 0,
                       value: verifiedDataset[0]?.revenue,
-                      label: "Technical",
+                      label: width < 850 ? "Tech.." : "Technical",
                     },
                     {
                       id: 1,
                       value: verifiedDataset[1]?.revenue,
-                      label: "Non-Technical",
+                      label: width < 850 ? "Non-T.." : "Non-Technical",
                     },
                     {
                       id: 2,
                       value: verifiedDataset[2]?.revenue,
-                      label: "Cyberthon",
+                      label: width < 850 ? "Cybe.." : "Cyberthon",
                     },
                     {
                       id: 3,
                       value: verifiedDataset[3]?.revenue,
-                      label: "Workshops",
+                      label: width < 850 ? "Work.." : "Workshops",
                     },
                     {
                       id: 4,
                       value: verifiedDataset[4]?.revenue,
-                      label: "Conclave",
+                      label: width < 850 ? "Conc.." : "Conclave",
                     },
                     {
                       id: 5,
                       value: verifiedDataset[5]?.revenue,
-                      label: "Awareness",
+                      label: width < 850 ? "Awar.." : "Awareness",
                     },
                   ],
                 },
               ]}
-              width={500}
-              height={200}
+              width={width < 850 ? 300 : 500}
+              height={width < 850 ? 200 : 200}
             />
           </div>
         ) : (

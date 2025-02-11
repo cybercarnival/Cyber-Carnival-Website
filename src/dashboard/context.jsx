@@ -25,6 +25,7 @@ export const AppProvider = ({ children }) => {
     "abdulaleem.a.official@gmail.com",
     "vr1813@srmist.edu.in",
     "ka2964@srmist.edu.in",
+    "shinyduj@srmist.edu.in",
   ];
 
   const [data, setData] = useState({});
