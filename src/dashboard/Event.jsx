@@ -243,7 +243,7 @@ Best regards,
 Team CyberCarnival`,
   },
   paperpresentation: { subject: "", body: "" },
-  startup: { subject: "", body: "" },x
+  startup: { subject: "", body: "" },
   surfing: { subject: "", body: "" },
   awareness: { subject: "", body: "" },
 };
