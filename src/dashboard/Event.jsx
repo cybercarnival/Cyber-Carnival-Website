@@ -206,11 +206,11 @@ If you have any questions, feel free to reach out. We look forward to seeing you
 Best regards,
 Team CyberCarnival`,
   },
-  workshop2: {
-    subject: "Confirmation of Your Ticket – Workshop 2: Digital Forensics",
-    body: `Dear {NAME},
+workshop2: {
+  subject: "Confirmation of Your Ticket – Workshop 2: Digital Forensics",
+  body: `Dear {NAME},
   
-  Thank you for registering for Workshop 2: Digital Forensics! We're excited to have you join us for this insightful session.
+Thank you for registering for Workshop 2: Digital Forensics! We're excited to have you join us for this insightful session.
 
 Workshop Details:
 📍 Venue: Gallery Hall
@@ -223,14 +223,14 @@ For any queries, feel free to reach out to us at hello@cybercarnival.in.
 
 Looking forward to seeing you there!
   
-  Best regards,
-  Team CyberCarnival`,
-    },
-  freefire: {
-    subject: "Confirmation of Your Freefire Ticket – Event Details Inside!",
-    body: `Dear {NAME},
+Best regards,
+Team CyberCarnival`,
+  },
+freefire: {
+  subject: "Confirmation of Your Freefire Ticket – Event Details Inside!",
+  body: `Dear {NAME},
     
-  Congratulations! Your ticket for the Freefire Tournament has been confirmed. Get ready to battle it out and showcase your skills!
+Congratulations! Your ticket for the Freefire Tournament has been confirmed. Get ready to battle it out and showcase your skills!
 
 📍 Venue: BMS Classrooms
 📅 Date: 20th & 21st February 2025
@@ -239,11 +239,9 @@ Looking forward to seeing you there!
 Please ensure you arrive on time and bring a valid ID for verification. Stay tuned for further updates, and feel free to reach out if you have any questions.
 
 See you on the battleground!
-  Best regards,
-  Team CyberCarnival`,
-    },
-    
-    
+Best regards,
+Team CyberCarnival`,
+  },
   paperpresentation: { subject: "", body: "" },
   startup: { subject: "", body: "" },x
   surfing: { subject: "", body: "" },
