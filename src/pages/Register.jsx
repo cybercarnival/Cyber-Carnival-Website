@@ -24,6 +24,7 @@ import {
 } from "../components/ui/animated-modal.jsx";
 import { motion } from "framer-motion";
 import { uid } from "uid";
+import Closed from "./Closed.jsx";
 
 function Register() {
   const nav = useNavigate();
@@ -177,7 +178,9 @@ function Register() {
     }
   };
 
-  return (
+  return ["valorant"].includes(event) ? (
+    <Closed />
+  ) : (
     <ModalProvider>
       <section className="">
         <div className=" my-32 flex flex-col items-center justify-center px-6 py-8 mx-auto lg:py-0">

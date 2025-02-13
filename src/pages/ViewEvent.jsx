@@ -233,8 +233,9 @@ function ViewEvent() {
           <button
             onClick={() => nav(`register`)}
             className="border-2 m-2 border-[#1EC1C5] w-2/3 p-1 rounded-xl text-[#1EC1C5] text-2xl font-jersey"
+            disabled={["valorant"].includes(event) ? true : false}
           >
-            Register
+            {["valorant"].includes(event) ? "Registrations Closed" : "Register"}
           </button>
         </div>
       </div>
