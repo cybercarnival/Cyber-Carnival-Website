@@ -468,12 +468,12 @@ export const data = {
     title_font: "font-saira",
     title_size: "text-4xl",
     description:
-      "Gear up for the ultimate Valorant showdown - where skill, strategy, and adrenaline collide!",
+      "REGISTRATIONS FOR VALORUSH IS CLOSED. ANY FURTHER PAYMENT MADE WILL NOT BE VALID AND WONT COUNT TOWARDS THE EVENT",
 
     brief:
-      "Prepare for an action-packed Valorant event, bringing together skilled players and fans for intense, strategic battles in the ultimate test of teamwork and precision. Whether you're competing for victory or cheering on your favorite teams, this event promises heart-pounding gameplay, thrilling highlights, and a vibrant community atmosphere.",
+      "REGISTRATIONS FOR VALORUSH IS CLOSED. ANY FURTHER PAYMENT MADE AFTER THIS WILL NOT BE VALID TOWARDS THE EVENT.",
     brief2:
-      "Get ready for an electrifying Valorant event, where top players and avid fans unite for a high-stakes showdown filled with strategy, skill, and adrenaline. Watch as teams go head-to-head in intense, tactical battles, showcasing their mastery of the game and pushing the limits of teamwork and precision. With immersive viewing experiences, fan activities, and plenty of highlights, this event is a must for anyone who lives for the thrill of competition. Don’t miss out on the excitement, camaraderie, and unforgettable moments that only Valorant can deliver!",
+      "VALORUSH REGISTRATIONS ARE CLOSED. REGISTRATIONS MADE AFTER THIS POINT WILL NOT BE VALID FOR THE DURATION OF THE EVENT.",
     poster: valo,
     url: "valorant",
     facultyCoordinator: ["Dr.D. Deva hema AP/CSE", "Ms.J. Juslin Sega AP/CSE"],
