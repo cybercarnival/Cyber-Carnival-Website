@@ -33,8 +33,7 @@ If you have any questions or need further assistance, feel free to contact us at
 We look forward to seeing you at Cyberthon and sharing an incredible experience together!  
 
 Best regards,  
-CyberCarnival Team
-`,
+CyberCarnival Team`,
   },
   capturetheflag: {
     subject: "Confirmation of Your CTF Ticket  for CyberCarnival’25",
@@ -189,13 +188,64 @@ If you have any questions, feel free to reach out at hello@cybercarnival.in or +
 Best regards,
 Team CyberCarnival`,
   },
+workshop1: {
+  subject: "Confirmation: Ticket for Workshop 1 – Red Teaming",
+  body: `Dear {NAME},
+
+Thank you for registering for Workshop 1: Red Teaming! We're excited to have you join us for this hands-on session.
+
+Workshop Details:
+📍 Venue: Gallery Hall
+📅 Date: 20th & 21st February 2025
+⏰ Time: 10:00 AM – 4:00 PM
+
+Please ensure you arrive at least 15 minutes early for check-in. Kindly present this email or your registration confirmation at the entrance.
+
+If you have any questions, feel free to reach out. We look forward to seeing you there!
+
+Best regards,
+Team CyberCarnival`,
+  },
+workshop2: {
+  subject: "Confirmation of Your Ticket – Workshop 2: Digital Forensics",
+  body: `Dear {NAME},
+  
+Thank you for registering for Workshop 2: Digital Forensics! We're excited to have you join us for this insightful session.
+
+Workshop Details:
+📍 Venue: Gallery Hall
+📅 Date: 20th & 21st February 2025
+⏰ Time: 10:00 AM – 4:00 PM
+
+Please ensure you arrive at least 15 minutes early for seamless check-in. Kindly present this email at the registration desk for verification.
+
+For any queries, feel free to reach out to us at hello@cybercarnival.in.
+
+Looking forward to seeing you there!
+  
+Best regards,
+Team CyberCarnival`,
+  },
+freefire: {
+  subject: "Confirmation of Your Freefire Ticket – Event Details Inside!",
+  body: `Dear {NAME},
+    
+Congratulations! Your ticket for the Freefire Tournament has been confirmed. Get ready to battle it out and showcase your skills!
+
+📍 Venue: BMS Classrooms
+📅 Date: 20th & 21st February 2025
+⏰ Time: 10:00 AM onwards
+
+Please ensure you arrive on time and bring a valid ID for verification. Stay tuned for further updates, and feel free to reach out if you have any questions.
+
+See you on the battleground!
+Best regards,
+Team CyberCarnival`,
+  },
   paperpresentation: { subject: "", body: "" },
   startup: { subject: "", body: "" },
-  freefire: { subject: "", body: "" },
   surfing: { subject: "", body: "" },
   awareness: { subject: "", body: "" },
-  workshop1: { subject: "", body: "" },
-  workshop2: { subject: "", body: "" },
 };
 
 function Event() {
