@@ -460,7 +460,7 @@ function Register() {
                     </div>
                   </>
                 )}
-                {["valorant"].includes(event) && (
+                {["valorant", "surfing"].includes(event) && (
                   <>
                     <div>
                       <label
