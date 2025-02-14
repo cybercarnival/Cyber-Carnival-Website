@@ -66,7 +66,7 @@ Thank you for registering for the Bug Bounty event at CyberCarnival! We are thri
 
 Event Details:
 - Date: 21st February 2025  
-- Time: 9 AM - 11 AM 
+- Time: 10 AM - 1 PM 
 Here's the whatsapp link to join our participants group: https://chat.whatsapp.com/JCNLUzsfA4mEqWFAawVJFp
 
 Please ensure you arrive at least 15 minutes early to complete the check-in process. Bring a copy of this confirmation email or your registration ID for seamless entry.  
