@@ -188,9 +188,9 @@ If you have any questions, feel free to reach out at hello@cybercarnival.in or +
 Best regards,
 Team CyberCarnival`,
   },
-workshop1: {
-  subject: "Confirmation: Ticket for Workshop 1 – Red Teaming",
-  body: `Dear {NAME},
+  workshop1: {
+    subject: "Confirmation: Ticket for Workshop 1 – Red Teaming",
+    body: `Dear {NAME},
 
 Thank you for registering for Workshop 1: Red Teaming! We're excited to have you join us for this hands-on session.
 
@@ -206,9 +206,9 @@ If you have any questions, feel free to reach out. We look forward to seeing you
 Best regards,
 Team CyberCarnival`,
   },
-workshop2: {
-  subject: "Confirmation of Your Ticket – Workshop 2: Digital Forensics",
-  body: `Dear {NAME},
+  workshop2: {
+    subject: "Confirmation of Your Ticket – Workshop 2: Digital Forensics",
+    body: `Dear {NAME},
   
 Thank you for registering for Workshop 2: Digital Forensics! We're excited to have you join us for this insightful session.
 
@@ -226,9 +226,9 @@ Looking forward to seeing you there!
 Best regards,
 Team CyberCarnival`,
   },
-freefire: {
-  subject: "Confirmation of Your Freefire Ticket – Event Details Inside!",
-  body: `Dear {NAME},
+  freefire: {
+    subject: "Confirmation of Your Freefire Ticket – Event Details Inside!",
+    body: `Dear {NAME},
     
 Congratulations! Your ticket for the Freefire Tournament has been confirmed. Get ready to battle it out and showcase your skills!
 
@@ -426,10 +426,10 @@ function Event() {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className={`w-full border-2 flex flex-col sm:block sm:flex-row border-black p-4 my-2 rounded-2xl relative max-h-[900px] justify-center items-center`}
                   >
-                    <div className="flex-col w-1/2 pr-8 flex">
+                    <div className="flex flex-col w-[90%] md:w-1/3 pr-8 h-full">
                       <img
                         src={row.screenshotUrl}
-                        className="object-contain h-full"
+                        className="object-contain self-center"
                       />
                     </div>
                     <div className="flex flex-col items-start justify-center">
@@ -474,6 +474,11 @@ function Event() {
                       {row.member5 && (
                         <h1 className="text-sm sm:text-xl font-mono ">
                           Member 5: {row.member5}
+                        </h1>
+                      )}
+                      {row.eventmode && (
+                        <h1 className="text-sm sm:text-xl font-mono ">
+                          Opted Mode: {row.eventmode}
                         </h1>
                       )}
                       <h1 className="text-sm sm:text-xl font-mono ">

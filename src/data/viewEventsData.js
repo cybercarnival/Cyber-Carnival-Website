@@ -331,6 +331,7 @@ export const data = {
     },
     rules: [
       "Team size can be maximum of four",
+      "Registrations are subject to preliminary screening",
       "Film duration: Stay within the time limit of 10 mins to maintain the judges attention.",
       "Use of copyrighted material is prohibited.",
       "Submissions will be evaluated based on the effectiveness of the noir atmosphere.",
