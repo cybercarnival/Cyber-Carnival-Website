@@ -50,6 +50,7 @@ function Register() {
     member3: "",
     member4: "",
     member5: "",
+    eventmode: "",
     startup: "",
     promocode: "",
     registration: "",
@@ -90,6 +91,11 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (["capturetheflag", "bugbounty"].includes(event)) {
+      if (formData.eventmode == "" || formData.eventmode == "None") {
+        return alert("Please Select Event Mode");
+      }
+    }
     if (
       event !== "awareness" &&
       event != "startup" &&
@@ -148,6 +154,7 @@ function Register() {
         promocode: formData.promocode,
         member4: formData.member4,
         member5: formData.member5,
+        eventmode: formData.eventmode,
         startup: formData.startup,
         registration: formData.registration,
         transactionID: formData.transactionID,
@@ -168,6 +175,7 @@ function Register() {
         promocode: "",
         member4: "",
         member5: "",
+        eventmode: "",
         startup: "",
         registration: "",
         transactionID: "",
@@ -460,7 +468,7 @@ function Register() {
                     </div>
                   </>
                 )}
-                {["valorant"].includes(event) && (
+                {["valorant", "surfing"].includes(event) && (
                   <>
                     <div>
                       <label
@@ -480,6 +488,34 @@ function Register() {
                       />
                     </div>
                   </>
+                )}
+                {(event == "capturetheflag" || event == "bugbounty") && (
+                  <div>
+                    <label
+                      htmlFor="eventmode"
+                      className="block mb-2 text-base font-medium text-gray-400"
+                    >
+                      Event Mode <span className="text-red-600">*</span>
+                    </label>
+                    <select
+                      id="eventmode"
+                      name="eventmode"
+                      value={formData.eventmode}
+                      onChange={handleInputChange}
+                      className="bg-gray-600 backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-300 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                      required
+                    >
+                      <option value="None" className="bg-black">
+                        Select
+                      </option>
+                      <option value="online" className="bg-black">
+                        Online
+                      </option>
+                      <option value="online" className="bg-black">
+                        Offline
+                      </option>
+                    </select>
+                  </div>
                 )}
                 {["workshop1", "workshop2"].includes(event) && (
                   <>
