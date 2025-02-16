@@ -511,7 +511,7 @@ function Register() {
                       <option value="online" className="bg-black">
                         Online
                       </option>
-                      <option value="online" className="bg-black">
+                      <option value="offline" className="bg-black">
                         Offline
                       </option>
                     </select>
