@@ -164,7 +164,7 @@ Event Details:
 ⏰ Time: 1:00 PM – 4:00 PM
 📍 Venue: Hi-Tech Hall
 
-Please present this email at the registration desk for a seamless check-in experience. If you have any questions, feel free to reach out.
+Please present this email at the registration desk for a seamless check-in experience. If you have any questions, feel free to reach out us at hello@cybercarnival.in
 
 We look forward to seeing you there!
 Best regards,
@@ -276,8 +276,24 @@ See you on the battleground!
 Best regards,
 Team CyberCarnival`,
   },
+  awareness: {
+    subject: "Confirmation: Your Ticket for Cyber Awareness Event",
+    body: `Dear {NAME},
+    
+Thank you for registering for Cyber Awareness! We're excited to have you join us for an insightful session.
+
+Event Details:
+📅 Date: 21st February 2025
+📍 Venue: Hi-Tech Hall
+Here's the whatsapp link to join our participants group: https://chat.whatsapp.com/C0baVYV5BuHLBNybOym8GR
+
+Please arrive at least 15 minutes early for seamless check-in. If you have any questions, feel free to reach out to us at hello@cybercarnival.in
+
+Looking forward to seeing you there!
+Best regards,
+Team CyberCarnival`,
+  },
   surfing: { subject: "", body: "" },
-  awareness: { subject: "", body: "" },
 };
 
 function Event() {
