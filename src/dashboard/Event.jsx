@@ -495,38 +495,44 @@ function Event() {
                           Transaction ID: {row.transactionID}
                         </h1>
                       )}
-                      <button
-                        disabled={verifiedList.includes(row.id)}
-                        className={`w-full h-10 ${
-                          verifiedList.includes(row.id)
-                            ? "bg-green-700"
-                            : "bg-red-600"
-                        } rounded-xl my-4 text-white text-lg`}
-                        onClick={() => handleVerification(row.id)}
-                      >
-                        {verifiedList.includes(row.id)
-                          ? "Verified"
-                          : "Add to Verified"}
-                      </button>
-                      <button
-                        className={`w-full h-10  rounded-xl my-4 text-white bg-red-600 text-lg`}
-                        onClick={() => handleDeletion(row)}
-                      >
-                        Delete
-                      </button>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={mailtoLink}
-                        className={`w-full h-10 ${
-                          verifiedList.includes(row.id)
-                            ? "bg-green-700"
-                            : "bg-red-600"
-                        } rounded-xl text-white text-lg text-center flex justify-center items-center`}
-                        aria-label={`Send email to ${row.name}`}
-                      >
-                        Send Mail
-                      </a>
+                      {AUTHORIZED.includes(user.email) ? (
+                        <div>
+                          <button
+                            disabled={verifiedList.includes(row.id)}
+                            className={`w-full h-10 ${
+                              verifiedList.includes(row.id)
+                                ? "bg-green-700"
+                                : "bg-red-600"
+                            } rounded-xl my-4 text-white text-lg`}
+                            onClick={() => handleVerification(row.id)}
+                          >
+                            {verifiedList.includes(row.id)
+                              ? "Verified"
+                              : "Add to Verified"}
+                          </button>
+                          <button
+                            className={`w-full h-10  rounded-xl my-4 text-white bg-red-600 text-lg`}
+                            onClick={() => handleDeletion(row)}
+                          >
+                            Delete
+                          </button>
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={mailtoLink}
+                            className={`w-full h-10 ${
+                              verifiedList.includes(row.id)
+                                ? "bg-green-700"
+                                : "bg-red-600"
+                            } rounded-xl text-white text-lg text-center flex justify-center items-center`}
+                            aria-label={`Send email to ${row.name}`}
+                          >
+                            Send Mail
+                          </a>
+                        </div>
+                      ) : (
+                        <></>
+                      )}
                     </div>
                   </motion.div>
                 }
