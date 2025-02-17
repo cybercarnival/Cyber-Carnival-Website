@@ -136,6 +136,40 @@ We look forward to seeing you there!
 Best regards,
 CyberCarnival Team`,
   },
+  paperpresentation: {
+    subject: "Confirmation of Your Ticket for Paper Presentation",
+    body: `Dear {NAME},
+    
+We are pleased to confirm your ticket for the Paper Presentation at [Event Name]. Below are the event details:
+
+📅 Date: 20th February 2025
+⏰ Time: 1:00 PM – 3:00 PM
+📍 Venue for Presentation: BMS Classrooms
+📍 Final Venue (Conference & Discussions): BMS 6th Floor Conference Room
+
+Please ensure you arrive at least 15 minutes before the session begins for a smooth check-in process. If you have any queries, feel free to reach out.
+
+Looking forward to your presentation!
+Best regards,
+Team CyberCarnival`,
+  },
+  startup: {
+    subject: "Confirmation of Your Ticket for Startup Expo 2025",
+    body: `Dear {NAME},
+    
+Thank you for registering for Startup Expo 2025! 🎉 We're excited to have you join us for an inspiring event filled with innovation, networking, and opportunities.
+
+Event Details:
+📅 Date: 20th February 2025
+⏰ Time: 1:00 PM – 4:00 PM
+📍 Venue: Hi-Tech Hall
+
+Please present this email at the registration desk for a seamless check-in experience. If you have any questions, feel free to reach out us at hello@cybercarnival.in
+
+We look forward to seeing you there!
+Best regards,
+Team CyberCarnival`,
+  },
   techexpo: {
     subject:
       "Your Ticket for SecureTool Expo 2025 – Confirmation & Event Details",
@@ -242,10 +276,24 @@ See you on the battleground!
 Best regards,
 Team CyberCarnival`,
   },
-  paperpresentation: { subject: "", body: "" },
-  startup: { subject: "", body: "" },
+  awareness: {
+    subject: "Confirmation: Your Ticket for Cyber Awareness Event",
+    body: `Dear {NAME},
+    
+Thank you for registering for Cyber Awareness! We're excited to have you join us for an insightful session.
+
+Event Details:
+📅 Date: 21st February 2025
+📍 Venue: Hi-Tech Hall
+Here's the whatsapp link to join our participants group: https://chat.whatsapp.com/C0baVYV5BuHLBNybOym8GR
+
+Please arrive at least 15 minutes early for seamless check-in. If you have any questions, feel free to reach out to us at hello@cybercarnival.in
+
+Looking forward to seeing you there!
+Best regards,
+Team CyberCarnival`,
+  },
   surfing: { subject: "", body: "" },
-  awareness: { subject: "", body: "" },
 };
 
 function Event() {
