@@ -73,163 +73,179 @@ function Home() {
       >
         Logout
       </button>
-      <h1 className="sm:text-xl md:text-2xl font-audiowide my-10">
-        {AUTHORIZED.includes(user.email)
-          ? "Overall Registrations and Revenue"
-          : "Overall Registrations"}
-      </h1>
+      {AUTHORIZED.includes(user.email) ? (
+        <h1 className="sm:text-xl md:text-2xl font-audiowide my-10">
+          Overall Registrations and Revenue
+        </h1>
+      ) : (
+        <></>
+      )}
+
       <div className="flex items-center justify-center flex-wrap w-full px-24">
-        <div className="flex flex-col items-center justify-center border-2 border-black rounded-xl bg-slate-200 m-2">
-          <h2 className="my-4 text-3xl font-alumni font-bold">
-            Total Registrations : {totalRegistrations}
-          </h2>
-          <BarChart
-            colors={["navy"]}
-            dataset={dataset}
-            yAxis={[{ scaleType: "band", dataKey: "event" }]}
-            sx={{}}
-            margin={{ left: 100 }}
-            series={[
-              {
-                dataKey: "registrations",
-                label: "Registrations",
-                valueFormatter,
-              },
-            ]}
-            layout="horizontal"
-            grid={{ vertical: true }}
-            {...chartSetting}
-          />
-        </div>
         {AUTHORIZED.includes(user.email) ? (
-          <div className="flex flex-col items-center justify-center rounded-xl border-2 bg-slate-200 m-2">
-            <h2 className="my-4 text-3xl font-alumni font-bold">
-              Total Revenue : Rs.{totalRevenue}
-            </h2>
-            <PieChart
-              series={[
-                {
-                  data: [
-                    {
-                      id: 0,
-                      value: dataset[0]?.revenue,
-                      label: width < 850 ? "Tech.." : "Technical",
-                    },
-                    {
-                      id: 1,
-                      value: dataset[1]?.revenue,
-                      label: width < 850 ? "Non-T.." : "Non-Technical",
-                    },
-                    {
-                      id: 2,
-                      value: dataset[2]?.revenue,
-                      label: width < 850 ? "Cybe.." : "Cyberthon",
-                    },
-                    {
-                      id: 3,
-                      value: dataset[3]?.revenue,
-                      label: width < 850 ? "Work.." : "Workshops",
-                    },
-                    {
-                      id: 4,
-                      value: dataset[4]?.revenue,
-                      label: width < 850 ? "Conc.." : "Conclave",
-                    },
-                    {
-                      id: 5,
-                      value: dataset[5]?.revenue,
-                      label: width < 850 ? "Awar.." : "Awareness",
-                    },
-                  ],
-                },
-              ]}
-              width={width < 850 ? 300 : 500}
-              height={width < 850 ? 200 : 200}
-            />
-          </div>
+          <>
+            <div className="flex flex-col items-center justify-center border-2 border-black rounded-xl bg-slate-200 m-2">
+              <h2 className="my-4 text-3xl font-alumni font-bold">
+                Total Registrations : {totalRegistrations}
+              </h2>
+              <BarChart
+                colors={["navy"]}
+                dataset={dataset}
+                yAxis={[{ scaleType: "band", dataKey: "event" }]}
+                sx={{}}
+                margin={{ left: 100 }}
+                series={[
+                  {
+                    dataKey: "registrations",
+                    label: "Registrations",
+                    valueFormatter,
+                  },
+                ]}
+                layout="horizontal"
+                grid={{ vertical: true }}
+                {...chartSetting}
+              />
+            </div>
+            <div className="flex flex-col items-center justify-center rounded-xl border-2 bg-slate-200 m-2">
+              <h2 className="my-4 text-3xl font-alumni font-bold">
+                Total Revenue : Rs.{totalRevenue}
+              </h2>
+              <PieChart
+                series={[
+                  {
+                    data: [
+                      {
+                        id: 0,
+                        value: dataset[0]?.revenue,
+                        label: width < 850 ? "Tech.." : "Technical",
+                      },
+                      {
+                        id: 1,
+                        value: dataset[1]?.revenue,
+                        label: width < 850 ? "Non-T.." : "Non-Technical",
+                      },
+                      {
+                        id: 2,
+                        value: dataset[2]?.revenue,
+                        label: width < 850 ? "Cybe.." : "Cyberthon",
+                      },
+                      {
+                        id: 3,
+                        value: dataset[3]?.revenue,
+                        label: width < 850 ? "Work.." : "Workshops",
+                      },
+                      {
+                        id: 4,
+                        value: dataset[4]?.revenue,
+                        label: width < 850 ? "Conc.." : "Conclave",
+                      },
+                      {
+                        id: 5,
+                        value: dataset[5]?.revenue,
+                        label: width < 850 ? "Awar.." : "Awareness",
+                      },
+                    ],
+                  },
+                ]}
+                width={width < 850 ? 300 : 500}
+                height={width < 850 ? 200 : 200}
+              />
+            </div>
+          </>
         ) : (
           <></>
         )}
       </div>
-      <h1 className="sm:text-xl md:text-2xl font-audiowide mb-5 mt-20">
-        {AUTHORIZED.includes(user.email)
-          ? "Verified Registrations and Revenue"
-          : "Verified Registrations"}
-      </h1>
+      {AUTHORIZED.includes(user.email) ? (
+        <h1 className="sm:text-xl md:text-2xl font-audiowide my-10">
+          Verified Registrations and Revenue
+        </h1>
+      ) : (
+        <></>
+      )}
       <div className="flex items-center justify-center flex-wrap w-full px-24 my-8">
-        <div className="flex flex-col items-center justify-center border-2 border-black rounded-xl bg-teal-100 m-2">
-          <h2 className="my-4 text-3xl font-alumni font-bold text-green-800">
-            Verified Registrations : {verifiedTotalRegistrations}
-          </h2>
-          <BarChart
-            dataset={verifiedDataset}
-            yAxis={[{ scaleType: "band", dataKey: "event" }]}
-            sx={{}}
-            margin={{ left: 100 }}
-            series={[
-              {
-                dataKey: "registrations",
-                label: "Registrations",
-                valueFormatter,
-              },
-            ]}
-            layout="horizontal"
-            grid={{ vertical: true }}
-            {...chartSetting}
-          />
-        </div>
         {AUTHORIZED.includes(user.email) ? (
-          <div className="flex flex-col items-center justify-center rounded-xl border-2 bg-teal-100 m-2">
-            <h2 className="my-4 text-3xl font-alumni font-bold text-green-800">
-              Verified Revenue : Rs.{verifiedTotalRevenue}
-            </h2>
-            <PieChart
-              series={[
-                {
-                  data: [
-                    {
-                      id: 0,
-                      value: verifiedDataset[0]?.revenue,
-                      label: width < 850 ? "Tech.." : "Technical",
-                    },
-                    {
-                      id: 1,
-                      value: verifiedDataset[1]?.revenue,
-                      label: width < 850 ? "Non-T.." : "Non-Technical",
-                    },
-                    {
-                      id: 2,
-                      value: verifiedDataset[2]?.revenue,
-                      label: width < 850 ? "Cybe.." : "Cyberthon",
-                    },
-                    {
-                      id: 3,
-                      value: verifiedDataset[3]?.revenue,
-                      label: width < 850 ? "Work.." : "Workshops",
-                    },
-                    {
-                      id: 4,
-                      value: verifiedDataset[4]?.revenue,
-                      label: width < 850 ? "Conc.." : "Conclave",
-                    },
-                    {
-                      id: 5,
-                      value: verifiedDataset[5]?.revenue,
-                      label: width < 850 ? "Awar.." : "Awareness",
-                    },
-                  ],
-                },
-              ]}
-              width={width < 850 ? 300 : 500}
-              height={width < 850 ? 200 : 200}
-            />
-          </div>
+          <>
+            <div className="flex flex-col items-center justify-center border-2 border-black rounded-xl bg-teal-100 m-2">
+              <h2 className="my-4 text-3xl font-alumni font-bold text-green-800">
+                Verified Registrations : {verifiedTotalRegistrations}
+              </h2>
+              <BarChart
+                dataset={verifiedDataset}
+                yAxis={[{ scaleType: "band", dataKey: "event" }]}
+                sx={{}}
+                margin={{ left: 100 }}
+                series={[
+                  {
+                    dataKey: "registrations",
+                    label: "Registrations",
+                    valueFormatter,
+                  },
+                ]}
+                layout="horizontal"
+                grid={{ vertical: true }}
+                {...chartSetting}
+              />
+            </div>
+
+            <div className="flex flex-col items-center justify-center rounded-xl border-2 bg-teal-100 m-2">
+              <h2 className="my-4 text-3xl font-alumni font-bold text-green-800">
+                Verified Revenue : Rs.{verifiedTotalRevenue}
+              </h2>
+              <PieChart
+                series={[
+                  {
+                    data: [
+                      {
+                        id: 0,
+                        value: verifiedDataset[0]?.revenue,
+                        label: width < 850 ? "Tech.." : "Technical",
+                      },
+                      {
+                        id: 1,
+                        value: verifiedDataset[1]?.revenue,
+                        label: width < 850 ? "Non-T.." : "Non-Technical",
+                      },
+                      {
+                        id: 2,
+                        value: verifiedDataset[2]?.revenue,
+                        label: width < 850 ? "Cybe.." : "Cyberthon",
+                      },
+                      {
+                        id: 3,
+                        value: verifiedDataset[3]?.revenue,
+                        label: width < 850 ? "Work.." : "Workshops",
+                      },
+                      {
+                        id: 4,
+                        value: verifiedDataset[4]?.revenue,
+                        label: width < 850 ? "Conc.." : "Conclave",
+                      },
+                      {
+                        id: 5,
+                        value: verifiedDataset[5]?.revenue,
+                        label: width < 850 ? "Awar.." : "Awareness",
+                      },
+                    ],
+                  },
+                ]}
+                width={width < 850 ? 300 : 500}
+                height={width < 850 ? 200 : 200}
+              />
+            </div>
+          </>
         ) : (
           <></>
         )}
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center my-10">
+      <div
+        className={
+          AUTHORIZED.includes(user.email)
+            ? "w-full flex flex-col items-center justify-center my-10"
+            : "w-full flex flex-col items-center justify-center my-1"
+        }
+      >
         <h1 className="text-2xl font-audiowide text-black m-4">
           Technical Events
         </h1>

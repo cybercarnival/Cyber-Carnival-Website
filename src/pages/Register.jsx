@@ -186,7 +186,7 @@ function Register() {
     }
   };
 
-  return ["valorant"].includes(event) ? (
+  return ["valorant", "freefire"].includes(event) ? (
     <Closed />
   ) : (
     <ModalProvider>

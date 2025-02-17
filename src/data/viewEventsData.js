@@ -26,6 +26,7 @@ import FreeFireQR from "../assets/FreeFireQR.png";
 import ShipwreckQR from "../assets/ShipwreckQR.jpg";
 import TitleEventQR from "../assets/TitleEventQR.jpg";
 import ValoQR from "../assets/ValoQR.png";
+import workshop2QR from "../assets/workshop2QR.png";
 
 export const data = {
   cyberconclave: {
@@ -84,7 +85,7 @@ export const data = {
     eventDetails: {
       time: "10 AM - 1 PM",
       date: "20 FEB 2025",
-      fees: "300 per team",
+      fees: "200 per team",
       seats: "180 seats",
       qr: CTFQR,
     },
@@ -528,14 +529,14 @@ export const data = {
     eventDetails: {
       time: "10 AM - 4 PM",
       date: "20 & 21 FEB",
-      fees: "500 PER head",
+      fees: "300 PER head",
       seats: "150 SEATS",
-      qr: WorkshopQR,
+      qr: workshop2QR,
     },
     rules: [],
   },
   workshop1: {
-    title: "Cybersecurity and Network Security",
+    title: "Cyber Security and Network Security",
     title_font: "font-saira",
     title_size: "text-2xl text-center",
     description:
