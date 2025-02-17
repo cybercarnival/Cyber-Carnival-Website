@@ -124,7 +124,7 @@ Thank you for registering for the Title Event! We are excited to confirm your pa
 
 Event Details:
 📅 Date: Friday, 21st February 2025
-⏰ Time: 11:00 AM to 1:00 PM
+⏰ Time: 1:00 PM to 3:00 PM
 Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/InHvZG5l3TNBWVCGItJGns
 
 Please bring a copy of this email or your ticket for verification at the registration desk. Ensure you arrive at least 15 minutes before the event starts to complete the check-in process smoothly.
