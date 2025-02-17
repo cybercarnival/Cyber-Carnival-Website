@@ -26,7 +26,6 @@ export const AppProvider = ({ children }) => {
     "vr1813@srmist.edu.in",
     "ka2964@srmist.edu.in",
     "shinyduj@srmist.edu.in",
-    
   ];
 
   const [data, setData] = useState({});
@@ -130,10 +129,10 @@ export const AppProvider = ({ children }) => {
 
       if (col === "cyberthon") {
         newDataset[2].registrations += colSnapshot.docs.length;
-        newDataset[2].revenue = 25750;
+        newDataset[2].revenue = 26500;
 
         newVerifiedDataset[2].registrations += verifiedDocs.length;
-        newVerifiedDataset[2].revenue = 25750;
+        newVerifiedDataset[2].revenue = 26500;
 
         Cyberthon.push({ collection: col, documents: colData });
         verifiedCyberthon.push({ collection: col, documents: verifiedDocs });

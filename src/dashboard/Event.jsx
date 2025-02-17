@@ -544,7 +544,7 @@ function Event() {
                         </h1>
                       )}
                       {AUTHORIZED.includes(user.email) ? (
-                        <div>
+                        <div className="w-full">
                           <button
                             disabled={verifiedList.includes(row.id)}
                             className={`w-full h-10 ${
