@@ -200,6 +200,8 @@ Thank you for registering for Cybersafe Cinema! We're excited to have you join u
 
 Your ticket is confirmed, and we look forward to seeing you there. Be sure to arrive on time to make the most of the event!
 
+Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/D2Ojuue6sBy7F87rnZlSaO
+
 If you have any questions or need further assistance, feel free to reach out to us at hello@cybercarnival.in or +91 72992 84940.
 
 Best regards,
@@ -235,6 +237,8 @@ Workshop Details:
 
 Please ensure you arrive at least 15 minutes early for check-in. Kindly present this email or your registration confirmation at the entrance.
 
+Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/B7vs5pnC8TbKrkn7BkJ6zr
+
 If you have any questions, feel free to reach out. We look forward to seeing you there!
 
 Best regards,
@@ -252,6 +256,8 @@ Workshop Details:
 ⏰ Time: 10:00 AM – 4:00 PM
 
 Please ensure you arrive at least 15 minutes early for seamless check-in. Kindly present this email at the registration desk for verification.
+
+Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/DNVQ2jO9iNP0gwWTIFEx7I
 
 For any queries, feel free to reach out to us at hello@cybercarnival.in.
 
@@ -271,6 +277,8 @@ Congratulations! Your ticket for the Freefire Tournament has been confirmed. Get
 ⏰ Time: 10:00 AM onwards
 
 Please ensure you arrive on time and bring a valid ID for verification. Stay tuned for further updates, and feel free to reach out if you have any questions.
+
+Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/GwxiKdwtMOkCyqlKIkhPTi
 
 See you on the battleground!
 Best regards,
