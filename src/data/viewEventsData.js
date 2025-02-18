@@ -20,11 +20,10 @@ import CTFQR from "../assets/CTFQR.png";
 import PaperPresentationQR from "../assets/PaperPresentationQR.png";
 import WorkshopQR from "../assets/WorkshopQR.png";
 import BugBountyQR from "../assets/BugBountyQR.png";
-import ChannelSurfingQR from "../assets/ChannelSurfingQR.jpg";
+import ChannelSurfingQR from "../assets/SurfingQR.png";
 import CyberSafeCinemaQR from "../assets/CyberSafeCinemaQR.png";
 import FreeFireQR from "../assets/FreeFireQR.png";
-import ShipwreckQR from "../assets/ShipwreckQR.jpg";
-import TitleEventQR from "../assets/TitleEventQR.jpg";
+import ShipwreckQR from "../assets/ShipwreckQR.png";
 import BGMIQR from "../assets/BGMIQR.png";
 import BGMI from "../assets/BGMI.jpeg";
 import ValoQR from "../assets/ValoQR.png";
@@ -362,7 +361,7 @@ export const data = {
     eventDetails: {
       time: "9 AM - 11 AM",
       date: "21 FEB 2025",
-      fees: "250 per team",
+      fees: "200 per team",
       seats: "150 SEATS",
       qr: ChannelSurfingQR,
     },
@@ -421,7 +420,7 @@ export const data = {
     eventDetails: {
       time: "11 AM - 1 PM",
       date: "21 FEB 2025",
-      fees: "150 per head",
+      fees: "100 per head",
       seats: "150 SEATS",
       qr: ShipwreckQR,
     },
