@@ -186,7 +186,7 @@ function Register() {
     }
   };
 
-  return ["valorant", "title", "freefire"].includes(event) ? (
+  return ["valorant", "freefire"].includes(event) ? (
     <Closed />
   ) : (
     <ModalProvider>
@@ -202,6 +202,7 @@ function Register() {
                   "capturetheflag",
                   "techexpo",
                   "freefire",
+                  "title",
                   "paperpresentation",
                   "cinema",
                   "valorant",
@@ -283,6 +284,7 @@ function Register() {
                       "capturetheflag",
                       "techexpo",
                       "freefire",
+                      "title",
                       "paperpresentation",
                       "cinema",
                       "valorant",
@@ -313,6 +315,7 @@ function Register() {
                       "capturetheflag",
                       "techexpo",
                       "freefire",
+                      "title",
                       "paperpresentation",
                       "cinema",
                       "valorant",
@@ -343,6 +346,7 @@ function Register() {
                       "capturetheflag",
                       "techexpo",
                       "freefire",
+                      "title",
                       "paperpresentation",
                       "cinema",
                       "valorant",
@@ -373,6 +377,7 @@ function Register() {
                       "capturetheflag",
                       "techexpo",
                       "freefire",
+                      "title",
                       "paperpresentation",
                       "cinema",
                       "valorant",
@@ -398,6 +403,7 @@ function Register() {
                   "capturetheflag",
                   "techexpo",
                   "freefire",
+                  "title",
                   "paperpresentation",
                   "cinema",
                   "valorant",
@@ -443,6 +449,7 @@ function Register() {
                 )}
                 {[
                   "freefire",
+                  "title",
                   "paperpresentation",
                   "valorant",
                   "surfing",

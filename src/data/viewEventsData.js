@@ -25,6 +25,8 @@ import CyberSafeCinemaQR from "../assets/CyberSafeCinemaQR.png";
 import FreeFireQR from "../assets/FreeFireQR.png";
 import ShipwreckQR from "../assets/ShipwreckQR.jpg";
 import TitleEventQR from "../assets/TitleEventQR.jpg";
+import BGMIQR from "../assets/BGMIQR.png";
+import BGMI from "../assets/BGMI.jpeg";
 import ValoQR from "../assets/ValoQR.png";
 import workshop2QR from "../assets/workshop2QR.png";
 
@@ -434,35 +436,37 @@ export const data = {
     ],
   },
   title: {
-    title: "Title Event",
+    title: "BGMI",
     title_font: "font-saira",
     title_size: "text-4xl",
     description:
-      "Join us for an electrifying Cyber Carnival, where technology meets creativity",
+      "Battle it out in Erangel, survive, dominate, and claim your Chicken Dinner!",
 
     brief:
-      " In Last One Standing: The Battle for the Title, fierce contenders clash in a high-stakes competition where only the strongest will prevail. This intense event pushes participants to their limits as they battle for the coveted champion title.",
+      "Get ready for an intense BGMI (Battlegrounds Mobile India) tournament!  This event is your chance to showcase your skills, teamwork, and strategy in Erangel. Compete against top players, survive till the end, and claim victory!",
     brief2:
-      "In Last One Standing: The Battle for the Title, the battle is intense among fierce contenders as they vie in a high-stakes competition for the champion title. Participants are pushed to their limits, making strategic moves and crucial decisions while facing various challenges. As the competition hots up, and hopefuls drop one by one, it is just the last man standing. 'Last One Standing' is all about tenacity and striving for greatness. Join us in this battle of strength and spirit.",
-    poster: title,
+      "Welcome to the ultimate Battle Ground! This competition is all about teamwork, coordination, and the relentless pursuit of that coveted Chicken Dinner.From the moment you drop into the map, your squad's synergy will be put to the test. Every decision, from loot choices to movement strategies, must be made with precision and mutual trust. Engage in heart-pounding firefights, overcome challenging situations, and adapt to shifting battle conditions—all while relying on your teammates to have your back. As the circle closes and the intensity ramps up, only the team with the best communication and strategy will survive until the very end.",
+    poster: BGMI,
     url: "title",
     facultyCoordinator: ["Ms. Sujeetha AP/CSE", ""],
     studentCoordinator: [
       "Shadrach P - +91 9094562861",
-      "Swasthikka Ranganathan - +91 7094234999",
+      "Aathish P - +91 7395807187",
     ],
     eventDetails: {
-      time: "1 PM - 3 PM",
+      time: "10 AM - 1 PM",
       date: "21 FEB 2025",
-      fees: "150 per head",
+      fees: "200 per head",
       seats: "200 SEATS",
-      qr: TitleEventQR,
+      qr: BGMIQR,
     },
     rules: [
-      "There will be multiple elimination rounds and the judge's decision is final.",
-      "Participants will be judged based on the humour creativity and spontaneity.",
-      "Do not use abusive words  or actions in your Act.",
-      "Winner Recieves the title Mr/Ms. Cyber Carnival.",
+      "Team Size: 1 to 4 players per team.",
+      "Map: Erangel.",
+      "Internet & Device: Players must use their own mobile/tablet and internet. The organizers are not responsible for network issues. ",
+      "No emulators allowed.",
+      "Fair Play: No cheating, hacking, or third-party software. Violators will be disqualified.",
+      "Behavior: Toxicity, abusive language, or any misconduct will lead to a ban.",
     ],
   },
   valorant: {
