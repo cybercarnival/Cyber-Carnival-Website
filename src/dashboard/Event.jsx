@@ -161,7 +161,7 @@ Thank you for registering for Startup Expo 2025! 🎉 We're excited to have you 
 
 Event Details:
 📅 Date: 20th February 2025
-⏰ Time: 1:00 PM – 4:00 PM
+⏰ Time: 10:00 AM – 3:00 PM
 📍 Venue: Hi-Tech Hall
 
 Please present this email at the registration desk for a seamless check-in experience. If you have any questions, feel free to reach out us at hello@cybercarnival.in
