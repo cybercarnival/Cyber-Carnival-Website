@@ -453,7 +453,7 @@ export const data = {
       "Aathish P - +91 7395807187",
     ],
     eventDetails: {
-      time: "10 AM - 1 PM",
+      time: "10 AM - 3 PM",
       date: "21 FEB 2025",
       fees: "200 per head",
       seats: "200 SEATS",
