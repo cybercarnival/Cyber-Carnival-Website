@@ -455,7 +455,7 @@ export const data = {
     eventDetails: {
       time: "10 AM - 1 PM",
       date: "21 FEB 2025",
-      fees: "200 per head",
+      fees: "200 per team",
       seats: "200 SEATS",
       qr: BGMIQR,
     },
