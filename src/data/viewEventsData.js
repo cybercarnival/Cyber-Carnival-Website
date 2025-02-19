@@ -227,7 +227,7 @@ export const data = {
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy", "Dr.J.Nithisha"],
     studentCoordinator: ["Dhivyan +91 9042876394", "Jonathan +91 9150662333"],
     eventDetails: {
-      time: "10 AM - 12 PM",
+      time: "1 PM - 3 PM",
       date: "20 FEB 2025",
       fees: "150 PER TEAM",
       seats: "150 SEATS",
