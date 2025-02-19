@@ -9,7 +9,7 @@ function Events() {
       <EventCard urlName="freefire" />
       <EventCard urlName="cinema" />
       <EventCard urlName="surfing" />
-      {/* <EventCard urlName="surviva" /> */}
+      <EventCard urlName="surviva" />
       <EventCard urlName="title" />
       <EventCard urlName="valorant" />
     </div>
