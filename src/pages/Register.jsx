@@ -193,6 +193,7 @@ function Register() {
     "workshop2",
     "startup",
     "techexpo",
+    "title",
   ].includes(event) ? (
     <Closed />
   ) : (
