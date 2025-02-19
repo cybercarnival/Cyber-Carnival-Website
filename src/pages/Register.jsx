@@ -186,9 +186,14 @@ function Register() {
     }
   };
 
-  return ["valorant", "freefire", "workshop1", "workshop2", "startup"].includes(
-    event
-  ) ? (
+  return [
+    "valorant",
+    "freefire",
+    "workshop1",
+    "workshop2",
+    "startup",
+    "techexpo",
+  ].includes(event) ? (
     <Closed />
   ) : (
     <ModalProvider>

@@ -240,6 +240,7 @@ function ViewEvent() {
                 "workshop1",
                 "workshop2",
                 "startup",
+                "techexpo",
               ].includes(event)
                 ? true
                 : false
@@ -251,6 +252,7 @@ function ViewEvent() {
               "workshop1",
               "workshop2",
               "startup",
+              "techexpo",
             ].includes(event)
               ? "Registrations Closed"
               : "Register"}

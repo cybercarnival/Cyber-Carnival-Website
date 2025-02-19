@@ -220,8 +220,7 @@ export const data = {
 
     brief:
       "Think you can build the next big cybersecurity tool? At Secure Tool Expo, you'll get the chance to design and showcase a tool you've created. It could be anything from protecting data to keeping systems running smoothly. Bring your coding skills and creativity—we can't wait to see what you come up with!",
-    brief2:
-      "Unleash innovation in cybersecurity as students showcase their own tools to safeguard the digital future while upholding Confidentiality, Integrity, and Availability! The Secure Tool Expo provides a dynamic platform for participants to demonstrate their creativity by showcasing cutting-edge cybersecurity tools built by you. Whether focused on safeguarding data, enhancing system performance, or detecting vulnerabilities, this event serves as a hub of innovation. Participants will present their solutions to a panel of judges, showcasing how their tools effectively address critical cybersecurity challenges.",
+    brief2: "Registrations Closed. For Queries contact - +91 9042876394",
     poster: techexpo,
     url: "techexpo",
     facultyCoordinator: ["Dr.Suganthi", "Dr.Revathy", "Dr.J.Nithisha"],
