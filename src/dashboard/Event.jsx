@@ -117,24 +117,24 @@ Best regards,
 Cyber Carnival Team`,
   },
   title: {
-    subject: "Confirmation of Your Ticket for the Title Event",
-    body: `Dear {NAME},
+    subject: "Confirmation of Your Ticket for the BGMI Event",
+    body: `Dear Team {NAME},
 
-Thank you for registering for the Title Event! We are excited to confirm your participation.
+Thank you for registering for the BGMI Event! We are excited to confirm your participation.
 
 Event Details:
 📅 Date: Friday, 21st February 2025
-⏰ Time: 1:00 PM to 3:00 PM
+⏰ Time: 10:00 AM to 3:00 PM
 Here’s the whatsapp link to join our participants group: https://chat.whatsapp.com/InHvZG5l3TNBWVCGItJGns
 
 Please bring a copy of this email or your ticket for verification at the registration desk. Ensure you arrive at least 15 minutes before the event starts to complete the check-in process smoothly.
 
-Should you have any questions or require further assistance, feel free to contact us at hello@cybercarnival.in or +91 9094562861.
+Should you have any questions or require further assistance, feel free to contact us at hello@cybercarnival.in or +91 9094562861.
 
 We look forward to seeing you there!
 
 Best regards,
-CyberCarnival Team`,
+CyberCarnival Team`,
   },
   paperpresentation: {
     subject: "Confirmation of Your Ticket for Paper Presentation",
