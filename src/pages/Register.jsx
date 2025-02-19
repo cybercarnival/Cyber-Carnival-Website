@@ -186,7 +186,9 @@ function Register() {
     }
   };
 
-  return ["valorant", "freefire", "workshop1", "workshop2"].includes(event) ? (
+  return ["valorant", "freefire", "workshop1", "workshop2", "surviva"].includes(
+    event
+  ) ? (
     <Closed />
   ) : (
     <ModalProvider>
