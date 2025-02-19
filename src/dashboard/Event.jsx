@@ -394,6 +394,28 @@ function Event() {
   if (!user) {
     return <Navigate to={"/admin"} replace={true} />;
   }
+  const handleMail = async (to, subject, body) => {
+    try {
+      const response = await fetch("https://gomma.syn4ck.workers.dev", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          to: to,
+          text: body,
+          subject: subject,
+        }),
+      });
+
+      const data = await response.text();
+      alert(data);
+      console.log("Response:", data);
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Mail NOT Sent");
+    }
+  };
   return (
     <div className="flex justify-start items-center flex-col bg-white min-h-screen">
       {<ExportData event={id} />}
@@ -588,10 +610,8 @@ function Event() {
                           >
                             Delete
                           </button>
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href={mailtoLink}
+                          <button
+                            onClick={() => handleMail(row.email, subject, body)}
                             className={`w-full h-10 ${
                               verifiedList.includes(row.id)
                                 ? "bg-green-700"
@@ -600,7 +620,7 @@ function Event() {
                             aria-label={`Send email to ${row.name}`}
                           >
                             Send Mail
-                          </a>
+                          </button>
                         </div>
                       ) : (
                         <></>
