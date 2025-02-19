@@ -276,7 +276,7 @@ function Home() {
               className="hover:scale-105 hover:shadow-teal-300 cursor-pointer shadow-xl shadow-teal-600 m-4 rounded-md flex items-center justify-center h-48 w-64 bg-teal-800 duration-300"
             >
               <h1 className="text-2xl font-mono text-white">
-                {event.collection}
+                {event.collection == "title" ? "BGMI" : event.collection}
               </h1>
             </div>
           ))}
