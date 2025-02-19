@@ -302,7 +302,7 @@ Best regards,
 Team CyberCarnival`,
   },
   surfing: {
-    subject: "Confirmation: Your Ticket for Cyber Awareness Event",
+    subject: "Confirmation: Your Ticket for Channel Surfing Event",
     body: `Dear {NAME},
     
 Thank you for registering for Channel Surfing! 🚀 We're excited to have you join us for this thrilling experience.
