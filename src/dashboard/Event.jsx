@@ -301,7 +301,23 @@ Looking forward to seeing you there!
 Best regards,
 Team CyberCarnival`,
   },
-  surfing: { subject: "", body: "" },
+  surfing: {
+    subject: "Confirmation: Your Ticket for Cyber Awareness Event",
+    body: `Dear {NAME},
+    
+Thank you for registering for Channel Surfing! 🚀 We're excited to have you join us for this thrilling experience.
+
+Event Details:
+📍 Venue: Hi-Tech Hall (Right Side)
+📅 Date: 21st February 2025
+⏰ Time: 9:00 AM – 11:00 AM
+
+Please ensure you arrive at least 15 minutes early for a smooth check-in process. Don't forget to bring a copy of this email or your registration ID for verification.
+If you have any questions, feel free to reach out to us at hello@cybercarnival.in
+Looking forward to seeing you there!
+Best regards,
+Team CyberCarnival`,
+  },
 };
 
 function Event() {
