@@ -191,7 +191,7 @@ function Register() {
     "capturetheflag",
     "cyberthon",
     "paperpresentation",
-    "bugbounty",
+    
     "techexpo",
     "startup",
     "freefire",
