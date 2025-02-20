@@ -239,11 +239,12 @@ function ViewEvent() {
                 "capturetheflag",
                 "cyberthon",
                 "paperpresentation",
-                
+                "bugbounty",
+                "surfing",
                 "techexpo",
                 "startup",
                 "freefire",
-                "cinema", 
+                "cinema",
                 "awareness",
                 "surviva",
                 "title",
@@ -260,12 +261,13 @@ function ViewEvent() {
               "capturetheflag",
               "cyberthon",
               "paperpresentation",
-              
+
               "techexpo",
               "startup",
               "freefire",
               "cinema",
-              
+              "bugbounty",
+              "surfing",
               "awareness",
               "surviva",
               "title",

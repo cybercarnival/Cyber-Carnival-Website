@@ -172,7 +172,6 @@ function ExportData({ event }) {
       ];
     } else if (
       event == "surviva" ||
-      event == "title" ||
       event == "workshop1" ||
       event == "workshop2" ||
       event == "cyberconclave"
@@ -185,7 +184,7 @@ function ExportData({ event }) {
         "URL",
         "Transaction ID",
       ];
-    } else if (event == "freefire" || event == "cinema" || event == "surfing") {
+    } else if (event == "freefire" || event == "cinema" || event == "title") {
       headers = [
         "Team Name",
         "Team Leader",
@@ -198,7 +197,7 @@ function ExportData({ event }) {
         "URL",
         "Transaction ID",
       ];
-    } else if (event == "valorant") {
+    } else if (event == "valorant" || event == "surfing") {
       headers = [
         "Team Name",
         "Team Leader",
