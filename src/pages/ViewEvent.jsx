@@ -243,8 +243,7 @@ function ViewEvent() {
                 "techexpo",
                 "startup",
                 "freefire",
-                "cinema",
-                "surfing",
+                "cinema", 
                 "awareness",
                 "surviva",
                 "title",
@@ -266,7 +265,7 @@ function ViewEvent() {
               "startup",
               "freefire",
               "cinema",
-              "surfing",
+              
               "awareness",
               "surviva",
               "title",
