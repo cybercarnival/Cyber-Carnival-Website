@@ -65,7 +65,6 @@ function ExportData({ event }) {
         ]);
       } else if (
         event == "surviva" ||
-        event == "title" ||
         event == "workshop1" ||
         event == "workshop2" ||
         event == "cyberconclave"
@@ -78,11 +77,7 @@ function ExportData({ event }) {
           i.screenshotUrl,
           i.transactionID,
         ]);
-      } else if (
-        event == "freefire" ||
-        event == "cinema" ||
-        event == "surfing"
-      ) {
+      } else if (event == "freefire" || event == "cinema" || event == "title") {
         ed.push([
           i.teamName,
           i.name,
@@ -95,7 +90,7 @@ function ExportData({ event }) {
           i.screenshotUrl,
           i.transactionID,
         ]);
-      } else if (event == "valorant") {
+      } else if (event == "valorant" || event == "surfing") {
         ed.push([
           i.teamName,
           i.name,
