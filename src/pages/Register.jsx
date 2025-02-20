@@ -187,13 +187,22 @@ function Register() {
   };
 
   return [
-    "valorant",
-    "freefire",
-    "workshop1",
-    "workshop2",
-    "startup",
+    "cyberconclave",
+    "capturetheflag",
+    "cyberthon",
+    "paperpresentation",
+    "bugbounty",
     "techexpo",
+    "startup",
+    "freefire",
+    "cinema",
+    "surfing",
+    "awareness",
+    "surviva",
     "title",
+    "valorant",
+    "workshop2",
+    "workshop1",
   ].includes(event) ? (
     <Closed />
   ) : (
